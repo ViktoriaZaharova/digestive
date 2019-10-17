@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Modal</title>
+	<link href="css/bundle.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="container">
+		<a href="#closed__modal" class="button open_modal">Магазин закрыт</a>
+		<a href="#subscribe__modal" class="button open_modal">Подпишись и получи скидку</a>
+		<a href="#product__modal" class="button open_modal">Продукт добавлен</a>
+		<a href="#product-comparison__modal" class="button open_modal">Продукт добавлен в сравнение</a>
+		<a href="#product-favorit__modal" class="button open_modal">Продукт добавлен в сравнение</a>
+		<a href="#greeting__modal" class="button open_modal">Добро пожаловать</a>
+		<a href="#message__modal" class="button open_modal">Написать директору</a>
+		<a href="#subscribe-sale__modal" class="button open_modal">Подписаться на акции и скидки</a>
+		<a href="#callback__modal" class="button open_modal">Закажите обратный звонок</a>
+		<a href="#reistration__modal" class="button open_modal">Регистрация на сайте</a>
+		<a href="#entrance__modal" class="button open_modal">Войти в личный кабинет</a>
+		<a href="#" class="button btn-basket">Корзина</a>
+	</div>
+
+	<div class="basket-wrapper">
+		<div class="basket-wrapper__scroll">
+			<div class="basket-wrapper__title">Корзина</div>
+
+			<div class="basket-wrapper__body">
+				<div class="cart-table__row">
+					<div class="cart-table__column cart-table__column--heading">
+						<a class="cart-table__product" href="#">
+							<img class=" ls-is-cached lazyloaded" src="images/products/6.png">
+
+						</a>
+
+						<div class="cart-table__column--body">
+							<div class="line">
+								<span class="cart-table__title">Виски Вудфорд Резерв не менее 3 лет п/к 0.7 л</span>
+								<div class="cart-table__column cart-table__column--price">
+									<span class="price-text cart-table__price">2 639 <span>₽</span></span>
+								</div>
+							</div>
+
+							<div class="line">
+								<div class="cart-table__column cart-table__column--count">
+									<div class="select">
+										<select class="select__container">
+											<option class="select__item">1</option>
+											<option class="select__item">2</option>
+											<option class="select__item">3</option>
+											<option class="select__item">4</option>
+											<option class="select__item">5</option>
+										</select>
+									</div>
+								</div>
+								<div class="cart-table__column cart-table__column--remove">
+									<button class="cart-table__remove">X</button>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="cart-table__column cart-table__column--result">
+						<p>Итого</p>
+						<span class="price-text cart-table__price">2 639 <span>₽</span></span>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="basket-wrapper__footer">
+				<a href="#" class="cart-footer__buy">Оформить заказ</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal__div popup__information" id="closed__modal">
+		<div class="modal__wrapper">
+			<div class="modal-image"><img src="images/popup/img-close.jpg" alt="">
+				<div class="modal-image__hidden">
+
+					<div class="icon-plus">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+								<path d="M26 0C11.664 0 0 11.663 0 26s11.664 26 26 26 26-11.663 26-26S40.336 0 26 0zm0 50C12.767 50 2 39.233 2 26S12.767 2 26 2s24 10.767 24 24-10.767 24-24 24z"/>
+								<path d="M38.5 25H27V14a1 1 0 1 0-2 0v11H13.5a1 1 0 1 0 0 2H25v12a1 1 0 1 0 2 0V27h11.5a1 1 0 1 0 0-2z"/>
+						</svg>						
+					</div>
+					<div class="modal-image__hidden-title">
+							Французский коньяк
+							Courvoisier 0.7 л
+					</div>
+					
+					<div class="price">2 639 <span>₽</span></div>
+
+					<a href="#" class="link link--theme-dashed">подробнее</a>
+				</div>
+			</div>
+
+			<div class="modal-text">
+				<h3>Наш магазин закрыт
+					по техническим причинам
+					с 18.08.2019 по 30.08.2019</h3>
+
+				<p>Приносим свои извинения
+					за доставленные неудобства</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal__div popup__information" id="subscribe__modal">
+		<div class="modal__wrapper">
+			<div class="modal__close"><img src="images/close.png" alt=""></div>
+			<div class="modal-image"><img src="images/popup/img-subscribe.jpg" alt="">
+				<div class="modal-image__hidden">
+
+						<div class="icon-plus">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+									<path d="M26 0C11.664 0 0 11.663 0 26s11.664 26 26 26 26-11.663 26-26S40.336 0 26 0zm0 50C12.767 50 2 39.233 2 26S12.767 2 26 2s24 10.767 24 24-10.767 24-24 24z"/>
+									<path d="M38.5 25H27V14a1 1 0 1 0-2 0v11H13.5a1 1 0 1 0 0 2H25v12a1 1 0 1 0 2 0V27h11.5a1 1 0 1 0 0-2z"/>
+							</svg>						
+						</div>
+						<div class="modal-image__hidden-title">
+								Французский коньяк
+								Courvoisier 0.7 л
+						</div>
+						
+						<div class="price">2 639 <span>₽</span></div>
+	
+						<a href="#" class="link link--theme-dashed">подробнее</a>
+					</div>
+			</div>
+
+			<div class="modal-text">
+				<h3>Подпишись и получи
+					<span class="bg-orange">скидку 10%</span> на первый заказ<sup>*</sup></h3>
+
+				<p>Подпишитесь на нашу рассылку, чтобы получать
+					последние обновления и акции</p>
+
+				<form method="post" class="contact-form__content">
+					<div class="contact-form__row">
+						<div class="contact-form__item">
+							<label class="contact-form__element">
+								<input class="contact-form__field" type="email" required="" placeholder="Введите свой e-mail...">
+							</label>
+						</div>
+						<button type="submit" class="button button button--theme-second">Подписаться</button>
+					</div>
+
+					<div class="contact-form__row">
+						<label class="checkbox">
+							<input class="checkbox__field" type="checkbox"
+								value="Отправляя форму я даю согласие на обработку моих персональных данных в соответствии с законом №152 РФ «О персоанльных данных» от 27.07.2006 и принимаю условия Пользовательского соглашения"><span
+								class="checkbox__text">Отправляя форму я даю согласие на обработку моих персональных данных в
+								соответствии с законом №152 РФ «О персоанльных данных» от 27.07.2006 и принимаю условия
+								<a href="#" class="links">Пользовательского соглашения</a></span>
+						</label>
+					</div>
+				</form>
+
+				<div class="description-sale">
+					<sup>*</sup> акция действительна на все напитки в ценовом диапазоне от 1ю до 4999ю
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal__div modal__div-product" id="product__modal">
+		<div class="modal__wrapper">
+			<h2>Продукт добавлен в корзину</h2>
+
+			<div class="product-item">
+				<div class="product-item__thumbnail">
+
+					<img class="product-item__image ls-is-cached lazyloaded" src="images/products/6.png"
+						srcset="images/products/6.png">
+				</div>
+
+				<div class="product-item__content">
+					<div class="product-item__seo"><span class="product-item__available product-item__available--yes">
+							Доступно
+						</span><span class="product-item__heading">Виски Вудфорд Резерв
+							не менее 3 лет п/к 0.7 л</span>
+					</div>
+					<div class="product-item__prices"><span class="product-item__price">2 639<span>₽</span></span><span
+							class="product-item__sale">3 890 ₽ без скидки</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="button-group">
+				<a href="#" class="button button--theme-darken">Продолжить покупки</a>
+				<a href="#" class="button">Перейти к оформлению</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal__div modal__div-product modal__div-comparison" id="product-comparison__modal">
+		<div class="modal__wrapper">
+			<h2>Продукт добавлен в сравнение</h2>
+
+			<div class="product-item">
+				<div class="product-item__thumbnail">
+					<img class="product-item__image ls-is-cached lazyloaded" src="images/products/7.png"
+						srcset="images/products/7.png">
+				</div>
+				<span class="product-item__heading">Ликер "De Kuyper" Creme De Menthe Green 0.7 л</span>
+
+			</div>
+
+			<div class="button-group">
+				<a href="#" class="button btn-modal__close">Закрыть</a>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal__div modal__div-product modal__div-comparison" id="product-favorit__modal">
+		<div class="modal__wrapper">
+			<h2>Продукт добавлен в избранное</h2>
+
+			<div class="product-item">
+				<div class="product-item__thumbnail">
+					<img class="product-item__image ls-is-cached lazyloaded" src="images/products/8.png"
+						srcset="images/products/8.png">
+				</div>
+				<span class="product-item__heading">Ликер "Becherovka" 0.5 л/span>
+
+			</div>
+
+			<div class="button-group">
+				<a href="#" class="button btn-modal__close">Закрыть</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal__div modal__div-product" id="greeting__modal">
+		<div class="modal__wrapper">
+			<h2>Добро пожаловать на сайт
+				элитного алкоголя The Digestive</h2>
+
+			<div class="question">
+				<h5>Вам уже исполнилось 18 лет?</h5>
+
+				<div class="button-group">
+					<a href="#" class="button button--theme-second">Да</a>
+					<a href="#" class="button">Нет</a>
+				</div>
+			</div>
+
+			<div class="modal__wrapper-footer">
+				<div class="box-attention">
+					<div class="icon"><img src="images/error.png" alt=""></div>
+					<p>Мы используем файлы cookie, чтобы улучшить работу и повысить эффективность сайта. Продолжая пользование
+						данным сайтом, Вы соглашаетесь с использованием файлов cookie.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal__div popup__information form__modal" id="message__modal">
+		<div class="modal__wrapper">
+			<div class="modal__close"><img src="images/close.png" alt=""></div>
+			<div class="modal-image"><img src="images/popup/1.png" alt="">
+				<div class="modal-image__hidden">
+
+						<div class="icon-plus">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+									<path d="M26 0C11.664 0 0 11.663 0 26s11.664 26 26 26 26-11.663 26-26S40.336 0 26 0zm0 50C12.767 50 2 39.233 2 26S12.767 2 26 2s24 10.767 24 24-10.767 24-24 24z"/>
+									<path d="M38.5 25H27V14a1 1 0 1 0-2 0v11H13.5a1 1 0 1 0 0 2H25v12a1 1 0 1 0 2 0V27h11.5a1 1 0 1 0 0-2z"/>
+							</svg>						
+						</div>
+						<div class="modal-image__hidden-title">
+								Французский коньяк
+								Courvoisier 0.7 л
+						</div>
+						
+						<div class="price">2 639 <span>₽</span></div>
+	
+						<a href="#" class="link link--theme-dashed">подробнее</a>
+					</div>
+			</div>
+
+			<div class="modal-text">
+				<h2>Написать директору</h2>
+
+				<form class="contact-form__content" action="#">
+					<div class="contact-form__row">
+						<div class="contact-form__item">
+							<label class="contact-form__element"><span class="contact-form__placeholder">Введите имя</span>
+								<input class="contact-form__field" type="text" required="" placeholder="Денис Самойлов">
+							</label>
+						</div>
+					</div>
+
+					<div class="contact-form__row">
+						<div class="contact-form__item">
+							<label class="contact-form__element"><span class="contact-form__placeholder">Введите номер
+									телефона</span>
+								<input class="contact-form__field" type="phone" required="" placeholder="+7 (929) 042 - 04 - 21">
+							</label>
+						</div>
+					</div>
+					<div class="contact-form__row">
+						<div class="contact-form__item">
+							<label class="contact-form__element"><span class="contact-form__placeholder">Введите email</span>
+								<input class="contact-form__field" type="email" required="" placeholder="brendmaster1@yandex.ru">
+							</label>
+						</div>
+					</div>
+
+					<div class="contact-form__row">
+						<div class="contact-form__item">
+							<label class="contact-form__element"><span class="contact-form__placeholder">Ваше сообщение</span>
+								<textarea class="contact-form__field contact-form__field--textarea"
+									placeholder="Я бы хотел выразить свою благодарность..."></textarea>
+							</label>
+						</div>
+
+					</div>
+					<div class="contact-form__row">
+						<div class="contact-form__item">
+							<label class="checkbox">
+								<input class="checkbox__field" type="checkbox"
+									value="Отправляя форму я даю согласие на обработку моих персональных данных в соответствии с законом №152 РФ «О персоанльных данных» от 27.07.2006 и принимаю условия Пользовательского соглашения"><span
+									class="checkbox__text">Отправляя форму я даю согласие на обработку моих персональных данных в
+									соответствии с законом №152 РФ «О персоанльных данных» от 27.07.2006 и принимаю условия
+									<a href="#" class="links">Пользовательского соглашения</a></span>
+							</label>
+							<button class="button" type="submit">Отправить письмо</button>
+						</div>
+					</div>
+
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal__div popup__information form__modal" id="subscribe-sale__modal">
+		<div class="modal__wrapper">
+			<div class="modal__close"><img src="images/close.png" alt=""></div>
+			<div class="modal-image"><img src="images/popup/2.png" alt="">
+				<div class="modal-image__hidden">
+
+						<div class="icon-plus">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+									<path d="M26 0C11.664 0 0 11.663 0 26s11.664 26 26 26 26-11.663 26-26S40.336 0 26 0zm0 50C12.767 50 2 39.233 2 26S12.767 2 26 2s24 10.767 24 24-10.767 24-24 24z"/>
+									<path d="M38.5 25H27V14a1 1 0 1 0-2 0v11H13.5a1 1 0 1 0 0 2H25v12a1 1 0 1 0 2 0V27h11.5a1 1 0 1 0 0-2z"/>
+							</svg>						
+						</div>
+						<div class="modal-image__hidden-title">
+								Французский коньяк
+								Courvoisier 0.7 л
+						</div>
+						
+						<div class="price">2 639 <span>₽</span></div>
+	
+						<a href="#" class="link link--theme-dashed">подробнее</a>
+					</div>
+			</div>
+
+			<div class="modal-text">
+				<h2>Подписаться на акции и скидки</h2>
+
+				<form class="contact-form__content" action="#">
+					<div class="contact-form__row">
+						<div class="contact-form__item">
+							<label class="contact-form__element"><span class="contact-form__placeholder">Введите email</span>
+								<input class="contact-form__field" type="email" required="" placeholder="brendmaster1@yandex.ru">
+							</label>
+						</div>
+					</div>
+
+					<div class="contact-form__row">
+						<div class="contact-form__item">
+							<label class="checkbox">
+								<input class="checkbox__field" type="checkbox"
+									value="Отправляя форму я даю согласие на обработку моих персональных данных в соответствии с законом №152 РФ «О персоанльных данных» от 27.07.2006 и принимаю условия Пользовательского соглашения"><span
+									class="checkbox__text">Отправляя форму я даю согласие на обработку моих персональных данных в
+									соответствии с законом №152 РФ «О персоанльных данных» от 27.07.2006 и принимаю условия
+									<a href="#" class="links">Пользовательского соглашения</a></span>
+							</label>
+							<button class="button button--theme-second" type="submit">Подписаться</button>
+						</div>
+					</div>
+
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal__div popup__information form__modal" id="callback__modal">
+		<div class="modal__wrapper">
+			<div class="modal__close"><img src="images/close.png" alt=""></div>
+			<div class="modal-image"><img src="images/popup/3.png" alt="">
+				<div class="modal-image__hidden">
+
+						<div class="icon-plus">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+									<path d="M26 0C11.664 0 0 11.663 0 26s11.664 26 26 26 26-11.663 26-26S40.336 0 26 0zm0 50C12.767 50 2 39.233 2 26S12.767 2 26 2s24 10.767 24 24-10.767 24-24 24z"/>
+									<path d="M38.5 25H27V14a1 1 0 1 0-2 0v11H13.5a1 1 0 1 0 0 2H25v12a1 1 0 1 0 2 0V27h11.5a1 1 0 1 0 0-2z"/>
+							</svg>						
+						</div>
+						<div class="modal-image__hidden-title">
+								Французский коньяк
+								Courvoisier 0.7 л
+						</div>
+						
+						<div class="price">2 639 <span>₽</span></div>
+	
+						<a href="#" class="link link--theme-dashed">подробнее</a>
+					</div>
+			</div>
+
+			<div class="modal-text">
+				<h2>Закажите обратный звонок</h2>
+
+				<form class="contact-form__content" action="#">
+					<div class="contact-form__row">
+						<div class="contact-form__item">
+							<label class="contact-form__element"><span class="contact-form__placeholder">Введите номер
+									телефона</span>
+								<input class="contact-form__field" type="phone" required="" placeholder="+7 (XXX) XXX - XX - XX">
+							</label>
+						</div>
+					</div>
+
+					<div class="contact-form__row">
+						<div class="contact-form__item">
+							<label class="checkbox">
+								<input class="checkbox__field" type="checkbox"
+									value="Отправляя форму я даю согласие на обработку моих персональных данных в соответствии с законом №152 РФ «О персоанльных данных» от 27.07.2006 и принимаю условия Пользовательского соглашения"><span
+									class="checkbox__text">Отправляя форму я даю согласие на обработку моих персональных данных в
+									соответствии с законом №152 РФ «О персоанльных данных» от 27.07.2006 и принимаю условия
+									<a href="#" class="links">Пользовательского соглашения</a></span>
+							</label>
+							<button class="button" type="submit">Заказать звонок</button>
+						</div>
+					</div>
+
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal__div popup__information form__modal" id="reistration__modal">
+		<div class="modal__wrapper">
+			<div class="modal__close"><img src="images/close.png" alt=""></div>
+			<div class="modal-image"><img src="images/popup/4.png" alt="">
+				<div class="modal-image__hidden">
+
+						<div class="icon-plus">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+									<path d="M26 0C11.664 0 0 11.663 0 26s11.664 26 26 26 26-11.663 26-26S40.336 0 26 0zm0 50C12.767 50 2 39.233 2 26S12.767 2 26 2s24 10.767 24 24-10.767 24-24 24z"/>
+									<path d="M38.5 25H27V14a1 1 0 1 0-2 0v11H13.5a1 1 0 1 0 0 2H25v12a1 1 0 1 0 2 0V27h11.5a1 1 0 1 0 0-2z"/>
+							</svg>						
+						</div>
+						<div class="modal-image__hidden-title">
+								Французский коньяк
+								Courvoisier 0.7 л
+						</div>
+						
+						<div class="price">2 639 <span>₽</span></div>
+	
+						<a href="#" class="link link--theme-dashed">подробнее</a>
+					</div>
+			</div>
+
+			<div class="modal-text">
+				<h2>Регистрация на сайте</h2>
+
+				<form class="contact-form__content" action="#">
+					<div class="contact-form__row">
+						<div class="contact-form__item">
+							<label class="contact-form__element"><span class="contact-form__placeholder">Введите имя</span>
+								<input class="contact-form__field" type="text" required="" placeholder="Денис Самойлов">
+							</label>
+						</div>
+					</div>
+
+					<div class="contact-form__row">
+						<div class="contact-form__item">
+							<label class="contact-form__element"><span class="contact-form__placeholder">Введите номер
+									телефона</span>
+								<input class="contact-form__field" type="phone" required="" placeholder="+7 (929) 042 - 04 - 21">
+							</label>
+						</div>
+					</div>
+					<div class="contact-form__row">
+						<div class="contact-form__item">
+							<label class="contact-form__element contact-form__element-novalid"><span
+									class="contact-form__placeholder">Введите email</span>
+								<input class="contact-form__field" type="email" required="" placeholder="введите корректный адрес">
+							</label>
+						</div>
+					</div>
+
+					<div class="contact-form__row">
+						<div class="contact-form__item">
+							<label class="contact-form__element"><span class="contact-form__placeholder">Введите пароль</span>
+								<input class="contact-form__field" type="email" required="" placeholder="*************************">
+
+								<span class="contact-form__icon"><img src="images/no_eye.png" alt=""></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="contact-form__row">
+						<div class="contact-form__item">
+							<label class="contact-form__element"><span class="contact-form__placeholder">Повторите пароль</span>
+								<input class="contact-form__field" type="email" required="" placeholder="odjsdkfbv732jkbdkbdhs">
+
+								<span class="contact-form__icon"><img src="images/eye.png" alt=""></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="contact-form__row">
+						<div class="contact-form__item">
+							<label class="checkbox">
+								<input class="checkbox__field" type="checkbox"
+									value="Отправляя форму я даю согласие на обработку моих персональных данных в соответствии с законом №152 РФ «О персоанльных данных» от 27.07.2006 и принимаю условия Пользовательского соглашения"><span
+									class="checkbox__text">Хочу получать уведомления об акциях и скидках</span>
+							</label>
+						</div>
+					</div>
+
+					<div class="contact-form__row">
+						<div class="contact-form__item">
+							<label class="checkbox">
+								<input class="checkbox__field" type="checkbox"
+									value="Отправляя форму я даю согласие на обработку моих персональных данных в соответствии с законом №152 РФ «О персоанльных данных» от 27.07.2006 и принимаю условия Пользовательского соглашения"><span
+									class="checkbox__text">Отправляя форму я даю согласие на обработку моих персональных данных в
+									соответствии с законом №152 РФ «О персоанльных данных» от 27.07.2006 и принимаю условия
+									<a href="#" class="links">Пользовательского соглашения</a></span>
+							</label>
+							<button class="button" type="submit">Зарегистрироваться</button>
+						</div>
+					</div>
+
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal__div popup__information form__modal" id="entrance__modal">
+		<div class="modal__wrapper">
+			<div class="modal__close"><img src="images/close.png" alt=""></div>
+			<div class="modal-image"><img src="images/popup/5.png" alt="">
+				<div class="modal-image__hidden">
+
+						<div class="icon-plus">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+									<path d="M26 0C11.664 0 0 11.663 0 26s11.664 26 26 26 26-11.663 26-26S40.336 0 26 0zm0 50C12.767 50 2 39.233 2 26S12.767 2 26 2s24 10.767 24 24-10.767 24-24 24z"/>
+									<path d="M38.5 25H27V14a1 1 0 1 0-2 0v11H13.5a1 1 0 1 0 0 2H25v12a1 1 0 1 0 2 0V27h11.5a1 1 0 1 0 0-2z"/>
+							</svg>						
+						</div>
+						<div class="modal-image__hidden-title">
+								Французский коньяк
+								Courvoisier 0.7 л
+						</div>
+						
+						<div class="price">2 639 <span>₽</span></div>
+	
+						<a href="#" class="link link--theme-dashed">подробнее</a>
+					</div>
+			</div>
+
+			<div class="modal-text">
+				<h2>Войти в личный кабинет</h2>
+
+				<form class="contact-form__content" action="#">
+
+					<div class="contact-form__row">
+						<div class="contact-form__item">
+							<label class="contact-form__element"><span class="contact-form__placeholder">Введите номер
+									телефона</span>
+								<input class="contact-form__field" type="phone" required="" placeholder="+7 (929) 042 - 04 - 21">
+							</label>
+						</div>
+					</div>
+
+					<div class="contact-form__row">
+						<div class="contact-form__item">
+							<label class="contact-form__element"><span class="contact-form__placeholder">Введите пароль</span>
+								<input class="contact-form__field" type="email" required="" placeholder="*************************">
+
+								<span class="contact-form__icon"><img src="images/no_eye.png" alt=""></span>
+							</label>
+						</div>
+					</div>
+					<div class="button-group">
+						<button class="button" type="submit">Войти в кабинет</button>
+						<a href="#" class="link link--theme-dashed">забыли пароль?</a>
+					</div>
+
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="attention_banner">
+		<div class="container">
+			<h4>Уважаемые клиенты!</h4>
+
+			<p>Наш магазин работает согласно законодательству РФ, и в соответствии с письмом ФАС РФ от 13.09.12 №АК/29977 мы
+				не осуществляем доставку и дистанционную продажу алкогольной продукции. Весь ассортимент и цены на сайте
+				представлены в информационных целях. Все напитки из каталога вы можете приобрести в нашем магазине по адресу
+				Москва, ул. Перерва вл. 31Б, ТК "Марьино". Алкоголь не отпускается лицам младше 18 лет.</p>
+
+
+			<button type="button" class="button">Я прочитал</button>
+		</div>
+	</div>
+
+	<div class="overlay"></div>
+	<script src="js/bundle.min.js"></script>
+</body>
+
+</html>
