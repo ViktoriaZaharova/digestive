@@ -7815,7 +7815,8 @@ button.mz-button:before {
 	width: 256px;
 	height: 43px;
 	margin-right: 20px;
-	background-size: cover;
+	background-size: contain;
+	background-repeat: no-repeat;
 	background-position: center
 }
 
@@ -8561,7 +8562,7 @@ button.mz-button:before {
 	border: none;
 	background: 0 0;
 	color: #bbb;
-	font-size: 20px;
+	font-size: 19px;
 	cursor: pointer;
 	outline: 0;
 	-webkit-flex-shrink: 0;
