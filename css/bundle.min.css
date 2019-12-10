@@ -2092,6 +2092,10 @@ body {
 	overflow: hidden
 }
 
+body.fixed {
+	position: fixed;
+}
+
 .mobile-menu {
 	position: fixed;
 	z-index: 9999;
@@ -10272,7 +10276,11 @@ visibility: visible;
 .modal__wrapper form button {
 	border-radius: 3px;
 	height: 41px;
-	line-height: 41px;
+	line-height: normal;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 	width: 141px;
 }
 
@@ -10415,9 +10423,13 @@ input, button {
 	margin: 0 auto 30px;
 }
 
+.modal__wrapper .product-item:hover {
+	box-shadow: none;
+}
+
 .modal__wrapper .product-item__thumbnail {
 	padding: 0;
-	width: 93px;
+	width: 135px;
 	height: 100px;
 }
 
@@ -10427,7 +10439,7 @@ input, button {
 }
 
 .modal__wrapper .product-item__content {
-	padding: 0 0 0 75px;
+	padding: 0 0 0 45px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -10440,6 +10452,7 @@ input, button {
 
 .modal__wrapper .button--theme-darken {
 	margin: 0 30px 0 0;
+	line-height: 42px;
 }
 
 .modal__wrapper .product-item__seo {
