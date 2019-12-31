@@ -48,15 +48,11 @@
 
 							<div class="line">
 								<div class="cart-table__column cart-table__column--count">
-									<div class="select">
-										<select class="select__container">
-											<option class="select__item">1</option>
-											<option class="select__item">2</option>
-											<option class="select__item">3</option>
-											<option class="select__item">4</option>
-											<option class="select__item">5</option>
-										</select>
-									</div>
+										<div class="amount">
+											<span class="down">-</span>
+											<input type="text" value="1" />
+											<span class="up">+</span>
+										</div>
 								</div>
 								<div class="cart-table__column cart-table__column--remove">
 									<button class="cart-table__remove">X</button>
@@ -629,7 +625,15 @@
 	</div>
 
 	<div class="overlay"></div>
+
+	<div class="btn-click-top"><i class="icon-slider-arrow-left"></i></div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="js/bundle.min.js"></script>
+	<script src="js/magiczoomplus.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/common.js"></script>
 </body>
 
 </html>
