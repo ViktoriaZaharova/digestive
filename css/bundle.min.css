@@ -1135,7 +1135,36 @@ body {
     border: 1px solid #f0f0f0;
     -webkit-transition: .3s ease;
     -o-transition: .3s ease;
-    transition: .3s ease
+    transition: .3s ease;
+    position: relative;
+}
+
+
+.product-item__content {
+    position: relative;
+}
+
+.product-item__content .single-item__vendor {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    padding: 0 19px;
+    margin: 0;
+    font-size: 13px;
+}
+
+.product-item__content .single-item__vendor strong {
+    transition: .5s ease;
+    overflow: hidden;
+    opacity: 0;
+    position: absolute;
+}
+
+
+.product-item:hover .product-item__content .single-item__vendor strong{
+    overflow: visible;
+    opacity: 1;
+    position: relative;
 }
 
 .product-item--type-large {
@@ -1228,8 +1257,8 @@ body {
     width: 44px;
     height: 44px;
     display: block;
-    margin: 1px auto auto 1px;
-    font-size: 3.1rem
+    margin: auto;
+    font-size: 46px
 }
 
 .product-item__tag--best {
@@ -4316,24 +4345,6 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
     justify-content: flex-end
 }
 
-/* @media (max-width: 992px) {
-	.category-header__container {
-		position: relative;
-		left: -15px;
-		width: -webkit-calc(100% + 15px + 15px);
-		width: calc(100% + 15px + 15px);
-		-webkit-box-pack: center;
-		-webkit-justify-content: center;
-		-ms-flex-pack: center;
-		justify-content: center;
-		-webkit-box-align: center;
-		-webkit-align-items: center;
-		-ms-flex-align: center;
-		align-items: center;
-		background: #fff
-	}
-} */
-
 .category-header__content {
     display: -webkit-box;
     display: -webkit-flex;
@@ -4344,16 +4355,6 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
     -ms-flex-align: center;
     align-items: center
 }
-
-/* @media (max-width: 992px) {
-	.category-header__content {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column
-	}
-} */
 
 .category-header__add-to-card {
     width: 64px;
@@ -4379,11 +4380,6 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
     background: #b93c11
 }
 
-/* @media (max-width: 992px) {
-	.category-header__add-to-card {
-		margin-bottom: 25px
-	}
-} */
 
 .category-header__infos {
     display: -webkit-box;
@@ -5599,6 +5595,10 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
     font-size: 14px;
     font-weight: 300;
     text-align: center
+}
+
+.contact-form__field::placeholder {
+    color: #131517;
 }
 
 .contact-form__field--textarea {
@@ -7007,10 +7007,10 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
     max-width: 100%;
     width: 100%;
     height: auto;
-    margin: 30px 0 0 0;
+    margin: 15px 0 0 0;
     display: flex;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 
@@ -7035,8 +7035,8 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
 
 .single-item__thumb {
     width: 100%;
-    max-width: 90px;
-    height: 90px;
+    max-width: 56px;
+    height: 56px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -7055,7 +7055,7 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
     -o-transition: .3s ease;
     transition: .3s ease;
     text-align: center;
-    margin: 0;
+    margin: 0 5px;
 }
 
 a[data-zoom-id] img, .mz-thumb img {
@@ -7110,6 +7110,7 @@ button.mz-button.mz-button-prev, button.mz-button.mz-button-next {
     width: 56px !important;
     height: 56px !important;
     transition: .3s ease;
+    display: block !important;
 }
 
 .mz-expand {
@@ -7138,13 +7139,13 @@ button.mz-button:before {
 .single-item__viewport {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 555px;
     border: none;
 }
 
 .single-item__viewport .flickity-page-dots {
     position: absolute;
-    bottom: -20px;
+    bottom: 0;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -7166,7 +7167,6 @@ button.mz-button:before {
 }
 
 .single-item__viewport .flickity-page-dots .dot.is-selected {
-    height: 2px;
     background: #ec5c2a
 }
 
@@ -10950,6 +10950,13 @@ input, button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+}
+
+.links-edit {
+    min-width: 15px;
+    width: 15px;
+    height: 15px;
 }
 
 .checkout-stage:not(:last-child) {
@@ -11567,8 +11574,8 @@ input, button {
     z-index: 10;
     bottom: 20px;
     right: 20px;
-    width: 30px;
-    height: 30px;
+    width: 56px;
+    height: 56px;
     color: #c3c3c3;
     cursor: pointer;
     display: none;
@@ -11578,7 +11585,7 @@ input, button {
     width: 100%;
     transform: rotate(90deg);
     display: inline-block;
-    font-size: 30px;
+    font-size: 56px;
     transition: .3s ease;
 }
 
@@ -11759,7 +11766,7 @@ input, button {
     align-items: center;
     justify-content: center;
     font-size: 10px;
-    font-family: 'Avenir Next Condensed', sans-serif;
+    /*font-family: 'Avenir Next Condensed', sans-serif;*/
     font-weight: 500;
 }
 
@@ -12085,8 +12092,13 @@ input, button {
     display: block;
 }
 
-.icon-check img {
+.icon-check svg {
     width: 100%;
+    fill: green;
+}
+
+.input-group--nocheck .icon-check svg {
+    fill: #E2574C;
 }
 
 .input-group--nocheck input {
@@ -12531,7 +12543,15 @@ input, button {
     }
 
     .single-item__viewport {
-        height: 600px
+        height: 320px
+    }
+
+    .single-item__infos {
+        padding: 0;
+    }
+
+    .single-item__slide {
+        max-width: 300px;
     }
 
     .single-item {
@@ -12741,11 +12761,16 @@ input, button {
     }
 
     button.mz-button.mz-button-prev, button.mz-button.mz-button-next {
-        border: 1px solid #ffffff !important;
+        border: 1px solid transparent !important;
         border-radius: 50%;
         color: #fff !important;
         width: 34px !important;
         height: 34px !important;
+    }
+
+    button.mz-button.mz-button-prev:hover, button.mz-button.mz-button-next:hover,
+    button.mz-button.mz-button-prev:focus, button.mz-button.mz-button-next:focus {
+        border-color: #fff !important;
     }
 
     .logo-brand {
@@ -12861,18 +12886,38 @@ input, button {
     .cart-table__wrapper, .cart-table__body, .cart-table__row, .cart-table__body td, .cart-table__body .cart-table__column {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .cart-table__body .cart-table__column {
         border: none;
         padding: 10px 0;
-        width: 50%;
+        width: 25%;
         justify-content: center;
+        align-items: center;
+    }
+
+    .cart-table__body  .cart-table__column--availability {
+        width: 80px;
+
+    }
+
+    .cart-table__body .cart-table__column--remove {
+        width: 20px;
+    }
+
+    .cart-table__body .cart-table__column--action {
+        width: 116px;
     }
 
     .cart-table__body .cart-table__column--heading {
         width: 100%;
         padding: 0;
+    }
+
+    .cart-table__thumbnail {
+        width: 80px;
+        height: 80px;
     }
 
     .cart-table__product {
@@ -13106,6 +13151,21 @@ input, button {
         justify-content: space-between;
         align-items: center;
     }
+
+    .page_single-post .page__grid {
+        margin-bottom: 0;
+    }
+
+    .checkout-stage__heading h4 {
+        position: relative;
+        padding: 0 0 0 25px;
+    }
+
+    .checkout-stage__heading h4 span {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -13221,6 +13281,22 @@ input, button {
     .latest-products__heading {
         font-size: 24px;
     }
+
+    .modal__wrapper .product-item__thumbnail {
+        width: 50px;
+        height: auto;
+        min-width: 50px;
+    }
+
+    .modal__wrapper .product-item {
+        height: auto;
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .modal__wrapper .product-item__seo {
+        min-width: auto;
+    }
 }
 
 @media (max-width: 420px) {
@@ -13306,6 +13382,14 @@ input, button {
         padding: 33px 25px 39px;
     }
 
+    .btn-click-top {
+        width: 30px;
+        height: 30px;
+    }
+
+    .btn-click-top i {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 380px) {
@@ -13313,8 +13397,6 @@ input, button {
         width: 20px;
         height: 20px;
         right: -28px;
-        /* top: 10px;
-		right: 10px; */
     }
 
     .mobile-menu {
