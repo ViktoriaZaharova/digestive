@@ -1154,17 +1154,14 @@ body {
 }
 
 .product-item__content .single-item__vendor strong {
-    transition: .5s ease;
-    overflow: hidden;
-    opacity: 0;
-    position: absolute;
+    transition: .2s ease;
+    display: none;
+
 }
 
 
 .product-item:hover .product-item__content .single-item__vendor strong{
-    overflow: visible;
-    opacity: 1;
-    position: relative;
+    display: inline-block;
 }
 
 .product-item--type-large {
@@ -1270,7 +1267,7 @@ body {
 }
 
 .product-item__tag--new i {
-    margin: -7px 8px 0 0
+    font-size: 42px;
 }
 
 .product-item__tag--sale {
@@ -1278,7 +1275,7 @@ body {
 }
 
 .product-item__tag--sale i {
-    margin: -7px 9px 0 0
+    font-size: 42px;
 }
 
 .product-item__controls {
@@ -5591,14 +5588,14 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
     border-radius: 3px;
     border: 1px solid #bbb;
     outline: 0;
-    color: #131517;
+    color: #000;
     font-size: 14px;
     font-weight: 300;
     text-align: center
 }
 
 .contact-form__field::placeholder {
-    color: #131517;
+    color: #000;
 }
 
 .contact-form__field--textarea {
@@ -12092,12 +12089,12 @@ input, button {
     display: block;
 }
 
-.icon-check svg {
+.icon-check svg, .icon-check svg path {
     width: 100%;
     fill: green;
 }
 
-.input-group--nocheck .icon-check svg {
+.input-group--nocheck .icon-check svg, .input-group--nocheck .icon-check svg path {
     fill: #E2574C;
 }
 
@@ -12353,6 +12350,16 @@ input, button {
     .result-search {
         padding: 28px 30px 38px 100px;
     }
+
+    .checkout__header .container {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0;
+    }
+
+    .checkout__header .header__logo {
+        margin: 0 auto 20px;
+    }
 }
 
 @media (max-width: 1034px) {
@@ -12361,7 +12368,7 @@ input, button {
     }
 
     .news-grid__item {
-        height: 352px;
+        height: 480px;
     }
 
     .mega-menu__range {
@@ -12550,9 +12557,14 @@ input, button {
         padding: 0;
     }
 
-    .single-item__slide {
-        max-width: 300px;
+
+    figure.mz-figure {
+        max-width: 280px;
     }
+
+    /*.single-item__slide {*/
+    /*    max-width: 300px;*/
+    /*}*/
 
     .single-item {
         margin-top: 0;
@@ -12918,6 +12930,11 @@ input, button {
     .cart-table__thumbnail {
         width: 80px;
         height: 80px;
+        border: none;
+        padding: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
     }
 
     .cart-table__product {
@@ -12927,6 +12944,30 @@ input, button {
     .cart-table__row {
         margin: 0 0 20px;
         padding: 0;
+        border-bottom: 1px solid #f0f0f0;
+        position: relative;
+        padding: 0 0 20px 90px;
+    }
+
+    .cart-table__head .cart-table__row {
+        padding: 0;
+    }
+
+    .cart-table__head {
+        width: 100%;
+    }
+
+    .cart-table {
+        overflow: visible;
+    }
+
+    .cart-table__head .cart-table__column--remove, .cart-table__head .cart-table__column--action {
+        display: none;
+    }
+
+    .cart-table__head .cart-table__column--heading, .cart-table__head .cart-table__column--price, .cart-table__head .cart-table__column--availability {
+        width: auto;
+        flex: 1;
     }
 }
 
@@ -13226,15 +13267,31 @@ input, button {
         width: 280px;
     }
 
-    .basket-wrapper .cart-table__column--heading {
-        flex-direction: column;
-        align-items: center;
-        padding: 0 20px;
+    .basket-wrapper__body .cart-table__product {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 60px;
+        height: 60px;
+        border: none;
+        padding: 0;
     }
 
     .basket-wrapper .cart-table__column--body {
         width: 100%;
-        padding: 20px 0 0 0;
+    }
+
+    .basket-wrapper .cart-table__column--heading {
+        padding: 0 10px 0 70px;
+    }
+
+    .cart-table__column--body .line {
+        flex-wrap: wrap;
+        margin: 0 0 15px;
+    }
+
+    .basket-wrapper .cart-table__column--price {
+        margin: 10px auto 0;
     }
 
     .basket-wrapper__footer {
@@ -13246,7 +13303,7 @@ input, button {
     }
 
     .basket-wrapper__body .cart-table__title {
-        max-width: 150px;
+        max-width: none;
     }
 
     .category-information__item {
@@ -13297,6 +13354,16 @@ input, button {
     .modal__wrapper .product-item__seo {
         min-width: auto;
     }
+
+    .modal__wrapper .product-item__seo .product-item__available {
+        order: 1;
+        margin: 10px auto 0;
+    }
+
+    .modal__wrapper .product-item__prices {
+        margin: 0 auto;
+    }
+
 }
 
 @media (max-width: 420px) {
@@ -13390,6 +13457,96 @@ input, button {
     .btn-click-top i {
         font-size: 30px;
     }
+
+    .cart-table__thumbnail {
+        width: 60px;
+        height: 60px;
+    }
+
+    .cart-table__row {
+        padding: 0 0 20px 70px;
+    }
+
+    .cart-table__title {
+        margin: 0;
+    }
+
+    .cart-table__body .cart-table__column--action {
+        width: 100%;
+        order: 1;
+        padding: 0;
+    }
+
+    .cart-table .button {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+
+
+    .single-item__carousel {
+        padding: 0 0 10px;
+    }
+
+    .single-item__viewport {
+        height: 260px;
+    }
+
+    .single-item__block--heading {
+        padding: 22px 10px;
+    }
+
+    .single-item__block--prices {
+        padding: 0 10px 20px;
+    }
+
+    .single-item__price{
+        font-size: 30px;
+        margin: 0 auto;
+    }
+
+    .single-item__heading {
+        font-size: 20px;
+    }
+
+    .single-item__thumb {
+        max-width: 45px;
+        height: 45px;
+    }
+
+    .mz-hint-message {
+        padding: 5px;
+        font-size: 10px;
+    }
+    figure.mz-figure {
+        max-width: 200px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+
+
+    .single-item__viewport {
+        height: 240px;
+    }
+
+    .cart-table__price {
+        font-size: 14px;
+    }
+
+    .amount input {
+        max-width: 50px;
+        font-size: 14px;
+    }
+
+    .cart-table__remove {
+        width: 30px;
+        height: 30px;
+        padding: 0;
+    }
+
 }
 
 @media (max-width: 380px) {
