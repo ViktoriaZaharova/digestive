@@ -4224,6 +4224,10 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
     outline: 0
 }
 
+.cart-table__product .single-item__vendor {
+    padding: 0 0 0 40px;
+}
+
 .cart-table__product:focus .cart-table__title, .cart-table__product:hover .cart-table__title {
     color: #ec5c2a
 }
@@ -4290,7 +4294,7 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
     color: #bbb
 }
 
-.cart-table__availability--empty span {
+.cart-table__availability--empty span, .cart-table__availability--empty strong {
     color: #bbb
 }
 
@@ -6673,6 +6677,10 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
     .products-layout__item--long {
         max-width: 720px;
         width: 100%
+    }
+
+    .products-layout__item--long .single-item__vendor {
+        bottom: -13px;
     }
 
     .products-layout__item--long .product-item {
@@ -10758,7 +10766,6 @@ input, button {
     width: 80px;
     min-width: 80px;
     height: 90px;
-    border: 1px solid #f0f0f0;
     background-color: rgba(255, 255, 255, .6);
     padding: 7px;
     box-sizing: border-box;
@@ -10772,6 +10779,12 @@ input, button {
     align-items: center;
     justify-content: space-between;
     margin: 0 0 27px;
+    flex-wrap: wrap;
+}
+
+.cart-table__column--body .single-item__vendor {
+    order: 1;
+    font-size: 12px;
 }
 
 .cart-table__column--body .line:last-child {
@@ -12662,12 +12675,25 @@ input, button {
         text-align: center;
     }
 
+    .product-item__content .single-item__vendor {
+        text-align: left;
+    }
+
     .single-item__description {
         font-size: 16px;
     }
 
+    .cart-table__title {
+        margin: 0;
+    }
+
     .single-item__vendor {
         text-align: center;
+    }
+
+    .cart-table__column--body .single-item__vendor, .cart-table__product .single-item__vendor {
+        text-align: left;
+        padding: 0;
     }
 
     .single-item__body {
@@ -12902,9 +12928,6 @@ input, button {
         margin: 0 10px;
     }
 
-    .cart-table__title {
-        margin: 0 0 0 20px;
-    }
 
     .cart-table__column--heading {
         width: 480px;
