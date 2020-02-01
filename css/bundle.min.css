@@ -6657,6 +6657,11 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
         align-items: flex-end
     }
 
+    .product-item__content .single-item__vendor 
+    {
+        text-align: left;
+    }
+
     .products-layout__item--large .product-item .product-item__heading {
         max-width: 420px
     }
