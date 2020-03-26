@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     var btn = $('.btn-click-top');
 
-    var height = $('html').height() / 2;
+    var height = $('html').height() / 4;
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > height) {
@@ -21,7 +21,7 @@ $(document).ready(function () {
     $('.mobile-navigation__control-search').on('click', function (e) {
         e.preventDefault();
         $('.mobile-search').fadeIn();
-    })
+    });
 
     $('.link-dropdown .link-phone').on('click', function () {
         $('.link-phone').hide();
@@ -99,3 +99,54 @@ function checkInput2() {
         $('.mobile-search .header__submit').addClass('key');
     }
 }
+
+// scroll header fixed
+
+$(document).ready(function () {
+    // fixed menu
+
+    var navFixed = $(".header__scroll.nofixed, .mobile-navigation.nofixed"),
+        navHeight = $('.header__scroll, .mobile-navigation').height();
+
+    if ($(window).scrollTop()) {
+        navFixed.addClass("fixed").removeClass("nofixed");
+    }
+
+
+    if (navFixed.length) {
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll < navHeight + 20) {
+                navFixed.addClass("nofixed");
+                navFixed.removeClass("fixed hidden");
+                $('main').removeClass('scrollPadding');
+            }
+            if (scroll > navHeight) {
+                navFixed.addClass("hidden");
+            }
+            if (scroll > navHeight + 40) {
+                navFixed.addClass("fixed");
+                navFixed.removeClass("nofixed");
+                $('main').addClass('scrollPadding');
+            }
+
+        })
+    }
+});
+
+// показать карточку товара по наведению в зависимости от значениея data-tab
+$(document).ready(function () {
+    $(".mega-menu__route").hover(function () {
+        var id = $(this).attr('data-tab'),
+            content = $('.js-tab-content[data-tab="'+ id +'"]');
+
+        $('.mega-menu__route.active').removeClass('active'); // 1
+        $(this).addClass('active'); // 2
+
+        $('.js-tab-content.active').removeClass('active'); // 3
+        content.addClass('active'); // 4
+    })
+});
+
+// timer
