@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About us</title>
+    <title>Single post</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="css/bundle.min.css" rel="stylesheet">
 </head>
-<body>
 
+<body>
 <div class="mobile-menu">
     <div class="mobile-menu__close"><img src="images/close.svg" alt=""></div>
     <div class="mobile-menu__scroll">
@@ -137,7 +138,7 @@
     </div>
 </div>
 
-<div class="page page_about-us">
+<div class="page page_homepage">
     <header class="mobile-navigation nofixed">
         <div class="mobile-navigation__wrapper">
             <div class="mobile-navigation__group">
@@ -176,24 +177,23 @@
                         </div>
                     </div>
 
-                    <a class="mobile-navigation__control" href="#"><i class="icon-basket"></i></a></div>
+                    <a class="mobile-navigation__control" href="#"><i
+                            class="icon-basket"></i></a></div>
             </div>
         </div>
-
+        <div class="mobile-search">
+            <form class="header__search" action="#">
+                <input class="header__field" type="text" placeholder="Найти алкоголь" required>
+                <button class="header__submit" type="submit"><i class="icon-search"></i></button>
+                <button class="header__delete" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 612 612">
+                        <path fill="#2A2A2A"
+                              d="M612 36.004L576.521.603 306 270.608 35.478.603 0 36.004l270.522 270.007L0 575.997l35.478 35.4L306 341.411l270.521 269.986 35.479-35.4-270.541-269.986z"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
     </header>
-
-    <div class="mobile-search">
-        <form class="header__search" action="#">
-            <input class="header__field" type="text" placeholder="Найти алкоголь" required>
-            <button class="header__submit" type="submit"><i class="icon-search"></i></button>
-            <button class="header__delete" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 612 612">
-                    <path fill="#2A2A2A"
-                          d="M612 36.004L576.521.603 306 270.608 35.478.603 0 36.004l270.522 270.007L0 575.997l35.478 35.4L306 341.411l270.521 269.986 35.479-35.4-270.541-269.986z"/>
-                </svg>
-            </button>
-        </form>
-    </div>
 
     <div class="result-search__mobile">
         <div class="result-search--content">
@@ -315,8 +315,19 @@
                     </a>
                 </div>
 
-                <div class="header__profile"><a class="header__auth header__auth--type-login" href="#">Вход</a><a
-                        class="header__auth header__auth--type--register" href="#">Регистрация</a></div>
+                <div class="header__profile"><a class="header__auth header__auth--type-login header__auth-user"
+                                                href="#"><span class="text">Алекснадр</span></a><a
+                        class="header__auth header__auth--type--register header__auth-edit" href="#">Выйти</a>
+
+                    <div class="dropDownProfile">
+                        <ul class="menu-profile">
+                            <li><a href="#">История заказов</a></li>
+                            <li><a href="#">Персональные предложения</a></li>
+                            <li><a href="#">Избранное</a></li>
+                            <li><a href="#">Подписки</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -340,8 +351,16 @@
                                                                              data-count="2"><i
                             class="icon-shuffle header__icon"></i></a></div>
                     <div class="header__block header__block--type-basket"><a
-                            class="header__basket header__basket--empty"
-                            href="#"><strong>Корзина</strong><span>Нет товаров</span></a>
+                            class="header__basket header__basket--empty header__basket-order"
+                            href="#">
+                        <span class="header__basket-total">12</span>
+                        <strong>Корзина</strong><span class="header__basket-sum">19 789 <span class="icon-rub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14.937" height="20.31"
+                             viewBox="0 0 14.937 20.31">
+    <path d="M984.4,2836.49h5.236v-2.24H984.4v-1.71h4.088c4.256,0,6.3-2.1,6.3-5.85,0-3.92-2.044-5.77-6.8-5.77h-6.216v9.38h-1.932v2.24h1.932v1.71h-1.932v2.24h1.932v4.73H984.4v-4.73Zm0-13.33h3.108c3.164,0,4.592,1.04,4.592,3.5,0,2.58-1.4,3.64-4.508,3.64H984.4v-7.14Z"
+          transform="translate(-979.844 -2820.91)"/>
+</svg>
+                    </span></span></a>
                     </div>
                 </div>
             </div>
@@ -371,12 +390,16 @@
                         <div class="mega-menu__header">
                             <div class="mega-menu__category">
                                 <h4 class="mega-menu__heading">Категория</h4>
-                                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Шампанское</a><a
-                                        class="mega-menu__route" href="#">Игристое вино</a><a class="mega-menu__route"
-                                                                                              href="#">Просекко</a><a
-                                        class="mega-menu__route" href="#">Асти</a><a class="mega-menu__route"
-                                                                                     href="#">Кава</a><a
-                                        class="mega-menu__route" href="#">Ламбурско</a></div>
+                                <div class="mega-menu__list">
+                                    <a class="mega-menu__route active" href="#" data-tab="card1">Шампанское</a><a
+                                        class="mega-menu__route" href="#" data-tab="card2">Игристое вино</a>
+                                    <a class="mega-menu__route"
+                                       href="#" data-tab="card3">Просекко</a>
+                                    <a
+                                            class="mega-menu__route" href="#" data-tab="card4">Асти</a>
+                                    <a class="mega-menu__route"
+                                       href="#" data-tab="card5">Кава</a><a
+                                        class="mega-menu__route" href="#" data-tab="card6">Ламбурско</a></div>
                                 <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
                             </div>
                             <div class="mega-menu__category">
@@ -440,7 +463,8 @@
                         </div>
                     </div>
                     <div class="mega-menu__favorite">
-                        <div class="product-item"><a class="product-item__header" href="#">
+                        <div class="product-item js-tab-content active" data-tab="card1"><a class="product-item__header"
+                                                                                            href="#">
                             <div class="product-item__thumbnail">
                                 <div class="product-item__tags">
                                     <div class="product-item__tag product-item__tag--new"><i class="icon-news"></i>
@@ -464,6 +488,7 @@
                                         class="product-item__component product-item__component--displacement">0.7 л</span><span
                                         class="product-item__component product-item__component--alcohol">47% алк</span>
                                 </div>
+                                <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
                             </div>
                         </a>
                             <div class="product-item__footer">
@@ -475,7 +500,197 @@
                                         class="icon-basket"></i><span>В корзину</span></a>
                             </div>
                         </div>
+
+                        <div class="product-item js-tab-content" data-tab="card2"><a class="product-item__header"
+                                                                                     href="#">
+                            <div class="product-item__thumbnail">
+                                <div class="product-item__tags">
+                                    <div class="product-item__tag product-item__tag--best"><i class="icon-stras"></i>
+                                    </div>
+                                </div>
+                                <div class="product-item__controls">
+                                    <button class="product-item__control product-item__control--like"><i
+                                            class="icon-heart"></i></button>
+                                    <button class="product-item__control product-item__control--comparison"><i
+                                            class="icon-shuffle"></i></button>
+                                </div>
+                                <img class="lazyload product-item__image" src="images/products/bombay.png"
+                                     srcset="images/products/bombay.png">
+                            </div>
+                            <div class="product-item__content">
+                                <div class="product-item__seo"><span
+                                        class="product-item__available product-item__available--yes">В
+											наличии</span><span
+                                        class="product-item__heading">Джин Bombay Sapphire 0.7 l</span>
+                                </div>
+                                <div class="product-item__components"><span
+                                        class="product-item__component product-item__component--displacement">0.7 л</span><span
+                                        class="product-item__component product-item__component--alcohol">47% алк</span>
+                                </div>
+                                <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
+                            </div>
+                        </a>
+                            <div class="product-item__footer">
+                                <div class="product-item__prices"><span
+                                        class="product-item__price">2 666<span class="icon-rub"></span></span><span
+                                        class="product-item__sale">4 890 ₽ без скидки</span>
+                                </div>
+                                <a class="button product-item__order" href="#"><i
+                                        class="icon-basket"></i><span>В корзину</span></a>
+                            </div>
+                        </div>
+                        <div class="product-item js-tab-content" data-tab="card3"><a class="product-item__header"
+                                                                                     href="#">
+                            <div class="product-item__thumbnail">
+                                <div class="product-item__tags">
+                                    <div class="product-item__tag product-item__tag--new"><i class="icon-news"></i>
+                                    </div>
+                                </div>
+                                <div class="product-item__controls">
+                                    <button class="product-item__control product-item__control--like"><i
+                                            class="icon-heart"></i></button>
+                                    <button class="product-item__control product-item__control--comparison"><i
+                                            class="icon-shuffle"></i></button>
+                                </div>
+                                <img class="lazyload product-item__image" src="images/products/chivas-regal.png"
+                                     srcset="images/products/chivas-regal.png">
+                            </div>
+                            <div class="product-item__content">
+                                <div class="product-item__seo"><span
+                                        class="product-item__available product-item__available--yes">Доступно</span><span
+                                        class="product-item__heading">Виски Chivas Regal 12 years old 0.7 l</span>
+                                </div>
+                                <div class="product-item__components"><span
+                                        class="product-item__component product-item__component--displacement">0.7 л</span><span
+                                        class="product-item__component product-item__component--alcohol">47% алк</span>
+                                </div>
+                                <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
+                            </div>
+                        </a>
+                            <div class="product-item__footer">
+                                <div class="product-item__prices"><span
+                                        class="product-item__price">2 639<span class="icon-rub"></span></span><span
+                                        class="product-item__sale">3 890 ₽ без скидки</span>
+                                </div>
+                                <a class="button product-item__order" href="#"><i
+                                        class="icon-basket"></i><span>В корзину</span></a>
+                            </div>
+                        </div>
+                        <div class="product-item js-tab-content" data-tab="card4"><a class="product-item__header"
+                                                                                     href="#">
+                            <div class="product-item__thumbnail">
+                                <div class="product-item__tags">
+                                    <div class="product-item__tag product-item__tag--best"><i class="icon-stras"></i>
+                                    </div>
+                                </div>
+                                <div class="product-item__controls">
+                                    <button class="product-item__control product-item__control--like"><i
+                                            class="icon-heart"></i></button>
+                                    <button class="product-item__control product-item__control--comparison"><i
+                                            class="icon-shuffle"></i></button>
+                                </div>
+                                <img class="lazyload product-item__image" src="images/products/bombay.png"
+                                     srcset="images/products/bombay.png">
+                            </div>
+                            <div class="product-item__content">
+                                <div class="product-item__seo"><span
+                                        class="product-item__available product-item__available--yes">В
+											наличии</span><span
+                                        class="product-item__heading">Джин Bombay Sapphire 0.7 l</span>
+                                </div>
+                                <div class="product-item__components"><span
+                                        class="product-item__component product-item__component--displacement">0.7 л</span><span
+                                        class="product-item__component product-item__component--alcohol">47% алк</span>
+                                </div>
+                                <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
+                            </div>
+                        </a>
+                            <div class="product-item__footer">
+                                <div class="product-item__prices"><span
+                                        class="product-item__price">2 666<span class="icon-rub"></span></span><span
+                                        class="product-item__sale">4 890 ₽ без скидки</span>
+                                </div>
+                                <a class="button product-item__order" href="#"><i
+                                        class="icon-basket"></i><span>В корзину</span></a>
+                            </div>
+                        </div>
+                        <div class="product-item js-tab-content" data-tab="card5"><a class="product-item__header"
+                                                                                     href="#">
+                            <div class="product-item__thumbnail">
+                                <div class="product-item__tags">
+                                    <div class="product-item__tag product-item__tag--new"><i class="icon-news"></i>
+                                    </div>
+                                </div>
+                                <div class="product-item__controls">
+                                    <button class="product-item__control product-item__control--like"><i
+                                            class="icon-heart"></i></button>
+                                    <button class="product-item__control product-item__control--comparison"><i
+                                            class="icon-shuffle"></i></button>
+                                </div>
+                                <img class="lazyload product-item__image" src="images/products/chivas-regal.png"
+                                     srcset="images/products/chivas-regal.png">
+                            </div>
+                            <div class="product-item__content">
+                                <div class="product-item__seo"><span
+                                        class="product-item__available product-item__available--yes">Доступно</span><span
+                                        class="product-item__heading">Виски Chivas Regal 12 years old 0.7 l</span>
+                                </div>
+                                <div class="product-item__components"><span
+                                        class="product-item__component product-item__component--displacement">0.7 л</span><span
+                                        class="product-item__component product-item__component--alcohol">47% алк</span>
+                                </div>
+                                <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
+                            </div>
+                        </a>
+                            <div class="product-item__footer">
+                                <div class="product-item__prices"><span
+                                        class="product-item__price">2 639<span class="icon-rub"></span></span><span
+                                        class="product-item__sale">3 890 ₽ без скидки</span>
+                                </div>
+                                <a class="button product-item__order" href="#"><i
+                                        class="icon-basket"></i><span>В корзину</span></a>
+                            </div>
+                        </div>
+                        <div class="product-item js-tab-content" data-tab="card6"><a class="product-item__header"
+                                                                                     href="#">
+                            <div class="product-item__thumbnail">
+                                <div class="product-item__tags">
+                                    <div class="product-item__tag product-item__tag--best"><i class="icon-stras"></i>
+                                    </div>
+                                </div>
+                                <div class="product-item__controls">
+                                    <button class="product-item__control product-item__control--like"><i
+                                            class="icon-heart"></i></button>
+                                    <button class="product-item__control product-item__control--comparison"><i
+                                            class="icon-shuffle"></i></button>
+                                </div>
+                                <img class="lazyload product-item__image" src="images/products/bombay.png"
+                                     srcset="images/products/bombay.png">
+                            </div>
+                            <div class="product-item__content">
+                                <div class="product-item__seo"><span
+                                        class="product-item__available product-item__available--yes">В
+											наличии</span><span
+                                        class="product-item__heading">Джин Bombay Sapphire 0.7 l</span>
+                                </div>
+                                <div class="product-item__components"><span
+                                        class="product-item__component product-item__component--displacement">0.7 л</span><span
+                                        class="product-item__component product-item__component--alcohol">47% алк</span>
+                                </div>
+                                <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
+                            </div>
+                        </a>
+                            <div class="product-item__footer">
+                                <div class="product-item__prices"><span
+                                        class="product-item__price">2 666<span class="icon-rub"></span></span><span
+                                        class="product-item__sale">4 890 ₽ без скидки</span>
+                                </div>
+                                <a class="button product-item__order" href="#"><i
+                                        class="icon-basket"></i><span>В корзину</span></a>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
                 <div class="mega-menu__window mega-menu__window--hidden" data-category="Коньяк">
                     <div class="mega-menu__content">
@@ -576,6 +791,7 @@
                                         class="product-item__component product-item__component--displacement">0.7 л</span><span
                                         class="product-item__component product-item__component--alcohol">47% алк</span>
                                 </div>
+                                <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
                             </div>
                         </a>
                             <div class="product-item__footer">
@@ -687,6 +903,7 @@
                                         class="product-item__component product-item__component--displacement">0.7 л</span><span
                                         class="product-item__component product-item__component--alcohol">47% алк</span>
                                 </div>
+                                <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
                             </div>
                         </a>
                             <div class="product-item__footer">
@@ -799,6 +1016,7 @@
                                         class="product-item__component product-item__component--displacement">0.7 л</span><span
                                         class="product-item__component product-item__component--alcohol">47% алк</span>
                                 </div>
+                                <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
                             </div>
                         </a>
                             <div class="product-item__footer">
@@ -910,6 +1128,7 @@
                                         class="product-item__component product-item__component--displacement">0.7 л</span><span
                                         class="product-item__component product-item__component--alcohol">47% алк</span>
                                 </div>
+                                <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
                             </div>
                         </a>
                             <div class="product-item__footer">
@@ -1022,6 +1241,7 @@
                                         class="product-item__component product-item__component--displacement">0.7 л</span><span
                                         class="product-item__component product-item__component--alcohol">47% алк</span>
                                 </div>
+                                <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
                             </div>
                         </a>
                             <div class="product-item__footer">
@@ -1133,6 +1353,7 @@
                                         class="product-item__component product-item__component--displacement">0.7 л</span><span
                                         class="product-item__component product-item__component--alcohol">47% алк</span>
                                 </div>
+                                <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
                             </div>
                         </a>
                             <div class="product-item__footer">
@@ -1245,6 +1466,7 @@
                                         class="product-item__component product-item__component--displacement">0.7 л</span><span
                                         class="product-item__component product-item__component--alcohol">47% алк</span>
                                 </div>
+                                <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
                             </div>
                         </a>
                             <div class="product-item__footer">
@@ -1356,6 +1578,7 @@
                                         class="product-item__component product-item__component--displacement">0.7 л</span><span
                                         class="product-item__component product-item__component--alcohol">47% алк</span>
                                 </div>
+                                <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
                             </div>
                         </a>
                             <div class="product-item__footer">
@@ -1456,51 +1679,648 @@
             </div>
         </div>
     </header>
-    <div class="breadcrumbs">
-        <div class="breadcrumbs__wrapper">
-            <ol class="breadcrumbs__list">
-                <li class="breadcrumbs__item"><a class="breadcrumbs__home" href="#"><i class="icon-home"></i></a></li>
-                <li class="breadcrumbs__item"><a href="#">Главная</a></li>
-                <li class="breadcrumbs__item"><span>О компании</span></li>
-            </ol>
-        </div>
-    </div>
-    <main class="content content_center">
-        <div class="page__wrapper">
-            <div class="heading-block">
-                <h4 class="heading-block__title">О нашей компании</h4>
-                <p class="heading-block__description">The Digestive - без купюр</p>
-            </div>
-            <div class="seo-content">
-                <p>Absolut Vodka — легендарная водка, знаменитая на весь мир своим исключительным качеством и креативным
-                   наследием. Изготавливается по оригинальному рецепту 1878 года только из натуральных ингредиентов без
-                   добавления сахара. Отличительной особенностью водки Абсолют является высокая степень очистки и
-                   отсутствие вредных примесей.</p>
-                <p>ОСОБЕННОСТИ ПРОИЗВОДСТВА Каждая капля водки Absolut рождается в одном единственном месте — городе
-                   Охус (на юге Швеции). Для ее создания используется только лучшая отборная озимая пшеница и кристально
-                   чистая вода. Завод и вся зона производства Absolut располагается над огромным подземным источником
-                   глубиной 120 метров, вода из которого, проходя через многочисленные слои почвы, фильтруется
-                   естественным образом и поступает на завод в идеальном состоянии для производства</p>
-                <div class="page__grid">
-                    <div class="page__item"><img class="lazyload page__thumbnail" src="images/about-us/first.png">
-                        <h3 class="page__heading">Кто мы такие?</h3>
-                        <p class="page__text">Absolut Vodka — легендарная водка, знаменитая на весь мир своим
-                                              исключительным качеством и креативным наследием. Изготавливается по
-                                              оригинальному рецепту 1878 года только из натуральных ингредиентов без
-                                              добавления сахара. Отличительной особенностью водки Абсолют является
-                                              высокая степень очистки и отсутствие вредных примесей.</p>
+
+    <main class="content">
+        <section class="page-cabinet">
+            <div class="container">
+                <h1 class="page__heading">Личный кабинет</h1>
+
+                <div class="page-cabinet__wrapper">
+                    <div class="page-cabinet__sidebar">
+
+                        <div class="page-cabinet__sidebar-wrapper">
+                            <h3>Контактная информация</h3>
+                            <form class="contact-form__content" action="#">
+                                <div class="contact-form__row">
+                                    <div class="contact-form__item">
+                                        <label class="contact-form__element">
+                                            <input class="contact-form__field" type="text" required=""
+                                                   placeholder="Денис">
+                                        </label>
+                                    </div>
+                                    <div class="contact-form__item">
+                                        <label class="contact-form__element">
+                                            <input class="contact-form__field" type="text" required=""
+                                                   placeholder="Самойлов">
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="contact-form__row">
+                                    <div class="contact-form__item">
+                                        <label class="contact-form__element"><span class="contact-form__placeholder">Ваш E-mail</span>
+                                            <input class="contact-form__field" type="email" required=""
+                                                   placeholder="brendmaster1@yandex.ru">
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="contact-form__row">
+                                    <div class="contact-form__item">
+                                        <span class="contact-form__placeholder">Пароль</span>
+                                        <button class="button">Изменить пароль</button>
+                                    </div>
+                                </div>
+
+                                <div class="contact-form__row">
+                                    <div class="contact-form__item">
+                                        <label class="contact-form__element"><span class="contact-form__placeholder">Телефон</span>
+
+                                            <span class="input-group input-group--edit">
+                                                <input class="contact-form__field" type="text" required=""
+                                                       placeholder="+7 929 042 04 21">
+                                                    <a href="#" class="icon-edit">
+                                                        <img src="images/page/edit.png" alt="">
+                                                    </a>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="contact-form__row">
+                                    <div class="contact-form__item">
+                                        <label class="contact-form__element"><span class="contact-form__placeholder">Дата рождения</span>
+                                            <input class="contact-form__field" type="text" required=""
+                                                   placeholder="02.07.1988">
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="contact-form__row">
+                                    <button class="cart-footer__buy" type="submit">Сохранить изменения</button>
+                                </div>
+
+
+                            </form>
+
+                            <div class="checkbox-wrapper">
+                                <label class="checkbox">
+                                    <input class="checkbox__field" type="checkbox" value="Металичксая труба"><span
+                                        class="checkbox__text">Хочу получать информацию о новинках</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input class="checkbox__field" type="checkbox" value="Металичксая труба"><span
+                                        class="checkbox__text">Хочу получать информацию о скидках и акциях</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input class="checkbox__field" type="checkbox" value="Металичксая труба"><span
+                                        class="checkbox__text">Хочу получить грантированный подарокв свой День рождения</span>
+                                </label>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="page__item"><img class="lazyload page__thumbnail" src="images/about-us/first.png">
-                        <h3 class="page__heading">Наша политика</h3>
-                        <p class="page__text">Absolut Vodka — легендарная водка, знаменитая на весь мир своим
-                                              исключительным качеством и креативным наследием. Изготавливается по
-                                              оригинальному рецепту 1878 года только из натуральных ингредиентов без
-                                              добавления сахара. Отличительной особенностью водки Абсолют является
-                                              высокая степень очистки и отсутствие вредных примесей.</p>
+
+                    <div class="page-cabinet__content">
+                        <div class="single-item__content">
+                            <div class="single-item__tabs">
+                                <a class="single-item__tab single-item__tab--current" href="#">ИСТОРИЯ ЗАКАЗОВ</a>
+                                <a class="single-item__tab" href="#">ПЕРСОНАЛЬНЫЕ ПРЕДЛОЖЕНИЯ</a>
+                                <a class="single-item__tab" href="#">ИЗБРАННОЕ</a>
+                                <a class="single-item__tab" href="#">ПОДПИСКИ</a>
+                            </div>
+
+                            <div class="tabs__content active">
+                                <div class="order-briefly__wrapper">
+                                    <div class="order-briefly checkout-total__detayls-toggle">
+                                        <div class="order-briefly__heading">
+                                            <div class="order-briefly__number">Заказ № RU190831-823176</div>
+                                            <div class="order-briefly__date">Дата оформления 30.08.2019</div>
+                                        </div>
+
+                                        <div class="order-briefly__sum">
+                                            <p>сумма заказа</p>
+                                            <div class="product-item__prices"><span
+                                                    class="product-item__price">38 573<span
+                                                    class="icon-rub"></span></span></div>
+                                        </div>
+
+                                        <div class="order-briefly__status">
+                                            <p>выполнен</p>
+                                            <div class="date">31.08.2019</div>
+                                        </div>
+
+                                        <a href="#" class="btn btn-order__details">подробнее <i class="icon-arrow"></i></a>
+                                    </div>
+
+                                    <div class="checkout-total__detayls-list">
+                                        <div class="checkout-total__detayls-item">
+                                            <div class="photo"><img src="images/products/6.png" alt=""></div>
+
+                                            <div class="product-info">
+                                                <div class="product-item__heading">Виски "Royal Salute" Flask Edition 30
+                                                    YO,
+                                                    gift box 0.7 л
+                                                </div>
+                                                <div class="product-item__description">
+                                                    <p>"Роял Салют" Фласк Эдишн 30 лет, в Подарочной упаковке 700 мл</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="product-info__line">
+                                                <div class="product-info__quantity">1 шт.</div>
+
+                                                <div class="product-item__prices"><span
+                                                        class="product-item__price">62 896<span
+                                                        class="icon-rub"></span></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="checkout-total__detayls-item">
+                                            <div class="photo"><img src="images/products/6.png" alt=""></div>
+
+                                            <div class="product-info">
+                                                <div class="product-item__heading">Виски "Royal Salute" Flask Edition 30
+                                                    YO,
+                                                    gift box 0.7 л
+                                                </div>
+                                                <div class="product-item__description">
+                                                    <p>"Роял Салют" Фласк Эдишн 30 лет, в Подарочной упаковке 700 мл</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="product-info__line">
+                                                <div class="product-info__quantity">1 шт.</div>
+
+                                                <div class="product-item__prices"><span
+                                                        class="product-item__price">62 896<span
+                                                        class="icon-rub"></span></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="order-briefly__wrapper">
+                                    <div class="order-briefly checkout-total__detayls-toggle">
+                                        <div class="order-briefly__heading">
+                                            <div class="order-briefly__number">Заказ № RU190831-823176</div>
+                                            <div class="order-briefly__date">Дата оформления 30.08.2019</div>
+                                        </div>
+
+                                        <div class="order-briefly__sum">
+                                            <p>сумма заказа</p>
+                                            <div class="product-item__prices"><span
+                                                    class="product-item__price">65 296<span
+                                                    class="icon-rub"></span></span></div>
+                                        </div>
+
+                                        <div class="order-briefly__status">
+                                            <p>выполнен</p>
+                                            <div class="date">31.08.2019</div>
+                                        </div>
+
+                                        <a href="#" class="btn btn-order__details">подробнее <i class="icon-arrow"></i></a>
+                                    </div>
+
+                                    <div class="checkout-total__detayls-list">
+                                        <div class="checkout-total__detayls-item">
+                                            <div class="photo"><img src="images/products/6.png" alt=""></div>
+
+                                            <div class="product-info">
+                                                <div class="product-item__heading">Виски "Royal Salute" Flask Edition 30
+                                                    YO,
+                                                    gift box 0.7 л
+                                                </div>
+                                                <div class="product-item__description">
+                                                    <p>"Роял Салют" Фласк Эдишн 30 лет, в Подарочной упаковке 700 мл</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="product-info__line">
+                                                <div class="product-info__quantity">1 шт.</div>
+
+                                                <div class="product-item__prices"><span
+                                                        class="product-item__price">2 400<span
+                                                        class="icon-rub"></span></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="checkout-total__detayls-item">
+                                            <div class="photo"><img src="images/products/6.png" alt=""></div>
+
+                                            <div class="product-info">
+                                                <div class="product-item__heading">Виски "Royal Salute" Flask Edition 30
+                                                    YO,
+                                                    gift box 0.7 л
+                                                </div>
+                                                <div class="product-item__description">
+                                                    <p>"Роял Салют" Фласк Эдишн 30 лет, в Подарочной упаковке 700 мл</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="product-info__line">
+                                                <div class="product-info__quantity">1 шт.</div>
+
+                                                <div class="product-item__prices"><span
+                                                        class="product-item__price">62 896<span
+                                                        class="icon-rub"></span></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="order-briefly__wrapper">
+                                    <div class="order-briefly checkout-total__detayls-toggle">
+                                        <div class="order-briefly__heading">
+                                            <div class="order-briefly__number">Заказ № RU190831-823176</div>
+                                            <div class="order-briefly__date">Дата оформления 30.08.2019</div>
+                                        </div>
+
+                                        <div class="order-briefly__sum">
+                                            <p>сумма заказа</p>
+                                            <div class="product-item__prices"><span
+                                                    class="product-item__price">38 573<span
+                                                    class="icon-rub"></span></span></div>
+                                        </div>
+
+                                        <div class="order-briefly__status">
+                                            <p>выполнен</p>
+                                            <div class="date">31.08.2019</div>
+                                        </div>
+
+                                        <a href="#" class="btn btn-order__details">подробнее <i class="icon-arrow"></i></a>
+                                    </div>
+
+                                    <div class="checkout-total__detayls-list">
+                                        <div class="checkout-total__detayls-item">
+                                            <div class="photo"><img src="images/products/6.png" alt=""></div>
+
+                                            <div class="product-info">
+                                                <div class="product-item__heading">Виски "Royal Salute" Flask Edition 30
+                                                    YO,
+                                                    gift box 0.7 л
+                                                </div>
+                                                <div class="product-item__description">
+                                                    <p>"Роял Салют" Фласк Эдишн 30 лет, в Подарочной упаковке 700 мл</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="product-info__line">
+                                                <div class="product-info__quantity">1 шт.</div>
+
+                                                <div class="product-item__prices"><span
+                                                        class="product-item__price">62 896<span
+                                                        class="icon-rub"></span></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="checkout-total__detayls-item">
+                                            <div class="photo"><img src="images/products/6.png" alt=""></div>
+
+                                            <div class="product-info">
+                                                <div class="product-item__heading">Виски "Royal Salute" Flask Edition 30
+                                                    YO,
+                                                    gift box 0.7 л
+                                                </div>
+                                                <div class="product-item__description">
+                                                    <p>"Роял Салют" Фласк Эдишн 30 лет, в Подарочной упаковке 700 мл</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="product-info__line">
+                                                <div class="product-info__quantity">1 шт.</div>
+
+                                                <div class="product-item__prices"><span
+                                                        class="product-item__price">62 896<span
+                                                        class="icon-rub"></span></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="order-briefly__wrapper">
+                                    <div class="order-briefly checkout-total__detayls-toggle">
+                                        <div class="order-briefly__heading">
+                                            <div class="order-briefly__number">Заказ № RU190831-823176</div>
+                                            <div class="order-briefly__date">Дата оформления 30.08.2019</div>
+                                        </div>
+
+                                        <div class="order-briefly__sum">
+                                            <p>сумма заказа</p>
+                                            <div class="product-item__prices"><span
+                                                    class="product-item__price">38 573<span
+                                                    class="icon-rub"></span></span></div>
+                                        </div>
+
+                                        <div class="order-briefly__status">
+                                            <p>выполнен</p>
+                                            <div class="date">31.08.2019</div>
+                                        </div>
+
+                                        <a href="#" class="btn btn-order__details">подробнее <i class="icon-arrow"></i></a>
+                                    </div>
+
+                                    <div class="checkout-total__detayls-list">
+                                        <div class="checkout-total__detayls-item">
+                                            <div class="photo"><img src="images/products/6.png" alt=""></div>
+
+                                            <div class="product-info">
+                                                <div class="product-item__heading">Виски "Royal Salute" Flask Edition 30
+                                                    YO,
+                                                    gift box 0.7 л
+                                                </div>
+                                                <div class="product-item__description">
+                                                    <p>"Роял Салют" Фласк Эдишн 30 лет, в Подарочной упаковке 700 мл</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="product-info__line">
+                                                <div class="product-info__quantity">1 шт.</div>
+
+                                                <div class="product-item__prices"><span
+                                                        class="product-item__price">62 896<span
+                                                        class="icon-rub"></span></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="checkout-total__detayls-item">
+                                            <div class="photo"><img src="images/products/6.png" alt=""></div>
+
+                                            <div class="product-info">
+                                                <div class="product-item__heading">Виски "Royal Salute" Flask Edition 30
+                                                    YO,
+                                                    gift box 0.7 л
+                                                </div>
+                                                <div class="product-item__description">
+                                                    <p>"Роял Салют" Фласк Эдишн 30 лет, в Подарочной упаковке 700 мл</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="product-info__line">
+                                                <div class="product-info__quantity">1 шт.</div>
+
+                                                <div class="product-item__prices"><span
+                                                        class="product-item__price">62 896<span
+                                                        class="icon-rub"></span></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__content">
+                                <div class="personal-item">
+                                    <div class="personal-item__photo"><img src="images/page/3.png" alt=""></div>
+                                    <div class="personal-item__content">
+                                        <h4>Выбор покупателей</h4>
+                                        <div class="box-text">
+                                            <p>Мы внимательно следим за вашими предпочтениями и дарим скидки только на
+                                                то, что вам действительно нужно. А чтобы было еще и удобно, рядом с
+                                                каждым таким вином красуется специальный шильдик «Выбор покупателя». В
+                                                винотеках тоже все предусмотрели: там будут специальные выкладки. Вперед
+                                                за новыми винными открытиями!</p>
+                                        </div>
+                                        <h6>На ассортимент на данной странице действуют скидки до -30%.</h6>
+
+                                        <a href="#" class="button button--theme-darken">За покупками</a>
+                                    </div>
+                                </div>
+
+                                <div class="personal-item">
+                                    <div class="personal-item__photo"><img src="images/page/4.png" alt=""></div>
+                                    <div class="personal-item__content">
+                                        <h4>Вместе с Италией!</h4>
+                                        <div class="box-text">
+                                            <p>Переживаем за Италию: в стране сложная ситуация, затрагивающая всех людей. К чести итальянцев, они не теряют присутствия духа! Социальные сети полны жизнелюбия, там и бабушка-блогерка Роза объясняет, как уберечься от вируса, и простые горожане исполняют арии прямо с балконов. Нам кажется, сейчас правильный момент, чтобы поднять бокал итальянского вина за их и наше здоровье. Даже самые сложные времена проходят, а тепло, дружба и любовь между людьми должны оставаться. Sante!</p>
+                                        </div>
+
+                                        <a href="#" class="button button--theme-darken">За покупками</a>
+                                    </div>
+                                </div>
+
+                                <div class="personal-item">
+                                    <div class="personal-item__photo"><img src="images/page/5.png" alt=""></div>
+                                    <div class="personal-item__content">
+                                        <h4>Шаблите с СуперБрокарами!</h4>
+                                        <div class="box-text">
+                                            <p>Фамилию Брокар можно записывать в синонимы к «шабли», не ошибётесь — семья давно ассоциируется именно с этим вином. Творения Жан-Марка — настоящая классика, любимая многими. Но новое поколение решило шаблить по-своему! Рады представить персональный проект сына Жан-Марка Жульена. Сертифицированная органика и биодинамика, минимум серы — словом, полный набор модных практик. И работа с дубом, которого отец обычно сторонится.</p>
+                                        </div>
+
+                                        <a href="#" class="button button--theme-darken">За покупками</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__content">
+                                <div class="cart-table__wrapper">
+
+                                    <div class="cart-table__row">
+                                        <div class="cart-table__column cart-table__column--heading">
+                                            <a class="cart-table__product"
+                                               href="#">
+                                                <div class="cart-table__thumbnail">
+                                                    <img class="lazyload" src="images/products/pere.png" alt="">
+                                                </div>
+
+                                            </a>
+
+                                        </div>
+
+                                        <div class="cart-table__column--body">
+                                            <div class="line">
+                                                <a href="#" class="cart-table__title">Кальвадос Pere Magloire Fine VS
+                                                    0.7 l</a>
+                                                <button class="cart-table__remove">X</button>
+                                            </div>
+
+                                            <div class="line">
+                                                <div
+                                                        class="price-text cart-table__price">2 896 <span
+                                                        class="icon-rub"></span></div>
+
+                                                <div
+                                                        class="cart-table__availability cart-table__availability--yes">
+                                                    Доступно
+                                                </div>
+
+                                                <a class="button"
+                                                   href="#"><i
+                                                        class="icon-basket"></i><span>В корзину</span></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="cart-table__row">
+                                        <div class="cart-table__column cart-table__column--heading">
+                                            <a class="cart-table__product"
+                                               href="#">
+                                                <div class="cart-table__thumbnail">
+                                                    <img class="lazyload" src="images/products/pere.png" alt="">
+                                                </div>
+
+                                            </a>
+
+                                        </div>
+
+                                        <div class="cart-table__column--body">
+                                            <div class="line">
+                                                <a href="#" class="cart-table__title cart-table__availability--empty">Кальвадос
+                                                    Pere Magloire Fine VS 0.7 l</a>
+                                                <button class="cart-table__remove">X</button>
+                                            </div>
+
+                                            <div class="line">
+                                                <div
+                                                        class="price-text cart-table__price cart-table__availability--empty">
+                                                    695 <span
+                                                        class="icon-rub"></span></div>
+
+                                                <div
+                                                        class="cart-table__availability cart-table__availability--empty">
+                                                    Нет на складе
+                                                </div>
+
+                                                <a class="button button--theme-disabled"
+                                                   href="#"><span>Нет на складе</span></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="cart-table__row">
+                                        <div class="cart-table__column cart-table__column--heading">
+                                            <a class="cart-table__product"
+                                               href="#">
+                                                <div class="cart-table__thumbnail">
+                                                    <img class="lazyload" src="images/products/pere.png" alt="">
+                                                </div>
+
+                                            </a>
+
+                                        </div>
+
+                                        <div class="cart-table__column--body">
+                                            <div class="line">
+                                                <a href="#" class="cart-table__title cart-table__availability--empty">Кальвадос
+                                                    Pere Magloire Fine VS 0.7 l</a>
+                                                <button class="cart-table__remove">X</button>
+                                            </div>
+
+                                            <div class="line">
+                                                <div
+                                                        class="price-text cart-table__price cart-table__availability--empty">
+                                                    2 896 <span
+                                                        class="icon-rub"></span></div>
+
+                                                <div
+                                                        class="cart-table__availability cart-table__availability--no">
+                                                    Распродано
+                                                </div>
+
+                                                <a class="button button--theme-danger"
+                                                   href="#"><span>Распродано</span></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="tabs__content">
+                                <div class="cart-table__wrapper subscribe-table__wrapper">
+                                    <div class="cart-table__row">
+                                        <div class="cart-table__column cart-table__column--heading">
+                                            <a class="cart-table__product"
+                                               href="#">
+                                                <div class="cart-table__thumbnail">
+                                                    <img class="lazyload" src="images/page/1.png" alt="">
+                                                </div>
+
+                                            </a>
+
+                                        </div>
+
+                                        <div class="cart-table__column--body">
+                                            <div class="line">
+                                                <a href="#" class="cart-table__title">Коньяк "Martell" Extra Cohiba,
+                                                    gift box 0.7 л</a>
+                                            </div>
+
+                                            <div class="line">
+                                                <label class="checkbox">
+                                                    <input class="checkbox__field" type="checkbox"
+                                                           value="Металичксая труба"><span
+                                                        class="checkbox__text">Уведомлять меня когда измениться цена</span>
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input class="checkbox__field" type="checkbox"
+                                                           value="Металичксая труба"><span
+                                                        class="checkbox__text">Уведомлять меня когда появиться на остатках</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="line">
+                                                <div class="price-text cart-table__price">
+                                                    <div class="price-text__icon"><img src="images/page/down.png"
+                                                                                       alt=""></div>
+                                                    22 160 <span class="icon-rub"></span></div>
+
+                                                <div
+                                                        class="cart-table__availability"><strong>12 шт</strong> на
+                                                    складе
+                                                </div>
+
+                                                <a class="button"
+                                                   href="#"><i
+                                                        class="icon-basket"></i><span>В корзину</span></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="cart-table__row">
+                                        <div class="cart-table__column cart-table__column--heading">
+                                            <a class="cart-table__product"
+                                               href="#">
+                                                <div class="cart-table__thumbnail">
+                                                    <img class="lazyload" src="images/page/1.png" alt="">
+                                                </div>
+
+                                            </a>
+
+                                        </div>
+
+                                        <div class="cart-table__column--body">
+                                            <div class="line">
+                                                <a href="#" class="cart-table__title">Коньяк "Martell" Extra Cohiba,
+                                                    gift box 0.7 л</a>
+                                            </div>
+
+                                            <div class="line">
+                                                <label class="checkbox">
+                                                    <input class="checkbox__field" type="checkbox"
+                                                           value="Металичксая труба"><span
+                                                        class="checkbox__text">Уведомлять меня когда измениться цена</span>
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input class="checkbox__field" type="checkbox"
+                                                           value="Металичксая труба"><span
+                                                        class="checkbox__text">Уведомлять меня когда появиться на остатках</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="line">
+                                                <div class="price-text cart-table__price">
+                                                    <div class="price-text__icon"><img src="images/page/growth.png"
+                                                                                       alt=""></div>
+                                                    22 160 <span class="icon-rub"></span></div>
+
+                                                <div
+                                                        class="cart-table__availability"><strong>12 шт</strong> на
+                                                    складе
+                                                </div>
+
+                                                <a class="button"
+                                                   href="#"><i
+                                                        class="icon-basket"></i><span>В корзину</span></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
         <section class="page__purchase-order">
             <div class="purchase-order">
                 <div class="purchase-order__wrapper">
@@ -1544,9 +2364,9 @@
                     <div class="brands-slider__viewport">
                         <div class="brands-slider__arrows">
                             <button class="brands-slider__arrow brands-slider__arrow--left" type="button"><i
-                                  class="icon-slider-arrow-left"></i></button>
+                                    class="icon-slider-arrow-left"></i></button>
                             <button class="brands-slider__arrow brands-slider__arrow--right" type="button"><i
-                                  class="icon-slider-arrow-right"></i></button>
+                                    class="icon-slider-arrow-right"></i></button>
                         </div>
                         <div class="brands-slider__flickity">
                             <a class="brands-slider__item" href="#"><img class="lazyload"
@@ -1604,7 +2424,7 @@
                         </div>
                     </div>
                     <div class="brands-slider__footer"><a class="link link--theme-dashed" href="#">Посмотреть всех
-                                                                                                   производителей</a>
+                        производителей</a>
                     </div>
                 </div>
             </div>
@@ -1619,9 +2439,9 @@
                 <a class="footer__logo" href="#"><img class="lazyload" src="images/main-logo/round-logo.png" alt=""></a>
                 <p class="footer__text">2016 - 2019 © The Digestive – магазин алкоголя в Москве.</p>
                 <p class="footer__text">Интернет-магазин розничной торговли элитных алкогольных напитков по Москве и
-                                        Московской области.</p>
+                    Московской области.</p>
                 <p class="footer__text">Продвижение сайтов - <a href="#">nuar.agency</a></p><a
-                  class="button footer__contact" href="#">Написать директору</a>
+                    class="button footer__contact" href="#">Написать директору</a>
 
                 <div class="footer__block block__mobile">
                     <h5 class="footer__title">Контакты:</h5>
@@ -1637,7 +2457,7 @@
                     </ul>
 
                     <a class="button button--theme-second" href="#">Перезвоните
-                                                                    мне</a>
+                        мне</a>
 
                     <div class="header__social">
                         <a href="#">
@@ -1664,26 +2484,26 @@
                 <div class="footer__block footer__block--category">
                     <h5 class="footer__title">Виски:</h5>
                     <div class="footer__list"><a class="footer__item" href="#">Шотландский виски</a><a
-                          class="footer__item" href="#">Ирландский виски</a><a class="footer__item" href="#">Американский
-                                                                                                             виски</a><a
-                          class="footer__item" href="#">Японский виски</a><a class="footer__item" href="#">Другой
-                                                                                                           виски</a>
+                            class="footer__item" href="#">Ирландский виски</a><a class="footer__item" href="#">Американский
+                        виски</a><a
+                            class="footer__item" href="#">Японский виски</a><a class="footer__item" href="#">Другой
+                        виски</a>
                     </div>
                 </div>
                 <div class="footer__block footer__block--category">
                     <h5 class="footer__title">Вино:</h5>
                     <div class="footer__list"><a class="footer__item" href="#">Крепленое вино</a><a class="footer__item"
                                                                                                     href="#">Плодовое
-                                                                                                             вино</a><a
-                          class="footer__item" href="#">Вино</a><a class="footer__item" href="#">Вермут</a><a
-                          class="footer__item" href="#">Портвейн</a><a class="footer__item" href="#">Херсе</a></div>
+                        вино</a><a
+                            class="footer__item" href="#">Вино</a><a class="footer__item" href="#">Вермут</a><a
+                            class="footer__item" href="#">Портвейн</a><a class="footer__item" href="#">Херсе</a></div>
                 </div>
                 <div class="footer__block footer__block--category">
                     <h5 class="footer__title">Ликеры:</h5>
                     <div class="footer__list"><a class="footer__item" href="#">Ликеры</a><a class="footer__item"
                                                                                             href="#">Настойки</a><a
-                          class="footer__item" href="#">Бальзам</a><a class="footer__item" href="#">Сиропы</a><a
-                          class="footer__item" href="#">Аперитив</a></div>
+                            class="footer__item" href="#">Бальзам</a><a class="footer__item" href="#">Сиропы</a><a
+                            class="footer__item" href="#">Аперитив</a></div>
                 </div>
                 <div class="footer__block block__mobile">
                     <h5 class="footer__title">Каталог:</h5>
@@ -1701,10 +2521,10 @@
                     <h5 class="footer__title">Информация:</h5>
                     <div class="footer__list"><a class="footer__item" href="#">О компании</a><a class="footer__item"
                                                                                                 href="#">Покупка и
-                                                                                                         оплата</a><a
-                          class="footer__item" href="#">Правила работы</a><a class="footer__item" href="#">Вопросы и
-                                                                                                           ответы</a><a
-                          class="footer__item" href="#">Контакты</a><a class="footer__item" href="#">Карта сайта</a>
+                        оплата</a><a
+                            class="footer__item" href="#">Правила работы</a><a class="footer__item" href="#">Вопросы и
+                        ответы</a><a
+                            class="footer__item" href="#">Контакты</a><a class="footer__item" href="#">Карта сайта</a>
                     </div>
                 </div>
                 <div class="footer__block footer__block--category">
@@ -1724,32 +2544,32 @@
                     <h5 class="footer__title">Коньяк:</h5>
                     <div class="footer__list"><a class="footer__item" href="#">Коньяк</a><a class="footer__item"
                                                                                             href="#">Арманьяк</a><a
-                          class="footer__item" href="#">Бренди</a><a class="footer__item" href="#">Армянский
-                                                                                                   коньяк</a><a
-                          class="footer__item" href="#">Кальвадос</a></div>
+                            class="footer__item" href="#">Бренди</a><a class="footer__item" href="#">Армянский
+                        коньяк</a><a
+                            class="footer__item" href="#">Кальвадос</a></div>
                 </div>
                 <div class="footer__block footer__block--category">
                     <h5 class="footer__title">Шампанское:</h5>
                     <div class="footer__list"><a class="footer__item" href="#">Шампанское</a><a class="footer__item"
                                                                                                 href="#">Игристое
-                                                                                                         вино</a><a
-                          class="footer__item" href="#">Асти</a><a class="footer__item" href="#">Просекко</a><a
-                          class="footer__item" href="#">Кава</a><a class="footer__item" href="#">Франчакорта</a><a
-                          class="footer__item" href="#">Ламбруско</a></div>
+                        вино</a><a
+                            class="footer__item" href="#">Асти</a><a class="footer__item" href="#">Просекко</a><a
+                            class="footer__item" href="#">Кава</a><a class="footer__item" href="#">Франчакорта</a><a
+                            class="footer__item" href="#">Ламбруско</a></div>
                 </div>
                 <div class="footer__block footer__block--category">
                     <h5 class="footer__title">Крепкие напитки:</h5>
                     <div class="footer__list"><a class="footer__item" href="#">Ром</a><a class="footer__item" href="#">Текила</a><a
-                          class="footer__item" href="#">Джин</a><a class="footer__item" href="#">Граппа</a><a
-                          class="footer__item" href="#">Самбука</a><a class="footer__item" href="#">Абсент</a><a
-                          class="footer__item" href="#">Кашаса</a><a class="footer__item" href="#">Мескаль</a></div>
+                            class="footer__item" href="#">Джин</a><a class="footer__item" href="#">Граппа</a><a
+                            class="footer__item" href="#">Самбука</a><a class="footer__item" href="#">Абсент</a><a
+                            class="footer__item" href="#">Кашаса</a><a class="footer__item" href="#">Мескаль</a></div>
                 </div>
                 <div class="footer__block">
                     <h5 class="footer__title">Интересные разделы:</h5>
                     <div class="footer__list"><a class="footer__item" href="#">Новинки</a><a class="footer__item"
                                                                                              href="#">Акции</a><a
-                          class="footer__item" href="#">Лучшие предложения</a><a class="footer__item" href="#">Подарочные
-                                                                                                               наборы</a>
+                            class="footer__item" href="#">Лучшие предложения</a><a class="footer__item" href="#">Подарочные
+                        наборы</a>
                     </div>
 
                     <div class="header__social">
@@ -1774,21 +2594,21 @@
                 </div>
                 <div class="footer__block footer__block--category">
                     <a class="button button--theme-second" href="#">Перезвоните
-                                                                    мне</a>
+                        мне</a>
                 </div>
                 <div class="footer__block footer__block--shift footer__block--category">
                     <h5 class="footer__title">Водка:</h5>
                     <div class="footer__list"><a class="footer__item" href="#">Водка</a><a class="footer__item"
                                                                                            href="#">Самогон</a><a
-                          class="footer__item" href="#">Полугар</a><a class="footer__item" href="#">Саке</a><a
-                          class="footer__item" href="#">Раки</a></div>
+                            class="footer__item" href="#">Полугар</a><a class="footer__item" href="#">Саке</a><a
+                            class="footer__item" href="#">Раки</a></div>
                 </div>
 
                 <div class="footer__payment block__mobile"><i class="icon-visa-card"></i><i
-                      class="icon-master-card"></i><i class="icon-mir-pay"></i></div>
+                        class="icon-master-card"></i><i class="icon-mir-pay"></i></div>
             </div>
             <div class="footer__payment footer__block--category"><i class="icon-visa-card"></i><i
-                  class="icon-master-card"></i><i class="icon-mir-pay"></i></div>
+                    class="icon-master-card"></i><i class="icon-mir-pay"></i></div>
         </div>
         <div class="footer__age-limit">
             <div class="container">
@@ -1842,7 +2662,7 @@
         </div>
     </footer>
 </div>
-
+<div class="overlay"></div>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 <script src="js/bundle.min.js"></script>
@@ -1851,4 +2671,5 @@
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/common.js"></script>
 </body>
+
 </html>

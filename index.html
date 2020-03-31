@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="css/bundle.min.css" rel="stylesheet">
 </head>
 
@@ -180,8 +181,6 @@
                             class="icon-basket"></i></a></div>
             </div>
         </div>
-
-
         <div class="mobile-search">
             <form class="header__search" action="#">
                 <input class="header__field" type="text" placeholder="Найти алкоголь" required>
@@ -196,8 +195,6 @@
         </div>
     </header>
 
-
-
     <div class="result-search__mobile">
         <div class="result-search--content">
             <h4 class="result-search--title">товары</h4>
@@ -209,7 +206,7 @@
                         <h6 class="result-search--name-product"><strong>Во</strong>дка "Absolut" Mango 0.7 л</h6>
                         <span class="name-product--category">фруктовая водка</span>
                     </div>
-                    <div class="product-item__price">1 285<span>₽</span></div>
+                    <div class="product-item__price">1 285<span class="icon-rub"></span></div>
                 </div>
                 <div class="result-search--item">
                     <div class="result-search--image"><img src="images/result2.png" alt=""></div>
@@ -217,7 +214,7 @@
                         <h6 class="result-search--name-product"><strong>Во</strong>дка "Belvedere" 3.0 л</h6>
                         <span class="name-product--category">классическая водка</span>
                     </div>
-                    <div class="product-item__price">11 912<span>₽</span></div>
+                    <div class="product-item__price">11 912<span class="icon-rub"></span></div>
                 </div>
                 <div class="result-search--item">
                     <div class="result-search--image"><img src="images/result3.png" alt=""></div>
@@ -225,7 +222,7 @@
                         <h6 class="result-search--name-product"><strong>Во</strong>дка "Finlandia" Cranberry 1.0 л</h6>
                         <span class="name-product--category">ягодная водка</span>
                     </div>
-                    <div class="product-item__price">1 499<span>₽</span></div>
+                    <div class="product-item__price">1 499<span class="icon-rub"></span></div>
                 </div>
 
                 <a href="#" class="links">
@@ -318,8 +315,18 @@
                     </a>
                 </div>
 
-                <div class="header__profile"><a class="header__auth header__auth--type-login" href="#">Вход</a><a
-                        class="header__auth header__auth--type--register" href="#">Регистрация</a></div>
+                <div class="header__profile"><a class="header__auth header__auth--type-login header__auth-user" href="#"><span class="text">Алекснадр</span></a><a
+                        class="header__auth header__auth--type--register header__auth-edit" href="#">Выйти</a>
+
+                <div class="dropDownProfile">
+                    <ul class="menu-profile">
+                        <li><a href="#">История заказов</a></li>
+                        <li><a href="#">Персональные предложения</a></li>
+                        <li><a href="#">Избранное</a></li>
+                        <li><a href="#">Подписки</a></li>
+                    </ul>
+                </div>
+                </div>
             </div>
         </div>
 
@@ -343,8 +350,15 @@
                                                                              data-count="2"><i
                             class="icon-shuffle header__icon"></i></a></div>
                     <div class="header__block header__block--type-basket"><a
-                            class="header__basket header__basket--empty"
-                            href="#"><strong>Корзина</strong><span>Нет товаров</span></a>
+                            class="header__basket header__basket--empty header__basket-order"
+                            href="#">
+                        <span class="header__basket-total">12</span>
+                        <strong>Корзина</strong><span class="header__basket-sum">19 789 <span class="icon-rub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14.937" height="20.31" viewBox="0 0 14.937 20.31">
+    <path d="M984.4,2836.49h5.236v-2.24H984.4v-1.71h4.088c4.256,0,6.3-2.1,6.3-5.85,0-3.92-2.044-5.77-6.8-5.77h-6.216v9.38h-1.932v2.24h1.932v1.71h-1.932v2.24h1.932v4.73H984.4v-4.73Zm0-13.33h3.108c3.164,0,4.592,1.04,4.592,3.5,0,2.58-1.4,3.64-4.508,3.64H984.4v-7.14Z"
+          transform="translate(-979.844 -2820.91)"/>
+</svg>
+                    </span></span></a>
                     </div>
                 </div>
             </div>
@@ -476,7 +490,7 @@
                         </a>
                             <div class="product-item__footer">
                                 <div class="product-item__prices"><span
-                                        class="product-item__price">2 639<span>₽</span></span><span
+                                        class="product-item__price">2 639<span class="icon-rub"></span></span><span
                                         class="product-item__sale">3 890 ₽ без скидки</span>
                                 </div>
                                 <a class="button product-item__order" href="#"><i
@@ -514,7 +528,7 @@
                         </a>
                             <div class="product-item__footer">
                                 <div class="product-item__prices"><span
-                                        class="product-item__price">2 666<span>₽</span></span><span
+                                        class="product-item__price">2 666<span class="icon-rub"></span></span><span
                                         class="product-item__sale">4 890 ₽ без скидки</span>
                                 </div>
                                 <a class="button product-item__order" href="#"><i
@@ -550,7 +564,7 @@
                         </a>
                             <div class="product-item__footer">
                                 <div class="product-item__prices"><span
-                                        class="product-item__price">2 639<span>₽</span></span><span
+                                        class="product-item__price">2 639<span class="icon-rub"></span></span><span
                                         class="product-item__sale">3 890 ₽ без скидки</span>
                                 </div>
                                 <a class="button product-item__order" href="#"><i
@@ -587,7 +601,7 @@
                         </a>
                             <div class="product-item__footer">
                                 <div class="product-item__prices"><span
-                                        class="product-item__price">2 666<span>₽</span></span><span
+                                        class="product-item__price">2 666<span class="icon-rub"></span></span><span
                                         class="product-item__sale">4 890 ₽ без скидки</span>
                                 </div>
                                 <a class="button product-item__order" href="#"><i
@@ -623,7 +637,7 @@
                         </a>
                             <div class="product-item__footer">
                                 <div class="product-item__prices"><span
-                                        class="product-item__price">2 639<span>₽</span></span><span
+                                        class="product-item__price">2 639<span class="icon-rub"></span></span><span
                                         class="product-item__sale">3 890 ₽ без скидки</span>
                                 </div>
                                 <a class="button product-item__order" href="#"><i
@@ -660,7 +674,7 @@
                         </a>
                             <div class="product-item__footer">
                                 <div class="product-item__prices"><span
-                                        class="product-item__price">2 666<span>₽</span></span><span
+                                        class="product-item__price">2 666<span class="icon-rub"></span></span><span
                                         class="product-item__sale">4 890 ₽ без скидки</span>
                                 </div>
                                 <a class="button product-item__order" href="#"><i
@@ -774,7 +788,7 @@
                         </a>
                             <div class="product-item__footer">
                                 <div class="product-item__prices"><span
-                                        class="product-item__price">2 666<span>₽</span></span><span
+                                        class="product-item__price">2 666<span class="icon-rub"></span></span><span
                                         class="product-item__sale">4 890 ₽ без скидки</span>
                                 </div>
                                 <a class="button product-item__order" href="#"><i
@@ -886,7 +900,7 @@
                         </a>
                             <div class="product-item__footer">
                                 <div class="product-item__prices"><span
-                                        class="product-item__price">2 639<span>₽</span></span><span
+                                        class="product-item__price">2 639<span class="icon-rub"></span></span><span
                                         class="product-item__sale">3 890 ₽ без скидки</span>
                                 </div>
                                 <a class="button product-item__order" href="#"><i
@@ -999,7 +1013,7 @@
                         </a>
                             <div class="product-item__footer">
                                 <div class="product-item__prices"><span
-                                        class="product-item__price">2 666<span>₽</span></span><span
+                                        class="product-item__price">2 666<span class="icon-rub"></span></span><span
                                         class="product-item__sale">4 890 ₽ без скидки</span>
                                 </div>
                                 <a class="button product-item__order" href="#"><i
@@ -1111,7 +1125,7 @@
                         </a>
                             <div class="product-item__footer">
                                 <div class="product-item__prices"><span
-                                        class="product-item__price">2 639<span>₽</span></span><span
+                                        class="product-item__price">2 639<span class="icon-rub"></span></span><span
                                         class="product-item__sale">3 890 ₽ без скидки</span>
                                 </div>
                                 <a class="button product-item__order" href="#"><i
@@ -1224,7 +1238,7 @@
                         </a>
                             <div class="product-item__footer">
                                 <div class="product-item__prices"><span
-                                        class="product-item__price">2 666<span>₽</span></span><span
+                                        class="product-item__price">2 666<span class="icon-rub"></span></span><span
                                         class="product-item__sale">4 890 ₽ без скидки</span>
                                 </div>
                                 <a class="button product-item__order" href="#"><i
@@ -1336,7 +1350,7 @@
                         </a>
                             <div class="product-item__footer">
                                 <div class="product-item__prices"><span
-                                        class="product-item__price">2 639<span>₽</span></span><span
+                                        class="product-item__price">2 639<span class="icon-rub"></span></span><span
                                         class="product-item__sale">3 890 ₽ без скидки</span>
                                 </div>
                                 <a class="button product-item__order" href="#"><i
@@ -1449,7 +1463,7 @@
                         </a>
                             <div class="product-item__footer">
                                 <div class="product-item__prices"><span
-                                        class="product-item__price">2 666<span>₽</span></span><span
+                                        class="product-item__price">2 666<span class="icon-rub"></span></span><span
                                         class="product-item__sale">4 890 ₽ без скидки</span>
                                 </div>
                                 <a class="button product-item__order" href="#"><i
@@ -1561,7 +1575,7 @@
                         </a>
                             <div class="product-item__footer">
                                 <div class="product-item__prices"><span
-                                        class="product-item__price">2 639<span>₽</span></span><span
+                                        class="product-item__price">2 639<span class="icon-rub"></span></span><span
                                         class="product-item__sale">3 890 ₽ без скидки</span>
                                 </div>
                                 <a class="button product-item__order" href="#"><i
@@ -1584,7 +1598,7 @@
                                 </h6>
                                 <span class="name-product--category">фруктовая водка</span>
                             </div>
-                            <div class="product-item__price">1 285<span>₽</span></div>
+                            <div class="product-item__price">1 285<span class="icon-rub"></span></div>
                         </div>
                         <div class="result-search--item">
                             <div class="result-search--image"><img src="images/result2.png" alt=""></div>
@@ -1592,7 +1606,7 @@
                                 <h6 class="result-search--name-product"><strong>Во</strong>дка "Belvedere" 3.0 л</h6>
                                 <span class="name-product--category">классическая водка</span>
                             </div>
-                            <div class="product-item__price">11 912<span>₽</span></div>
+                            <div class="product-item__price">11 912<span class="icon-rub"></span></div>
                         </div>
                         <div class="result-search--item">
                             <div class="result-search--image"><img src="images/result3.png" alt=""></div>
@@ -1602,7 +1616,7 @@
                                 </h6>
                                 <span class="name-product--category">ягодная водка</span>
                             </div>
-                            <div class="product-item__price">1 499<span>₽</span></div>
+                            <div class="product-item__price">1 499<span class="icon-rub"></span></div>
                         </div>
                         <div class="result-search--item">
                             <div class="result-search--image"><img src="images/result4.png" alt=""></div>
@@ -1612,7 +1626,7 @@
                                     metaltube 0.75 л</h6>
                                 <span class="name-product--category">классическая водка</span>
                             </div>
-                            <div class="product-item__price new-price">896<span>₽</span></div>
+                            <div class="product-item__price new-price">896<span class="icon-rub"></span></div>
                         </div>
                         <div class="result-search--item">
                             <div class="result-search--image"><img src="images/result5.png" alt=""></div>
@@ -1622,7 +1636,7 @@
                                     (leather) 0.75 л</h6>
                                 <span class="name-product--category">классическая водка</span>
                             </div>
-                            <div class="product-item__price new-price">3 406<span>₽</span></div>
+                            <div class="product-item__price new-price">3 406<span class="icon-rub"></span></div>
                         </div>
 
                         <a href="#" class="links">
@@ -1939,7 +1953,7 @@
                             </a>
                                 <div class="product-item__footer">
                                     <div class="product-item__prices"><span
-                                            class="product-item__price">2 666<span>₽</span></span><span
+                                            class="product-item__price">2 666<span class="icon-rub"></span></span><span
                                             class="product-item__sale">4 890 ₽ без скидки</span>
                                     </div>
                                     <a class="button product-item__order" href="#"><i class="icon-basket"></i><span>В корзину</span></a>
@@ -1976,7 +1990,7 @@
                             </a>
                                 <div class="product-item__footer">
                                     <div class="product-item__prices"><span
-                                            class="product-item__price">2 639<span>₽</span></span><span
+                                            class="product-item__price">2 639<span class="icon-rub"></span></span><span
                                             class="product-item__sale">3 890 ₽ без скидки</span>
                                     </div>
                                     <a class="button product-item__order" href="#"><i class="icon-basket"></i><span>В корзину</span></a>
@@ -2013,7 +2027,7 @@
                             </a>
                                 <div class="product-item__footer">
                                     <div class="product-item__prices"><span
-                                            class="product-item__price">1 359<span>₽</span></span>
+                                            class="product-item__price">1 359<span class="icon-rub"></span></span>
                                     </div>
                                     <a class="button product-item__order" href="#"><i class="icon-basket"></i><span>В корзину</span></a>
                                 </div>
@@ -2049,7 +2063,7 @@
                             </a>
                                 <div class="product-item__footer">
                                     <div class="product-item__prices"><span
-                                            class="product-item__price">2 896<span>₽</span></span><span
+                                            class="product-item__price">2 896<span class="icon-rub"></span></span><span
                                             class="product-item__sale">3 890 ₽ без скидки</span>
                                     </div>
                                     <a class="button product-item__order" href="#"><i class="icon-basket"></i><span>В корзину</span></a>
@@ -2086,7 +2100,7 @@
                             </a>
                                 <div class="product-item__footer">
                                     <div class="product-item__prices"><span
-                                            class="product-item__price">695<span>₽</span></span><span
+                                            class="product-item__price">695<span class="icon-rub"></span></span><span
                                             class="product-item__sale">770 ₽ без скидки</span>
                                     </div>
                                     <a class="button product-item__order" href="#"><i class="icon-basket"></i><span>В корзину</span></a>
@@ -2123,7 +2137,7 @@
                             </a>
                                 <div class="product-item__footer">
                                     <div class="product-item__prices"><span
-                                            class="product-item__price">1 285<span>₽</span></span>
+                                            class="product-item__price">1 285<span class="icon-rub"></span></span>
                                     </div>
                                     <a class="button product-item__order" href="#"><i class="icon-basket"></i><span>В корзину</span></a>
                                 </div>
@@ -2159,7 +2173,7 @@
                             </a>
                                 <div class="product-item__footer">
                                     <div class="product-item__prices"><span class="product-item__price">149
-												990<span>₽</span></span><span class="product-item__sale">159 900 ₽ без скидки</span>
+												990<span class="icon-rub"></span></span><span class="product-item__sale">159 900 ₽ без скидки</span>
                                     </div>
                                     <a class="button product-item__order" href="#"><i class="icon-basket"></i><span>В корзину</span></a>
                                 </div>
@@ -2196,7 +2210,7 @@
                             </a>
                                 <div class="product-item__footer">
                                     <div class="product-item__prices"><span
-                                            class="product-item__price">5 790<span>₽</span></span>
+                                            class="product-item__price">5 790<span class="icon-rub"></span></span>
                                     </div>
                                     <a class="button product-item__order" href="#"><i class="icon-basket"></i><span>В корзину</span></a>
                                 </div>
@@ -2719,9 +2733,10 @@
 
 <div class="btn-click-top"><i class="icon-slider-arrow-left"></i></div>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
 <script src="js/bundle.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/magiczoomplus.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/common.js"></script>

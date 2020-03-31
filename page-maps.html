@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About us</title>
+    <title>Single post</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="css/bundle.min.css" rel="stylesheet">
 </head>
+
 <body>
 
 <div class="mobile-menu">
@@ -137,7 +139,7 @@
     </div>
 </div>
 
-<div class="page page_about-us">
+<div class="page page_single-post">
     <header class="mobile-navigation nofixed">
         <div class="mobile-navigation__wrapper">
             <div class="mobile-navigation__group">
@@ -1456,157 +1458,472 @@
             </div>
         </div>
     </header>
+
     <div class="breadcrumbs">
         <div class="breadcrumbs__wrapper">
             <ol class="breadcrumbs__list">
                 <li class="breadcrumbs__item"><a class="breadcrumbs__home" href="#"><i class="icon-home"></i></a></li>
                 <li class="breadcrumbs__item"><a href="#">Главная</a></li>
-                <li class="breadcrumbs__item"><span>О компании</span></li>
+                <li class="breadcrumbs__item breadcrumbs__item-dropdown"><span>Информация</span>
+                    <ul class="sub-breadcrumbs">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Покупка и оплата</a></li>
+                        <li><a href="#">Правила работы</a></li>
+                        <li><a href="#">Вопросы и ответы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </li>
+                <li class="breadcrumbs__item"><span>Карта сайта</span></li>
             </ol>
         </div>
     </div>
-    <main class="content content_center">
-        <div class="page__wrapper">
-            <div class="heading-block">
-                <h4 class="heading-block__title">О нашей компании</h4>
-                <p class="heading-block__description">The Digestive - без купюр</p>
-            </div>
-            <div class="seo-content">
-                <p>Absolut Vodka — легендарная водка, знаменитая на весь мир своим исключительным качеством и креативным
-                   наследием. Изготавливается по оригинальному рецепту 1878 года только из натуральных ингредиентов без
-                   добавления сахара. Отличительной особенностью водки Абсолют является высокая степень очистки и
-                   отсутствие вредных примесей.</p>
-                <p>ОСОБЕННОСТИ ПРОИЗВОДСТВА Каждая капля водки Absolut рождается в одном единственном месте — городе
-                   Охус (на юге Швеции). Для ее создания используется только лучшая отборная озимая пшеница и кристально
-                   чистая вода. Завод и вся зона производства Absolut располагается над огромным подземным источником
-                   глубиной 120 метров, вода из которого, проходя через многочисленные слои почвы, фильтруется
-                   естественным образом и поступает на завод в идеальном состоянии для производства</p>
-                <div class="page__grid">
-                    <div class="page__item"><img class="lazyload page__thumbnail" src="images/about-us/first.png">
-                        <h3 class="page__heading">Кто мы такие?</h3>
-                        <p class="page__text">Absolut Vodka — легендарная водка, знаменитая на весь мир своим
-                                              исключительным качеством и креативным наследием. Изготавливается по
-                                              оригинальному рецепту 1878 года только из натуральных ингредиентов без
-                                              добавления сахара. Отличительной особенностью водки Абсолют является
-                                              высокая степень очистки и отсутствие вредных примесей.</p>
+    <main class="content">
+        <section class="page-section">
+            <div class="container">
+                <h3 class="page-section__title">Карта сайта</h3>
+
+                <div class="page-section__content">
+                    <h4>Аперитив</h4>
+
+                   <div class="box-text maps-site__wrapper">
+                       <div class="maps-site__box">
+                           <h5>Франция
+                               </h5>
+                           <ul class="list">
+                               <li><a href="#">Арманьяк</a></li>
+                               <li><a href="#">Бордо</a></li>
+                               <li><a href="#">Лангедок-Руссийон</a></li>
+                               <li><a href="#">Марсель</a></li>
+                               <li><a href="#">Савойя</a></li>
+                           </ul>
+                       </div>
+
+                       <div class="maps-site__box">
+                           <h5>Регион</h5>
+                           <ul class="list">
+                               <li><a href="#">Франция</a></li>
+                               <li><a href="#">Италия</a></li>
+                               <li><a href="#">Россия</a></li>
+                               <li><a href="#">США</a></li>
+                           </ul>
+                       </div>
+
+
+                       <div class="maps-site__box">
+                           <h5>Италия</h5>
+                           <ul class="list">
+                               <li><a href="#">Милан</a></li>
+                               <li><a href="#">Пьемонт</a></li>
+                               <li><a href="#">Эмилия-Романья</a></li>
+                           </ul>
+                       </div>
+
+                       <div class="maps-site__box">
+                           <h5>Производитель</h5>
+                           <ul class="list">
+                               <li><a href="#">Pernod Ricard</a></li>
+                               <li><a href="#">Campari</a></li>
+                               <li><a href="#">Gancia</a></li>
+                               <li><a href="#">Duffau (Domaine de Juglaron)</a></li>
+                               <li><a href="#">Мариинский ликеро-водочный завод</a></li>
+                               <li><a href="#" class="links">Посмотреть все</a></li>
+                           </ul>
+                       </div>
+
+                       <div class="maps-site__box">
+                           <h5>Цена</h5>
+                           <ul class="list">
+                               <li><a href="#">До 1 000 <span class="icon-rub"></span></a></li>
+                               <li><a href="#">1 000–2 500 <span class="icon-rub"></span></a></li>
+                               <li><a href="#">2 500–6 000 <span class="icon-rub"></span></a></li>
+                               <li><a href="#">От 6 000<span class="icon-rub"></span></a></li>
+                           </ul>
+                       </div>
+
+                       <div class="maps-site__box">
+                           <h5>Объем</h5>
+                           <ul class="list">
+                               <li><a href="#">250 мл</a></li>
+                               <li><a href="#">0.5 л</a></li>
+                               <li><a href="#">0.7 л</a></li>
+                               <li><a href="#">0.75 л</a></li>
+                               <li><a href="#">1 л</a></li>
+                               <li><a href="#">3 л</a></li>
+                               <li><a href="#">375 мл</a></li>
+                           </ul>
+                       </div>
+
+                       <div class="maps-site__box">
+                           <h5>Наличие на складе</h5>
+                           <ul class="list">
+                               <li><a href="#">В наличии</a></li>
+                               <li><a href="#">Количество ограничено</a></li>
+                               <li><a href="#">Нет в наличии</a></li>
+                           </ul>
+                       </div>
+                   </div>
+
+                    <h4>Арманьяк</h4>
+
+                    <div class="box-text maps-site__wrapper">
+                        <div class="maps-site__box">
+                            <h5>Производитель</h5>
+                            <ul class="list">
+                                <li><a href="#">Delord</a></li>
+                                <li><a href="#">Janneau</a></li>
+                                <li><a href="#">Lheraud</a></li>
+                                <li><a href="#">Samalens</a></li>
+                                <li><a href="#">Marquis de Caussade</a></li>
+                                <li><a href="#" class="links">Посмотреть все</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Цена</h5>
+                            <ul class="list">
+                                <li><a href="#">До 1 000 <span class="icon-rub"></span></a></li>
+                                <li><a href="#">1 000–2 500 <span class="icon-rub"></span></a></li>
+                                <li><a href="#">2 500–6 000 <span class="icon-rub"></span></a></li>
+                                <li><a href="#">От 6 000<span class="icon-rub"></span></a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="maps-site__box">
+                            <h5>Объем</h5>
+                            <ul class="list">
+                                <li><a href="#">250 мл</a></li>
+                                <li><a href="#">0.5 л</a></li>
+                                <li><a href="#">0.7 л</a></li>
+                                <li><a href="#">1.5 л</a></li>
+                                <li><a href="#">2 л</a></li>
+                                <li><a href="#" class="links">Посмотреть все</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Упаковка</h5>
+                            <ul class="list">
+                                <li><a href="#">В коробке</a></li>
+                                <li><a href="#">Без упаковки</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="maps-site__box">
+                            <h5>Наличие на складе</h5>
+                            <ul class="list">
+                                <li><a href="#">В наличии</a></li>
+                                <li><a href="#">Количество ограничено</a></li>
+                                <li><a href="#">Нет в наличии</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="page__item"><img class="lazyload page__thumbnail" src="images/about-us/first.png">
-                        <h3 class="page__heading">Наша политика</h3>
-                        <p class="page__text">Absolut Vodka — легендарная водка, знаменитая на весь мир своим
-                                              исключительным качеством и креативным наследием. Изготавливается по
-                                              оригинальному рецепту 1878 года только из натуральных ингредиентов без
-                                              добавления сахара. Отличительной особенностью водки Абсолют является
-                                              высокая степень очистки и отсутствие вредных примесей.</p>
+
+                    <h4>Пиво</h4>
+
+                    <div class="box-text maps-site__wrapper">
+                        <div class="maps-site__box">
+                            <h5>Германия</h5>
+
+                            <ul class="list">
+                                <li><a href="#">Бавария</a></li>
+                                <li><a href="#">Баден</a></li>
+                                <li><a href="#">Гамбург</a></li>
+                                <li><a href="#">Земля Гессен</a></li>
+                                <li><a href="#">Нижняя Саксония</a></li>
+                                <li><a href="#" class="links">Посмотреть все</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Регион</h5>
+                            <ul class="list">
+                                <li><a href="#">Германия</a></li>
+                                <li><a href="#">Бельгия</a></li>
+                                <li><a href="#">Англия</a></li>
+                                <li><a href="#">Чехия</a></li>
+                                <li><a href="#">Россия</a></li>
+                                <li><a href="#" class="links">Посмотреть все</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="maps-site__box">
+                            <h5>Бельгия</h5>
+                            <ul class="list">
+                                <li><a href="#">Валлония</a></li>
+                                <li><a href="#">Фландрия</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Англия</h5>
+                            <ul class="list">
+                                <li><a href="#">Саффолк</a></li>
+                                <li><a href="#">Хемпшир</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Чехия</h5>
+                            <ul class="list">
+                                <li><a href="#">Моравия</a></li>
+                                <li><a href="#">Северная Моравия</a></li>
+                                <li><a href="#">Южная Моравия</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Россия</h5>
+
+                            <ul class="list">
+                                <li><a href="#">Алтайский край</a></li>
+                                <li><a href="#">Великий Новгород</a></li>
+                                <li><a href="#">Воронежская область</a></li>
+                                <li><a href="#">Краснодарский край</a></li>
+                                <li><a href="#">Москва</a></li>
+                                <li><a href="#" class="links">Посмотреть все</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Великобритания</h5>
+                            <ul class="list">
+                                <li><a href="#">Корнуолл</a></li>
+                                <li><a href="#">Лондон</a></li>
+                                <li><a href="#">Манчестер</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Испания</h5>
+                            <ul class="list">
+                                <li><a href="#">Кастилия Ла Манча</a></li>
+                                <li><a href="#">Каталония</a></li>
+                                <li><a href="#">Мадрид</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Италия</h5>
+
+                            <ul class="list">
+                                <li><a href="#">Виченца</a></li>
+                                <li><a href="#">Лацио</a></li>
+                                <li><a href="#">Марке</a></li>
+                                <li><a href="#">Пьемонт</a></li>
+                                <li><a href="#">Римини</a></li>
+                                <li><a href="#" class="links">Посмотреть все</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>США</h5>
+                            <ul class="list">
+                                <li><a href="#">Вашингтон</a></li>
+                                <li><a href="#">Калифорния</a></li>
+                                <li><a href="#">Колорадо</a></li>
+                                <li><a href="#">Мэриленд</a></li>
+                                <li><a href="#">Орегон</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Украина</h5>
+                            <ul class="list">
+                                <li><a href="#">Киев</a></li>
+                                <li><a href="#">Львов</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Франция</h5>
+                            <ul class="list">
+                                <li><a href="#">Лангедок-Руссийон</a></li>
+                                <li><a href="#">Савойя</a></li>
+                                <li><a href="#">Эльзас</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Шотландия</h5>
+                            <ul class="list">
+                                <li><a href="#">Глазго</a></li>
+                                <li><a href="#">Хайленд (Высокогорье)</a></li>
+                                <li><a href="#">Эдинбург</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Стиль</h5>
+                            <ul class="list">
+                                <li><a href="#">Эль</a></li>
+                                <li><a href="#">Лагер</a></li>
+                                <li><a href="#">Смешанный</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Крепость</h5>
+                            <ul class="list">
+                                <li><a href="#">Мезалкогольное (менее 1%)</a></li>
+                                <li><a href="#">Лёгкое (1-4,2%)</a></li>
+                                <li><a href="#">Средней крепости (4,3-5,9%)</a></li>
+                                <li><a href="#">Крепкое (6-7,4%)</a></li>
+                                <li><a href="#">Очень крепкое (более 7,5%)</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Фильтрация</h5>
+                            <ul class="list">
+                                <li><a href="#">Фильтрованное</a></li>
+                                <li><a href="#">Нефильтрованное</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Цена</h5>
+                            <ul class="list">
+                                <li><a href="#">До 100 руб</a></li>
+                                <li><a href="#">100–200 руб</a></li>
+                                <li><a href="#">200–300 руб</a></li>
+                                <li><a href="#">300–500 руб</a></li>
+                                <li><a href="#">500–1000 руб</a></li>
+                                <li><a href="#" class="links">Посмотреть все</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Бренд</h5>
+                            <ul class="list">
+                                <li><a href="#">Guinness</a></li>
+                                <li><a href="#">Leffe</a></li>
+                                <li><a href="#">Wychcraft</a></li>
+                                <li><a href="#">Heineken</a></li>
+                                <li><a href="#">Budweiser Budvar</a></li>
+                                <li><a href="#" class="links">Посмотреть все</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Цвет</h5>
+                            <ul class="list">
+                                <li><a href="#">Cветлое</a></li>
+                                <li><a href="#">Темное</a></li>
+                                <li><a href="#">Средне-светлое</a></li>
+                                <li><a href="#">Янтарное</a></li>
+                                <li><a href="#">Средне-янтарное</a></li>
+                                <li><a href="#" class="links">Посмотреть все</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Разновидность</h5>
+                            <ul class="list">
+                                <li><a href="#">Крафтовое</a></li>
+                                <li><a href="#">Вишневое</a></li>
+                                <li><a href="#">Медовое</a></li>
+                                <li><a href="#">Малиновое</a></li>
+                                <li><a href="#">Ароматизированное</a></li>
+                                <li><a href="#" class="links">Посмотреть все</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="maps-site__box">
+                            <h5>Производитель</h5>
+                            <ul class="list">
+                                <li><a href="#">АAnheuser-Busch InBev</a></li>
+                                <li><a href="#">Carlsberg Group</a></li>
+                                <li><a href="#">Konix Brewery</a></li>
+                                <li><a href="#">Heineken International</a></li>
+                                <li><a href="#">Московская Пивоваренная Компания</a></li>
+                                <li><a href="#" class="links">Посмотреть все</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Объем</h5>
+                            <ul class="list">
+                                <li><a href="#">1250 мл</a></li>
+                                <li><a href="#">300 мл</a></li>
+                                <li><a href="#">320 мл</a></li>
+                                <li><a href="#">0.33 л</a></li>
+                                <li><a href="#">350 мл</a></li>
+                                <li><a href="#" class="links">Посмотреть все</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Ёмкость</h5>
+                            <ul class="list">
+                                <li><a href="#">Бутылка</a></li>
+                                <li><a href="#">Банка</a></li>
+                                <li><a href="#">Кег</a></li>
+                                <li><a href="#">Бочонок</a></li>
+                                <li><a href="#">Кувшин</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Тип термообработки</h5>
+                            <ul class="list">
+                                <li><a href="#">Пастеризация</a></li>
+                                <li><a href="#">Живое (Непастеризованное)</a></li>
+                                <li><a href="#">Другое</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Тип ферментации</h5>
+                            <ul class="list">
+                                <li><a href="#">Верховое брожение</a></li>
+                                <li><a href="#">Низовое брожение</a></li>
+                                <li><a href="#">Натуральное брожение</a></li>
+                            </ul>
+                        </div>
+                        <div class="maps-site__box">
+                            <h5>Сезон</h5>
+                            <ul class="list">
+                                <li><a href="#">Все сезоны</a></li>
+                                <li><a href="#">зимнее</a></li>
+                                <li><a href="#">летнее</a></li>
+                                <li><a href="#">осеннее</a></li>
+                                <li><a href="#">весеннее</a></li>
+                            </ul>
+                        </div>
+                        <div class="maps-site__box">
+                            <h5>Капсула</h5>
+                            <ul class="list">
+                                <li><a href="#">Без капсулы</a></li>
+                                <li><a href="#">С капсулой</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Упаковка</h5>
+                            <ul class="list">
+                                <li><a href="#">Без упаковки</a></li>
+                                <li><a href="#">В коробке</a></li>
+                                <li><a href="#">С сувениром</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="maps-site__box">
+                            <h5>Наличие на складе</h5>
+                            <ul class="list">
+                                <li><a href="#">В наличии</a></li>
+                                <li><a href="#">Количество ограничено</a></li>
+                                <li><a href="#">Нет в наличии</a></li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-        </div>
-        <section class="page__purchase-order">
-            <div class="purchase-order">
-                <div class="purchase-order__wrapper">
-                    <div class="heading-block">
-                        <h4 class="heading-block__title">Порядок покупки алкоголя</h4>
-                        <p class="heading-block__description">Мы не продаем алкоголь дистанционно</p>
-                    </div>
-                    <div class="purchase-order__grid">
-                        <div class="purchase-order__item">
-                            <div class="purchase-order__thumbnail"><i class="icon-shopping purchase-order__icon"></i>
-                            </div>
-                            <p class="purchase-order__heading">Резервируете товар с помощью сайта</p>
-                        </div>
-                        <div class="purchase-order__item">
-                            <div class="purchase-order__thumbnail"><i class="icon-delivery purchase-order__icon"></i>
-                            </div>
-                            <p class="purchase-order__heading">Приезжаете в магазин</p>
-                        </div>
-                        <div class="purchase-order__item">
-                            <div class="purchase-order__thumbnail"><i class="icon-payment purchase-order__icon"></i>
-                            </div>
-                            <p class="purchase-order__heading">Оплачиваете заказ</p>
-                        </div>
-                        <div class="purchase-order__item">
-                            <div class="purchase-order__thumbnail"><i class="icon-bags purchase-order__icon"></i></div>
-                            <p class="purchase-order__heading">Забираете товар</p>
-                        </div>
-                    </div>
-                    <div class="purchase-order__footer"><a class="button button--size-little purchase-order__button"
-                                                           href="#">Начать покупки</a></div>
-                </div>
-            </div>
-        </section>
-        <section class="page__brands-slider">
-            <div class="brands-slider">
-                <div class="brands-slider__wrapper">
-                    <div class="heading-block">
-                        <h4 class="heading-block__title">Ваши любимые бренды</h4>
-                        <p class="heading-block__description">Мы доставляем алкоголь со всего Мира</p>
-                    </div>
-                    <div class="brands-slider__viewport">
-                        <div class="brands-slider__arrows">
-                            <button class="brands-slider__arrow brands-slider__arrow--left" type="button"><i
-                                  class="icon-slider-arrow-left"></i></button>
-                            <button class="brands-slider__arrow brands-slider__arrow--right" type="button"><i
-                                  class="icon-slider-arrow-right"></i></button>
-                        </div>
-                        <div class="brands-slider__flickity">
-                            <a class="brands-slider__item" href="#"><img class="lazyload"
-                                                                         src="images/brands/absolut-vodka.png"
-                                                                         srcset="images/brands/absolut-vodka.png"></a>
-                            <a class="brands-slider__item" href="#"><img class="lazyload"
-                                                                         src="images/brands/bacardi.png"
-                                                                         srcset="images/brands/bacardi.png"></a>
-                            <a class="brands-slider__item" href="#"><img class="lazyload"
-                                                                         src="images/brands/martini.png"
-                                                                         srcset="images/brands/martini.png"></a>
-                            <a class="brands-slider__item" href="#"><img class="lazyload"
-                                                                         src="images/brands/henessy.png"
-                                                                         srcset="images/brands/henessy.png"></a>
-                            <a class="brands-slider__item" href="#"><img class="lazyload"
-                                                                         src="images/brands/jameson.png"
-                                                                         srcset="images/brands/jameson.png"></a>
-                            <a class="brands-slider__item" href="#"><img class="lazyload"
-                                                                         src="images/brands/moet-et-chandon.png"
-                                                                         srcset="images/brands/moet-et-chandon.png"></a>
-                            <a class="brands-slider__item" href="#"><img class="lazyload"
-                                                                         src="images/brands/macallan.png"
-                                                                         srcset="images/brands/macallan.png"></a>
-                            <a class="brands-slider__item" href="#"><img class="lazyload" src="images/brands/bombay.png"
-                                                                         srcset="images/brands/bombay.png"></a>
-                            <a class="brands-slider__item" href="#"><img class="lazyload"
-                                                                         src="images/brands/jackdaniels.png"
-                                                                         srcset="images/brands/jackdaniels.png"></a>
-                            <a class="brands-slider__item" href="#"><img class="lazyload"
-                                                                         src="images/brands/absolut-vodka.png"
-                                                                         srcset="images/brands/absolut-vodka.png"></a>
-                            <a class="brands-slider__item" href="#"><img class="lazyload"
-                                                                         src="images/brands/bacardi.png"
-                                                                         srcset="images/brands/bacardi.png"></a>
-                            <a class="brands-slider__item" href="#"><img class="lazyload"
-                                                                         src="images/brands/martini.png"
-                                                                         srcset="images/brands/martini.png"></a>
-                            <a class="brands-slider__item" href="#"><img class="lazyload"
-                                                                         src="images/brands/henessy.png"
-                                                                         srcset="images/brands/henessy.png"></a>
-                            <a class="brands-slider__item" href="#"><img class="lazyload"
-                                                                         src="images/brands/jameson.png"
-                                                                         srcset="images/brands/jameson.png"></a>
-                            <a class="brands-slider__item" href="#"><img class="lazyload"
-                                                                         src="images/brands/moet-et-chandon.png"
-                                                                         srcset="images/brands/moet-et-chandon.png"></a>
-                            <a class="brands-slider__item" href="#"><img class="lazyload"
-                                                                         src="images/brands/macallan.png"
-                                                                         srcset="images/brands/macallan.png"></a>
-                            <a class="brands-slider__item" href="#"><img class="lazyload" src="images/brands/bombay.png"
-                                                                         srcset="images/brands/bombay.png"></a>
-                            <a class="brands-slider__item" href="#"><img class="lazyload"
-                                                                         src="images/brands/jackdaniels.png"
-                                                                         srcset="images/brands/jackdaniels.png"></a>
-                        </div>
-                    </div>
-                    <div class="brands-slider__footer"><a class="link link--theme-dashed" href="#">Посмотреть всех
-                                                                                                   производителей</a>
-                    </div>
-                </div>
+
+
             </div>
         </section>
     </main>
@@ -1619,9 +1936,9 @@
                 <a class="footer__logo" href="#"><img class="lazyload" src="images/main-logo/round-logo.png" alt=""></a>
                 <p class="footer__text">2016 - 2019 © The Digestive – магазин алкоголя в Москве.</p>
                 <p class="footer__text">Интернет-магазин розничной торговли элитных алкогольных напитков по Москве и
-                                        Московской области.</p>
+                    Московской области.</p>
                 <p class="footer__text">Продвижение сайтов - <a href="#">nuar.agency</a></p><a
-                  class="button footer__contact" href="#">Написать директору</a>
+                    class="button footer__contact" href="#">Написать директору</a>
 
                 <div class="footer__block block__mobile">
                     <h5 class="footer__title">Контакты:</h5>
@@ -1637,7 +1954,7 @@
                     </ul>
 
                     <a class="button button--theme-second" href="#">Перезвоните
-                                                                    мне</a>
+                        мне</a>
 
                     <div class="header__social">
                         <a href="#">
@@ -1664,26 +1981,26 @@
                 <div class="footer__block footer__block--category">
                     <h5 class="footer__title">Виски:</h5>
                     <div class="footer__list"><a class="footer__item" href="#">Шотландский виски</a><a
-                          class="footer__item" href="#">Ирландский виски</a><a class="footer__item" href="#">Американский
-                                                                                                             виски</a><a
-                          class="footer__item" href="#">Японский виски</a><a class="footer__item" href="#">Другой
-                                                                                                           виски</a>
+                            class="footer__item" href="#">Ирландский виски</a><a class="footer__item" href="#">Американский
+                        виски</a><a
+                            class="footer__item" href="#">Японский виски</a><a class="footer__item" href="#">Другой
+                        виски</a>
                     </div>
                 </div>
                 <div class="footer__block footer__block--category">
                     <h5 class="footer__title">Вино:</h5>
                     <div class="footer__list"><a class="footer__item" href="#">Крепленое вино</a><a class="footer__item"
                                                                                                     href="#">Плодовое
-                                                                                                             вино</a><a
-                          class="footer__item" href="#">Вино</a><a class="footer__item" href="#">Вермут</a><a
-                          class="footer__item" href="#">Портвейн</a><a class="footer__item" href="#">Херсе</a></div>
+                        вино</a><a
+                            class="footer__item" href="#">Вино</a><a class="footer__item" href="#">Вермут</a><a
+                            class="footer__item" href="#">Портвейн</a><a class="footer__item" href="#">Херсе</a></div>
                 </div>
                 <div class="footer__block footer__block--category">
                     <h5 class="footer__title">Ликеры:</h5>
                     <div class="footer__list"><a class="footer__item" href="#">Ликеры</a><a class="footer__item"
                                                                                             href="#">Настойки</a><a
-                          class="footer__item" href="#">Бальзам</a><a class="footer__item" href="#">Сиропы</a><a
-                          class="footer__item" href="#">Аперитив</a></div>
+                            class="footer__item" href="#">Бальзам</a><a class="footer__item" href="#">Сиропы</a><a
+                            class="footer__item" href="#">Аперитив</a></div>
                 </div>
                 <div class="footer__block block__mobile">
                     <h5 class="footer__title">Каталог:</h5>
@@ -1701,10 +2018,10 @@
                     <h5 class="footer__title">Информация:</h5>
                     <div class="footer__list"><a class="footer__item" href="#">О компании</a><a class="footer__item"
                                                                                                 href="#">Покупка и
-                                                                                                         оплата</a><a
-                          class="footer__item" href="#">Правила работы</a><a class="footer__item" href="#">Вопросы и
-                                                                                                           ответы</a><a
-                          class="footer__item" href="#">Контакты</a><a class="footer__item" href="#">Карта сайта</a>
+                        оплата</a><a
+                            class="footer__item" href="#">Правила работы</a><a class="footer__item" href="#">Вопросы и
+                        ответы</a><a
+                            class="footer__item" href="#">Контакты</a><a class="footer__item" href="#">Карта сайта</a>
                     </div>
                 </div>
                 <div class="footer__block footer__block--category">
@@ -1724,32 +2041,32 @@
                     <h5 class="footer__title">Коньяк:</h5>
                     <div class="footer__list"><a class="footer__item" href="#">Коньяк</a><a class="footer__item"
                                                                                             href="#">Арманьяк</a><a
-                          class="footer__item" href="#">Бренди</a><a class="footer__item" href="#">Армянский
-                                                                                                   коньяк</a><a
-                          class="footer__item" href="#">Кальвадос</a></div>
+                            class="footer__item" href="#">Бренди</a><a class="footer__item" href="#">Армянский
+                        коньяк</a><a
+                            class="footer__item" href="#">Кальвадос</a></div>
                 </div>
                 <div class="footer__block footer__block--category">
                     <h5 class="footer__title">Шампанское:</h5>
                     <div class="footer__list"><a class="footer__item" href="#">Шампанское</a><a class="footer__item"
                                                                                                 href="#">Игристое
-                                                                                                         вино</a><a
-                          class="footer__item" href="#">Асти</a><a class="footer__item" href="#">Просекко</a><a
-                          class="footer__item" href="#">Кава</a><a class="footer__item" href="#">Франчакорта</a><a
-                          class="footer__item" href="#">Ламбруско</a></div>
+                        вино</a><a
+                            class="footer__item" href="#">Асти</a><a class="footer__item" href="#">Просекко</a><a
+                            class="footer__item" href="#">Кава</a><a class="footer__item" href="#">Франчакорта</a><a
+                            class="footer__item" href="#">Ламбруско</a></div>
                 </div>
                 <div class="footer__block footer__block--category">
                     <h5 class="footer__title">Крепкие напитки:</h5>
                     <div class="footer__list"><a class="footer__item" href="#">Ром</a><a class="footer__item" href="#">Текила</a><a
-                          class="footer__item" href="#">Джин</a><a class="footer__item" href="#">Граппа</a><a
-                          class="footer__item" href="#">Самбука</a><a class="footer__item" href="#">Абсент</a><a
-                          class="footer__item" href="#">Кашаса</a><a class="footer__item" href="#">Мескаль</a></div>
+                            class="footer__item" href="#">Джин</a><a class="footer__item" href="#">Граппа</a><a
+                            class="footer__item" href="#">Самбука</a><a class="footer__item" href="#">Абсент</a><a
+                            class="footer__item" href="#">Кашаса</a><a class="footer__item" href="#">Мескаль</a></div>
                 </div>
                 <div class="footer__block">
                     <h5 class="footer__title">Интересные разделы:</h5>
                     <div class="footer__list"><a class="footer__item" href="#">Новинки</a><a class="footer__item"
                                                                                              href="#">Акции</a><a
-                          class="footer__item" href="#">Лучшие предложения</a><a class="footer__item" href="#">Подарочные
-                                                                                                               наборы</a>
+                            class="footer__item" href="#">Лучшие предложения</a><a class="footer__item" href="#">Подарочные
+                        наборы</a>
                     </div>
 
                     <div class="header__social">
@@ -1774,21 +2091,21 @@
                 </div>
                 <div class="footer__block footer__block--category">
                     <a class="button button--theme-second" href="#">Перезвоните
-                                                                    мне</a>
+                        мне</a>
                 </div>
                 <div class="footer__block footer__block--shift footer__block--category">
                     <h5 class="footer__title">Водка:</h5>
                     <div class="footer__list"><a class="footer__item" href="#">Водка</a><a class="footer__item"
                                                                                            href="#">Самогон</a><a
-                          class="footer__item" href="#">Полугар</a><a class="footer__item" href="#">Саке</a><a
-                          class="footer__item" href="#">Раки</a></div>
+                            class="footer__item" href="#">Полугар</a><a class="footer__item" href="#">Саке</a><a
+                            class="footer__item" href="#">Раки</a></div>
                 </div>
 
                 <div class="footer__payment block__mobile"><i class="icon-visa-card"></i><i
-                      class="icon-master-card"></i><i class="icon-mir-pay"></i></div>
+                        class="icon-master-card"></i><i class="icon-mir-pay"></i></div>
             </div>
             <div class="footer__payment footer__block--category"><i class="icon-visa-card"></i><i
-                  class="icon-master-card"></i><i class="icon-mir-pay"></i></div>
+                    class="icon-master-card"></i><i class="icon-mir-pay"></i></div>
         </div>
         <div class="footer__age-limit">
             <div class="container">
@@ -1842,6 +2159,7 @@
         </div>
     </footer>
 </div>
+<div class="overlay"></div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
@@ -1851,4 +2169,5 @@
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/common.js"></script>
 </body>
+
 </html>

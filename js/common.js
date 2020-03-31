@@ -54,7 +54,7 @@ $(document).ready(function () {
     $('.mobile-search .header__search input').click(function () {
         $('.mobile-search .header__search .header__delete').fadeIn();
         $('.mobile-search .header__search .header__submit').fadeOut();
-    })
+    });
 
     $('.mobile-search .header__search .header__delete').click(function () {
         $('.mobile-search').fadeOut();
@@ -74,6 +74,7 @@ $(document).ready(function () {
 $(function () {
     $('.header__body .header__search input').keydown(checkInput).keyup(checkInput);
     $('.mobile-search .header__search input').keydown(checkInput2).keyup(checkInput2);
+    $('.search-by-letter .search-by-letter__input input').keydown(checkInput3).keyup(checkInput3);
 });
 
 function checkInput() {
@@ -97,6 +98,17 @@ function checkInput2() {
     } else {
         $('.result-search__mobile').fadeIn();
         $('.mobile-search .header__submit').addClass('key');
+    }
+}
+
+function checkInput3() {
+    if ($('.search-by-letter .search-by-letter__input input').val() === "") {
+        $('.search-by-letter__submit').removeClass('key');
+        $('.result-search__brands').fadeOut();
+
+    } else {
+        $('.result-search__brands').fadeIn();
+        $('.search-by-letter__submit').addClass('key');
     }
 }
 
@@ -139,7 +151,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $(".mega-menu__route").hover(function () {
         var id = $(this).attr('data-tab'),
-            content = $('.js-tab-content[data-tab="'+ id +'"]');
+            content = $('.js-tab-content[data-tab="' + id + '"]');
 
         $('.mega-menu__route.active').removeClass('active'); // 1
         $(this).addClass('active'); // 2
@@ -149,4 +161,44 @@ $(document).ready(function () {
     })
 });
 
-// timer
+
+// hidden list > 1
+$('.product-filter .product-filter__item').each(function () {
+    if ($(this).find('.filter-item').length > 1) {
+        $(this).find('.filter-item').slice(1).hide();
+    }
+
+});
+
+
+// show list all
+$('.btn-all__filter').on('click', function (e) {
+    e.preventDefault();
+    $('.filter-item:hidden').slice(0, 12).slideDown();
+
+    var onBlock = $('.filter-item:hidden').length;
+    if (onBlock <= 0) {
+        $('.btn-all__filter').hide();
+    }
+});
+// show list all
+
+
+$('.header__auth-user').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('open');
+    $('.dropDownProfile').fadeToggle();
+});
+
+$('.breadcrumbs__item-dropdown').click(function () {
+   $(this).find('.sub-breadcrumbs').fadeToggle();
+});
+
+$('.main__select').selectmenu();
+
+$('.date-box').on('click', function () {
+   $('.date-box').removeClass('date-box__active');
+   $(this).addClass('date-box__active');
+});
+
+
