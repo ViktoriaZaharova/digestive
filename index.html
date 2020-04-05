@@ -16,9 +16,21 @@
     <div class="mobile-menu__close"><img src="images/close.svg" alt=""></div>
     <div class="mobile-menu__scroll">
 
-        <div class="mobile-menu__header"><a class="mobile-menu__action mobile-menu__action--login"
-                                            href="#">Вход</a><a
-                class="mobile-menu__action mobile-menu__action--register" href="#">Регистрация</a></div>
+        <div class="mobile-menu__header header__profile-user__mobile"><a class="mobile-menu__action mobile-menu__action--login header__auth-user"
+                                            href="#">Александр</a>
+            <div class="dropDownProfile">
+                <ul class="menu-profile">
+                    <li><a href="#">История заказов</a></li>
+                    <li><a href="#">Персональные предложения</a></li>
+                    <li><a href="#">Избранное</a></li>
+                    <li><a href="#">Подписки</a></li>
+                </ul>
+
+                <a href="#" class="links-exit">Выход</a>
+            </div>
+        </div>
+
+
         <div class="mobile-menu__body">
             <nav class="mobile-menu__navigation">
                 <div class="mobile-menu__categories">
@@ -62,7 +74,8 @@
                             class="mobile-menu__item" href="#">Шампанское</a></div>
                 </div>
                 <div class="mobile-menu__categories">
-                    <button class="mobile-menu__category" type="button"><span class="mobile-menu__name">Шампанское</span><i
+                    <button class="mobile-menu__category" type="button"><span
+                            class="mobile-menu__name">Шампанское</span><i
                             class="icon-arrow"></i></button>
                     <div class="mobile-menu__content"><a class="mobile-menu__item" href="#">Шампанское</a><a
                             class="mobile-menu__item" href="#">Шампанское</a><a class="mobile-menu__item"
@@ -178,7 +191,11 @@
                     </div>
 
                     <a class="mobile-navigation__control" href="#"><i
-                            class="icon-basket"></i></a></div>
+                            class="icon-basket"></i>
+                        <span class="header__basket-total">20</span>
+                    </a>
+
+                </div>
             </div>
         </div>
         <div class="mobile-search">
@@ -315,17 +332,18 @@
                     </a>
                 </div>
 
-                <div class="header__profile"><a class="header__auth header__auth--type-login header__auth-user" href="#"><span class="text">Алекснадр</span></a><a
+                <div class="header__profile header__profile-user"><a
+                        class="header__auth header__auth--type-login header__auth-user" href="#"><span class="text">Алекснадр</span></a><a
                         class="header__auth header__auth--type--register header__auth-edit" href="#">Выйти</a>
 
-                <div class="dropDownProfile">
-                    <ul class="menu-profile">
-                        <li><a href="#">История заказов</a></li>
-                        <li><a href="#">Персональные предложения</a></li>
-                        <li><a href="#">Избранное</a></li>
-                        <li><a href="#">Подписки</a></li>
-                    </ul>
-                </div>
+                    <div class="dropDownProfile">
+                        <ul class="menu-profile">
+                            <li><a href="#">История заказов</a></li>
+                            <li><a href="#">Персональные предложения</a></li>
+                            <li><a href="#">Избранное</a></li>
+                            <li><a href="#">Подписки</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -354,7 +372,8 @@
                             href="#">
                         <span class="header__basket-total">12</span>
                         <strong>Корзина</strong><span class="header__basket-sum">19 789 <span class="icon-rub">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14.937" height="20.31" viewBox="0 0 14.937 20.31">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14.937" height="20.31"
+                             viewBox="0 0 14.937 20.31">
     <path d="M984.4,2836.49h5.236v-2.24H984.4v-1.71h4.088c4.256,0,6.3-2.1,6.3-5.85,0-3.92-2.044-5.77-6.8-5.77h-6.216v9.38h-1.932v2.24h1.932v1.71h-1.932v2.24h1.932v4.73H984.4v-4.73Zm0-13.33h3.108c3.164,0,4.592,1.04,4.592,3.5,0,2.58-1.4,3.64-4.508,3.64H984.4v-7.14Z"
           transform="translate(-979.844 -2820.91)"/>
 </svg>
@@ -392,11 +411,11 @@
                                     <a class="mega-menu__route active" href="#" data-tab="card1">Шампанское</a><a
                                         class="mega-menu__route" href="#" data-tab="card2">Игристое вино</a>
                                     <a class="mega-menu__route"
-                                                                                              href="#" data-tab="card3">Просекко</a>
+                                       href="#" data-tab="card3">Просекко</a>
                                     <a
-                                        class="mega-menu__route" href="#"data-tab="card4">Асти</a>
+                                            class="mega-menu__route" href="#" data-tab="card4">Асти</a>
                                     <a class="mega-menu__route"
-                                                                                     href="#" data-tab="card5">Кава</a><a
+                                       href="#" data-tab="card5">Кава</a><a
                                         class="mega-menu__route" href="#" data-tab="card6">Ламбурско</a></div>
                                 <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
                             </div>
@@ -461,7 +480,8 @@
                         </div>
                     </div>
                     <div class="mega-menu__favorite">
-                        <div class="product-item js-tab-content active" data-tab="card1"><a class="product-item__header" href="#">
+                        <div class="product-item js-tab-content active" data-tab="card1"><a class="product-item__header"
+                                                                                            href="#">
                             <div class="product-item__thumbnail">
                                 <div class="product-item__tags">
                                     <div class="product-item__tag product-item__tag--new"><i class="icon-news"></i>
@@ -498,7 +518,8 @@
                             </div>
                         </div>
 
-                        <div class="product-item js-tab-content" data-tab="card2"><a class="product-item__header" href="#">
+                        <div class="product-item js-tab-content" data-tab="card2"><a class="product-item__header"
+                                                                                     href="#">
                             <div class="product-item__thumbnail">
                                 <div class="product-item__tags">
                                     <div class="product-item__tag product-item__tag--best"><i class="icon-stras"></i>
@@ -535,7 +556,8 @@
                                         class="icon-basket"></i><span>В корзину</span></a>
                             </div>
                         </div>
-                        <div class="product-item js-tab-content" data-tab="card3"><a class="product-item__header" href="#">
+                        <div class="product-item js-tab-content" data-tab="card3"><a class="product-item__header"
+                                                                                     href="#">
                             <div class="product-item__thumbnail">
                                 <div class="product-item__tags">
                                     <div class="product-item__tag product-item__tag--new"><i class="icon-news"></i>
@@ -571,7 +593,8 @@
                                         class="icon-basket"></i><span>В корзину</span></a>
                             </div>
                         </div>
-                        <div class="product-item js-tab-content" data-tab="card4"><a class="product-item__header" href="#">
+                        <div class="product-item js-tab-content" data-tab="card4"><a class="product-item__header"
+                                                                                     href="#">
                             <div class="product-item__thumbnail">
                                 <div class="product-item__tags">
                                     <div class="product-item__tag product-item__tag--best"><i class="icon-stras"></i>
@@ -608,7 +631,8 @@
                                         class="icon-basket"></i><span>В корзину</span></a>
                             </div>
                         </div>
-                        <div class="product-item js-tab-content" data-tab="card5"><a class="product-item__header" href="#">
+                        <div class="product-item js-tab-content" data-tab="card5"><a class="product-item__header"
+                                                                                     href="#">
                             <div class="product-item__thumbnail">
                                 <div class="product-item__tags">
                                     <div class="product-item__tag product-item__tag--new"><i class="icon-news"></i>
@@ -644,7 +668,8 @@
                                         class="icon-basket"></i><span>В корзину</span></a>
                             </div>
                         </div>
-                        <div class="product-item js-tab-content" data-tab="card6"><a class="product-item__header" href="#">
+                        <div class="product-item js-tab-content" data-tab="card6"><a class="product-item__header"
+                                                                                     href="#">
                             <div class="product-item__thumbnail">
                                 <div class="product-item__tags">
                                     <div class="product-item__tag product-item__tag--best"><i class="icon-stras"></i>
@@ -2173,7 +2198,8 @@
                             </a>
                                 <div class="product-item__footer">
                                     <div class="product-item__prices"><span class="product-item__price">149
-												990<span class="icon-rub"></span></span><span class="product-item__sale">159 900 ₽ без скидки</span>
+												990<span class="icon-rub"></span></span><span
+                                            class="product-item__sale">159 900 ₽ без скидки</span>
                                     </div>
                                     <a class="button product-item__order" href="#"><i class="icon-basket"></i><span>В корзину</span></a>
                                 </div>
@@ -2461,24 +2487,51 @@
             <div class="container">
                 <div class="heading-block">
                     <h2 class="heading-block__title">Заголовок h2</h2>
-                    <h3 class="heading-block__subtitle">Заголовок h3</h3>
+                    <p class="heading-block__description">Заголовок h3</p>
                 </div>
+                <div class="seo-content">
 
-                <ul class="list-decimal">
-                    <li>Список нумерованный</li>
-                    <li>Список нумерованный</li>
-                    <li>Список нумерованный</li>
-                    <li>Список нумерованный</li>
-                </ul>
+                    <ul class="list-decimal">
+                        <li>Absolut Vodka — легендарная водка, знаменитая на весь мир своим исключительным качеством и
+                            креативным
+                            наследием. Изготавливается по оригинальному рецепту 1878 года только из натуральных
+                            ингредиентов без
+                            добавления сахара. Отличительной особенностью водки Абсолют является высокая степень очистки
+                            и
+                            отсутствие вредных примесей.
+                        </li>
+                        <li>ОСОБЕННОСТИ ПРОИЗВОДСТВА Каждая капля водки Absolut рождается в одном единственном месте —
+                            городе
+                            Охус (на юге Швеции). Для ее создания используется только лучшая отборная озимая пшеница и
+                            кристально
+                            чистая вода. Завод и вся зона производства Absolut располагается над огромным подземным
+                            источником
+                            глубиной 120 метров, вода из которого, проходя через многочисленные слои почвы, фильтруется
+                            естественным образом и поступает на завод в идеальном состоянии для производства
+                        </li>
 
-                <ul class="list">
-                    <li>Список ненумерованный</li>
-                    <li>Список ненумерованный</li>
-                    <li>Список ненумерованный</li>
-                    <li>Список ненумерованный</li>
-                    <li>Список ненумерованный</li>
-                    <li>Список ненумерованный</li>
-                </ul>
+                    </ul>
+
+                    <ul class="list">
+                        <li>Absolut Vodka — легендарная водка, знаменитая на весь мир своим исключительным качеством и
+                            креативным
+                            наследием. Изготавливается по оригинальному рецепту 1878 года только из натуральных
+                            ингредиентов без
+                            добавления сахара. Отличительной особенностью водки Абсолют является высокая степень очистки
+                            и
+                            отсутствие вредных примесей.
+                        </li>
+                        <li>ОСОБЕННОСТИ ПРОИЗВОДСТВА Каждая капля водки Absolut рождается в одном единственном месте —
+                            городе
+                            Охус (на юге Швеции). Для ее создания используется только лучшая отборная озимая пшеница и
+                            кристально
+                            чистая вода. Завод и вся зона производства Absolut располагается над огромным подземным
+                            источником
+                            глубиной 120 метров, вода из которого, проходя через многочисленные слои почвы, фильтруется
+                            естественным образом и поступает на завод в идеальном состоянии для производства
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>

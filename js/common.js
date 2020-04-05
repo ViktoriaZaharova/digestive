@@ -184,14 +184,16 @@ $('.btn-all__filter').on('click', function (e) {
 // show list all
 
 
-$('.header__auth-user').click(function (e) {
-    e.preventDefault();
+$('.header__profile-user').hover(function () {
     $(this).toggleClass('open');
-    $('.dropDownProfile').fadeToggle();
 });
 
-$('.breadcrumbs__item-dropdown').click(function () {
-   $(this).find('.sub-breadcrumbs').fadeToggle();
+$('.header__profile-user__mobile').click(function () {
+    $(this).toggleClass('open');
+});
+
+$('.breadcrumbs__item-dropdown').hover(function () {
+   $(this).toggleClass('open');
 });
 
 $('.main__select').selectmenu();
