@@ -10214,9 +10214,8 @@ footer .button {
 }
 
 .countdown-number {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: inline-block;
+    text-align: center;
 }
 
 .coundown-dots {
