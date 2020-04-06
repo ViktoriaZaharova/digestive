@@ -10582,6 +10582,7 @@ input, button {
     padding: 0;
     width: 135px;
     height: 100px;
+    display: block;
 }
 
 .modal__wrapper .product-item__thumbnail img {
@@ -12490,6 +12491,8 @@ input, button {
     justify-content: center;
     text-align: center;
     text-transform: none;
+    bottom: 50%;
+    left: -150%;
 }
 
 .btn-all__filter {
