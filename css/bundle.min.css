@@ -15482,6 +15482,10 @@ input, button {
         height: auto;
     }
 
+    .sale-item {
+        left: -100%;
+    }
+
 }
 
 @media (max-width: 420px) {
