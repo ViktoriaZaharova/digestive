@@ -15460,6 +15460,11 @@ input, button {
         width: 100%;
     }
 
+    .modal__wrapper .product-item__thumbnail img {
+        width: 100%;
+        height: auto;
+    }
+
 }
 
 @media (max-width: 420px) {
