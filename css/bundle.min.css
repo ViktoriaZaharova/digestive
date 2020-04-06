@@ -4241,6 +4241,16 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
     transition: .3s ease
 }
 
+.page-cabinet__wrapper .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-cabinet__wrapper .button i {
+    font-size: 21px;
+}
+
 .cart-table__column--action .button span, .page-cabinet__content .button span {
     margin-left: 10px;
     text-transform: lowercase
@@ -11738,7 +11748,7 @@ input, button {
 .result-search, .result-search__mobile {
     display: none;
     position: absolute;
-    top: 110px;
+    top: 100%;
     right: 0;
     left: 0;
     bottom: 0;
@@ -12525,7 +12535,7 @@ input, button {
     background-color: #ffffff;
     z-index: 1021;
     padding: 58px 15px 21px;
-    width: 237px;
+    width: 240px;
     box-sizing: border-box;
     display: none;
     flex-wrap: wrap;
@@ -14222,7 +14232,7 @@ input, button {
         padding: 0 10px;
     }
 
-    .cart-table__column--action .button i {
+    .cart-table__column--action .button i, .page-cabinet__wrapper .button i {
         font-size: 16px;
     }
 
