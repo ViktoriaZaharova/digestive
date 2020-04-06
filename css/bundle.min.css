@@ -10197,14 +10197,15 @@ footer .button {
     width: 621px;
     background-color: #f0f0f0;
     padding: 35px 44px 34px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    /*display: flex;*/
+    /*align-items: flex-start;*/
+    /*justify-content: space-between;*/
+    /*flex-wrap: wrap;*/
     font-size: 20px;
     color: #bbbbbb;
     text-transform: uppercase;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .countdown-time {
