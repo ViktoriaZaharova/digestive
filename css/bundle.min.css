@@ -10565,6 +10565,10 @@ input, button {
     display: block;
 }
 
+.modal__div-product .modal__wrapper .button-group {
+    text-align: center;
+}
+
 .modal__wrapper .product-item {
     width: auto;
     background: transparent;
