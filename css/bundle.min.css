@@ -1534,7 +1534,9 @@ body {
 .product-item__price {
     color: #111;
     font-size: 28px;
-    font-weight: 900
+    font-weight: 900;
+    display: flex;
+    align-items: center;
 }
 
 .product-item__price span {
@@ -12432,6 +12434,7 @@ input, button {
     letter-spacing: -1.31px;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .modal-products .old-price .price-text {
@@ -12442,6 +12445,7 @@ input, button {
     font-size: 24px;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .modal-products .product-item__prices .icon-rub {
@@ -12566,13 +12570,16 @@ input, button {
     text-align: right;
     justify-content: flex-end;
     text-decoration: underline;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
+    line-height: 1;
 }
 
+
 .header__basket-order .header__basket-sum .icon-rub {
-    width: 10px;
-    height: 11px;
+    width: 8px;
+    height: 100%;
     margin: 0 0 0 2px;
     color: #ec5c2a;
     background: transparent;
@@ -13587,6 +13594,7 @@ input, button {
 .subscribe-table__wrapper .price-text {
     display: flex;
     align-items: flex-end;
+    font-size: 16px;
 
 }
 
@@ -15682,6 +15690,14 @@ input, button {
         font-size: 16px;
     }
 
+    .mobile-navigation__control:not(:last-child) {
+        margin-right: 17px;
+    }
+
+    .mobile-navigation__group {
+        width: 97px;
+    }
+
 }
 
 @media (max-width: 380px) {
@@ -15713,5 +15729,17 @@ input, button {
 
     .modal__wrapper .button {
         margin: 0 auto;
+    }
+
+
+}
+
+@media (max-width: 340px) {
+    .mobile-navigation__control:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .mobile-navigation__group {
+        width: 90px;
     }
 }
