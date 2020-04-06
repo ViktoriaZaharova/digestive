@@ -12355,8 +12355,10 @@ input, button {
 .modal__div-thanks .countdown-time {
     font-weight: bold;
     margin: 0 auto;
-    line-height: 40px;
+    line-height: normal;
+    display: block;
 }
+
 
 .modal__div-thanks .countdown-number {
     width: 90px;
@@ -12398,6 +12400,7 @@ input, button {
     width: auto;
     margin: 0 auto;
     position: relative;
+    text-align: center;
 }
 
 .modal-products .product-item__thumbnail img {
