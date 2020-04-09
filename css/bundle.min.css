@@ -10197,10 +10197,10 @@ footer .button {
     width: 621px;
     background-color: #f0f0f0;
     padding: 35px 44px 34px;
-    /*display: flex;*/
-    /*align-items: flex-start;*/
-    /*justify-content: space-between;*/
-    /*flex-wrap: wrap;*/
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
     font-size: 20px;
     color: #bbbbbb;
     text-transform: uppercase;
@@ -10211,6 +10211,7 @@ footer .button {
 .countdown-time {
     font-size: 48px;
     color: #ec5c2a;
+    display: block;
     margin: 0 0 13px;
 }
 
@@ -10645,6 +10646,7 @@ input, button {
 .modal__wrapper .question h5 {
     color: #35393e;
     font-size: 20px;
+    text-align: center;
 }
 
 #greeting__modal .button-group {
@@ -11754,7 +11756,7 @@ input, button {
 .result-search, .result-search__mobile {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 65px;
     right: 0;
     left: 0;
     bottom: 0;
@@ -12356,6 +12358,7 @@ input, button {
     justify-content: center;
     padding: 0;
     color: #35393e;
+    display: inline-block;
 }
 
 .modal__div-thanks .countdown-time {
@@ -12812,6 +12815,7 @@ input, button {
 
 .modal__confirmation .image {
     width: 56px;
+    margin: 0 auto;
 }
 
 .modal__confirmation .modal__div-header {
@@ -13281,6 +13285,7 @@ input, button {
     font-weight: 500;
     width: 100%;
     margin: 0 0 60px;
+    text-align: center;
 }
 
 .page-cabinet__sidebar-wrapper {
@@ -13304,6 +13309,8 @@ input, button {
     margin: 0 0 35px;
     font-size: 21.5px;
     font-weight: bold;
+    width: 100%;
+    text-align: center;
 }
 
 .page-cabinet__wrapper {
@@ -14308,6 +14315,14 @@ input, button {
         width: 100%;
     }
 
+    .mobile-navigation__group:last-child {
+        margin: 0 10px 0 0;
+    }
+
+    .cart-footer__attention {
+        margin: 0 0 10px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -15286,6 +15301,22 @@ input, button {
     .edit__password .modal__div-header {
         margin: 0 auto 20px;
     }
+
+    .checkout {
+        padding: 50px 0 100px;
+    }
+
+    .checkout-box .latest-products__heading {
+        text-align: center;
+    }
+
+    .cart-footer {
+        margin-bottom: 80px;
+    }
+
+    .cart-footer__actions {
+        margin-bottom: 50px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -15675,6 +15706,10 @@ input, button {
         display: flex;
     }
 
+    .contact-form__row-password .contact-form__placeholder {
+        display: none;
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -15745,9 +15780,7 @@ input, button {
         font-size: 12px;
     }
 
-    .contact-form__row-password .contact-form__placeholder {
-        display: none;
-    }
+
 
     .modal__div-product h2 {
         font-size: 20px;
@@ -15761,7 +15794,19 @@ input, button {
         margin: 0 auto;
     }
 
+    .page-cabinet__sidebar-wrapper h3 {
+        font-size: 18px;
+    }
 
+    #greeting__modal .modal__wrapper h2 {
+        padding: 0 10px 26px;
+        box-sizing: border-box;
+    }
+
+    #greeting__modal .modal__wrapper .question {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
 }
 
 @media (max-width: 340px) {
@@ -15772,4 +15817,10 @@ input, button {
     .mobile-navigation__group {
         width: 90px;
     }
+
+    .mobile-navigation__group:last-child {
+        margin: 0;
+    }
+
+
 }
