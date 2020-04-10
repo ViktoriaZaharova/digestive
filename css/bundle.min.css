@@ -10690,7 +10690,7 @@ input, button {
 }
 
 .form__modal, .form__modal .modal__wrapper {
-    overflow: visible;
+    /*overflow: visible;*/
     max-height: 90%;
 }
 
@@ -14150,17 +14150,22 @@ input, button {
         overflow-y: auto;
     }
 
-    .search__modal .modal__close, .password__modal .modal__close {
+    .search__modal .modal__close, .password__modal .modal__close, .modal__close {
         top: 10px;
         right: 10px;
         z-index: 1;
     }
 
-    .search__modal .modal__close img, .password__modal .modal__close img {
+    .modal__close {
+        width: 22px;
+        height: 16px;
+    }
+
+    .search__modal .modal__close img, .password__modal .modal__close img, .modal__close img {
         display: none;
     }
 
-    .search__modal .modal__close:before, .search__modal .modal__close:after, .password__modal .modal__close:after, .password__modal .modal__close:before {
+    .search__modal .modal__close:before, .search__modal .modal__close:after, .password__modal .modal__close:after, .password__modal .modal__close:before, .modal__close:before, .modal__close:after {
         content: '';
         position: absolute;
         width: 100%;
@@ -14169,12 +14174,12 @@ input, button {
         top: 6px;
     }
 
-    .search__modal .modal__close:before, .password__modal .modal__close:before {
+    .search__modal .modal__close:before, .password__modal .modal__close:before, .modal__close:before {
         left: 0;
         transform: rotate(40deg);
     }
 
-    .search__modal .modal__close:after, .password__modal .modal__close:after {
+    .search__modal .modal__close:after, .password__modal .modal__close:after, .modal__close:after {
         right: 0;
         transform: rotate(135deg);
     }
@@ -14356,12 +14361,12 @@ input, button {
         font-size: 20px;
     }
 
-    .modal__close {
-        right: 0;
-        width: 15px;
-        height: 15px;
-        top: -20px;
-    }
+    /*.modal__close {*/
+    /*    right: 0;*/
+    /*    width: 15px;*/
+    /*    height: 15px;*/
+    /*    top: -20px;*/
+    /*}*/
 
     .category-information__content, .page_category .page__navigation, .product-filter__sort-title, .product-filter__toggle {
         display: none
@@ -15478,6 +15483,7 @@ input, button {
         height: auto;
         width: 100%;
         padding: 0 5px;
+        justify-content: center;
     }
 
     .modal__wrapper .product-item__seo {
@@ -15793,6 +15799,15 @@ input, button {
 
     .bg-orange {
         padding: 0 6px;
+    }
+
+    #entrance__modal .modal__wrapper .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #entrance__modal .modal__wrapper .button-group .button {
+        margin: 0 auto 10px;
     }
 
 }
