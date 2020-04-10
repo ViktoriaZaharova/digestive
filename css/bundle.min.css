@@ -10533,9 +10533,9 @@ input, button {
     color: #bbbbbb;
 }
 
-#subscribe__modal, #subscribe__modal .modal__wrapper {
-    overflow: visible;
-}
+/*#subscribe__modal, #subscribe__modal .modal__wrapper {*/
+/*    overflow: visible;*/
+/*}*/
 
 .modal__div-product h2 {
     width: 100%;
@@ -12358,7 +12358,7 @@ input, button {
     justify-content: center;
     padding: 0;
     color: #35393e;
-    display: inline-block;
+    display: block;
 }
 
 .modal__div-thanks .countdown-time {
@@ -14993,14 +14993,8 @@ input, button {
         box-sizing: border-box;
     }
 
-    /* .single-item__viewport {
-		height: 400px;
-	} */
-    /*.button.single-item__add-to-card {*/
-    /*    margin: 10px auto 0;*/
-    /*}*/
-    .single-item__block--description {
-        padding: 20px;
+    .form__modal .modal__wrapper form button {
+        margin: 0;
     }
 
     .single-item__content .seo-content h4 {
@@ -15042,6 +15036,11 @@ input, button {
 
     .post-gallery__item, .post-gallery__item--largre, .post-gallery__item--wide {
         width: 100%;
+    }
+
+    .modal__wrapper .product-item__thumbnail img {
+        width: auto;
+        height: 100%;
     }
 
 
@@ -15262,6 +15261,21 @@ input, button {
 
     .modal__div-product .modal__wrapper {
         margin: 20px 0;
+        padding: 50px 10px;
+    }
+
+    #greeting__modal .modal__wrapper {
+        padding: 50px 0 0;
+    }
+
+    #greeting__modal .modal__wrapper h2 {
+        padding: 0 10px 26px;
+        box-sizing: border-box;
+    }
+
+    #greeting__modal .modal__wrapper .question {
+        padding: 0 10px;
+        box-sizing: border-box;
     }
 
     .modal__confirmation h6 {
@@ -15316,6 +15330,10 @@ input, button {
 
     .cart-footer__actions {
         margin-bottom: 50px;
+    }
+
+    .password__modal .contact-form__content {
+        margin: 10px auto 0;
     }
 }
 
@@ -15449,6 +15467,11 @@ input, button {
         width: 50px;
         height: auto;
         min-width: 50px;
+    }
+
+    .modal__div-comparison .modal__wrapper .product-item__thumbnail {
+        width: 135px;
+        height: 100px;
     }
 
     .modal__wrapper .product-item {
@@ -15763,6 +15786,15 @@ input, button {
         width: 97px;
     }
 
+    .modal__wrapper h3 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .bg-orange {
+        padding: 0 6px;
+    }
+
 }
 
 @media (max-width: 380px) {
@@ -15787,7 +15819,7 @@ input, button {
     }
 
     .modal__div-product .modal__wrapper {
-        padding: 30px 0;
+        padding: 30px 10px;
     }
 
     .modal__wrapper .button {
@@ -15798,15 +15830,11 @@ input, button {
         font-size: 18px;
     }
 
-    #greeting__modal .modal__wrapper h2 {
-        padding: 0 10px 26px;
-        box-sizing: border-box;
+
+    .modal__div-product .modal__wrapper .button-group .button {
+        margin: 0 auto 20px;
     }
 
-    #greeting__modal .modal__wrapper .question {
-        padding: 0 10px;
-        box-sizing: border-box;
-    }
 }
 
 @media (max-width: 340px) {
