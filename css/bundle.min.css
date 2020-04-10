@@ -14353,7 +14353,7 @@ input, button {
     }
 
     .form__modal .modal-text {
-        padding: 20px;
+        padding: 30px 20px 20px;
         width: 100%;
     }
 
