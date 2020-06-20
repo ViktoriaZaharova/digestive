@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Category</title>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" />
     <link href="css/bundle.min.css" rel="stylesheet">
 </head>
 
@@ -1635,7 +1636,7 @@
                                 </li>
                             </ul>
 
-                            <a href="#" class="load-more open_modal">Еще</a>
+                            <a href="#type-drink" class="load-more open_modal">Еще</a>
                         </div>
 
                         <div class="filter-item">
@@ -2636,15 +2637,96 @@
     </footer>
 </div>
 
+<div class="modal__div popup__information form__modal password__modal edit__password modal-filter" id="type-drink">
+    <div class="modal__wrapper">
+        <div class="modal__close"><img src="images/close.png" alt=""></div>
+
+        <div class="modal__div-header">
+            <h2>Выберите тип напитка</h2>
+        </div>
+
+        <form class="contact-form__content" action="#">
+
+            <div class="modal-scroll__content mCustomScrollbar">
+
+                <ul class="list-filter">
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"
+                                   value="СКИДКИ И АКЦИИ"><span class="checkbox__text">Вино <span
+                                class="val">(24394)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"
+                                   value="СКИДКИ И АКЦИИ"><span class="checkbox__text">Мадера <span
+                                class="val">(22)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"
+                                   value="СКИДКИ И АКЦИИ"><span class="checkbox__text">Портвейн <span
+                                class="val">(146)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"
+                                   value="СКИДКИ И АКЦИИ"><span class="checkbox__text">Марсала <span
+                                class="val">(12)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"
+                                   value="СКИДКИ И АКЦИИ"><span class="checkbox__text">Херес <span
+                                class="val">(117)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"
+                                   value="СКИДКИ И АКЦИИ"><span class="checkbox__text">Глинтвейн <span
+                                class="val">(1)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"
+                                   value="СКИДКИ И АКЦИИ"><span class="checkbox__text">Вермут <span
+                                class="val">(82)</span></span>
+                        </label>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="button-group">
+                <button class="button" type="submit">Применить фильтр</button>
+
+                <a href="#" class="btn-clear">
+                    <span class="icon"><img src="images/close2.png" alt=""></span>
+                    <span class="text">Очистить фильтр</span>
+                </a>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+
 <div class="overlay"></div>
 
 <div class="btn-click-top"><i class="icon-slider-arrow-left"></i></div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
 <script src="js/bundle.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="js/magiczoomplus.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/common.js"></script>

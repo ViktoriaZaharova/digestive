@@ -235,3 +235,9 @@ $('.slider-range').slider({
 $(".dec1").val($(".slider-range").slider("value"));
 $(".dec2").val($(".slider-range").slider("value"));
 
+(function($){
+    $(window).on("load",function(){
+        $(".mCustomScrollbar").mCustomScrollbar();
+    });
+})(jQuery);
+
