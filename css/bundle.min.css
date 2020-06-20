@@ -16068,8 +16068,34 @@ input, button {
 }
 
 .modal-filter .modal__div-header {
-    margin: 0 0 17px;
+    padding: 0 0 17px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
+.modal-filter__title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #35393e;
+    min-width: 200px;
+}
+
+.modal__div-header__wrap .modal__div-header {
+    border-bottom: 1px solid #bbbbbb;
+    margin: 0 0 25px;
+}
+
+.modal__div-header__wrap .modal__div-header:last-child {
+    margin: 0;
+    border: none;
+}
+
+.links-prev__modal {
+    text-decoration: underline;
+    color: #ec5c2a;
+    font-size: 12px;
 }
 
 .modal-scroll__content {
@@ -16086,6 +16112,7 @@ input, button {
     flex-wrap: wrap;
     color: #35393e;
     font-size: 12px;
+
 }
 
 .modal-filter .modal__wrapper .list-filter .checkbox__text {
@@ -16096,13 +16123,39 @@ input, button {
 .list-filter li {
     width: 50%;
     margin: 0 0 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 30px 0 0;
 }
 
-.modal-filter h2 {
-    font-size: 14px;
-    font-weight: 500;
-    color: #35393e;
+.list-filter li .val {
+    margin: 0 0 0 5px;
 }
+
+.js-tab-trigger {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.js-tab-trigger:hover {
+    font-weight: 500;
+    color: #ec5c2a;
+}
+
+.link-region {
+    color: #bbbbbb;
+    font-size: 12px;
+}
+
+.link-region .icon-arrow{
+    transform: rotate(-90deg);
+    font-size: 6px;
+    margin: 0 0 0 5px;
+}
+
 
 .modal-filter .modal__wrapper form button {
     border-radius: 20px;
@@ -16125,10 +16178,6 @@ input, button {
 .modal-filter.form__modal .button-group {
     margin: 40px 0 0 ;
 }
-
-/*.mCSB_scrollTools .mCSB_draggerRail {*/
-/*    margin-right: 0;*/
-/*}*/
 
 .mCSB_scrollTools {
     opacity: 1;
@@ -16155,3 +16204,25 @@ input, button {
     height: 45px;
     cursor: pointer;
 }
+
+.modal-filter__country {
+    max-width: 630px;
+}
+
+.modal-filter__country .list-filter li {
+    padding: 0 30px 0 0;
+    box-sizing: border-box;
+}
+
+.modal-filter__country .modal__wrapper {
+    display: none;
+}
+
+.js-tab-content {
+    display: none;
+}
+
+.js-tab-content.active {
+    display: block;
+}
+
