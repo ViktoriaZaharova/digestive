@@ -164,21 +164,33 @@ $(document).ready(function () {
 
 // hidden list > 1
 $('.product-filter .product-filter__item').each(function () {
-    if ($(this).find('.filter-item').length > 1) {
-        $(this).find('.filter-item').slice(1).hide();
+    if ($(this).find('.filter-item').length > 6) {
+        $(this).find('.filter-item').slice(6).hide();
     }
-
 });
 
 
 // show list all
 $('.btn-all__filter').on('click', function (e) {
     e.preventDefault();
-    $('.filter-item:hidden').slice(0, 12).slideDown();
+    var
+        $this = $(this);
+        // content = $(this).parent().find('ul li');
 
-    var onBlock = $('.filter-item:hidden').length;
-    if (onBlock <= 0) {
-        $('.btn-all__filter').hide();
+    // var onBlock = $('.filter-item:hidden').length;
+    // if (onBlock <= 0) {
+    //     $('.btn-all__filter > .text').html('Скрыть дополнительные фильтры');
+    // }
+    if(!$this.hasClass('trigger')){
+        $this.addClass('trigger');
+        $this.find('.text').html('Скрыть дополнительные фильтры');
+
+        $('.filter-item:hidden').slideDown();
+    } else {
+        $this.removeClass('trigger');
+        $this.find('.text').html('Показать еще фильтры');
+
+        $('.filter-item').slice(6).slideUp();
     }
 });
 // show list all
@@ -203,4 +215,23 @@ $('.date-box').on('click', function () {
    $(this).addClass('date-box__active');
 });
 
+
+$('.slider-range').slider({
+    range: true,
+    min: 0,
+    max: 12500,
+    values: [0, 0],
+    classes: {
+        "ui-slider-handle": "ui-corner-all"
+    },
+    slide: function (event, ui) {
+        //Поле минимального значения
+        $(".dec1").val(ui.values[0]);
+        //Поле максимального значения
+        $(".dec2").val(ui.values[1]);
+    }
+});
+
+$(".dec1").val($(".slider-range").slider("value"));
+$(".dec2").val($(".slider-range").slider("value"));
 
