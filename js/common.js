@@ -254,3 +254,7 @@ $(document).ready(function () {
     })
 });
 
+
+$('.btn-close-tooltip').click(function () {
+    $(this).parents('.tooltip-wrapper').fadeOut();
+});

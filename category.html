@@ -1577,12 +1577,28 @@
             <div class="product-filter">
 
                 <div class="product-filter__container">
-                    <button class="product-filter__toggle product-filter__toggle--no" type="button"><i
-                            class="icon-funnel"></i><span>Фильтр</span><i class="product-filter__icon icon-arrow"></i>
-                    </button>
+                    <div class="product-filter__toggle-wrap">
+                        <button class="product-filter__toggle product-filter__toggle--no" type="button"><i
+                                class="icon-funnel"></i><span>Фильтр</span><i
+                                class="product-filter__icon icon-arrow"></i>
+                        </button>
+                        <div class="tooltip-wrapper">
+                            У нас есть удобный фильтр для поиска
+                            <div class="btn-close-tooltip">ОК</div>
+                        </div>
+                    </div>
+
+                    <div class="product-filter__sort">
+                        <label class="product-filter__sort-title"><i class="icon-swap"></i><span>Сортировать по:</span></label>
+                        <div class="select">
+                            <select class="select__container main__select">
+                                <option class="select__item">Возрастание цены</option>
+                                <option class="select__item">Убывание цены</option>
+                            </select>
+                        </div>
+                    </div>
 
                 </div>
-
 
                 <div class="product-filter__wrapper">
                     <div class="product-filter__item">
@@ -1637,7 +1653,7 @@
                                 </li>
                             </ul>
 
-                            <a href="#" class="load-more open_modal">Еще</a>
+                            <a href="#type-drink" class="load-more open_modal">Еще</a>
                         </div>
 
                         <div class="filter-item">
@@ -1671,27 +1687,27 @@
                             <ul class="filter-item__wrapper">
                                 <li>
                                     <p>Мерло <span class="quantity">(2571)</span></p>
-                                    <a href="#" class="b-filter__link open_modal"><img src="images/plus.png" alt=""></a>
+                                    <a href="#country-drink2" class="b-filter__link open_modal"><img src="images/plus.svg" alt=""></a>
                                 </li>
                                 <li>
                                     <p>Каберне совиньон <span class="quantity">(2536)</span></p>
-                                    <a href="#" class="b-filter__link open_modal"><img src="images/plus.png" alt=""></a>
+                                    <a href="#country-drink2" class="b-filter__link open_modal"><img src="images/plus.svg" alt=""></a>
                                 </li>
                                 <li>
                                     <p>Шардоне <span class="quantity">(1527)</span></p>
-                                    <a href="#" class="b-filter__link open_modal"><img src="images/plus.png" alt=""></a>
+                                    <a href="#country-drink2" class="b-filter__link open_modal"><img src="images/plus.svg" alt=""></a>
                                 </li>
                                 <li>
                                     <p>Каберне фран <span class="quantity">(1313)</span></p>
-                                    <a href="#" class="b-filter__link open_modal"><img src="images/plus.png" alt=""></a>
+                                    <a href="#country-drink2" class="b-filter__link open_modal"><img src="images/plus.svg" alt=""></a>
                                 </li>
                                 <li>
                                     <p>Санджовезе <span class="quantity">(1101)</span></p>
-                                    <a href="#" class="b-filter__link open_modal"><img src="images/plus.png" alt=""></a>
+                                    <a href="#country-drink2" class="b-filter__link open_modal"><img src="images/plus.svg" alt=""></a>
                                 </li>
                             </ul>
 
-                            <a href="#" class="load-more open_modal">Еще</a>
+                            <a href="#type-drink" class="load-more open_modal">Еще</a>
                         </div>
 
                         <div class="filter-item">
@@ -1771,7 +1787,7 @@
                                 </li>
                             </ul>
 
-                            <a href="#" class="load-more open_modal">Еще</a>
+                            <a href="#type-drink" class="load-more open_modal">Еще</a>
                         </div>
                         <div class="filter-item">
                             <div class="filter-item__title">Тип</div>
@@ -1805,7 +1821,7 @@
                                 </li>
                             </ul>
 
-                            <a href="#" class="load-more open_modal">Еще</a>
+                            <a href="#type-drink" class="load-more open_modal">Еще</a>
                         </div>
                         <div class="filter-item">
                             <div class="filter-item__title">Категории</div>
@@ -1827,7 +1843,7 @@
                                 </li>
                             </ul>
 
-                            <a href="#" class="load-more open_modal">Еще</a>
+                            <a href="#type-drink" class="load-more open_modal">Еще</a>
                         </div>
                     </div>
 
@@ -1840,11 +1856,13 @@
                             </label>
                             <label class="checkbox">
                                 <input class="checkbox__field" type="checkbox"
-                                       value="выбор покупателей"><span class="checkbox__text">выбор покупателей</span>
+                                       value="выбор покупателей"><span
+                                    class="checkbox__text">выбор покупателей</span>
                             </label>
                             <label class="checkbox">
                                 <input class="checkbox__field" type="checkbox"
-                                       value="НОВИНКИ ДИЖЕСТИВА"><span class="checkbox__text">НОВИНКИ ДИЖЕСТИВА</span>
+                                       value="НОВИНКИ ДИЖЕСТИВА"><span
+                                    class="checkbox__text">НОВИНКИ ДИЖЕСТИВА</span>
                             </label>
                             <label class="checkbox">
                                 <input class="checkbox__field" type="checkbox"
@@ -1862,18 +1880,6 @@
 
                 <div class="product-filter__selected"></div>
 
-                <div class="product-filter__container">
-
-                    <div class="product-filter__sort">
-                        <label class="product-filter__sort-title"><i class="icon-swap"></i><span>Сортировать по:</span></label>
-                        <div class="select">
-                            <select class="select__container main__select">
-                                <option class="select__item">Возрастание цены</option>
-                                <option class="select__item">Убывание цены</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         <div class="page__wrapper">
@@ -2640,7 +2646,7 @@
 
 <div class="modal__div popup__information form__modal password__modal edit__password modal-filter" id="type-drink">
     <div class="modal__wrapper">
-        <div class="modal__close"><img src="images/close.png" alt=""></div>
+        <div class="modal__close"><img src="images/close2.svg" alt=""></div>
 
         <div class="modal__div-header">
             <div class="modal-filter__title">Выберите тип напитка</div>
@@ -2702,7 +2708,7 @@
                 <button class="button" type="submit">Применить фильтр</button>
 
                 <a href="#" class="btn-clear">
-                    <span class="icon"><img src="images/close2.png" alt=""></span>
+                    <span class="icon"><img src="images/close2.svg" alt=""></span>
                     <span class="text">Очистить фильтр</span>
                 </a>
             </div>
@@ -2715,7 +2721,7 @@
 <div class="modal__div popup__information form__modal password__modal edit__password modal-filter modal-filter__country"
      id="country-drink">
     <div class="modal__wrapper active js-tab-content" data-tab="2">
-        <div class="modal__close"><img src="images/close.png" alt=""></div>
+        <div class="modal__close"><img src="images/close2.svg" alt=""></div>
 
         <div class="modal__div-header">
             <div class="modal-filter__title">Страны</div>
@@ -3040,7 +3046,7 @@
                 <button class="button" type="submit">Применить фильтр</button>
 
                 <a href="#" class="btn-clear">
-                    <span class="icon"><img src="images/close2.png" alt=""></span>
+                    <span class="icon"><img src="images/close2.svg" alt=""></span>
                     <span class="text">Очистить фильтр</span>
                 </a>
             </div>
@@ -3050,7 +3056,7 @@
     </div>
 
     <div class="modal__wrapper js-tab-content js-tab-content__level2" data-tab="1">
-        <div class="modal__close"><img src="images/close.png" alt=""></div>
+        <div class="modal__close"><img src="images/close2.svg" alt=""></div>
 
         <div class="modal__div-header__wrap">
             <div class="modal__div-header">
@@ -3126,7 +3132,7 @@
                 <button class="button" type="submit">Применить фильтр</button>
 
                 <a href="#" class="btn-clear">
-                    <span class="icon"><img src="images/close2.png" alt=""></span>
+                    <span class="icon"><img src="images/close2.svg" alt=""></span>
                     <span class="text">Очистить фильтр</span>
                 </a>
             </div>
@@ -3134,7 +3140,7 @@
     </div>
 
     <div class="modal__wrapper js-tab-content js-tab-content__level2" data-tab="3">
-        <div class="modal__close"><img src="images/close.png" alt=""></div>
+        <div class="modal__close"><img src="images/close2.svg" alt=""></div>
 
         <div class="modal__div-header__wrap">
             <div class="modal__div-header">
@@ -3156,7 +3162,7 @@
             </div>
 
             <div class="modal__div-header">
-                <div class="modal-filter__title">Субрегионы </div>
+                <div class="modal-filter__title">Субрегионы</div>
             </div>
         </div>
 
@@ -3172,7 +3178,8 @@
                     </li>
                     <li>
                         <label class="checkbox">
-                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Лухан де Куйо<span
+                            <input class="checkbox__field" type="checkbox"><span
+                                class="checkbox__text">Лухан де Куйо<span
                                 class="val">(614)</span></span>
                         </label>
                     </li>
@@ -3214,7 +3221,518 @@
                 <button class="button" type="submit">Применить фильтр</button>
 
                 <a href="#" class="btn-clear">
-                    <span class="icon"><img src="images/close2.png" alt=""></span>
+                    <span class="icon"><img src="images/close2.svg" alt=""></span>
+                    <span class="text">Очистить фильтр</span>
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal__div popup__information form__modal password__modal edit__password modal-filter modal-filter__country"
+     id="country-drink2">
+    <div class="modal__wrapper js-tab-content" data-tab="2">
+        <div class="modal__close"><img src="images/close2.svg" alt=""></div>
+
+        <div class="modal__div-header">
+            <div class="modal-filter__title">Страны</div>
+        </div>
+
+        <form class="contact-form__content" action="#">
+
+            <div class="modal-scroll__content mCustomScrollbar">
+
+                <ul class="list-filter">
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Абхазия<span
+                                class="val">(20)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Абхазия<span
+                                class="val">(20)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Австралия<span
+                                class="val">(618)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="1">
+                            <div class="text">Регионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Австралия<span
+                                class="val">(618)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="1">
+                            <div class="text">Регионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Австрия<span
+                                class="val">(646)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="1">
+                            <div class="text">Регионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Австрия<span
+                                class="val">(646)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="1">
+                            <div class="text">Регионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Азербайджан<span
+                                class="val">(104)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Азербайджан<span
+                                class="val">(104)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Аргентина <span
+                                class="val">(614)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="1">
+                            <div class="text">Регионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Аргентина <span
+                                class="val">(614)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="1">
+                            <div class="text">Регионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Армения <span
+                                class="val">(50)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="1">
+                            <div class="text">Регионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Армения <span
+                                class="val">(50)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="1">
+                            <div class="text">Регионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Болгария <span
+                                class="val">(61)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Болгария <span
+                                class="val">(61)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Венгрия <span
+                                class="val">(48)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="1">
+                            <div class="text">Регионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Венгрия <span
+                                class="val">(48)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="1">
+                            <div class="text">Регионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Гватемала <span
+                                class="val">(1)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Гватемала <span
+                                class="val">(1)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Армения <span
+                                class="val">(50)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="1">
+                            <div class="text">Регионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Армения <span
+                                class="val">(50)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="1">
+                            <div class="text">Регионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Болгария <span
+                                class="val">(61)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Болгария <span
+                                class="val">(61)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Венгрия <span
+                                class="val">(48)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="1">
+                            <div class="text">Регионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Венгрия <span
+                                class="val">(48)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="1">
+                            <div class="text">Регионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Гватемала <span
+                                class="val">(1)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Гватемала <span
+                                class="val">(1)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Абхазия<span
+                                class="val">(20)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Абхазия<span
+                                class="val">(20)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Австралия<span
+                                class="val">(618)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="1">
+                            <div class="text">Регионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Австралия<span
+                                class="val">(618)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="1">
+                            <div class="text">Регионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Австрия<span
+                                class="val">(646)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="1">
+                            <div class="text">Регионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Австрия<span
+                                class="val">(646)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="1">
+                            <div class="text">Регионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Азербайджан<span
+                                class="val">(104)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Азербайджан<span
+                                class="val">(104)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Аргентина <span
+                                class="val">(614)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="1">
+                            <div class="text">Регионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Аргентина <span
+                                class="val">(614)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="1">
+                            <div class="text">Регионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Армения <span
+                                class="val">(50)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="1">
+                            <div class="text">Регионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="button-group">
+                <button class="button" type="submit">Применить фильтр</button>
+
+                <a href="#" class="btn-clear">
+                    <span class="icon"><img src="images/close2.svg" alt=""></span>
+                    <span class="text">Очистить фильтр</span>
+                </a>
+            </div>
+        </form>
+
+
+    </div>
+
+    <div class="modal__wrapper active js-tab-content js-tab-content__level2" data-tab="1">
+        <div class="modal__close"><img src="images/close2.svg" alt=""></div>
+
+        <div class="modal__div-header__wrap">
+            <div class="modal__div-header">
+                <div class="modal-filter__title">Страна Аргентина</div>
+
+                <div class="js-tab-trigger links-prev__modal" data-tab="2">
+                    <div class="text">Вернуться к выбору страны</div>
+                </div>
+
+            </div>
+
+            <div class="modal__div-header">
+                <div class="modal-filter__title">Регионы</div>
+            </div>
+        </div>
+
+        <form class="contact-form__content" action="#">
+
+            <div class="modal-scroll__content mCustomScrollbar">
+                <ul class="list-filter">
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span
+                                class="checkbox__text">Все регионы</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Прочие<span
+                                class="val">(104)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Мендоса<span
+                                class="val">(618)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="3">
+                            <div class="text">Субрегионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Сан-Хуан <span
+                                class="val">(614)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Патагония<span
+                                class="val">(646)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="3">
+                            <div class="text">Субрегионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Северо-Западная Аргентина<span
+                                class="val">(50)</span></span>
+                        </label>
+                        <div class="link-region js-tab-trigger" data-tab="3">
+                            <div class="text">Субрегионы</div>
+                            <div class="icon-arrow"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="button-group">
+                <button class="button" type="submit">Применить фильтр</button>
+
+                <a href="#" class="btn-clear">
+                    <span class="icon"><img src="images/close2.svg" alt=""></span>
+                    <span class="text">Очистить фильтр</span>
+                </a>
+            </div>
+        </form>
+    </div>
+
+    <div class="modal__wrapper js-tab-content js-tab-content__level2" data-tab="3">
+        <div class="modal__close"><img src="images/close2.svg" alt=""></div>
+
+        <div class="modal__div-header__wrap">
+            <div class="modal__div-header">
+                <div class="modal-filter__title">Страна Аргентина</div>
+
+                <div class="js-tab-trigger links-prev__modal" data-tab="2">
+                    <div class="text">Вернуться к выбору страны</div>
+                </div>
+
+            </div>
+
+            <div class="modal__div-header">
+                <div class="modal-filter__title">Регион Мендоса</div>
+
+                <div class="js-tab-trigger links-prev__modal" data-tab="1">
+                    <div class="text">Вернуться к выбору региона</div>
+                </div>
+
+            </div>
+
+            <div class="modal__div-header">
+                <div class="modal-filter__title">Субрегионы</div>
+            </div>
+        </div>
+
+        <form class="contact-form__content" action="#">
+
+            <div class="modal-scroll__content mCustomScrollbar">
+                <ul class="list-filter">
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span
+                                class="checkbox__text">Все субрегионы</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span
+                                class="checkbox__text">Лухан де Куйо<span
+                                class="val">(614)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Барранкас<span
+                                class="val">(618)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Майпу<span
+                                class="val">(50)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Долина Туппунгато<span
+                                class="val">(646)</span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Прочие<span
+                                class="val">(50)</span></span>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label class="checkbox">
+                            <input class="checkbox__field" type="checkbox"><span class="checkbox__text">Долина Уко<span
+                                class="val">(104)</span></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="button-group">
+                <button class="button" type="submit">Применить фильтр</button>
+
+                <a href="#" class="btn-clear">
+                    <span class="icon"><img src="images/close2.svg" alt=""></span>
                     <span class="text">Очистить фильтр</span>
                 </a>
             </div>

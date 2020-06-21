@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15.656" height="15.656" viewBox="0 0 15.656 15.656">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ec5c2a;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="close_копия" data-name="close копия" class="cls-1" d="M972.708,383.832l6.262-7.226,6.286,7.226h1.565l-7.013-8,6.767-7.652h-1.541l-6.015,6.888-6.027-6.888h-1.565l6.791,7.674-7.05,7.979h1.54Z" transform="translate(-971.156 -368.188)"/>
+</svg>
