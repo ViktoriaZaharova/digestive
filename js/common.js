@@ -124,7 +124,6 @@ $(document).ready(function () {
         navFixed.addClass("fixed").removeClass("nofixed");
     }
 
-
     if (navFixed.length) {
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
@@ -220,7 +219,7 @@ $('.slider-range').slider({
     range: true,
     min: 0,
     max: 12500,
-    values: [0, 0],
+    values: [0, 1000],
     classes: {
         "ui-slider-handle": "ui-corner-all"
     },
@@ -258,3 +257,16 @@ $(document).ready(function () {
 $('.btn-close-tooltip').click(function () {
     $(this).parents('.tooltip-wrapper').fadeOut();
 });
+
+$('.filter-item__wrapper li').click(function () {
+    $('.filter-item__wrapper li').removeClass('click');
+   $(this).toggleClass('click');
+});
+
+window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+    }, 3000);
+};
