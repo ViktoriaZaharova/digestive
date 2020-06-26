@@ -2095,7 +2095,7 @@ body {
 }
 
 .product-filter__wrapper {
-    margin: 0 0 24px;
+    /*margin: 0 0 24px;*/
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     display: -webkit-box;
@@ -2140,7 +2140,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     flex-wrap: wrap;
-    /*margin: 30px 0;*/
+    margin: 30px 0;
 }
 
 .product-filter__current {
@@ -16303,8 +16303,8 @@ body.modal-click, html.modal-click {
     position: relative;
     top: 50%;
     left: 50%;
-    width: 250px;
-    height: 320px;
+    width: 100px;
+    height: 128px;
     transform: translate(-50%,-50%);
     background: url('../images/loader.gif') no-repeat 50% 50%;
     -webkit-background-size: contain;
@@ -16327,23 +16327,23 @@ body.modal-click, html.modal-click {
     right: 0;
     bottom: 0;
     overflow: hidden;
-    background: rgba(255,255,255, .75);
+    background: rgba(0,0,0, .75);
     z-index: 1001;
 }
 
-.preloader__image {
+.preloader-catalog__image {
     position: relative;
     top: 50%;
     left: 50%;
-    width: 250px;
-    height: 320px;
+    width: 100px;
+    height: 128px;
     transform: translate(-50%,-50%);
     background: url('../images/loader.gif') no-repeat 50% 50%;
     -webkit-background-size: contain;
     background-size: contain;
 }
 
-.loaded_hiding .preloader {
+.loaded_hiding .preloader-catalog {
     transition: 0.3s opacity;
     opacity: 0;
 }
@@ -16486,10 +16486,6 @@ body.modal-click, html.modal-click {
         margin: 10px auto;
     }
 
-    .preloader__image {
-        width: 150px;
-        height: 220px;
-    }
 }
 
 

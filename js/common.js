@@ -270,3 +270,7 @@ window.onload = function () {
         document.body.classList.remove('loaded_hiding');
     }, 3000);
 };
+
+$('.btn-loader').click(function () {
+    $('.preloader-catalog').fadeIn().end().delay(3000).fadeOut('slow');
+});
