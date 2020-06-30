@@ -263,13 +263,10 @@ $('.filter-item__wrapper li').click(function () {
    $(this).toggleClass('click');
 });
 
-window.onload = function () {
-    document.body.classList.add('loaded_hiding');
-    window.setTimeout(function () {
-        document.body.classList.add('loaded');
-        document.body.classList.remove('loaded_hiding');
-    }, 3000);
-};
+
+$(window).on('load', function() {
+    $('.preloader').fadeOut().end().delay(400).fadeOut('slow');
+});
 
 $('.btn-loader').click(function () {
     $('.preloader-catalog').fadeIn().end().delay(3000).fadeOut('slow');

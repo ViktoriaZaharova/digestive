@@ -16292,9 +16292,8 @@ body.modal-click, html.modal-click {
     position: fixed;
     left: 0;
     top: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
     background: #fff;
     z-index: 1001;
 }
@@ -16303,25 +16302,18 @@ body.modal-click, html.modal-click {
     position: relative;
     top: 50%;
     left: 50%;
-    width: 100px;
-    height: 128px;
+    width: 130px;
+    height: 166px;
     transform: translate(-50%,-50%);
     background: url('../images/loader.gif') no-repeat 50% 50%;
     -webkit-background-size: contain;
     background-size: contain;
 }
 
-.loaded_hiding .preloader {
-    transition: 0.3s opacity;
-    opacity: 0;
-}
 
-.loaded .preloader {
-    display: none;
-}
-
+/*.preloader-catalog */
 .preloader-catalog {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     right: 0;
@@ -16329,28 +16321,21 @@ body.modal-click, html.modal-click {
     overflow: hidden;
     background: rgba(0,0,0, .75);
     z-index: 1001;
+    display: none;
 }
 
 .preloader-catalog__image {
     position: relative;
     top: 50%;
     left: 50%;
-    width: 100px;
-    height: 128px;
+    width: 130px;
+    height: 166px;
     transform: translate(-50%,-50%);
     background: url('../images/loader.gif') no-repeat 50% 50%;
     -webkit-background-size: contain;
     background-size: contain;
 }
 
-.loaded_hiding .preloader-catalog {
-    transition: 0.3s opacity;
-    opacity: 0;
-}
-
-.loaded .preloader-catalog {
-    display: none;
-}
 
 
 @media (max-width: 1199px) {
