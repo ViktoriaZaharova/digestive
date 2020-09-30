@@ -210,7 +210,7 @@ template {
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
+}
 
 @font-face {
     font-family: icomoon;
@@ -1824,7 +1824,7 @@ body {
     box-sizing: border-box;
     bottom: 143%;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
 }
 
 .product-filter__toggle-wrap {
@@ -2097,7 +2097,11 @@ body {
     text-transform: uppercase;
 }
 
-.sorting-filter .checkbox:hover {
+.sorting-filter .checkbox:hover, .form__modal .modal__wrapper .checkbox:hover {
+    text-shadow: 0.25px 0px 0.1px, -0.25px 0px 0.1px;
+}
+
+.sorting-filter .checkbox__field:checked + .checkbox__text, .modal__wrapper .checkbox__field:checked + .checkbox__text {
     text-shadow: 0.25px 0px 0.1px, -0.25px 0px 0.1px;
 }
 
@@ -2170,8 +2174,6 @@ body {
     width: 100%;
     background: #fff;
 }
-
-
 
 
 .product-filter__item {
@@ -13566,7 +13568,7 @@ input, button {
     background: transparent;
     left: 7px;
     top: 50%;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     z-index: 1;
     position: absolute;
     cursor: pointer;
@@ -14682,8 +14684,7 @@ input, button {
     /*    height: 15px;*/
     /*    top: -20px;*/
     /*}*/
-
-    .category-information__content, .page_category .page__navigation, .product-filter__sort-title{
+    .category-information__content, .page_category .page__navigation, .product-filter__sort-title {
         display: none
     }
 
@@ -16148,7 +16149,6 @@ input, button {
     }
 
 
-
     .modal__div-product h2 {
         font-size: 20px;
     }
@@ -16285,7 +16285,7 @@ input, button {
     font-size: 12px;
 }
 
-.link-region .icon-arrow{
+.link-region .icon-arrow {
     transform: rotate(-90deg);
     font-size: 6px;
     margin: 0 0 0 5px;
@@ -16312,7 +16312,7 @@ input, button {
 
 
 .modal-filter.form__modal .button-group {
-    margin: 40px 0 0 ;
+    margin: 40px 0 0;
 }
 
 .mCSB_scrollTools {
@@ -16332,6 +16332,11 @@ input, button {
     background-color: #35393e;
     border-radius: 1.5px;
     width: 4px;
+}
+
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+    background-color: #35393e;
+    background-color: rgba(53, 57, 62, 1);
 }
 
 .mCSB_scrollTools .mCSB_dragger {
@@ -16377,6 +16382,11 @@ body.modal-click, html.modal-click {
 
 .filter-item__wrapper li.click {
     font-weight: bold;
+    text-shadow: none;
+}
+
+.filter-item__wrapper li.click:hover {
+    text-shadow: none;
 }
 
 .preloader {
@@ -16395,7 +16405,7 @@ body.modal-click, html.modal-click {
     left: 50%;
     width: 130px;
     height: 166px;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background: url('../images/loader.gif') no-repeat 50% 50%;
     -webkit-background-size: contain;
     background-size: contain;
@@ -16410,7 +16420,7 @@ body.modal-click, html.modal-click {
     right: 0;
     bottom: 0;
     overflow: hidden;
-    background: rgba(0,0,0, .75);
+    background: rgba(0, 0, 0, .75);
     z-index: 1001;
     display: none;
 }
@@ -16421,12 +16431,11 @@ body.modal-click, html.modal-click {
     left: 50%;
     width: 130px;
     height: 166px;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background: url('../images/loader.gif') no-repeat 50% 50%;
     -webkit-background-size: contain;
     background-size: contain;
 }
-
 
 
 @media (max-width: 1199px) {
