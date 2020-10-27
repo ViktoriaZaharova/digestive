@@ -776,6 +776,10 @@ body {
     background-color: #fff
 }
 
+.mega-menu__favorite .product-item__heading {
+    height: auto;
+}
+
 
 .mega-menu__footer {
     display: -webkit-box;
@@ -1212,7 +1216,7 @@ body {
 .product-item {
     max-width: 360px;
     width: 100%;
-    height: 400px;
+    height: 420px;
     display: inline-block;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1896,6 +1900,14 @@ body {
 .product-filter__sort .select {
     max-width: 170px;
     margin-right: 20px
+}
+
+.ui-selectmenu-text {
+    transition: .3s ease;
+}
+
+.product-filter__sort .select:hover .ui-selectmenu-text {
+    color: #ec5c2a;
 }
 
 .product-filter__sort .select:after {
@@ -6972,6 +6984,8 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
     width: 100%
 }
 
+
+
 @media (max-width: 768px) {
     .products-layout__item:not(:last-child) {
         margin-bottom: 15px
@@ -6986,8 +7000,8 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
 
     .products-layout__item--large .product-item {
         max-width: 720px;
-        height: -webkit-calc(400px * 2);
-        height: calc(400px * 2)
+        height: -webkit-calc(420px * 2);
+        height: calc(420px * 2)
     }
 
     .products-layout__item--large .product-item .product-item__thumbnail {
@@ -8290,7 +8304,7 @@ button.mz-button:before {
     z-index: 100;
     top: 30px;
     right: 0;
-    width: 85%;
+    width: calc(100% - 585px);
     height: 1px;
     display: block;
     -webkit-flex-shrink: 0;
@@ -8414,6 +8428,11 @@ button.mz-button:before {
     display: flex;
     flex-direction: column;
     padding: 30px 0;
+    transition: .3s ease;
+}
+
+.stock-slider__item:hover {
+    transform: translateY(-7px);
 }
 
 .stock-slider__item-title {
@@ -9978,20 +9997,20 @@ footer .button {
     display: inline-block;
     margin-right: 30px;
     outline: 0;
-    text-transform: none
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    text-transform: none;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
 }
 
 .brands-slider__item > img {
     width: 100%;
     height: auto;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    -webkit-transition: .3s ease;
-    -o-transition: .3s ease;
-    transition: .3s ease
 }
 
-.brands-slider__item:focus > img, .brands-slider__item:hover > img {
+.brands-slider__item:hover {
     -webkit-filter: grayscale(0);
     filter: grayscale(0)
 }
@@ -10129,8 +10148,7 @@ footer .button {
 }
 
 .checkbox {
-    transition: .3s ease;
-    display: block
+    display: block;
 }
 
 .checkbox__field {
@@ -10171,9 +10189,6 @@ footer .button {
     background-repeat: no-repeat;
     background-image: url(../images/checked-icon.png);
     background-position: center;
-    -webkit-transition: .3s ease;
-    -o-transition: .3s ease;
-    transition: .3s ease;
     box-sizing: border-box;
 }
 
@@ -12165,6 +12180,11 @@ input, button {
     font-size: 14px;
     line-height: 1.71;
     font-weight: bold;
+    transition: .3s ease;
+}
+
+.result-search--box .links:hover {
+    color: #ec5c2a;
 }
 
 .result-search--box .links i {
@@ -12874,7 +12894,7 @@ input, button {
 }
 
 .header__auth {
-    z-index: 999;
+    z-index: 1023;
 }
 
 .menu-profile a {
@@ -13811,6 +13831,10 @@ input, button {
 }
 
 .order-briefly__heading:hover, .checkbox:hover {
+    text-shadow: 0.25px 0px 0.1px, -0.25px 0px 0.1px;
+}
+
+.radio-label .checkbox__field:checked + .checkbox__text {
     text-shadow: 0.25px 0px 0.1px, -0.25px 0px 0.1px;
 }
 
@@ -16442,7 +16466,7 @@ body.modal-click, html.modal-click {
     width: 100%;
     height: 100%;
     background: #fff;
-    z-index: 1001;
+    z-index: 1031;
 }
 
 .preloader__image {
@@ -16467,7 +16491,7 @@ body.modal-click, html.modal-click {
     bottom: 0;
     overflow: hidden;
     background: rgba(0, 0, 0, .75);
-    z-index: 1001;
+    z-index: 1031;
     display: none;
 }
 
