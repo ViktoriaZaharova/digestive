@@ -1216,7 +1216,7 @@ body {
 .product-item {
     max-width: 360px;
     width: 100%;
-    height: 420px;
+    height: 450px;
     display: inline-block;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1280,7 +1280,7 @@ body {
 
 @media (max-width: 576px) {
     .product-item {
-        height: 450px
+        height: 500px
     }
 }
 
@@ -1438,12 +1438,21 @@ body {
 .product-item__image {
     width: auto;
     height: 100%;
-    max-height: 240px
+    max-height: 240px;
+    transition: .3s ease;
+}
+
+.product-item__image:hover {
+    -o-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
 }
 
 .product-item__content {
     position: relative;
-    padding: 0 20px 20px 20px;
+    padding: 10px 20px 20px 20px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1524,6 +1533,9 @@ body {
     width: 200px;
     height: 100px;
     display: none;
+    background: url("../images/tooltip-bg2.png") no-repeat center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
 }
 
 .order-status {
@@ -1570,7 +1582,7 @@ body {
     align-items: center;
 }
 
-.product-item:hover .tooltip-wrapper {
+.tooltip-content:hover .tooltip-wrapper {
     display: block;
 }
 
@@ -1600,6 +1612,17 @@ body {
 
 .product-item__info span {
     text-decoration: underline;
+    transition: .3s ease;
+}
+
+.product-item__info span:hover {
+    color: #ec5c2a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.product-item__bottom-line span:hover {
+    color: #ec5c2a;
 }
 
 .product-item__info strong {
@@ -1627,20 +1650,21 @@ body {
     font-size: 12px;
 }
 
-.product-item__bottom-line a {
+.product-item__bottom-line span {
     text-decoration: underline;
     color: #111111;
+    transition: .3s ease;
 }
 
 .product-item__bottom-line .icon {
-    width: 20px;
-    height: 20px;
-    min-width: 20px;
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
     margin: 0 10px 0 0;
 }
 
 .product-item__bottom-line .icon-percent {
-    font-size: 14px;
+    font-size: 20px;
     background: #ed1c24;
     color: #fff;
     padding: 2px;

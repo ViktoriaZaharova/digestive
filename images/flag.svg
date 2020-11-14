@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 341.34">
+    <defs>
+        <style>.cls-1{fill:#f0f0f0;}.cls-2{fill:#0052b4;}</style>
+    </defs>
+    <g id="Слой_2" data-name="Слой 2">
+        <g id="Capa_1" data-name="Capa 1">
+            <rect class="cls-1" width="512" height="341.34"/>
+            <rect class="cls-2" width="512" height="341.34"/>
+            <polygon class="cls-1"
+                     points="301.25 170.67 512 30.17 512 0 466.75 0 256 140.5 45.26 0 0 0 0 30.17 210.75 170.67 0 311.17 0 341.33 45.26 341.33 256 200.84 466.75 341.33 512 341.33 512 311.17 301.25 170.67"/>
+        </g>
+    </g>
+</svg>
