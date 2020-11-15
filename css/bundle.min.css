@@ -1506,9 +1506,13 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    margin: 0 0 10px;
+    margin: 0 0 2px;
     font-weight: 500;
     color: #35393e;
+}
+
+.product-item__available-line:last-child {
+    margin: 0;
 }
 
 .product-item__available-line p {
@@ -1530,18 +1534,36 @@ body {
     left: 0;
     transform: translate(0);
     text-align: left;
-    width: 200px;
-    height: 100px;
+    width: 205px;
+    height: auto;
     display: none;
-    background: url("../images/tooltip-bg2.png") no-repeat center;
-    -webkit-background-size: 100%;
-    background-size: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 #ec5c2a;
+    padding: 15px;
+}
+
+.tooltip-content .tooltip-wrapper:before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    bottom: -12px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 12px solid #fff;
 }
 
 .order-status {
     display: inline-flex;
     display: -webkit-inline-flex;
     align-items: flex-start;
+    margin: 0 0 10px;
+}
+
+.order-status:last-child {
+    margin: 0;
 }
 
 .order-status span {
@@ -1561,6 +1583,10 @@ body {
 
 .order-status.color-green:before {
     background: #10c507;
+}
+
+.order-status.color-red:before {
+    background: #ed1c24;
 }
 
 .color-green {
@@ -1696,7 +1722,7 @@ body {
     background: #ed1c24;
 }
 
-.product-item__available--limited:before, .order-status.color-orange:before, .order-status.color-red:before {
+.product-item__available--limited:before, .order-status.color-orange:before {
     background: #f6b415;
 }
 
