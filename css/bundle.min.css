@@ -314,7 +314,7 @@ template {
 }
 
 .icon-percent:before {
-    content: "\e914"
+    content: "\e914";
 }
 
 .icon-plus-18:before {
@@ -1352,7 +1352,9 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
     border-radius: 50%;
-    background: 0 0
+    background: 0 0;
+    padding: 2px;
+    box-sizing: border-box;
 }
 
 .product-item__tag:not(:last-child) {
@@ -1361,12 +1363,14 @@ body {
 
 .product-item__tag i {
     color: #fff;
-    width: 44px;
-    height: 44px;
-    display: block;
-    margin: auto;
-    font-size: 46px
+    /*width: 44px;*/
+    /*height: 44px;*/
+    /*display: block;*/
+    /*margin: auto;*/
+    font-size: 46px;
+    width: 100%;
 }
+
 
 .product-item__tag--best {
     background: #0da205
@@ -1577,8 +1581,9 @@ body {
     width: 6px;
     min-width: 6px;
     height: 6px;
-    margin: 0 7px 0 0;
+    margin: 2px 13px 0 5px;
     border-radius: 50%;
+
 }
 
 .order-status.color-green:before {
@@ -14998,6 +15003,9 @@ input, button {
         margin: 0 0 10px;
     }
 
+    .tooltip-content:hover .tooltip-wrapper, .product-item:hover .product-item__bottom {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
