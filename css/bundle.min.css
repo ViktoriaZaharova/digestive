@@ -15458,6 +15458,10 @@ input, button {
     /*    height: auto;*/
     /*    overflow: visible;*/
     /*}*/
+
+    .page_category .page__content .product-item {
+        height: auto;
+    }
 }
 
 @media (max-width: 690px) {
