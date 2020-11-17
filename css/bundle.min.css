@@ -1446,7 +1446,7 @@ body {
     transition: .3s ease;
 }
 
-.product-item__image:hover {
+.product-item:hover .product-item__image {
     -o-transform: scale(1.1, 1.1);
     -ms-transform: scale(1.1, 1.1);
     -moz-transform: scale(1.1, 1.1);
@@ -1545,6 +1545,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 5px 0 #ec5c2a;
     padding: 15px;
+    bottom: 100%;
 }
 
 .tooltip-content .tooltip-wrapper:before {
@@ -1611,6 +1612,8 @@ body {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 3;
 }
 
 .tooltip-content:hover .tooltip-wrapper {
