@@ -17093,13 +17093,13 @@ body.modal-click, html.modal-click {
 
 @media (max-width: 420px) {
     .range_val input {
-        width: 100%;
+        width: 40%;
     }
 
-    .range_val .inp-group {
-        flex-direction: column;
-        align-items: center;
-    }
+    /*.range_val .inp-group {*/
+    /*    flex-direction: column;*/
+    /*    align-items: center;*/
+    /*}*/
 
     .range_val .inp-group .line {
         margin: 10px auto;
@@ -17112,6 +17112,15 @@ body.modal-click, html.modal-click {
 
     .page_category .product-item__price {
         font-size: 16px;
+    }
+
+    .product-filter__item .filter-item-price {
+        width: 100%;
+        order: 1;
+    }
+
+    .product-filter__item .filter-item-price .filter-item__wrapper {
+    max-width: none;
     }
 }
 
