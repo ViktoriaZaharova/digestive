@@ -139,7 +139,7 @@
     </div>
 </div>
 
-<div class="page page_category">
+<div class="page page_category page-responsive-card">
 
     <header class="mobile-navigation nofixed">
         <div class="mobile-navigation__wrapper">
@@ -1536,11 +1536,30 @@
             </div>
         </section>
         <section class="page__wrapper page__product-filter">
+
+
             <div class="product-filter">
+
                 <div class="product-filter__container">
-                    <button class="product-filter__toggle product-filter__toggle--no" type="button"><i
-                            class="icon-funnel"></i><span>Фильтр</span><i class="product-filter__icon icon-arrow"></i>
-                    </button>
+                    <div class="product-filter__toggle-wrap">
+                        <button class="product-filter__toggle product-filter__toggle--no" type="button"><i
+                                class="icon-funnel"></i><span>Фильтр</span><i
+                                class="product-filter__icon icon-arrow"></i>
+
+                            <span class="filter-icon-mobile">
+                                <svg width="22" height="20" viewBox="0 0 22 20"
+                                     xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd"
+      d="M7.94347 6.20515C8.61795 6.2044 9.2738 5.98374 9.81156 5.57661C10.3493 5.16949 10.7396 4.59811 10.9234 3.94912L21.1555 3.94912C21.2664 3.94912 21.3762 3.92728 21.4787 3.88484C21.5811 3.8424 21.6742 3.78019 21.7527 3.70177C21.8311 3.62335 21.8933 3.53026 21.9357 3.4278C21.9782 3.32534 22 3.21552 22 3.10462C22 2.99372 21.9782 2.8839 21.9357 2.78144C21.8933 2.67898 21.8311 2.58589 21.7527 2.50747C21.6742 2.42905 21.5811 2.36684 21.4787 2.3244C21.3762 2.28196 21.2664 2.26012 21.1555 2.26012L10.9234 2.26012C10.7413 1.60986 10.3515 1.03701 9.81349 0.628944C9.27547 0.220878 8.61873 -5.84914e-07 7.94347 -6.14431e-07C7.2682 -6.43947e-07 6.61147 0.220878 6.07345 0.628944C5.53543 1.03701 5.14565 1.60986 4.96358 2.26012L3.15393 2.26012C2.92996 2.26012 2.71516 2.34909 2.55678 2.50747C2.39841 2.66584 2.30943 2.88064 2.30943 3.10462C2.30943 3.32859 2.39841 3.5434 2.55678 3.70177C2.71516 3.86015 2.92996 3.94912 3.15393 3.94912L4.96358 3.94912C5.14729 4.59811 5.53762 5.16949 6.07538 5.57661C6.61314 5.98374 7.26898 6.2044 7.94347 6.20515ZM6.52591 3.10462C6.52591 2.82545 6.6087 2.55254 6.7638 2.32042C6.9189 2.08829 7.13935 1.90737 7.39727 1.80054C7.65519 1.6937 7.939 1.66575 8.21281 1.72022C8.48662 1.77468 8.73813 1.90911 8.93554 2.10652C9.13294 2.30392 9.26738 2.55543 9.32184 2.82924C9.3763 3.10305 9.34835 3.38686 9.24152 3.64479C9.13468 3.90271 8.95376 4.12316 8.72164 4.27826C8.48951 4.43336 8.21661 4.51614 7.93744 4.51614C7.56308 4.51614 7.20405 4.36743 6.93934 4.10272C6.67463 3.83801 6.52591 3.47898 6.52591 3.10462ZM7.94347 19.5841C8.61795 19.5834 9.2738 19.3627 9.81156 18.9556C10.3493 18.5484 10.7396 17.9771 10.9234 17.3281L21.1555 17.3281C21.3795 17.3281 21.5943 17.2391 21.7527 17.0807C21.911 16.9223 22 16.7075 22 16.4836C22 16.2596 21.911 16.0448 21.7527 15.8864C21.5943 15.728 21.3795 15.6391 21.1555 15.6391L10.9234 15.6391C10.7413 14.9888 10.3515 14.416 9.81349 14.0079C9.27547 13.5998 8.61873 13.3789 7.94347 13.3789C7.2682 13.3789 6.61147 13.5998 6.07345 14.0079C5.53543 14.416 5.14566 14.9888 4.96358 15.6391L3.15393 15.6391C2.92996 15.6391 2.71516 15.728 2.55678 15.8864C2.39841 16.0448 2.30943 16.2596 2.30943 16.4836C2.30943 16.7075 2.39841 16.9223 2.55678 17.0807C2.71516 17.2391 2.92996 17.3281 3.15393 17.3281L4.96358 17.3281C5.14729 17.9771 5.53762 18.5484 6.07538 18.9556C6.61313 19.3627 7.26898 19.5834 7.94347 19.5841ZM6.52591 16.4836C6.52591 16.2044 6.6087 15.9315 6.7638 15.6994C6.9189 15.4672 7.13935 15.2863 7.39727 15.1795C7.65519 15.0727 7.939 15.0447 8.21281 15.0992C8.48662 15.1536 8.73813 15.2881 8.93554 15.4855C9.13294 15.6829 9.26738 15.9344 9.32184 16.2082C9.3763 16.482 9.34835 16.7658 9.24152 17.0237C9.13468 17.2817 8.95376 17.5021 8.72164 17.6572C8.48951 17.8123 8.21661 17.8951 7.93744 17.8951C7.75207 17.8951 7.56852 17.8586 7.39727 17.7876C7.22601 17.7167 7.07041 17.6127 6.93934 17.4817C6.80827 17.3506 6.70429 17.195 6.63336 17.0237C6.56242 16.8525 6.52591 16.6689 6.52591 16.4836ZM12.4849 7.31948C13.0226 6.91235 13.6785 6.69169 14.353 6.69095C15.0275 6.69169 15.6833 6.91235 16.2211 7.31948C16.7588 7.72661 17.1492 8.29799 17.3329 8.94697L19.1425 8.94697C19.3665 8.94697 19.5813 9.03595 19.7397 9.19432C19.898 9.3527 19.987 9.5675 19.987 9.79148C19.987 10.0155 19.898 10.2303 19.7397 10.3886C19.5813 10.547 19.3665 10.636 19.1425 10.636L17.3329 10.636C17.1508 11.2862 16.761 11.8591 16.223 12.2671C15.685 12.6752 15.0282 12.8961 14.353 12.8961C13.6777 12.8961 13.021 12.6752 12.483 12.2671C11.9449 11.8591 11.5552 11.2862 11.3731 10.636L1.14095 10.636C0.916973 10.636 0.702171 10.547 0.543796 10.3886C0.385421 10.2303 0.296447 10.0154 0.296447 9.79147C0.296447 9.5675 0.385421 9.3527 0.543796 9.19432C0.702171 9.03595 0.916973 8.94697 1.14095 8.94697L11.3731 8.94697C11.5568 8.29799 11.9471 7.72661 12.4849 7.31948ZM15.5327 10.5757C15.6878 10.3436 15.7705 10.0706 15.7705 9.79148C15.7705 9.41711 15.6218 9.05809 15.3571 8.79337C15.0924 8.52866 14.7334 8.37995 14.359 8.37995C14.0798 8.37995 13.8069 8.46273 13.5748 8.61783C13.3427 8.77293 13.1618 8.99338 13.0549 9.25131C12.9481 9.50923 12.9201 9.79304 12.9746 10.0668C13.0291 10.3407 13.1635 10.5922 13.3609 10.7896C13.5583 10.987 13.8098 11.1214 14.0836 11.1759C14.3574 11.2303 14.6413 11.2024 14.8992 11.0956C15.1571 10.9887 15.3775 10.8078 15.5327 10.5757Z"/>
+</svg>
+                            </span>
+                        </button>
+                        <div class="tooltip-wrapper">
+                            У нас есть удобный фильтр для поиска
+                            <div class="btn-close-tooltip">ОК</div>
+                        </div>
+                    </div>
+
                     <div class="product-filter__sort">
                         <label class="product-filter__sort-title"><i class="icon-swap"></i><span>Сортировать по:</span></label>
                         <div class="select">
@@ -1550,325 +1569,330 @@
                             </select>
                         </div>
                     </div>
+
                 </div>
-                <div class="product-filter__wrapper" data-open="false">
-                    <div class="product-filter__item">
-                        <div class="filter-item">
-                            <button class="filter-item__toggle" type="button">Алкогольный бренд<i
-                                    class="icon-arrow filter-item__arrow"></i>
-                            </button>
-                            <div class="filter-item__content" style="display: none;">
-                                <div class="filter-item__search">
-                                    <form class="header__search" action="#">
-                                        <input class="header__field" type="text" placeholder="Найти" required="">
-                                        <button class="header__submit" type="submit"><i class="icon-search"></i>
-                                        </button>
-                                    </form>
-                                </div>
-                                <div class="filter-item__wrapper">
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Металичксая труба"><span
-                                            class="checkbox__text">Металичксая труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox"
-                                               value="Металическая упаковка"><span class="checkbox__text">Металическая упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная труба"><span
-                                            class="checkbox__text">Подарочная труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная упаковка"><span
-                                            class="checkbox__text">Подарочная упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Металичксая труба"><span
-                                            class="checkbox__text">Металичксая труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox"
-                                               value="Металическая упаковка"><span class="checkbox__text">Металическая упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная труба"><span
-                                            class="checkbox__text">Подарочная труба</span>
-                                    </label>
 
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная труба"><span
-                                            class="checkbox__text">Подарочная труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная упаковка"><span
-                                            class="checkbox__text">Подарочная упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Металичксая труба"><span
-                                            class="checkbox__text">Металичксая труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox"
-                                               value="Металическая упаковка"><span class="checkbox__text">Металическая упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная труба"><span
-                                            class="checkbox__text">Подарочная труба</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="filter-item">
-                            <button class="filter-item__toggle" type="button">Вкус напитка<i
-                                    class="icon-arrow filter-item__arrow"></i>
-                            </button>
-                            <div class="filter-item__content" style="display: none;">
-                                <div class="filter-item__wrapper">
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Металичксая труба"><span
-                                            class="checkbox__text">Металичксая труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox"
-                                               value="Металическая упаковка"><span class="checkbox__text">Металическая упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная труба"><span
-                                            class="checkbox__text">Подарочная труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная упаковка"><span
-                                            class="checkbox__text">Подарочная упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Металичксая труба"><span
-                                            class="checkbox__text">Металичксая труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox"
-                                               value="Металическая упаковка"><span class="checkbox__text">Металическая упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная труба"><span
-                                            class="checkbox__text">Подарочная труба</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="filter-item">
-                            <button class="filter-item__toggle" type="button">Тип упаковки<i
-                                    class="icon-arrow filter-item__arrow"></i>
-                            </button>
-                            <div class="filter-item__content" style="display: none;">
-                                <div class="filter-item__wrapper">
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Металичксая труба"><span
-                                            class="checkbox__text">Металичксая труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox"
-                                               value="Металическая упаковка"><span class="checkbox__text">Металическая упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная труба"><span
-                                            class="checkbox__text">Подарочная труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная упаковка"><span
-                                            class="checkbox__text">Подарочная упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Металичксая труба"><span
-                                            class="checkbox__text">Металичксая труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox"
-                                               value="Металическая упаковка"><span class="checkbox__text">Металическая упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная труба"><span
-                                            class="checkbox__text">Подарочная труба</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="product-filter__wrapper">
                     <div class="product-filter__item">
                         <div class="filter-item">
-                            <button class="filter-item__toggle" type="button">Страна изготовитель<i
-                                    class="icon-arrow filter-item__arrow"></i>
-                            </button>
-                            <div class="filter-item__content" style="display: none;">
-                                <div class="filter-item__wrapper">
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Металичксая труба"><span
-                                            class="checkbox__text">Металичксая труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox"
-                                               value="Металическая упаковка"><span class="checkbox__text">Металическая упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная труба"><span
-                                            class="checkbox__text">Подарочная труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная упаковка"><span
-                                            class="checkbox__text">Подарочная упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Металичксая труба"><span
-                                            class="checkbox__text">Металичксая труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox"
-                                               value="Металическая упаковка"><span class="checkbox__text">Металическая упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная труба"><span
-                                            class="checkbox__text">Подарочная труба</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="filter-item">
-                            <button class="filter-item__toggle" type="button">Крепкость алкоголя<i
-                                    class="icon-arrow filter-item__arrow"></i>
-                            </button>
-                            <div class="filter-item__content" style="display: none;">
-                                <div class="filter-item__wrapper">
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Металичксая труба"><span
-                                            class="checkbox__text">Металичксая труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox"
-                                               value="Металическая упаковка"><span class="checkbox__text">Металическая упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная труба"><span
-                                            class="checkbox__text">Подарочная труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная упаковка"><span
-                                            class="checkbox__text">Подарочная упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Металичксая труба"><span
-                                            class="checkbox__text">Металичксая труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox"
-                                               value="Металическая упаковка"><span class="checkbox__text">Металическая упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная труба"><span
-                                            class="checkbox__text">Подарочная труба</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="filter-item">
-                            <button class="filter-item__toggle" type="button">Ценовой диапазон<i
-                                    class="icon-arrow filter-item__arrow"></i>
-                            </button>
-                            <div class="filter-item__content" style="display: none;">
-                                <div class="filter-item__search">
-                                    <form class="header__search" action="#">
-                                        <input class="header__field" type="text" placeholder="От 100 руб." required="">
-                                        <input class="header__field" type="text" placeholder="До 50000 руб."
-                                               required="">
-                                        <button class="header__submit" type="submit"><i class="icon-search"></i>
-                                        </button>
-                                    </form>
-                                </div>
+                            <div class="filter-item__title">Бренд</div>
 
+                            <ul class="filter-item__wrapper">
+                                <li class="disable-filter">
+                                    <p>Barkan <span class="quantity">(31)</span></p>
+                                </li>
+                                <li>
+                                    <p>Winiveria <span class="quantity">(6)</span></p>
+                                </li>
+                                <li>
+                                    <p>Гай-Кодзор <span class="quantity">(31)</span></p>
+                                </li>
+                                <li>
+                                    <p>Jacob's Creek <span class="quantity">(7)</span></p>
+                                </li>
+                                <li>
+                                    <p>Poderi Castellare di Castellina <span class="quantity">(63)</span></p>
+                                </li>
+                                <li>
+                                    <p>Mud House <span class="quantity">(9)</span></p>
+                                </li>
+                            </ul>
+
+                            <a href="#type-drink" class="load-more open_modal">Еще</a>
+                        </div>
+
+                        <div class="filter-item">
+                            <div class="filter-item__title">Тип напитка</div>
+
+                            <ul class="filter-item__wrapper">
+                                <li>
+                                    <p>Вино <span class="quantity">(24387)</span></p>
+                                </li>
+                                <li>
+                                    <p>Портвейн <span class="quantity">(416)</span></p>
+                                </li>
+                                <li>
+                                    <p>Херес <span class="quantity">(117)</span></p>
+                                </li>
+                                <li>
+                                    <p>Вермут <span class="quantity">(82)</span></p>
+                                </li>
+                                <li>
+                                    <p>Мадера <span class="quantity">(22)</span></p>
+                                </li>
+                                <li>
+                                    <p>Марсала <span class="quantity">(12)</span></p>
+                                </li>
+                            </ul>
+
+                            <a href="#type-drink" class="load-more open_modal">Еще</a>
+                        </div>
+
+                        <div class="filter-item">
+                            <div class="filter-item__title">Бренд</div>
+                            <ul class="filter-item__wrapper">
+                                <li>
+                                    <p>Италия <span class="quantity">(7496)</span></p>
+                                </li>
+                                <li>
+                                    <p>Франция <span class="quantity">(6774)</span></p>
+                                </li>
+                                <li>
+                                    <p>Испания <span class="quantity">(2504)</span></p>
+                                </li>
+                                <li>
+                                    <p>Чили <span class="quantity">(1180)</span></p>
+                                </li>
+                                <li>
+                                    <p>Португалия <span class="quantity">(783)</span></p>
+                                </li>
+                                <li>
+                                    <p>Австрия <span class="quantity">(646)</span></p>
+                                </li>
+                            </ul>
+
+                            <a href="#country-drink" class="load-more open_modal">Еще</a>
+                        </div>
+
+                        <div class="filter-item">
+                            <div class="filter-item__title">Виноград</div>
+                            <ul class="filter-item__wrapper">
+                                <li>
+                                    <p>Мерло <span class="quantity">(2571)</span></p>
+                                    <a href="#country-drink2" class="b-filter__link open_modal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12.66" height="12.69"
+                                             viewBox="0 0 12.66 12.69">
+                                            <path d="M1079.11,1113.19a6.34,6.34,0,1,0,6.33,6.34A6.348,6.348,0,0,0,1079.11,1113.19Zm0,11.69a5.355,5.355,0,1,1,5.35-5.35A5.358,5.358,0,0,1,1079.11,1124.88Zm2.45-5.89h-1.96v-1.96a0.49,0.49,0,0,0-.98,0v1.96h-1.97a0.5,0.5,0,0,0,0,.99h1.97v1.96a0.49,0.49,0,0,0,.98,0v-1.96h1.96A0.5,0.5,0,0,0,1081.56,1118.99Z"
+                                                  transform="translate(-1072.78 -1113.19)"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <p>Каберне совиньон <span class="quantity">(2536)</span></p>
+                                    <a href="#country-drink2" class="b-filter__link open_modal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12.66" height="12.69"
+                                             viewBox="0 0 12.66 12.69">
+                                            <path d="M1079.11,1113.19a6.34,6.34,0,1,0,6.33,6.34A6.348,6.348,0,0,0,1079.11,1113.19Zm0,11.69a5.355,5.355,0,1,1,5.35-5.35A5.358,5.358,0,0,1,1079.11,1124.88Zm2.45-5.89h-1.96v-1.96a0.49,0.49,0,0,0-.98,0v1.96h-1.97a0.5,0.5,0,0,0,0,.99h1.97v1.96a0.49,0.49,0,0,0,.98,0v-1.96h1.96A0.5,0.5,0,0,0,1081.56,1118.99Z"
+                                                  transform="translate(-1072.78 -1113.19)"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <p>Шардоне <span class="quantity">(1527)</span></p>
+                                    <a href="#country-drink2" class="b-filter__link open_modal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12.66" height="12.69"
+                                             viewBox="0 0 12.66 12.69">
+                                            <path d="M1079.11,1113.19a6.34,6.34,0,1,0,6.33,6.34A6.348,6.348,0,0,0,1079.11,1113.19Zm0,11.69a5.355,5.355,0,1,1,5.35-5.35A5.358,5.358,0,0,1,1079.11,1124.88Zm2.45-5.89h-1.96v-1.96a0.49,0.49,0,0,0-.98,0v1.96h-1.97a0.5,0.5,0,0,0,0,.99h1.97v1.96a0.49,0.49,0,0,0,.98,0v-1.96h1.96A0.5,0.5,0,0,0,1081.56,1118.99Z"
+                                                  transform="translate(-1072.78 -1113.19)"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <p>Каберне фран <span class="quantity">(1313)</span></p>
+                                    <a href="#country-drink2" class="b-filter__link open_modal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12.66" height="12.69"
+                                             viewBox="0 0 12.66 12.69">
+                                            <path d="M1079.11,1113.19a6.34,6.34,0,1,0,6.33,6.34A6.348,6.348,0,0,0,1079.11,1113.19Zm0,11.69a5.355,5.355,0,1,1,5.35-5.35A5.358,5.358,0,0,1,1079.11,1124.88Zm2.45-5.89h-1.96v-1.96a0.49,0.49,0,0,0-.98,0v1.96h-1.97a0.5,0.5,0,0,0,0,.99h1.97v1.96a0.49,0.49,0,0,0,.98,0v-1.96h1.96A0.5,0.5,0,0,0,1081.56,1118.99Z"
+                                                  transform="translate(-1072.78 -1113.19)"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <p>Санджовезе <span class="quantity">(1101)</span></p>
+                                    <a href="#country-drink2" class="b-filter__link open_modal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12.66" height="12.69"
+                                             viewBox="0 0 12.66 12.69">
+                                            <path d="M1079.11,1113.19a6.34,6.34,0,1,0,6.33,6.34A6.348,6.348,0,0,0,1079.11,1113.19Zm0,11.69a5.355,5.355,0,1,1,5.35-5.35A5.358,5.358,0,0,1,1079.11,1124.88Zm2.45-5.89h-1.96v-1.96a0.49,0.49,0,0,0-.98,0v1.96h-1.97a0.5,0.5,0,0,0,0,.99h1.97v1.96a0.49,0.49,0,0,0,.98,0v-1.96h1.96A0.5,0.5,0,0,0,1081.56,1118.99Z"
+                                                  transform="translate(-1072.78 -1113.19)"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#type-drink" class="load-more open_modal">Еще</a>
+                        </div>
+
+                        <div class="filter-item filter-item-price">
+                            <div class="filter-item__title">Цена</div>
+                            <ul class="filter-item__wrapper">
+                                <li>
+                                    <p>до 1000 <span class="quantity">(6071)</span></p>
+                                </li>
+                                <li>
+                                    <p>от 1000 до 2000 <span class="quantity">(6282)</span></p>
+                                </li>
+                                <li>
+                                    <p>от 2000 до 6000 <span class="quantity">(7624)</span></p>
+                                </li>
+
+                            </ul>
+
+                            <div class="range-price">
+
+                                <div class="range_val">
+                                    <div class="inp-group">
+                                        <input type="text" name="dec" class="dec1">
+                                        <span class="line"></span>
+                                        <input type="text" name="dec" class="dec2">
+                                    </div>
+
+                                </div>
+                                <div class="slider-range"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="product-filter__item">
+
                         <div class="filter-item">
-                            <button class="filter-item__toggle" type="button">Тип алкогольного напитка<i
-                                    class="icon-arrow filter-item__arrow"></i>
-                            </button>
-                            <div class="filter-item__content" style="display: none;">
-                                <div class="filter-item__wrapper">
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Металичксая труба"><span
-                                            class="checkbox__text">Металичксая труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox"
-                                               value="Металическая упаковка"><span class="checkbox__text">Металическая упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная труба"><span
-                                            class="checkbox__text">Подарочная труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная упаковка"><span
-                                            class="checkbox__text">Подарочная упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Металичксая труба"><span
-                                            class="checkbox__text">Металичксая труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox"
-                                               value="Металическая упаковка"><span class="checkbox__text">Металическая упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная труба"><span
-                                            class="checkbox__text">Подарочная труба</span>
-                                    </label>
-                                </div>
-                            </div>
+                            <div class="filter-item__title">Цвет</div>
+                            <ul class="filter-item__wrapper">
+                                <li>
+                                    <p>белое <span class="quantity">(9398)</span></p>
+                                </li>
+                                <li>
+                                    <p>розовое <span class="quantity">(962)</span></p>
+                                </li>
+                                <li>
+                                    <p>красное <span class="quantity">(14480)</span></p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="filter-item">
+                            <div class="filter-item__title">Сахар</div>
+
+                            <ul class="filter-item__wrapper">
+                                <li>
+                                    <p>сухое <span class="quantity">(20773)</span></p>
+                                </li>
+                                <li>
+                                    <p>полусухое <span class="quantity">(2031)</span></p>
+                                </li>
+                                <li>
+                                    <p>полусладкое <span class="quantity">(1025)</span></p>
+                                </li>
+                                <li>
+                                    <p>сладкое <span class="quantity">(941)</span></p>
+                                </li>
+                            </ul>
                         </div>
                         <div class="filter-item">
-                            <button class="filter-item__toggle" type="button">Объем бутылки<i
-                                    class="icon-arrow filter-item__arrow"></i>
-                            </button>
-                            <div class="filter-item__content" style="display: none;">
-                                <div class="filter-item__wrapper">
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Металичксая труба"><span
-                                            class="checkbox__text">Металичксая труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox"
-                                               value="Металическая упаковка"><span class="checkbox__text">Металическая упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная труба"><span
-                                            class="checkbox__text">Подарочная труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная упаковка"><span
-                                            class="checkbox__text">Подарочная упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Металичксая труба"><span
-                                            class="checkbox__text">Металичксая труба</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox"
-                                               value="Металическая упаковка"><span class="checkbox__text">Металическая упаковка</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__field" type="checkbox" value="Подарочная труба"><span
-                                            class="checkbox__text">Подарочная труба</span>
-                                    </label>
-                                </div>
-                            </div>
+                            <div class="filter-item__title">Объем</div>
+
+                            <ul class="filter-item__wrapper">
+                                <li>
+                                    <p>1.5 <span class="quantity">(876)</span></p>
+                                </li>
+                                <li>
+                                    <p>0.75 <span class="quantity">(22959)</span></p>
+                                </li>
+                                <li>
+                                    <p>0.375 <span class="quantity">(605)</span></p>
+                                </li>
+                            </ul>
+
+                            <a href="#type-drink" class="load-more open_modal">Еще</a>
+                        </div>
+                        <div class="filter-item">
+                            <div class="filter-item__title">Тип</div>
+
+                            <ul class="filter-item__wrapper">
+                                <li>
+                                    <p>Кошерное вино <span class="quantity">(121)</span></p>
+                                </li>
+                                <li>
+                                    <p>Безалкогольное вино <span class="quantity">(24)</span></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter-item">
+                            <div class="filter-item__title">Гастрономия</div>
+                            <ul class="filter-item__wrapper">
+                                <li>
+                                    <p>Свинина <span class="quantity">(6619)</span></p>
+                                </li>
+                                <li>
+                                    <p>Курица <span class="quantity">(4482)</span></p>
+                                </li>
+                                <li>
+                                    <p>Баранина <span class="quantity">(4427)</span></p>
+                                </li>
+                                <li>
+                                    <p>Стейк <span class="quantity">(4083)</span></p>
+                                </li>
+                                <li>
+                                    <p>Грибы <span class="quantity">(3664)</span></p>
+                                </li>
+                            </ul>
+
+                            <a href="#type-drink" class="load-more open_modal">Еще</a>
+                        </div>
+                        <div class="filter-item">
+                            <div class="filter-item__title">Категории</div>
+                            <ul class="filter-item__wrapper">
+                                <li>
+                                    <p>Франция AOC <span class="quantity">(2257)</span></p>
+                                </li>
+                                <li>
+                                    <p>Франция AOC GrandCru <span class="quantity">(934)</span></p>
+                                </li>
+                                <li>
+                                    <p>Италия IGT <span class="quantity">(621)</span></p>
+                                </li>
+                                <li>
+                                    <p>Италия DOC <span class="quantity">(614)</span></p>
+                                </li>
+                                <li>
+                                    <p>Италия DOCG <span class="quantity">(420)</span></p>
+                                </li>
+                            </ul>
+
+                            <a href="#type-drink" class="load-more open_modal">Еще</a>
                         </div>
                     </div>
 
-                    <div class="btn-wrapper">
-                        <div class="btn-all__filter button">показать все фильтры</div>
+
+                    <div class="bottom-line">
+                        <div class="sorting-filter">
+                            <label class="checkbox">
+                                <input class="checkbox__field" type="checkbox"
+                                       value="в НАЛИЧИИ"><span class="checkbox__text">в НАЛИЧИИ</span>
+                            </label>
+                            <label class="checkbox">
+                                <input class="checkbox__field" type="checkbox"
+                                       value="выбор покупателей"><span
+                                    class="checkbox__text">выбор покупателей</span>
+                            </label>
+                            <label class="checkbox">
+                                <input class="checkbox__field" type="checkbox"
+                                       value="НОВИНКИ ДИЖЕСТИВА"><span
+                                    class="checkbox__text">НОВИНКИ</span>
+                            </label>
+                            <label class="checkbox">
+                                <input class="checkbox__field" type="checkbox"
+                                       value="СКИДКИ И АКЦИИ"><span class="checkbox__text">СКИДКИ И АКЦИИ</span>
+                            </label>
+                        </div>
+
+                        <div class="btn-clear-filter">
+                            <div class="icon"></div>
+                            <div class="text">Очистить фильтр</div>
+                        </div>
+
+                        <div class="btn-all__filter button">
+                            <div class="text">Показать еще фильтры</div>
+                            <div class="icon-arrow"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="product-filter__selected"></div>
+
+                <div class="preloader-catalog">
+                    <div class="preloader-catalog__image"></div>
+                </div>
+
             </div>
+
+            <div class="product-filter__selected"></div>
+
+
         </section>
         <div class="page__wrapper">
             <div class="page__navigation">
@@ -1891,7 +1915,7 @@
                 </label>
             </div>
 
-            <div class="page__content">
+            <div class="page__content page__content-responsive">
                 <div class="product-item">
                     <div class="product-item__overlay">
                         <a class="product-item__header" href="#">
@@ -1908,15 +1932,32 @@
                                      src="images/products/chivas-regal.png" srcset="images/products/chivas-regal.png">
                             </div>
                             <div class="product-item__content">
-                                <div class="product-item__seo"><span
-                                        class="product-item__available product-item__available--yes">В
-										наличии</span><span class="product-item__heading">Виски Chivas Regal 12 years old 0.7 l</span>
+                                <div class="product-item__seo">
+                                    <div class="tooltip-content">
+                                        <span class="product-item__available product-item__available--yes">Доступно</span>
+                                        <div class="tooltip-wrapper">
+
+                                            <div class="product-item__available-line">
+                                                <div class="icon"><img src="images/delivery-box.svg" alt=""></div>
+                                                <p>Он-лайн резерв товара</p>
+                                            </div>
+
+                                            <div class="order-status color-green"><p>Доступно под заказ на
+                                                9-11 ноября</p></div>
+                                        </div>
+                                    </div>
+
+                                    <span class="product-item__heading">Виски Chivas Regal 12 years old 0.7 l dhgdsj dsdh hdgshgd hdgsh hdgshd wie hgsy iqwuqib u3872 dsdhg dsewb dsjdhs hdsjd dhsdg dhjsd eweuw uweweb</span>
                                 </div>
                                 <div class="product-item__components"><span
                                         class="product-item__component product-item__component--displacement">0.7 л</span><span
                                         class="product-item__component product-item__component--alcohol">40% алк</span>
                                 </div>
                                 <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
+                            </div>
+
+                            <div class="product-item__info">
+                                <span>Шотландия</span>, 40%, <span>купажированный</span>, <span>12 лет</span>
                             </div>
                         </a>
                         <div class="product-item__footer">
@@ -1933,7 +1974,9 @@
                     <div class="product-item__overlay">
                         <a class="product-item__header" href="#">
                             <div class="product-item__thumbnail">
-
+                                <div class="product-item__tags">
+                                    <div class="product-item__tag product-item__tag--sale"><img src="images/red.svg" alt=""></div>
+                                </div>
                                 <div class="product-item__controls">
                                     <button class="product-item__control product-item__control--like"><i
                                             class="icon-heart"></i>
@@ -1946,16 +1989,38 @@
                                      srcset="images/products/beluga.png">
                             </div>
                             <div class="product-item__content">
-                                <div class="product-item__seo"><span
-                                        class="product-item__available product-item__available--yes">В
-										наличии</span><span
-                                        class="product-item__heading">Водка Beluga Noble 0.7 l</span>
+                                <div class="product-item__seo">
+                                    <div class="tooltip-content">
+                                        <span class="product-item__available product-item__available--yes">Доступно</span>
+                                        <div class="tooltip-wrapper">
+                                            <div class="product-item__available-line">
+                                                <div class="icon"><img src="images/shop.svg" alt=""></div>
+                                                <p>Сущевский Вал, 46с1</p>
+                                            </div>
+
+                                            <div class="order-status color-red"><p>Нет в наличии</p></div>
+
+                                            <div class="product-item__available-line">
+                                                <div class="icon"><img src="images/delivery-box.svg" alt=""></div>
+                                                <p>Он-лайн резерв товара</p>
+                                            </div>
+
+                                            <div class="order-status color-green"><p>Доступно под заказ на
+                                                9-11 ноября</p></div>
+                                        </div>
+                                    </div>
+                                    <span
+                                            class="product-item__heading">Водка Beluga Noble 0.7 l</span>
                                 </div>
                                 <div class="product-item__components"><span
                                         class="product-item__component product-item__component--displacement">0.7 л</span><span
                                         class="product-item__component product-item__component--alcohol">40% алк</span>
                                 </div>
                                 <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
+                            </div>
+
+                            <div class="product-item__info">
+                                <span>Шотландия</span>, 40%, <span>купажированный</span>, <span>12 лет</span>
                             </div>
                         </a>
                         <div class="product-item__footer">
@@ -1964,6 +2029,18 @@
                             </div>
                             <a class="button product-item__order" href="#"><i
                                     class="icon-basket"></i><span>В корзину</span></a>
+                        </div>
+
+                        <div class="product-item__bottom">
+                            <div class="product-item__bottom-line">
+                                <img src="images/red.svg" alt="" class="icon">
+                                <p>Цена действительна при покупке от 12 бутылок</p>
+                            </div>
+
+                            <div class="product-item__bottom-line">
+                                <img src="images/flag.svg" alt="" class="icon">
+                                <span>Неделя Шотландского виски</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1984,15 +2061,32 @@
                                      srcset="images/products/chivas-regal.png">
                             </div>
                             <div class="product-item__content">
-                                <div class="product-item__seo"><span
-                                        class="product-item__available product-item__available--yes">В
-										наличии</span><span class="product-item__heading">Виски Chivas Regal 12 years old 0.7 l</span>
+                                <div class="product-item__seo">
+                                    <div class="tooltip-content">
+                                        <span class="product-item__available product-item__available--no">Нет в наличии</span>
+                                        <div class="tooltip-wrapper">
+                                            <div class="product-item__available-line">
+                                                <div class="icon"><img src="images/delivery-box.svg" alt=""></div>
+                                                <p>Он-лайн резерв товара</p>
+                                            </div>
+
+                                            <div class="order-status color-red">
+                                                <p>Нет в наличии</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <span class="product-item__heading">Виски Chivas Regal 12 years old 0.7 l</span>
                                 </div>
                                 <div class="product-item__components"><span
                                         class="product-item__component product-item__component--displacement">0.7 л</span><span
                                         class="product-item__component product-item__component--alcohol">40% алк</span>
                                 </div>
                                 <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
+                            </div>
+
+                            <div class="product-item__info">
+                                <span>Шотландия</span>, 40%, <span>купажированный</span>, <span>12 лет</span>
                             </div>
                         </a>
                         <div class="product-item__footer">
@@ -2002,6 +2096,18 @@
                             </div>
                             <a class="button product-item__order" href="#"><i
                                     class="icon-basket"></i><span>В корзину</span></a>
+                        </div>
+
+                        <div class="product-item__bottom">
+                            <div class="product-item__bottom-line">
+                                <img src="images/red.svg" alt="" class="icon">
+                                <p>Цена действительна при покупке от 12 бутылок</p>
+                            </div>
+
+                            <div class="product-item__bottom-line">
+                                <img src="images/flag.svg" alt="" class="icon">
+                                <span>Неделя Шотландского виски</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2022,16 +2128,32 @@
                                      srcset="images/products/beluga.png">
                             </div>
                             <div class="product-item__content">
-                                <div class="product-item__seo"><span
-                                        class="product-item__available product-item__available--yes">В
-										наличии</span><span
-                                        class="product-item__heading">Водка Beluga Noble 0.7 l</span>
+                                <div class="product-item__seo">
+                                    <div class="tooltip-content">
+                                        <span class="product-item__available product-item__available--limited">Количество ограничено</span>
+                                        <div class="tooltip-wrapper">
+                                            <div class="product-item__available-line">
+                                                <div class="icon"><img src="images/delivery-box.svg" alt=""></div>
+                                                <p>Он-лайн резерв товара</p>
+                                            </div>
+
+                                            <div class="order-status color-orange">
+                                                <p><span class="color-orange">Уточняйте о наличие
+                                                    у менеджера</span> перед
+                                                    созданием заказа</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="product-item__heading">Водка Beluga Noble 0.7 l</span>
                                 </div>
                                 <div class="product-item__components"><span
                                         class="product-item__component product-item__component--displacement">0.7 л</span><span
                                         class="product-item__component product-item__component--alcohol">40% алк</span>
                                 </div>
                                 <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
+                            </div>
+                            <div class="product-item__info">
+                                <span>Шотландия</span>, 40%, <span>купажированный</span>, <span>12 лет</span>
                             </div>
                         </a>
                         <div class="product-item__footer">
@@ -2041,8 +2163,20 @@
                             <a class="button product-item__order" href="#"><i
                                     class="icon-basket"></i><span>В корзину</span></a>
                         </div>
+                        <div class="product-item__bottom">
+                            <div class="product-item__bottom-line">
+                                <img src="images/red.svg" alt="" class="icon">
+                                <p>Цена действительна при покупке от 12 бутылок</p>
+                            </div>
+
+                            <div class="product-item__bottom-line">
+                                <img src="images/flag.svg" alt="" class="icon">
+                                <span>Неделя Шотландского виски</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="product-item">
                     <div class="product-item__overlay">
                         <a class="product-item__header" href="#">
@@ -2059,9 +2193,21 @@
                                      srcset="images/products/pere.png">
                             </div>
                             <div class="product-item__content">
-                                <div class="product-item__seo"><span
-                                        class="product-item__available product-item__available--yes">В
-										наличии</span><span class="product-item__heading">Кальвадос Pere Magloire
+                                <div class="product-item__seo">
+                                    <div class="tooltip-content">
+                                        <span class="product-item__available product-item__available--yes">Доступно</span>
+                                        <div class="tooltip-wrapper">
+
+                                            <div class="product-item__available-line">
+                                                <div class="icon"><img src="images/delivery-box.svg" alt=""></div>
+                                                <p>Он-лайн резерв товара</p>
+                                            </div>
+
+                                            <div class="order-status color-green"><p>Доступно под заказ на
+                                                9-11 ноября</p></div>
+                                        </div>
+                                    </div>
+                                    <span class="product-item__heading">Кальвадос Pere Magloire
 										Fine VS 0.7 l</span>
                                 </div>
                                 <div class="product-item__components"><span
@@ -2070,6 +2216,9 @@
                                 </div>
                                 <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
                             </div>
+                            <div class="product-item__info">
+                                <span>Шотландия</span>, 40%, <span>купажированный</span>, <span>12 лет</span>
+                            </div>
                         </a>
                         <div class="product-item__footer">
                             <div class="product-item__prices"><span class="product-item__price">2 896<span
@@ -2077,6 +2226,17 @@
                             </div>
                             <a class="button product-item__order" href="#"><i
                                     class="icon-basket"></i><span>В корзину</span></a>
+                        </div>
+                        <div class="product-item__bottom">
+                            <div class="product-item__bottom-line">
+                                <img src="images/red.svg" alt="" class="icon">
+                                <p>Цена действительна при покупке от 12 бутылок</p>
+                            </div>
+
+                            <div class="product-item__bottom-line">
+                                <img src="images/flag.svg" alt="" class="icon">
+                                <span>Неделя Шотландского виски</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2096,9 +2256,23 @@
                                      srcset="images/products/2.png">
                             </div>
                             <div class="product-item__content">
-                                <div class="product-item__seo"><span
-                                        class="product-item__available product-item__available--yes">В
-										наличии</span><span class="product-item__heading">Игристое Вино Gancia Asti
+                                <div class="product-item__seo">
+                                    <div class="tooltip-content">
+                                        <span class="product-item__available product-item__available--limited">Количество ограничено</span>
+                                        <div class="tooltip-wrapper">
+                                            <div class="product-item__available-line">
+                                                <div class="icon"><img src="images/delivery-box.svg" alt=""></div>
+                                                <p>Он-лайн резерв товара</p>
+                                            </div>
+
+                                            <div class="order-status color-orange">
+                                                <p><span class="color-orange">Уточняйте о наличие
+                                                    у менеджера</span> перед
+                                                    созданием заказа</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="product-item__heading">Игристое Вино Gancia Asti
 										DOCG 0.75 l</span>
                                 </div>
                                 <div class="product-item__components"><span
@@ -2106,6 +2280,9 @@
                                         class="product-item__component product-item__component--alcohol">8% алк</span>
                                 </div>
                                 <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
+                            </div>
+                            <div class="product-item__info">
+                                <span>Шотландия</span>, 40%, <span>купажированный</span>, <span>12 лет</span>
                             </div>
                         </a>
                         <div class="product-item__footer">
@@ -2115,6 +2292,17 @@
                             </div>
                             <a class="button product-item__order" href="#"><i
                                     class="icon-basket"></i><span>В корзину</span></a>
+                        </div>
+                        <div class="product-item__bottom">
+                            <div class="product-item__bottom-line">
+                                <img src="images/red.svg" alt="" class="icon">
+                                <p>Цена действительна при покупке от 12 бутылок</p>
+                            </div>
+
+                            <div class="product-item__bottom-line">
+                                <img src="images/flag.svg" alt="" class="icon">
+                                <span>Неделя Шотландского виски</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2134,9 +2322,23 @@
                                      srcset="images/products/pere.png">
                             </div>
                             <div class="product-item__content">
-                                <div class="product-item__seo"><span
-                                        class="product-item__available product-item__available--yes">В
-										наличии</span><span class="product-item__heading">Кальвадос Pere Magloire
+                                <div class="product-item__seo">
+                                    <div class="tooltip-content">
+                                        <span class="product-item__available product-item__available--limited">Количество ограничено</span>
+                                        <div class="tooltip-wrapper">
+                                            <div class="product-item__available-line">
+                                                <div class="icon"><img src="images/delivery-box.svg" alt=""></div>
+                                                <p>Он-лайн резерв товара</p>
+                                            </div>
+
+                                            <div class="order-status color-orange">
+                                                <p><span class="color-orange">Уточняйте о наличие
+                                                    у менеджера</span> перед
+                                                    созданием заказа</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="product-item__heading">Кальвадос Pere Magloire
 										Fine VS 0.7 l</span>
                                 </div>
                                 <div class="product-item__components"><span
@@ -2145,6 +2347,9 @@
                                 </div>
                                 <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
                             </div>
+                            <div class="product-item__info">
+                                <span>Шотландия</span>, 40%, <span>купажированный</span>, <span>12 лет</span>
+                            </div>
                         </a>
                         <div class="product-item__footer">
                             <div class="product-item__prices"><span class="product-item__price">2 896<span
@@ -2152,6 +2357,17 @@
                             </div>
                             <a class="button product-item__order" href="#"><i
                                     class="icon-basket"></i><span>В корзину</span></a>
+                        </div>
+                        <div class="product-item__bottom">
+                            <div class="product-item__bottom-line">
+                                <img src="images/red.svg" alt="" class="icon">
+                                <p>Цена действительна при покупке от 12 бутылок</p>
+                            </div>
+
+                            <div class="product-item__bottom-line">
+                                <img src="images/flag.svg" alt="" class="icon">
+                                <span>Неделя Шотландского виски</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2171,9 +2387,21 @@
                                      srcset="images/products/2.png">
                             </div>
                             <div class="product-item__content">
-                                <div class="product-item__seo"><span
-                                        class="product-item__available product-item__available--yes">В
-										наличии</span><span class="product-item__heading">Игристое Вино Gancia Asti
+                                <div class="product-item__seo">
+                                    <div class="tooltip-content">
+                                        <span class="product-item__available product-item__available--yes">Доступно</span>
+                                        <div class="tooltip-wrapper">
+
+                                            <div class="product-item__available-line">
+                                                <div class="icon"><img src="images/delivery-box.svg" alt=""></div>
+                                                <p>Он-лайн резерв товара</p>
+                                            </div>
+
+                                            <div class="order-status color-green"><p>Доступно под заказ на
+                                                9-11 ноября</p></div>
+                                        </div>
+                                    </div>
+                                    <span class="product-item__heading">Игристое Вино Gancia Asti
 										DOCG 0.75 l</span>
                                 </div>
                                 <div class="product-item__components"><span
@@ -2181,6 +2409,9 @@
                                         class="product-item__component product-item__component--alcohol">8% алк</span>
                                 </div>
                                 <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
+                            </div>
+                            <div class="product-item__info">
+                                <span>Шотландия</span>, 40%, <span>купажированный</span>, <span>12 лет</span>
                             </div>
                         </a>
                         <div class="product-item__footer">
@@ -2190,6 +2421,17 @@
                             </div>
                             <a class="button product-item__order" href="#"><i
                                     class="icon-basket"></i><span>В корзину</span></a>
+                        </div>
+                        <div class="product-item__bottom">
+                            <div class="product-item__bottom-line">
+                                <img src="images/red.svg" alt="" class="icon">
+                                <p>Цена действительна при покупке от 12 бутылок</p>
+                            </div>
+
+                            <div class="product-item__bottom-line">
+                                <img src="images/flag.svg" alt="" class="icon">
+                                <span>Неделя Шотландского виски</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2209,15 +2451,30 @@
                                      src="images/products/chivas-regal.png" srcset="images/products/chivas-regal.png">
                             </div>
                             <div class="product-item__content">
-                                <div class="product-item__seo"><span
-                                        class="product-item__available product-item__available--yes">В
-										наличии</span><span class="product-item__heading">Виски Chivas Regal 12 years old 0.7 l</span>
+                                <div class="product-item__seo">
+                                    <div class="tooltip-content">
+                                        <span class="product-item__available product-item__available--yes">Доступно</span>
+                                        <div class="tooltip-wrapper">
+
+                                            <div class="product-item__available-line">
+                                                <div class="icon"><img src="images/delivery-box.svg" alt=""></div>
+                                                <p>Он-лайн резерв товара</p>
+                                            </div>
+
+                                            <div class="order-status color-green"><p>Доступно под заказ на
+                                                9-11 ноября</p></div>
+                                        </div>
+                                    </div>
+                                    <span class="product-item__heading">Виски Chivas Regal 12 years old 0.7 l</span>
                                 </div>
                                 <div class="product-item__components"><span
                                         class="product-item__component product-item__component--displacement">0.7 л</span><span
                                         class="product-item__component product-item__component--alcohol">40% алк</span>
                                 </div>
                                 <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
+                            </div>
+                            <div class="product-item__info">
+                                <span>Шотландия</span>, 40%, <span>купажированный</span>, <span>12 лет</span>
                             </div>
                         </a>
                         <div class="product-item__footer">
@@ -2227,6 +2484,17 @@
                             </div>
                             <a class="button product-item__order" href="#"><i
                                     class="icon-basket"></i><span>В корзину</span></a>
+                        </div>
+                        <div class="product-item__bottom">
+                            <div class="product-item__bottom-line">
+                                <img src="images/red.svg" alt="" class="icon">
+                                <p>Цена действительна при покупке от 12 бутылок</p>
+                            </div>
+
+                            <div class="product-item__bottom-line">
+                                <img src="images/flag.svg" alt="" class="icon">
+                                <span>Неделя Шотландского виски</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2246,16 +2514,31 @@
                                      srcset="images/products/beluga.png">
                             </div>
                             <div class="product-item__content">
-                                <div class="product-item__seo"><span
-                                        class="product-item__available product-item__available--yes">В
-										наличии</span><span
-                                        class="product-item__heading">Водка Beluga Noble 0.7 l</span>
+                                <div class="product-item__seo">
+                                    <div class="tooltip-content">
+                                        <span class="product-item__available product-item__available--yes">Доступно</span>
+                                        <div class="tooltip-wrapper">
+
+                                            <div class="product-item__available-line">
+                                                <div class="icon"><img src="images/delivery-box.svg" alt=""></div>
+                                                <p>Он-лайн резерв товара</p>
+                                            </div>
+
+                                            <div class="order-status color-green"><p>Доступно под заказ на
+                                                9-11 ноября</p></div>
+                                        </div>
+                                    </div>
+                                    <span
+                                            class="product-item__heading">Водка Beluga Noble 0.7 l</span>
                                 </div>
                                 <div class="product-item__components"><span
                                         class="product-item__component product-item__component--displacement">0.7 л</span><span
                                         class="product-item__component product-item__component--alcohol">40% алк</span>
                                 </div>
                                 <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
+                            </div>
+                            <div class="product-item__info">
+                                <span>Шотландия</span>, 40%, <span>купажированный</span>, <span>12 лет</span>
                             </div>
                         </a>
                         <div class="product-item__footer">
@@ -2264,6 +2547,17 @@
                             </div>
                             <a class="button product-item__order" href="#"><i
                                     class="icon-basket"></i><span>В корзину</span></a>
+                        </div>
+                        <div class="product-item__bottom">
+                            <div class="product-item__bottom-line">
+                                <img src="images/red.svg" alt="" class="icon">
+                                <p>Цена действительна при покупке от 12 бутылок</p>
+                            </div>
+
+                            <div class="product-item__bottom-line">
+                                <img src="images/flag.svg" alt="" class="icon">
+                                <span>Неделя Шотландского виски</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2283,15 +2577,30 @@
                                      srcset="images/products/chivas-regal.png">
                             </div>
                             <div class="product-item__content">
-                                <div class="product-item__seo"><span
-                                        class="product-item__available product-item__available--yes">В
-										наличии</span><span class="product-item__heading">Виски Chivas Regal 12 years old 0.7 l</span>
+                                <div class="product-item__seo">
+                                    <div class="tooltip-content">
+                                        <span class="product-item__available product-item__available--no">Нет в наличии</span>
+                                        <div class="tooltip-wrapper">
+                                            <div class="product-item__available-line">
+                                                <div class="icon"><img src="images/delivery-box.svg" alt=""></div>
+                                                <p>Он-лайн резерв товара</p>
+                                            </div>
+
+                                            <div class="order-status color-red">
+                                                <p>Нет в наличии</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="product-item__heading">Виски Chivas Regal 12 years old 0.7 l</span>
                                 </div>
                                 <div class="product-item__components"><span
                                         class="product-item__component product-item__component--displacement">0.7 л</span><span
                                         class="product-item__component product-item__component--alcohol">40% алк</span>
                                 </div>
                                 <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
+                            </div>
+                            <div class="product-item__info">
+                                <span>Шотландия</span>, 40%, <span>купажированный</span>, <span>12 лет</span>
                             </div>
                         </a>
                         <div class="product-item__footer">
@@ -2301,6 +2610,17 @@
                             </div>
                             <a class="button product-item__order" href="#"><i
                                     class="icon-basket"></i><span>В корзину</span></a>
+                        </div>
+                        <div class="product-item__bottom">
+                            <div class="product-item__bottom-line">
+                                <img src="images/red.svg" alt="" class="icon">
+                                <p>Цена действительна при покупке от 12 бутылок</p>
+                            </div>
+
+                            <div class="product-item__bottom-line">
+                                <img src="images/flag.svg" alt="" class="icon">
+                                <span>Неделя Шотландского виски</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2320,16 +2640,31 @@
                                      srcset="images/products/beluga.png">
                             </div>
                             <div class="product-item__content">
-                                <div class="product-item__seo"><span
-                                        class="product-item__available product-item__available--yes">В
-										наличии</span><span
-                                        class="product-item__heading">Водка Beluga Noble 0.7 l</span>
+                                <div class="product-item__seo">
+                                    <div class="tooltip-content">
+                                        <span class="product-item__available product-item__available--yes">Доступно</span>
+                                        <div class="tooltip-wrapper">
+
+                                            <div class="product-item__available-line">
+                                                <div class="icon"><img src="images/delivery-box.svg" alt=""></div>
+                                                <p>Он-лайн резерв товара</p>
+                                            </div>
+
+                                            <div class="order-status color-green"><p>Доступно под заказ на
+                                                9-11 ноября</p></div>
+                                        </div>
+                                    </div>
+                                    <span
+                                            class="product-item__heading">Водка Beluga Noble 0.7 l</span>
                                 </div>
                                 <div class="product-item__components"><span
                                         class="product-item__component product-item__component--displacement">0.7 л</span><span
                                         class="product-item__component product-item__component--alcohol">40% алк</span>
                                 </div>
                                 <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
+                            </div>
+                            <div class="product-item__info">
+                                <span>Шотландия</span>, 40%, <span>купажированный</span>, <span>12 лет</span>
                             </div>
                         </a>
                         <div class="product-item__footer">
@@ -2339,7 +2674,17 @@
                             <a class="button product-item__order" href="#"><i
                                     class="icon-basket"></i><span>В корзину</span></a>
                         </div>
+                        <div class="product-item__bottom">
+                            <div class="product-item__bottom-line">
+                                <img src="images/red.svg" alt="" class="icon">
+                                <p>Цена действительна при покупке от 12 бутылок</p>
+                            </div>
 
+                            <div class="product-item__bottom-line">
+                                <img src="images/flag.svg" alt="" class="icon">
+                                <span>Неделя Шотландского виски</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
