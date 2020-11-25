@@ -6391,15 +6391,10 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
     }
 }
 
-@media (max-width: 992px) {
-    .hero-slider {
-        height: 300px
-    }
-}
 
 @media (max-width: 576px) {
     .hero-slider {
-        height: 180px
+        height: 300px
     }
 }
 
