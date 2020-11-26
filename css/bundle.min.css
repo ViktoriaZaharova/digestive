@@ -2737,9 +2737,9 @@ body {
 /*    overflow: hidden*/
 /*}*/
 
-/*body.fixed {*/
-/*    position: fixed;*/
-/*}*/
+body.fixed {
+    position: fixed;
+}
 
 .mobile-menu {
     position: fixed;
@@ -2882,7 +2882,7 @@ body {
 .mobile-menu__name {
     color: #35393e;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
     /*text-transform: uppercase;*/
 }
 
@@ -2903,7 +2903,7 @@ body {
 
 .mobile-menu__item {
     color: #35393e;
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
     outline: 0;
     width: 100%;
@@ -9237,8 +9237,8 @@ button.mz-button:before {
     background: 0 0;
     outline: 0;
     color: #35393e;
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 14px;
+    /*font-weight: 500;*/
     border-bottom: 1px solid transparent;
     box-sizing: border-box;
     padding: 6px 0;
@@ -10455,8 +10455,10 @@ footer .button {
     -ms-flex-negative: 0;
     flex-shrink: 0;
     background-repeat: no-repeat;
-    background-image: url(../images/checked-icon.png);
+    background-image: url(../images/checked.svg);
     background-position: center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
     box-sizing: border-box;
 }
 
@@ -14362,6 +14364,7 @@ input, button {
     box-sizing: border-box;
     bottom: auto;
     height: auto;
+    box-shadow: 0px 5px 7px 0 rgba(62, 62, 62, 0.25);
 }
 
 .result-search__brands .result-search--box__max {
@@ -15803,6 +15806,11 @@ input, button {
 
     .page_single-post .page__product .product-item {
         border: none;
+        height: auto;
+    }
+
+    .page_single-post .product-item:hover .product-item__overlay {
+        box-shadow: none;
     }
 
     .page_single-post .page__footer .link {
@@ -16149,7 +16157,7 @@ input, button {
     }
 
     .category-information__item {
-        width: calc(100% / 2);
+        width: calc(100% / 3);
     }
 
     .category-information__flickity {
@@ -17053,6 +17061,14 @@ body.modal-click, html.modal-click {
 
     .page-responsive-card .product-item__available {
         min-height: 20px;
+    }
+
+    .latest-products__thumbnail > img {
+        max-height: 100%;
+    }
+
+    .latest-products__grid {
+        align-items: stretch;
     }
 }
 
