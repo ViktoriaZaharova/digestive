@@ -6212,19 +6212,26 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center
+    align-items: center;
+    position: relative;
 }
 
 .contact-form__placeholder {
-    margin-bottom: 12px;
     color: #35393e;
-    font-size: 14px
+    font-size: 14px;
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    top: 22px;
+    line-height: 1;
+    transition: .3s;
+    pointer-events: none;
 }
 
 .contact-form__field {
     width: 100%;
-    height: 40px;
-    padding: 0 15px;
+    height: 56px;
+    padding: 10px 15px 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 3px;
@@ -6233,16 +6240,30 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
     color: #000;
     font-size: 14px;
     font-weight: 300;
-    text-align: center
+    text-align: left;
+
 }
 
 .contact-form__field::placeholder {
     color: #000;
 }
 
+.contact-form__field:focus~.contact-form__placeholder,
+.contact-form__field:focus:invalid~.contact-form__placeholder,
+.contact-form__field:not(:focus):valid~.contact-form__placeholder
+{
+    font-size: 10px;
+    transform: translateY(-7px);
+}
+
+
+textarea {
+    resize: vertical;
+}
+
 .contact-form__field--textarea {
     height: 130px;
-    padding: 15px;
+    padding: 22px 15px 10px;
     resize: none
 }
 
@@ -10895,6 +10916,10 @@ footer .button {
 .modal-image {
     position: relative;
     cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-image:hover .modal-image__hidden {
@@ -11010,7 +11035,7 @@ footer .button {
 
 .modal__wrapper form button {
     border-radius: 3px;
-    height: 41px;
+    height: 56px;
     line-height: normal;
     display: flex;
     align-items: center;
@@ -11021,8 +11046,8 @@ footer .button {
 
 .modal__wrapper form input {
     text-align: left;
-    height: 41px;
-    line-height: 41px;
+    height: 56px;
+    line-height: 56px;
 }
 
 input, button {
@@ -11325,7 +11350,8 @@ input, button {
 }
 
 .form__modal form input {
-    text-align: center;
+    /*text-align: center;*/
+    text-align: left;
 }
 
 .form__modal .contact-form__row {
@@ -11344,6 +11370,7 @@ input, button {
 .form__modal .modal__wrapper form button {
     border-radius: 18px;
     width: auto;
+    height: 38px;
 }
 
 .contact-form__element {
@@ -13709,6 +13736,7 @@ input, button {
 .date-wrapper {
     display: flex;
     align-items: flex-start;
+    overflow-x: auto;
 
 }
 
@@ -13717,6 +13745,7 @@ input, button {
     flex-direction: column;
     align-items: center;
     margin: 0 15px 0 0;
+    min-width: 70px;
     width: 70px;
     height: 80px;
     border-radius: 3px;

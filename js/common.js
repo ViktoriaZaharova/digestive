@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("[name='phone']").mask("+7 (926) 999-9999");
+    $("[name='phone']").mask("+7 (999) 999-9999");
 
     var btn = $('.btn-click-top');
 

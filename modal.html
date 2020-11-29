@@ -163,9 +163,11 @@
                 <div class="contact-form__row">
                     <div class="contact-form__item">
                         <label class="contact-form__element">
-                            <input class="contact-form__field" type="email" required=""
-                                   placeholder="Введите свой e-mail...">
+                            <input class="contact-form__field" type="text" required
+                                   placeholder="">
+                            <span class="contact-form__placeholder">Введите свой e-mail...</span>
                         </label>
+
                     </div>
                     <button type="submit" class="button button button--theme-second">Подписаться</button>
                 </div>
@@ -311,37 +313,38 @@
             <form class="contact-form__content" action="#">
                 <div class="contact-form__row">
                     <div class="contact-form__item">
-                        <label class="contact-form__element"><span class="contact-form__placeholder">Введите имя</span>
-                            <input class="contact-form__field" type="text" required="" placeholder="Денис Самойлов">
+                        <label class="contact-form__element">
+                            <input class="contact-form__field" type="text" required>
+                            <span class="contact-form__placeholder">Введите имя</span>
                         </label>
                     </div>
                 </div>
 
                 <div class="contact-form__row">
                     <div class="contact-form__item">
-                        <label class="contact-form__element"><span class="contact-form__placeholder">Введите номер
+                        <label class="contact-form__element">
+                            <input class="contact-form__field" type="text" name="phone" required>
+                            <span class="contact-form__placeholder">Введите номер
 									телефона</span>
-                            <input class="contact-form__field" type="phone" required=""
-                                   placeholder="+7 (929) 042 - 04 - 21">
                         </label>
                     </div>
                 </div>
                 <div class="contact-form__row">
                     <div class="contact-form__item">
-                        <label class="contact-form__element"><span
+                        <label class="contact-form__element">
+                            <input class="contact-form__field" type="text" required>
+                            <span
                                 class="contact-form__placeholder">Введите email</span>
-                            <input class="contact-form__field" type="email" required=""
-                                   placeholder="brendmaster1@yandex.ru">
                         </label>
                     </div>
                 </div>
 
                 <div class="contact-form__row">
                     <div class="contact-form__item">
-                        <label class="contact-form__element"><span
+                        <label class="contact-form__element">
+                            <textarea class="contact-form__field contact-form__field--textarea" required></textarea>
+                            <span
                                 class="contact-form__placeholder">Ваше сообщение</span>
-                            <textarea class="contact-form__field contact-form__field--textarea"
-                                      placeholder="Я бы хотел выразить свою благодарность..."></textarea>
                         </label>
                     </div>
 
@@ -364,6 +367,7 @@
         </div>
     </div>
 </div>
+
 
 <div class="modal__div popup__information form__modal" id="subscribe-sale__modal">
     <div class="modal__wrapper">
@@ -394,10 +398,11 @@
             <form class="contact-form__content" action="#">
                 <div class="contact-form__row">
                     <div class="contact-form__item">
-                        <label class="contact-form__element"><span
-                                class="contact-form__placeholder">Введите email</span>
-                            <input class="contact-form__field" type="email" required=""
-                                   placeholder="brendmaster1@yandex.ru">
+                        <label class="contact-form__element">
+                            <input class="contact-form__field" type="text" required
+                                   placeholder="">
+                            <span
+                                    class="contact-form__placeholder">Введите email</span>
                         </label>
                     </div>
                 </div>
@@ -450,10 +455,11 @@
             <form class="contact-form__content" action="#">
                 <div class="contact-form__row">
                     <div class="contact-form__item">
-                        <label class="contact-form__element"><span class="contact-form__placeholder">Введите номер
+                        <label class="contact-form__element">
+                            <input class="contact-form__field" type="text" required name="phone"
+                                   placeholder="">
+                            <span class="contact-form__placeholder">Введите номер
 									телефона</span>
-                            <input class="contact-form__field" type="phone" required=""
-                                   placeholder="+7 (XXX) XXX - XX - XX">
                         </label>
                     </div>
                 </div>
@@ -506,37 +512,41 @@
             <form class="contact-form__content" action="#">
                 <div class="contact-form__row">
                     <div class="contact-form__item">
-                        <label class="contact-form__element"><span class="contact-form__placeholder">Введите имя</span>
-                            <input class="contact-form__field" type="text" required="" placeholder="Денис Самойлов">
+                        <label class="contact-form__element">
+                            <input class="contact-form__field" type="text" required placeholder="">
+                            <span class="contact-form__placeholder">Введите имя</span>
                         </label>
                     </div>
                 </div>
 
                 <div class="contact-form__row">
                     <div class="contact-form__item">
-                        <label class="contact-form__element"><span class="contact-form__placeholder">Введите номер
+                        <label class="contact-form__element">
+                            <input class="contact-form__field" type="text" required name="phone"
+                                   placeholder="">
+                            <span class="contact-form__placeholder">Введите номер
 									телефона</span>
-                            <input class="contact-form__field" type="phone" required=""
-                                   placeholder="+7 (929) 042 - 04 - 21">
                         </label>
                     </div>
                 </div>
                 <div class="contact-form__row">
                     <div class="contact-form__item">
-                        <label class="contact-form__element contact-form__element-novalid"><span
-                                class="contact-form__placeholder">Введите email</span>
-                            <input class="contact-form__field" type="email" required=""
-                                   placeholder="введите корректный адрес">
+                        <label class="contact-form__element contact-form__element-novalid">
+                            <input class="contact-form__field" type="email" required
+                                   placeholder="">
+                            <span
+                                    class="contact-form__placeholder">Введите email</span>
                         </label>
                     </div>
                 </div>
 
                 <div class="contact-form__row">
                     <div class="contact-form__item">
-                        <label class="contact-form__element"><span
-                                class="contact-form__placeholder">Введите пароль</span>
-                            <input class="contact-form__field" type="email" required=""
-                                   placeholder="*************************">
+                        <label class="contact-form__element">
+                            <input class="contact-form__field" type="email" required
+                                   placeholder="">
+                            <span
+                                    class="contact-form__placeholder">Введите пароль</span>
 
                             <span class="contact-form__icon"><img src="images/no_eye.png" alt=""></span>
                         </label>
@@ -545,10 +555,11 @@
 
                 <div class="contact-form__row">
                     <div class="contact-form__item">
-                        <label class="contact-form__element"><span
-                                class="contact-form__placeholder">Повторите пароль</span>
-                            <input class="contact-form__field" type="email" required=""
-                                   placeholder="odjsdkfbv732jkbdkbdhs">
+                        <label class="contact-form__element">
+                            <input class="contact-form__field" type="email" required
+                                   placeholder="">
+                            <span
+                                    class="contact-form__placeholder">Повторите пароль</span>
 
                             <span class="contact-form__icon"><img src="images/eye.png" alt=""></span>
                         </label>
@@ -614,20 +625,22 @@
 
                 <div class="contact-form__row">
                     <div class="contact-form__item">
-                        <label class="contact-form__element"><span class="contact-form__placeholder">Введите номер
+                        <label class="contact-form__element">
+                            <input class="contact-form__field" type="text" required name="phone"
+                                   placeholder="">
+                            <span class="contact-form__placeholder">Введите номер
 									телефона</span>
-                            <input class="contact-form__field" type="phone" required=""
-                                   placeholder="+7 (929) 042 - 04 - 21">
                         </label>
                     </div>
                 </div>
 
                 <div class="contact-form__row">
                     <div class="contact-form__item">
-                        <label class="contact-form__element"><span
-                                class="contact-form__placeholder">Введите пароль</span>
-                            <input class="contact-form__field" type="email" required=""
-                                   placeholder="*************************">
+                        <label class="contact-form__element">
+                            <input class="contact-form__field" type="email" required
+                                   placeholder="">
+                            <span
+                                    class="contact-form__placeholder">Введите пароль</span>
 
                             <span class="contact-form__icon"><img src="images/no_eye.png" alt=""></span>
                         </label>
@@ -876,9 +889,10 @@ Reserve 0.7 л</span></div>
         <form class="contact-form__content" action="#">
             <div class="contact-form__row">
                 <div class="contact-form__item">
-                    <label class="contact-form__element"><span class="contact-form__placeholder">Введите Ваш e-mail</span>
-                        <input class="contact-form__field" type="email" required=""
-                               placeholder="mail@mail.ru">
+                    <label class="contact-form__element">
+                        <input class="contact-form__field" type="text" required
+                               placeholder="">
+                        <span class="contact-form__placeholder">Введите Ваш e-mail</span>
                     </label>
                     <button class="button" type="submit">Восстановить</button>
                 </div>
@@ -901,18 +915,20 @@ Reserve 0.7 л</span></div>
         <form class="contact-form__content" action="#">
             <div class="contact-form__row">
                 <div class="contact-form__item">
-                    <label class="contact-form__element"><span class="contact-form__placeholder">Введите новый пароль</span>
-                        <input class="contact-form__field" type="password" required=""
+                    <label class="contact-form__element">
+                        <input class="contact-form__field" type="password" required
                                placeholder="">
+                        <span class="contact-form__placeholder">Введите новый пароль</span>
                     </label>
                 </div>
             </div>
 
             <div class="contact-form__row">
                 <div class="contact-form__item">
-                    <label class="contact-form__element"><span class="contact-form__placeholder">И повторите его</span>
-                        <input class="contact-form__field" type="password" required=""
+                    <label class="contact-form__element">
+                        <input class="contact-form__field" type="password" required
                                placeholder="">
+                        <span class="contact-form__placeholder">И повторите его</span>
                     </label>
                     <button class="button" type="submit">Войти в кабинет</button>
                 </div>
@@ -933,9 +949,10 @@ Reserve 0.7 л</span></div>
         <form class="contact-form__content" action="#">
             <div class="contact-form__row">
                 <div class="contact-form__item">
-                    <label class="contact-form__element"><span class="contact-form__placeholder">Введите ваш текущий пароль</span>
-                        <input class="contact-form__field" type="password" required=""
+                    <label class="contact-form__element">
+                        <input class="contact-form__field" type="password" required
                                placeholder="">
+                        <span class="contact-form__placeholder">Введите ваш текущий пароль</span>
                     </label>
                 </div>
             </div>
@@ -943,17 +960,19 @@ Reserve 0.7 л</span></div>
 
             <div class="contact-form__row">
                 <div class="contact-form__item">
-                    <label class="contact-form__element"><span class="contact-form__placeholder">Введите новый пароль</span>
-                        <input class="contact-form__field" type="password" required=""
+                    <label class="contact-form__element">
+                        <input class="contact-form__field" type="password" required
                                placeholder="">
+                        <span class="contact-form__placeholder">Введите новый пароль</span>
                     </label>
                 </div>
             </div>
             <div class="contact-form__row">
                 <div class="contact-form__item">
-                    <label class="contact-form__element"><span class="contact-form__placeholder">И повторите его</span>
-                        <input class="contact-form__field" type="password" required=""
+                    <label class="contact-form__element">
+                        <input class="contact-form__field" type="password" required
                                placeholder="">
+                        <span class="contact-form__placeholder">И повторите его</span>
                     </label>
                     <button class="button" type="submit">Изменить</button>
                 </div>
