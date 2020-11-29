@@ -6224,7 +6224,7 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
     left: 15px;
     top: 22px;
     line-height: 1;
-    transition: .3s;
+    transition: .2s;
     pointer-events: none;
 }
 
