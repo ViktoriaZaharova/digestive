@@ -2037,7 +2037,7 @@ body {
     outline: 0;
     cursor: pointer;
     color: #bbb;
-    font-size: 22px;
+    font-size: 21px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6217,6 +6217,7 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
 }
 
 .contact-form__placeholder {
+
     color: #35393e;
     font-size: 14px;
     position: absolute;
@@ -6252,8 +6253,9 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
 .contact-form__field:focus:invalid~.contact-form__placeholder,
 .contact-form__field:not(:focus):valid~.contact-form__placeholder
 {
+    color: #bbb;
     font-size: 10px;
-    transform: translateY(-7px);
+    transform: translateY(-12px);
 }
 
 
@@ -11035,7 +11037,7 @@ footer .button {
 
 .modal__wrapper form button {
     border-radius: 3px;
-    height: 56px;
+    height: 60px;
     line-height: normal;
     display: flex;
     align-items: center;
@@ -11046,8 +11048,8 @@ footer .button {
 
 .modal__wrapper form input {
     text-align: left;
-    height: 56px;
-    line-height: 56px;
+    height: 60px;
+    line-height: 60px;
 }
 
 input, button {
@@ -13746,7 +13748,7 @@ input {
     display: flex;
     align-items: flex-start;
     overflow-x: auto;
-
+    padding: 0 0 10px;
 }
 
 .date-box {
@@ -14018,7 +14020,7 @@ input {
 
 .page-cabinet__sidebar-wrapper .contact-form__field, .page-cabinet__sidebar-wrapper .contact-form__field::placeholder {
     color: #b0b0b0;
-    font-weight: 500;
+    /*font-weight: 500;*/
 }
 
 .page-cabinet__sidebar-wrapper .contact-form__field:focus:invalid,
@@ -14048,13 +14050,22 @@ input {
 .page-cabinet__sidebar-wrapper .contact-form__placeholder {
     margin: 0;
     min-width: 132px;
-    font-weight: 500;
+    /*font-weight: 500;*/
     font-size: 14px;
 }
 
 .page-cabinet__sidebar-wrapper .contact-form__item {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-form__row-password .contact-form__placeholder {
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .page-cabinet__sidebar-wrapper .contact-form__item button {
@@ -14070,6 +14081,11 @@ input {
     top: 50%;
     transform: translate(0, -50%);
     right: 14px;
+    width: 15px;
+}
+
+.icon-edit img {
+    width: 100%;
 }
 
 .checkbox-wrapper {
