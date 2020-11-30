@@ -1986,7 +1986,8 @@ body {
     color: #000;
     font-size: 12px;
     background: 0 0;
-    outline: 0
+    outline: 0;
+    border-radius: 0;
 }
 
 .search-by-letter__field::-webkit-input-placeholder {
@@ -6219,7 +6220,7 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
 .contact-form__placeholder {
 
     color: #35393e;
-    font-size: 14px;
+    font-size: 16px;
     position: absolute;
     pointer-events: none;
     left: 15px;
@@ -12869,12 +12870,21 @@ input {
     top: 50%;
     transform: translate(0, -50%);
     width: 15px;
+    height: 15px;
     display: block;
 }
 
 .icon-check svg, .icon-check svg path {
     width: 100%;
+    height: 100%;
     fill: green;
+}
+
+.input-error {
+    color: #f73d34;
+    font-size: 12px;
+    margin-top: 8px;
+    display: block;
 }
 
 .input-group--nocheck .icon-check svg, .input-group--nocheck .icon-check svg path {
@@ -13923,7 +13933,6 @@ input {
 
 .edit__password .contact-form__placeholder {
     width: 100%;
-    font-weight: 500;
 }
 
 .edit__password .contact-form__row:last-child .contact-form__item:last-child .button {
