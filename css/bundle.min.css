@@ -11352,6 +11352,7 @@ input, button {
 .form__modal form input {
     /*text-align: center;*/
     text-align: left;
+    box-shadow: none;
 }
 
 .form__modal .contact-form__row {
@@ -11379,7 +11380,7 @@ input, button {
 
 .contact-form__icon {
     position: absolute;
-    top: 57%;
+    top: 41%;
     transform: translate(-50%, 0);
     right: 0;
     display: flex;
