@@ -11355,6 +11355,11 @@ input, button {
     box-shadow: none;
 }
 
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
 .form__modal .contact-form__row {
     margin: 0 0 25px;
 }
