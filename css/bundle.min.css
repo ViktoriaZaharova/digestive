@@ -8729,7 +8729,7 @@ button.mz-button:before {
     display: flex;
     flex-direction: column;
     padding: 30px 0;
-    /*transition: .3s ease;*/
+    transition: .3s ease;
 }
 
 .stock-slider__item:hover {
@@ -11144,10 +11144,6 @@ input, button {
     color: #bbbbbb;
 }
 
-/*#subscribe__modal, #subscribe__modal .modal__wrapper {*/
-/*    overflow: visible;*/
-/*}*/
-
 .modal__div-product h2 {
     width: 100%;
     text-align: center;
@@ -11353,12 +11349,11 @@ input, button {
 }
 
 .form__modal form input {
-    /*text-align: center;*/
     text-align: left;
     box-shadow: none;
 }
 
-input {
+input, textarea {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -17133,6 +17128,10 @@ body.modal-click, html.modal-click {
     .latest-products__grid {
         align-items: stretch;
     }
+
+    .stock-slider__item {
+        transition: none;
+    }
 }
 
 @media (max-width: 575px) {
@@ -17247,8 +17246,6 @@ body.modal-click, html.modal-click {
 
     .brands-slider__item {
         max-width: 80px;
-        /*margin: 0 15px;*/
-        /*margin-right: 0;*/
     }
 }
 
