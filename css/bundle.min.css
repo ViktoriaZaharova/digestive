@@ -6220,7 +6220,7 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
 .contact-form__placeholder {
     width: calc(100% - 30px);
     color: #35393e;
-    font-size: 16px;
+    font-size: 13px;
     position: absolute;
     pointer-events: none;
     left: 15px;
@@ -6232,15 +6232,15 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
 
 .contact-form__field {
     width: 100%;
-    height: 56px;
-    padding: 17px 15px 0;
+    height: 48px;
+    padding: 13px 15px 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 3px;
     border: 1px solid #bbb;
     outline: 0;
     color: #000;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
     text-align: left;
 
@@ -6255,7 +6255,7 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
 .contact-form__field:not(:focus):valid~.contact-form__placeholder
 {
     color: #83878d;
-    font-size: 12px;
+    font-size: 10px;
     transform: translateY(-12px);
 }
 
@@ -11038,7 +11038,7 @@ footer .button {
 
 .modal__wrapper form button {
     border-radius: 3px;
-    height: 52px;
+    height: 48px;
     line-height: normal;
     display: flex;
     align-items: center;
@@ -11049,8 +11049,8 @@ footer .button {
 
 .modal__wrapper form input {
     text-align: left;
-    height: 52px;
-    line-height: 52px;
+    height: 48px;
+    line-height: 48px;
 }
 
 input, button {
@@ -11136,7 +11136,7 @@ input, button {
 }
 
 #subscribe__modal form input {
-    padding: 17px 145px 0 15px;
+    padding: 13px 145px 0 15px;
 }
 
 .description-sale {

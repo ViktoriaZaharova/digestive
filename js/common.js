@@ -52,15 +52,15 @@ $(document).ready(function () {
     });
 
     $('.mobile-search .header__search input').click(function () {
-        $('.mobile-search .header__search .header__delete').fadeIn();
-        $('.mobile-search .header__search .header__submit').fadeOut();
+        $('.mobile-search .header__search .header__delete').show();
+        $('.mobile-search .header__search .header__submit').hide();
     });
 
     $('.mobile-search .header__search .header__delete').click(function () {
         $('.mobile-search').fadeOut();
         $('.result-search__mobile').fadeOut();
-        $('.mobile-search .header__search .header__delete').fadeOut();
-        $('.mobile-search .header__search .header__submit').fadeIn();
+        $('.mobile-search .header__search .header__delete').hide();
+        $('.mobile-search .header__search .header__submit').show();
     });
 
     $('.btn__close').click(function () {
