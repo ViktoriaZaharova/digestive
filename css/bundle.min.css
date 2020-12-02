@@ -9323,7 +9323,7 @@ button.mz-button:before {
     border: none;
     background: 0 0;
     color: #bbb;
-    font-size: 19px;
+    font-size: 17px;
     cursor: pointer;
     outline: 0;
     -webkit-flex-shrink: 0;
@@ -17245,7 +17245,7 @@ body.modal-click, html.modal-click {
     }
 
     .brands-slider__item {
-        max-width: 80px;
+        max-width: 70px;
     }
 }
 
@@ -17367,6 +17367,10 @@ body.modal-click, html.modal-click {
 @media (max-width: 360px) {
     .filter-item__wrapper {
         max-width: none;
+    }
+
+    .brands-slider__item {
+        margin-right: 15px;
     }
 }
 
