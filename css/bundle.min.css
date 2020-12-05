@@ -1296,7 +1296,8 @@ body {
 .product-item__header {
     display: block;
     text-decoration: none;
-    outline: 0
+    outline: 0;
+    overflow: hidden;
 }
 
 .product-item__thumbnail {
@@ -6241,7 +6242,7 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
     outline: 0;
     color: #000;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: left;
 
 }
@@ -7954,11 +7955,19 @@ button.mz-button:before {
 
 .single-item__brand {
     max-width: 120px;
-    margin-top: -20px
+    margin-top: -20px;
+    cursor: pointer;
 }
 
 .single-item__brand > img {
-    width: 100%
+    width: 100%;
+    transition: .3s ease;
+}
+
+
+.single-item__brand:hover > img {
+    transform: scale(1.02, 1.02);
+    filter: grayscale(100%);
 }
 
 .single-item__prices {
