@@ -192,6 +192,52 @@ $('.btn-all__filter').on('click', function (e) {
         $('.filter-item').slice(6).slideUp();
     }
 });
+
+$('.single-item__infos .single-item__years-new ').each(function () {
+    if ($(this).find('.single-item__year').length > 4) {
+        $(this).find('.single-item__year').slice(4).hide();
+    }
+});
+
+
+$('.btn-all-val').on('click', function (e) {
+    e.preventDefault();
+    let
+        $this = $(this),
+        $content = $(this).parent('.single-item__years-new').find('.single-item__year');
+
+
+    if(!$this.hasClass('trigger')){
+        $this.addClass('trigger');
+        $this.html('Свернуть');
+
+        $content.slideDown();
+    } else {
+        $this.removeClass('trigger');
+        $this.html('Еще объемы');
+
+        $content.slice(4).slideUp();
+    }
+});
+
+$('.links-more').on('click', function (e) {
+    e.preventDefault();
+    let $this = $(this),
+        $content = $(this).parent().find('.block-toggle__content');
+
+    if(!$this.hasClass('trigger')){
+        $this.addClass('trigger');
+        $this.html('Скрыть подробности');
+
+
+        $content.addClass('open');
+    } else {
+        $this.removeClass('trigger');
+        $this.html('Узнать больше');
+
+        $content.removeClass('open');
+    }
+});
 // show list all
 
 
