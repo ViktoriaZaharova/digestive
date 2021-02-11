@@ -14634,6 +14634,26 @@ input, textarea {
     text-align: justify;
 }
 
+.page__desc-new {
+    margin: 0 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.page__desc-new .page__desc {
+    height: 130px;
+    overflow: hidden;
+    margin: 0;
+    /*margin: 0 0 20px;*/
+    display: inline-block;
+}
+
+.page__desc-new.open .page__desc {
+    height: auto;
+    visibility: visible;
+}
+
 .links-details {
     color: #ec5c2a;
     font-size: 14px;
@@ -14812,8 +14832,9 @@ input, textarea {
 }
 
 .category-advantages-footer {
-    padding: 29px 20px 21px;
+    padding: 23px 20px 20px;
     border-radius: 3px;
+    line-height: 1.5;
     background-color: #f0f0f0;
     color: #35393e;
     text-align: center;
@@ -17733,6 +17754,10 @@ body.modal-click, html.modal-click {
         margin: 0;
     }
 
+    .category-header__footer .button.product-item__order  {
+        margin: 0 0 0 30px;
+    }
+
     .page-responsive-card .button.product-item__order {
         line-height: 29px;
     }
@@ -17864,6 +17889,10 @@ body.modal-click, html.modal-click {
 
     .latest-products__title {
         font-size: 12px;
+    }
+
+    .category-header__footer .button.product-item__order {
+        margin: 10px 0 0;
     }
 }
 
