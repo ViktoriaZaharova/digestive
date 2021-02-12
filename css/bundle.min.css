@@ -14615,6 +14615,10 @@ input, textarea {
     margin: 15px 0 0;
 }
 
+.category-header__footer .price-text {
+    white-space: nowrap;
+}
+
 .category-header__footer .button.product-item__order {
     height: 30px;
     line-height: normal;
