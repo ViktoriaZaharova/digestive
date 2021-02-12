@@ -214,24 +214,24 @@ $('.btn-all__filter').on('click', function (e) {
 //     }
 // });
 
-$('.links-more').on('click', function (e) {
-    e.preventDefault();
-    let $this = $(this),
-        $content = $(this).parent().find('.block-toggle__content');
-
-    if(!$this.hasClass('trigger')){
-        $this.addClass('trigger');
-        $this.html('Скрыть подробности');
-
-
-        $content.addClass('open');
-    } else {
-        $this.removeClass('trigger');
-        $this.html('Узнать больше');
-
-        $content.removeClass('open');
-    }
-});
+// $('.links-more').on('click', function (e) {
+//     e.preventDefault();
+//     let $this = $(this),
+//         $content = $(this).parent().find('.block-toggle__content');
+//
+//     if(!$this.hasClass('trigger')){
+//         $this.addClass('trigger');
+//         $this.html('Скрыть подробности');
+//
+//
+//         $content.addClass('open');
+//     } else {
+//         $this.removeClass('trigger');
+//         $this.html('Узнать больше');
+//
+//         $content.removeClass('open');
+//     }
+// });
 
 $('.links-load-text').on('click', function (e) {
     e.preventDefault();

@@ -14611,7 +14611,7 @@ input, textarea {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     margin: 15px 0 0;
 }
 
@@ -14657,7 +14657,7 @@ input, textarea {
 .links-details {
     color: #ec5c2a;
     font-size: 14px;
-    display: inline;
+    display: block;
 }
 
 .block-toggle__content {
@@ -16930,6 +16930,7 @@ input, textarea {
 
     .category-header__footer {
         margin: 10px 0 0;
+        flex-wrap: wrap;
     }
 
     .category-header__footer .button.product-item__order {
