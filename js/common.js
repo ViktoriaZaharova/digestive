@@ -174,7 +174,7 @@ $('.btn-all__filter').on('click', function (e) {
     e.preventDefault();
     var
         $this = $(this);
-    if(!$this.hasClass('trigger')){
+    if (!$this.hasClass('trigger')) {
         $this.addClass('trigger');
         $this.find('.text').html('Скрыть дополнительные фильтры');
 
@@ -238,7 +238,7 @@ $('.links-load-text').on('click', function (e) {
     let $this = $(this),
         $content = $(this).parent('.page__desc-new');
 
-    if(!$this.hasClass('trigger')){
+    if (!$this.hasClass('trigger')) {
         $this.addClass('trigger');
         $this.html('скрыть');
 
@@ -263,14 +263,14 @@ $('.header__profile-user__mobile').click(function () {
 });
 
 $('.breadcrumbs__item-dropdown').hover(function () {
-   $(this).toggleClass('open');
+    $(this).toggleClass('open');
 });
 
 $('.main__select').selectmenu();
 
 $('.date-box').on('click', function () {
-   $('.date-box').removeClass('date-box__active');
-   $(this).addClass('date-box__active');
+    $('.date-box').removeClass('date-box__active');
+    $(this).addClass('date-box__active');
 });
 
 
@@ -293,8 +293,8 @@ $('.slider-range').slider({
 $(".dec1").val($(".slider-range").slider("value"));
 $(".dec2").val($(".slider-range").slider("value"));
 
-(function($){
-    $(window).on("load",function(){
+(function ($) {
+    $(window).on("load", function () {
         $(".mCustomScrollbar").mCustomScrollbar();
     });
 })(jQuery);
@@ -302,7 +302,7 @@ $(".dec2").val($(".slider-range").slider("value"));
 $(document).ready(function () {
     $(".js-tab-trigger").click(function () {
         var id = $(this).attr('data-tab'),
-            content = $('.js-tab-content[data-tab="'+ id +'"]');
+            content = $('.js-tab-content[data-tab="' + id + '"]');
 
         $('.js-tab-trigger.active').removeClass('active'); // 1
         $(this).addClass('active'); // 2
@@ -319,14 +319,39 @@ $('.btn-close-tooltip').click(function () {
 
 $('.filter-item__wrapper li').click(function () {
     $('.filter-item__wrapper li').removeClass('click');
-   $(this).toggleClass('click');
+    $(this).toggleClass('click');
 });
 
 
-$(window).on('load', function() {
+$(window).on('load', function () {
     $('.preloader').fadeOut().end().delay(400).fadeOut('slow');
 });
 
 $('.btn-loader').click(function () {
     $('.preloader-catalog').fadeIn().end().delay(3000).fadeOut('slow');
+});
+
+
+// new slider
+$('.category-page-slider').slick({
+    slideToShow: 1,
+    nextArrow: '<button type="button" class="slick-next"><span class="icon-slider-arrow-right"></span></button>',
+    prevArrow: '<button type="button" class="slick-prev"><span class="icon-slider-arrow-left"></span></button>'
+});
+
+$('.stock-slider__slick').slick({
+    slideToShow: 3,
+    appendArrows: '.stock-slider__buttons-slick',
+    variableWidth: true,
+    nextArrow: '<button type="button" class="slick-next"><span class="icon-slider-arrow-right"></span></button>',
+    prevArrow: '<button type="button" class="slick-prev"><span class="icon-slider-arrow-left"></span></button>',
+});
+
+$('.brands-slider__slick').slick({
+    slideToShow: 7,
+    slideToScroll: 1,
+    // appendArrows: '.brands-slider__arrows-slick',
+    // variableWidth: true,
+    nextArrow: '<button type="button" class="slick-next"><span class="icon-slider-arrow-right"></span></button>',
+    prevArrow: '<button type="button" class="slick-prev"><span class="icon-slider-arrow-left"></span></button>',
 });
