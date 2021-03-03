@@ -336,7 +336,16 @@ $('.btn-loader').click(function () {
 $('.category-page-slider').slick({
     slideToShow: 1,
     nextArrow: '<button type="button" class="slick-next"><span class="icon-slider-arrow-right"></span></button>',
-    prevArrow: '<button type="button" class="slick-prev"><span class="icon-slider-arrow-left"></span></button>'
+    prevArrow: '<button type="button" class="slick-prev"><span class="icon-slider-arrow-left"></span></button>',
+    appendArrows: '.category-page-slider__nav',
+    responsive: [
+        {
+            breakpoint: 575,
+            settings: {
+                arrows: false
+            }
+        }
+    ]
 });
 
 $('.stock-slider__slick').slick({
