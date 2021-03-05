@@ -9081,10 +9081,10 @@ button.mz-button:before {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
     list-style: none
 }
 
@@ -9102,6 +9102,7 @@ button.mz-button:before {
     font-weight: 300;
     padding: 11px 0 10px;
     box-sizing: border-box;
+
 }
 
 .breadcrumbs__item a {
@@ -17019,7 +17020,13 @@ input, textarea {
     }
 
     .category-page-slider__box-content {
-        padding: 20px 0 70px;
+        padding: 20px 0 10px;
+        justify-content: center;
+    }
+
+    .category-header__wrap-mini-card {
+        position: relative;
+        margin: 10px 0 0 auto;
     }
 
     .category-page-slider .slick-arrow {
@@ -17099,7 +17106,7 @@ input, textarea {
 
 
     .page__head {
-        font-size: 24px;
+        font-size: 20px;
     }
 
 }
@@ -17471,14 +17478,10 @@ input, textarea {
     }
 
     .category-page-slider__box-info h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
-    .category-page-slider__box-info .slogan {
-        font-size: 15px;
-    }
-
-    .category-page-slider__box-info .text {
+    .category-page-slider__box-info .text, .category-page-slider__box-info .slogan {
         font-size: 13px;
     }
 
@@ -18393,17 +18396,35 @@ body.modal-click, html.modal-click {
         max-width: 70px;
     }
 
+    .breadcrumbs__list {
+        /*padding: 0 15px;*/
+        white-space: nowrap;
+    }
+
     .breadcrumbs__wrapper {
+        overflow-x: hidden;
+        position: relative;
         max-width: none;
         width: 100%;
     }
 
-    .breadcrumbs__list {
-        flex-wrap: wrap;
+    .breadcrumbs__wrapper:before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 40px;
+        background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
     }
 
     .breadcrumbs__item {
-        padding: 5px 0;
+        padding: 5px 0 5px 5px;
+        background: #f0f0f0;
+    }
+
+    .breadcrumbs__item:last-child {
+        padding: 5px;
     }
 
     .breadcrumbs__item .breadcrumbs__home {
@@ -18413,6 +18434,12 @@ body.modal-click, html.modal-click {
     .breadcrumbs__item:not(:last-child):after {
         width: 10px;
         margin: 0 5px;
+        width: auto;
+        display: inline-block;
+        position: relative;
+        height: auto;
+        content: '/';
+        background: transparent;
     }
 
     .page__desc-new, .products-found {
@@ -18508,6 +18535,10 @@ body.modal-click, html.modal-click {
 
     .category-header__footer .button.product-item__order {
         margin: 10px 0 0;
+    }
+
+    .category-header__wrap-mini-card .category-header__content {
+        display: none;
     }
 }
 
