@@ -17020,7 +17020,7 @@ input, textarea {
     }
 
     .category-page-slider__box-content {
-        padding: 20px 0 10px;
+        padding: 20px 0;
         justify-content: center;
     }
 
@@ -17092,12 +17092,12 @@ input, textarea {
     }
 
     .category-page-slider__box-content .category-header__add-to-card {
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
     }
 
     .category-header__add-to-card {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .category-page-slider {
@@ -18401,11 +18401,16 @@ body.modal-click, html.modal-click {
         white-space: nowrap;
     }
 
+    .breadcrumbs__item, .breadcrumbs__item a {
+        font-size: 10px;
+    }
+
     .breadcrumbs__wrapper {
         overflow-x: hidden;
         position: relative;
         max-width: none;
         width: 100%;
+        padding: 0;
     }
 
     .breadcrumbs__wrapper:before {
@@ -18418,16 +18423,25 @@ body.modal-click, html.modal-click {
         background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
     }
 
+
     .breadcrumbs__item {
         padding: 5px 0 5px 5px;
         background: #f0f0f0;
     }
 
+    .breadcrumbs__item:first-child {
+        padding: 5px 0 5px 20px;
+    }
+
     .breadcrumbs__item:last-child {
-        padding: 5px;
+        padding: 5px 10px 5px 5px;
     }
 
     .breadcrumbs__item .breadcrumbs__home {
+        font-size: 10px;
+    }
+
+    .links-details {
         font-size: 12px;
     }
 
@@ -18447,7 +18461,7 @@ body.modal-click, html.modal-click {
     }
 
     .page__desc-new .page__desc {
-        height: 65px;
+        height: 49px;
         font-size: 12px;
         line-height: 1.4;
     }
