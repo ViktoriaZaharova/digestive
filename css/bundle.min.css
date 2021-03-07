@@ -2329,7 +2329,7 @@ body {
 }
 
 .product-filter {
-    margin: 0 0 30px;
+    margin: 0 0 15px;
     position: relative;
 }
 
@@ -2496,7 +2496,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 30px 0;
+    margin: 10px 0;
 }
 
 .product-filter__current {
@@ -3259,7 +3259,7 @@ body.fixed {
 }
 
 .page_category .page__category-information {
-    margin-bottom: 15px
+    margin-bottom: 10px
 }
 
 .page_category .page__purchase-order {
@@ -3368,7 +3368,7 @@ body.fixed {
 }
 
 .page_category .page__seo {
-    margin-bottom: 154px
+    margin-bottom: 70px
 }
 
 .page_compare .page__content {
@@ -5494,7 +5494,8 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
     margin-bottom: 30px;
     color: #35393e;
     font-size: 16px;
-    font-weight: 500
+    font-weight: 500;
+    text-align: center;
 }
 
 @media (max-width: 1024px) {
@@ -8495,9 +8496,9 @@ button.mz-button:before {
     font-weight: 500
 }
 
-.single-item__years {
-    margin-bottom: 15px
-}
+/*.single-item__years {*/
+/*    margin-bottom: 15px*/
+/*}*/
 
 .single-item__year {
     margin: 0 0 15px 0;
@@ -9098,7 +9099,7 @@ button.mz-button:before {
     -ms-flex-align: center;
     align-items: center;
     color: #bbb;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
     padding: 11px 0 10px;
     box-sizing: border-box;
@@ -9107,7 +9108,7 @@ button.mz-button:before {
 
 .breadcrumbs__item a {
     color: #35393e;
-    font-size: 14px;
+    font-size: 12px;
     text-decoration: none;
     outline: 0
 }
@@ -9118,17 +9119,17 @@ button.mz-button:before {
 
 .breadcrumbs__item:not(:last-child):after {
     content: "";
-    width: 30px;
+    width: 25px;
     height: 1px;
     display: block;
-    margin: 0 20px;
+    margin: 0 15px;
     background: #ddd;
     pointer-events: none
 }
 
 .breadcrumbs__item .breadcrumbs__home {
     color: #35393e;
-    font-size: 18px
+    font-size: 15px
 }
 
 .breadcrumbs__item .breadcrumbs__home:focus, .breadcrumbs__item .breadcrumbs__home:hover {
@@ -14641,7 +14642,7 @@ input, textarea {
 }
 
 .page__desc-new {
-    margin: 0 0 50px;
+    margin: 0 0 20px;
     /*display: flex;*/
     /*flex-direction: column;*/
     /*align-items: flex-start;*/
@@ -14797,6 +14798,10 @@ input, textarea {
     margin: 0 0 25px;
 }
 
+.category-advantages-body__item-box-pay h4 {
+    text-align: center;
+}
+
 .list-pay {
     display: flex;
     align-items: center;
@@ -14838,7 +14843,7 @@ input, textarea {
 }
 
 .advantages-new {
-    margin: 0 0 100px;
+    margin: 0 0 70px;
 }
 
 .category-advantages-footer {
@@ -14858,7 +14863,7 @@ input, textarea {
 }
 
 .single-item__years-new {
-    margin: 0 0 35px;
+    margin: 0 0 20px;
 }
 
 .single-item__years-new:last-child {
@@ -14983,7 +14988,7 @@ input, textarea {
 }
 
 .category-page-slider {
-    background: url("../images/category/category-bg.png") no-repeat center;
+    background: url("../images/category/category-bg.png") no-repeat center bottom;
     -webkit-background-size: cover;
     background-size: cover;
     margin: 0 0 40px;
@@ -15159,11 +15164,11 @@ input, textarea {
     text-align: left;
     padding: 0;
     height: auto;
-    margin: 20px 0 0;
+    margin: 10px 0 0;
 }
 .single-item__heading {
-    min-height: calc(16px * 3);
-    height: calc(16px * 3);
+    min-height: calc(17px * 3);
+    height: calc(17px * 3);
     transition: .3s ease;
     overflow: hidden;
     -webkit-line-clamp: 3;
@@ -18474,6 +18479,10 @@ body.modal-click, html.modal-click {
         margin-right: 5px;
         padding: 5px 5px 5px 0;
     }
+
+    .category-advantages-body h3 {
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -18549,6 +18558,14 @@ body.modal-click, html.modal-click {
 
     .category-header__footer .button.product-item__order {
         margin: 10px 0 0;
+    }
+
+    .page_category .page__category-information {
+        margin-bottom: 5px;
+    }
+
+    .category-header__wrap-mini-card {
+        margin: 20px 0 -20px auto;
     }
 
     .category-header__wrap-mini-card .category-header__content {
