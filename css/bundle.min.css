@@ -17648,8 +17648,8 @@ input, textarea {
 
     .single-item__heading {
         font-size: 20px;
-        min-height: calc(13px * 3);
-        height: calc(13px * 3);
+        /*min-height: calc(13px * 3);*/
+        /*height: calc(13px * 3);*/
         line-height: 1;
     }
 
