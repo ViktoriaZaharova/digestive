@@ -352,8 +352,10 @@ $('.stock-slider__slick').slick({
     slideToShow: 3,
     appendArrows: '.stock-slider__buttons-slick',
     variableWidth: true,
+    useCSS: false,
     nextArrow: '<button type="button" class="slick-next"><span class="icon-slider-arrow-right"></span></button>',
     prevArrow: '<button type="button" class="slick-prev"><span class="icon-slider-arrow-left"></span></button>',
+
 });
 
 $('.brands-slider__slick').slick({
