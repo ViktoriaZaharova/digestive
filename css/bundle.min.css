@@ -8887,7 +8887,7 @@ button.mz-button:before {
     }
 
     .stock-slider__item .bottom-box .image-product {
-        bottom: -20px;
+        bottom: 0;
     }
 }
 
@@ -17360,6 +17360,7 @@ input, textarea {
 
     .recommended-products__grid .product-item__image, .products-layout__item .product-item__image {
         max-height: 170px;
+        height: auto;
     }
 
     .recommended-products__grid .product-item__price, .products-layout__item .product-item__price {
