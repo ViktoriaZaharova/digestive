@@ -5468,13 +5468,20 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
 }
 
 .category-information__content {
-    max-width: 440px;
+    max-width: 500px;
     width: 100%;
     padding-left: 15px;
-    margin-right: 60px;
+    padding-right: 60px;
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
-    flex-shrink: 0
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.category-information__carousel {
+    position: relative;
+    width: calc(100% - 500px);
+
 }
 
 @media (max-width: 1024px) {
@@ -5483,18 +5490,20 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
         padding-left: 0;
         margin-right: 0;
         margin-bottom: 35px;
-        text-align: center
+        text-align: center;
+        padding: 0;
     }
 
     .category-information__content .page__desc {
         margin-bottom: 0
     }
+
+    .category-information__carousel {
+        width: 100%;
+    }
 }
 
-.category-information__carousel {
-    position: relative;
-    width: 100%
-}
+
 
 .category-information__heading {
     margin-bottom: 30px;
@@ -5513,12 +5522,22 @@ input[type=range]:focus + .rangeslider .rangeslider__handle {
 .category-information__flickity {
     padding: 0 60px;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.category-information__flickity .slick-arrow {
+    color: #c3c3c3;
+}
+
+.category-information__flickity .slick-arrow span {
+    font-size: 31px;
 }
 
 .category-information__item {
-    width: -webkit-calc(100% / 6);
-    width: calc(100% / 6);
+    /*width: -webkit-calc(100% / 6);*/
+    /*width: calc(100% / 6);*/
     padding-bottom: 25px;
     padding-top: 10px;
     text-decoration: none;
@@ -7701,7 +7720,7 @@ textarea {
 }
 
 .single-item__carousel {
-    max-width: 100%;
+    max-width: 50%;
     width: 100%;
     padding-bottom: 35px;
     margin-right: 15px;
@@ -7847,7 +7866,7 @@ button.mz-button:before {
     border-color: #bbb
 }
 
-.single-item__thumb--current {
+.mz-thumb-selected {
     border-color: #bbb
 }
 
@@ -7887,7 +7906,7 @@ button.mz-button:before {
 
 .single-item__slide {
     width: 100%;
-    height: 100%;
+    height: 555px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -14659,12 +14678,16 @@ input, textarea {
 }
 
 .category-information__content-new {
-    max-width: 660px;
-    margin: 0 55px 0 0;
+    max-width: 715px;
+    padding: 0 55px 0 0;
 }
 
 .category-information__content-new .page__desc {
     text-align: justify;
+}
+
+.category-information__carousel-new {
+    width: calc(100% - 715px);
 }
 
 .page__desc-new {
@@ -14743,10 +14766,6 @@ input, textarea {
 .links-more:hover {
     background: #ec5c2a;
     color: #fff;
-}
-
-.category-information__carousel-new .category-information__item {
-    width: calc(100% / 5);
 }
 
 .category-information__carousel-new .category-information__flickity {
@@ -15156,10 +15175,10 @@ input, textarea {
 }
 
 .brands-slider__slick {
-    max-width: 1080px;
+    max-width: 980px;
     margin: 0 auto;
     width: 100%;
-    padding: 0 90px;
+    padding: 0 40px;
 }
 
 .brands-slider__slick .brands-slider__item {
@@ -15502,6 +15521,10 @@ input, textarea {
         max-width: 500px;
     }
 
+    .category-information__carousel-new {
+        width: calc(100% - 500px);
+    }
+
     .category-advantages-body h4 {
         font-size: 16px;
         margin: 0 0 15px;
@@ -15670,6 +15693,11 @@ input, textarea {
     .category-information__content-new {
         max-width: none;
         margin: 30px 0 40px;
+        padding: 0;
+    }
+
+    .category-information__carousel-new {
+        width: 100%;
     }
 
 }
@@ -15945,9 +15973,9 @@ input, textarea {
         padding: 0;
     }
 
-    .category-information__item {
-        width: calc(100% / 4);
-    }
+    /*.category-information__item {*/
+    /*    width: calc(100% / 4);*/
+    /*}*/
 
     .page_category .page__navigation--bottom .pagination, .page_category .page__seo, .page_sub-category .page__navigation, .product-filter .product-filter__wrapper, .page_sub-category .page__navigation--bottom .pagination {
         display: none;
@@ -15981,6 +16009,10 @@ input, textarea {
 
     .single-item__viewport {
         border: none;
+        height: 300px;
+    }
+
+    .single-item__slide {
         height: 300px;
     }
 
@@ -16306,6 +16338,7 @@ input, textarea {
         flex-direction: column;
         align-items: center;
         width: fit-content;
+        width: 60px;
     }
 
     .single-item__thumb {

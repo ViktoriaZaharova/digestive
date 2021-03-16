@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="css/magiczoomplus.css" rel="stylesheet">
     <link href="css/bundle.min.css" rel="stylesheet">
 </head>
 
@@ -1853,14 +1857,10 @@
                     </div>
                 </div>
                 <div class="stock-slider__container">
-                    <div class="stock-slider__buttons">
-                        <button class="stock-slider__button stock-slider__button--right" type="button"><i
-                                class="icon-slider-arrow-right"></i></button>
-                        <button class="stock-slider__button stock-slider__button--left" type="button"><i
-                                class="icon-slider-arrow-left"></i></button>
+                    <div class="stock-slider__buttons stock-slider__buttons-slick">
                     </div>
                     <div class="stock-slider__viewport">
-                        <div class="stock-slider__flickity">
+                        <div class="stock-slider__slick">
                             <a class="stock-slider__item bg-light-green" href="#">
                                 <div class="stock-slider__item-title">Свежесть Италии</div>
                                 <div class="box-sale">до -25%</div>
@@ -2472,50 +2472,45 @@
                         <h4 class="heading-block__title">Ваши любимые бренды</h4>
                         <p class="heading-block__description">Мы доставляем алкоголь со всего Мира</p>
                     </div>
-                    <div class="brands-slider__viewport">
-                        <div class="brands-slider__arrows">
-                            <button class="brands-slider__arrow brands-slider__arrow--left" type="button"><i
-                                    class="icon-slider-arrow-left"></i></button>
-                            <button class="brands-slider__arrow brands-slider__arrow--right" type="button"><i
-                                    class="icon-slider-arrow-right"></i></button>
-                        </div>
-                        <div class="brands-slider__flickity">
+                    <div class="brands-slider__flickity brands-slider__slick">
+                        <div class="slide">
                             <a class="brands-slider__item" href="#"><img src="images/brands/absolut-vodka.png"
                                                                          srcset="images/brands/absolut-vodka.png"></a>
-                            <a class="brands-slider__item" href="#"><img src="images/brands/bacardi.png"
-                                                                         srcset="images/brands/bacardi.png"></a>
-                            <a class="brands-slider__item" href="#"><img src="images/brands/martini.png"
-                                                                         srcset="images/brands/martini.png"></a>
-                            <a class="brands-slider__item" href="#"><img src="images/brands/henessy.png"
-                                                                         srcset="images/brands/henessy.png"></a>
-                            <a class="brands-slider__item" href="#"><img src="images/brands/jameson.png"
-                                                                         srcset="images/brands/jameson.png"></a>
-                            <a class="brands-slider__item" href="#"><img src="images/brands/moet-et-chandon.png"
-                                                                         srcset="images/brands/moet-et-chandon.png"></a>
-                            <a class="brands-slider__item" href="#"><img src="images/brands/macallan.png"
-                                                                         srcset="images/brands/macallan.png"></a>
-                            <a class="brands-slider__item" href="#"><img src="images/brands/bombay.png"
-                                                                         srcset="images/brands/bombay.png"></a>
-                            <a class="brands-slider__item" href="#"><img src="images/brands/jackdaniels.png"
-                                                                         srcset="images/brands/jackdaniels.png"></a>
-                            <a class="brands-slider__item" href="#"><img src="images/brands/absolut-vodka.png"
-                                                                         srcset="images/brands/absolut-vodka.png"></a>
-                            <a class="brands-slider__item" href="#"><img src="images/brands/bacardi.png"
-                                                                         srcset="images/brands/bacardi.png"></a>
-                            <a class="brands-slider__item" href="#"><img src="images/brands/martini.png"
-                                                                         srcset="images/brands/martini.png"></a>
-                            <a class="brands-slider__item" href="#"><img src="images/brands/henessy.png"
-                                                                         srcset="images/brands/henessy.png"></a>
-                            <a class="brands-slider__item" href="#"><img src="images/brands/jameson.png"
-                                                                         srcset="images/brands/jameson.png"></a>
-                            <a class="brands-slider__item" href="#"><img src="images/brands/moet-et-chandon.png"
-                                                                         srcset="images/brands/moet-et-chandon.png"></a>
-                            <a class="brands-slider__item" href="#"><img src="images/brands/macallan.png"
-                                                                         srcset="images/brands/macallan.png"></a>
-                            <a class="brands-slider__item" href="#"><img srcset="images/brands/bombay.png"></a>
-                            <a class="brands-slider__item" href="#"><img src="images/brands/jackdaniels.png"
-                                                                         srcset="images/brands/jackdaniels.png"></a>
                         </div>
+                        <div class="slide"> <a class="brands-slider__item" href="#"><img src="images/brands/bacardi.png"
+                                                                                         srcset="images/brands/bacardi.png"></a></div>
+                        <div class="slide"><a class="brands-slider__item" href="#"><img src="images/brands/martini.png"
+                                                                                        srcset="images/brands/martini.png"></a></div>
+                        <div class="slide"><a class="brands-slider__item" href="#"><img src="images/brands/henessy.png"
+                                                                                        srcset="images/brands/henessy.png"></a></div>
+                        <div class="slide"><a class="brands-slider__item" href="#"><img src="images/brands/jameson.png"
+                                                                                        srcset="images/brands/jameson.png"></a></div>
+                        <div class="slide"><a class="brands-slider__item" href="#"><img src="images/brands/moet-et-chandon.png"
+                                                                                        srcset="images/brands/moet-et-chandon.png"></a></div>
+                        <div class="slide"><a class="brands-slider__item" href="#"><img src="images/brands/macallan.png"
+                                                                                        srcset="images/brands/macallan.png"></a></div>
+                        <div class="slide"><a class="brands-slider__item" href="#"><img src="images/brands/bombay.png"
+                                                                                        srcset="images/brands/bombay.png"></a></div>
+                        <div class="slide"><a class="brands-slider__item" href="#"><img src="images/brands/jackdaniels.png"
+                                                                                        srcset="images/brands/jackdaniels.png"></a></div>
+                        <div class="slide"><a class="brands-slider__item" href="#"><img src="images/brands/absolut-vodka.png"
+                                                                                        srcset="images/brands/absolut-vodka.png"></a></div>
+                        <div class="slide"><a class="brands-slider__item" href="#"><img src="images/brands/bacardi.png"
+                                                                                        srcset="images/brands/bacardi.png"></a></div>
+                        <div class="slide"><a class="brands-slider__item" href="#"><img src="images/brands/martini.png"
+                                                                                        srcset="images/brands/martini.png"></a></div>
+                        <div class="slide"><a class="brands-slider__item" href="#"><img src="images/brands/henessy.png"
+                                                                                        srcset="images/brands/henessy.png"></a></div>
+                        <div class="slide"><a class="brands-slider__item" href="#"><img src="images/brands/jameson.png"
+                                                                                        srcset="images/brands/jameson.png"></a></div>
+                        <div class="slide"><a class="brands-slider__item" href="#"><img src="images/brands/moet-et-chandon.png"
+                                                                                        srcset="images/brands/moet-et-chandon.png"></a></div>
+                        <div class="slide"><a class="brands-slider__item" href="#"><img src="images/brands/macallan.png"
+                                                                                        srcset="images/brands/macallan.png"></a></div>
+                        <div class="slide"><a class="brands-slider__item" href="#"><img srcset="images/brands/bombay.png"></a></div>
+                        <div class="slide"><a class="brands-slider__item" href="#"><img src="images/brands/jackdaniels.png"
+                                                                                        srcset="images/brands/jackdaniels.png"></a></div>
+
                     </div>
                     <div class="brands-slider__footer"><a class="link link--theme-dashed" href="#">Посмотреть всех
                         производителей</a>
@@ -2878,13 +2873,19 @@
 
 <div class="btn-click-top"><i class="icon-slider-arrow-left"></i></div>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="js/bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/plugins/bgset/ls.bgset.min.js"
+        integrity="sha512-bSn9hGXfp8sBRE7h7QXP07gKLkkz+uSfuSynsKHauxL2xxX6Wyzxm9l7mdbL1f6oDtl9Av3B/0+Xg8NzxyttGA=="
+        crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/magiczoomplus.js"></script>
-<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/common.js"></script>
 </body>
 
