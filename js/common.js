@@ -359,8 +359,11 @@ $('.stock-slider__slick').slick({
 });
 
 $('.brands-slider__slick').slick({
-    slidesToShow: 7,
+    slidesToShow: 8,
     slidesToScroll: 1,
+    dots: true,
+    appendArrows: '.brands-slider__slick-nav',
+    appendDots: '.brands-slider__slick-nav',
     nextArrow: '<button type="button" class="slick-next"><span class="icon-slider-arrow-right"></span></button>',
     prevArrow: '<button type="button" class="slick-prev"><span class="icon-slider-arrow-left"></span></button>',
     responsive: [
@@ -413,6 +416,70 @@ $('.single-item__thumbs').slick({
         }
     ]
 });
+
+$('.instagramm-slider').slick({
+    slidesToShow: 5,
+    variableWidth: true,
+    dots: true,
+    appendArrows: '.instagramm-slider-nav',
+    appendDots: '.instagramm-slider-nav',
+    nextArrow: '<button type="button" class="slick-next"><span class="icon-slider-arrow-right"></span></button>',
+    prevArrow: '<button type="button" class="slick-prev"><span class="icon-slider-arrow-left"></span></button>',
+});
+
+$('.popular-category-slider').slick({
+    slidesToShow: 4,
+    dots: true,
+    // variableWidth: true,
+    appendArrows: '.popular-category-nav',
+    appendDots: '.popular-category-nav',
+    nextArrow: '<button type="button" class="slick-next"><span class="icon-slider-arrow-right"></span></button>',
+    prevArrow: '<button type="button" class="slick-prev"><span class="icon-slider-arrow-left"></span></button>',
+});
+
+//счетчик слик слайдер с 0//
+let pagingInfo = $('.news-slider-nav .counter-slide');
+let teamSlider = $('.news-slider');
+
+teamSlider.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+    let i = (currentSlide ? currentSlide : 0) + 1;
+    let prefix = i < 10 ? '0' : '';
+    let prefixAll = slick.slideCount < 10 ? '0' : '';
+    pagingInfo.html('<span class="current">' + prefix + i + ' / ' + '</span>' + ' ' + '<span class="total">' + prefixAll + slick.slideCount + '</span>');
+});
+
+
+$('.news-slider').slick({
+    slidesToShow: 1,
+    dots: true,
+    fade: true,
+    appendArrows: '.news-slider-nav',
+    appendDots: '.news-slider-nav',
+    nextArrow: '<button type="button" class="slick-next"><span class="icon-slider-arrow-right"></span></button>',
+    prevArrow: '<button type="button" class="slick-prev"><span class="icon-slider-arrow-left"></span></button>',
+});
+
+let pagingInfo2 = $('.main-home-slider__nav .counter-slide');
+let teamSlider2 = $('.main-home-slider');
+
+teamSlider2.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+    let i = (currentSlide ? currentSlide : 0) + 1;
+    let prefix = i < 10 ? '0' : '';
+    let prefixAll = slick.slideCount < 10 ? '0' : '';
+    pagingInfo2.html('<span class="current">' + prefix + i + '</span>' + ' ' + '<span class="total">' + prefixAll + slick.slideCount + '</span>');
+});
+
+
+$('.main-home-slider').slick({
+    slidesToShow: 1,
+    dots: true,
+    fade: true,
+    appendArrows: '.main-home-slider__arrows',
+    appendDots: '.main-home-slider__nav',
+    nextArrow: '<button type="button" class="slick-next"><span class="icon-slider-arrow-right"></span></button>',
+    prevArrow: '<button type="button" class="slick-prev"><span class="icon-slider-arrow-left"></span></button>',
+});
+
 
 // category
 $(document).ready(function () {
