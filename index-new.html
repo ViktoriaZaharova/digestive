@@ -217,8 +217,11 @@
     </div>
     <div class="mobile-search">
       <form class="header__search" action="#">
-        <input class="header__field" type="text" placeholder="Найти алкоголь" required>
-        <button class="header__submit" type="submit"><i class="icon-search"></i></button>
+        <input class="header__field" type="text" placeholder="Поиск по каталогу" required>
+        <button class="header__submit" type="submit">
+          <span class="header__submit-icon"><img src="images/search_icon.svg" alt=""></span><span
+            class="header__submit-text">Найти</span>
+        </button>
         <button class="header__delete" type="button">
           <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 612 612">
             <path fill="#2A2A2A"
@@ -337,19 +340,48 @@
         </nav>
 
 
-        <div class="header__profile header__profile-user"><a
-            class="header__auth header__auth--type-login header__auth-user" href="#"><span class="text">Алекснадр</span></a><a
-            class="header__auth header__auth--type--register header__auth-edit" href="#">Выйти</a>
-
+        <div class="header__profile header__profile-user">
+          <a class="header__phone-number"
+             href="tel:+74957897117"><span class="header__phone-number-icon"><img src="images/phone_icon.svg" class="img-responsive" alt=""></span>8 (495) 789-71-17</a>
           <div class="dropDownProfile">
-            <ul class="menu-profile">
-              <li><a href="#">История заказов</a></li>
-              <li><a href="#">Персональные предложения</a></li>
-              <li><a href="#">Избранное</a></li>
-              <li><a href="#">Подписки</a></li>
-            </ul>
+            <div class="header-item-contacts">
+              <p>Городской телефон</p>
+              <a href="tel:+74957897117" class="phone-links">8 (495) 789-71-17</a>
+            </div>
+
+            <div class="header-item-contacts">
+              <p>Мобильный телефон</p>
+              <a href="tel:+79107897117" class="phone-links">8 (910) 789-71-17</a>
+            </div>
+
+            <div class="header-item-contacts">
+              <p>Электронная почта
+                </p>
+              <a href="mailto:info@thedigestive.ru" class="phone-links">info@thedigestive.ru</a>
+            </div>
+
+            <div class="header-item-contacts">
+              <p>Время работы</p>
+              <span class="phone-links">с 9:00 до 21:00</span>
+            </div>
+
+            <div class="header-item-contacts">
+              <p>Мессенджеры</p>
+              <ul class="list-message">
+                <li><a href="#"><img class="img-responsive" src="images/messengers/telegram_icon.svg" alt=""></a></li>
+                <li><a href="#"><img class="img-responsive" src="images/messengers/viber_icon.svg" alt=""></a></li>
+                <li><a href="#"><img class="img-responsive" src="images/messengers/whatsapp_icon.svg" alt=""></a></li>
+                <li><a href="#"><img class="img-responsive" src="images/messengers/vk_icon.svg" alt=""></a></li>
+                <li><a href="#"><img class="img-responsive" src="images/messengers/facebook_icon.svg" alt=""></a></li>
+              </ul>
+            </div>
+
+            <a href="#" class="btn btn-accent">Перезвоните мне <span class="btn-icon-arrow"><img src="images/arrow_mini_right-white.svg" alt=""></span></a>
           </div>
         </div>
+
+                  <div class="header__block header__block--type-callback"><a
+                      class="link link--theme-dashed" href="#">Перезвоните мне</a></div>
       </div>
     </div>
 
@@ -360,24 +392,31 @@
                                                                            srcset="images/logo.svg"
                                                                            alt="The digestive"></a>
           <form class="header__search" action="#">
-            <input class="header__field" type="text" placeholder="Найти алкоголь" required>
-            <button class="header__submit" type="submit"><i class="icon-search"></i></button>
+            <input class="header__field" type="text" placeholder="Поиск по каталогу" required>
+            <button class="header__submit" type="submit">
+              <span class="header__submit-icon"><img src="images/search_icon.svg" alt=""></span><span
+                class="header__submit-text">Найти</span>
+            </button>
           </form>
-          <div class="header__block header__block--type-callback"><a class="header__phone-number"
-                                                                     href="tel:+74957897117">8 (495)
-            <span>789-71-17</span></a><a
-              class="link link--theme-dashed" href="#">Перезвоните мне</a></div>
+
+          <div class="header__block header__block-links header__block--type-button"><a class="header__button" href="#"
+                                                                   data-count="5"><span class="header__block-icon"><img
+              src="images/user_icon.svg" class="img-responsive" alt=""></span></a></div>
+
           <div class="header__block header__block--type-button"><a class="header__button" href="#"
-                                                                   data-count="5"><i
-              class="icon-heart header__icon"></i></a></div>
-          <div class="header__block header__block--type-button"><a class="header__button" href="#"
-                                                                   data-count="2"><i
-              class="icon-shuffle header__icon"></i></a></div>
+                                                                   data-count="5"><span class="header__block-icon"><img
+              src="images/favorite_icon.svg" class="img-responsive" alt=""></span></a></div>
+
+
+          <div class="header__block header__block-links header__block--type-button"><a class="header__button" href="#"
+                                                                   data-count="2"><span class="header__block-icon"><img
+              src="images/compare_icon.svg" class="img-responsive" alt=""></span></a></div>
+
           <div class="header__block header__block--type-basket"><a
               class="header__basket header__basket--empty header__basket-order"
               href="#">
-            <span class="header__basket-total">12</span>
-            <strong>Корзина</strong><span class="header__basket-sum">19 789 <span class="icon-rub">
+            <span class="header__basket-total">13</span>
+            <span>Сумма</span><span class="header__basket-sum">12 998 <span class="icon-rub">
                         <svg xmlns="http://www.w3.org/2000/svg" width="14.937" height="20.31"
                              viewBox="0 0 14.937 20.31">
     <path
@@ -389,7 +428,7 @@
         </div>
       </div>
       <div class="header__footer">
-        <div class="header__wrapper"><a class="header__home" href="#"><i class="icon-home"></i></a>
+        <div class="header__wrapper">
           <div class="header__menu"><a class="header__category" href="#" data-category="Виски">Виски</a><a
               class="header__category" href="#" data-category="Коньяк">Коньяк</a><a
               class="header__category"
@@ -409,1266 +448,1253 @@
         </div>
       </div>
       <div class="mega-menu mega-menu--hidden">
-        <div class="mega-menu__window mega-menu__window--hidden" data-category="Виски">
-          <div class="mega-menu__content">
-            <div class="mega-menu__header">
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Категория</h4>
-                <div class="mega-menu__list">
-                  <a class="mega-menu__route active" href="#" data-tab="card1">Шампанское</a><a
-                    class="mega-menu__route" href="#" data-tab="card2">Игристое вино</a>
-                  <a class="mega-menu__route"
-                     href="#" data-tab="card3">Просекко</a>
-                  <a
-                      class="mega-menu__route" href="#" data-tab="card4">Асти</a>
-                  <a class="mega-menu__route"
-                     href="#" data-tab="card5">Кава</a><a
-                    class="mega-menu__route" href="#" data-tab="card6">Ламбурско</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Страна</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Франция</a><a
-                    class="mega-menu__route" href="#">Италия</a><a class="mega-menu__route"
-                                                                   href="#">Чили</a><a
-                    class="mega-menu__route" href="#">Аргентина</a><a class="mega-menu__route"
-                                                                      href="#">Испания</a><a
-                    class="mega-menu__route" href="#">Россия</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Сахар</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Брют</a><a
-                    class="mega-menu__route" href="#">Сухое</a><a class="mega-menu__route" href="#">Полусладкое</a><a
-                    class="mega-menu__route" href="#">Полусухое</a><a class="mega-menu__route"
-                                                                      href="#">Сладкое</a><a
-                    class="mega-menu__route" href="#">Экстра брют</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Цвет</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Белое</a><a
-                    class="mega-menu__route" href="#">Розовое</a><a class="mega-menu__route"
-                                                                    href="#">Красное</a>
+        <div class="container">
+          <div class="mega-menu__window mega-menu__window--hidden" data-category="Виски">
+            <div class="mega-menu__content">
+              <div class="mega-menu__header">
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Категория</h4>
+                  <div class="mega-menu__list">
+                    <a class="mega-menu__route active" href="#" data-tab="card1">Шампанское</a><a
+                      class="mega-menu__route" href="#" data-tab="card2">Игристое вино</a>
+                    <a class="mega-menu__route"
+                       href="#" data-tab="card3">Просекко</a>
+                    <a
+                        class="mega-menu__route" href="#" data-tab="card4">Асти</a>
+                    <a class="mega-menu__route"
+                       href="#" data-tab="card5">Кава</a><a
+                      class="mega-menu__route" href="#" data-tab="card6">Ламбурско</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Страна</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Франция</a><a
+                      class="mega-menu__route" href="#">Италия</a><a class="mega-menu__route"
+                                                                     href="#">Чили</a><a
+                      class="mega-menu__route" href="#">Аргентина</a><a class="mega-menu__route"
+                                                                        href="#">Испания</a><a
+                      class="mega-menu__route" href="#">Россия</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Сахар</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Брют</a><a
+                      class="mega-menu__route" href="#">Сухое</a><a class="mega-menu__route" href="#">Полусладкое</a><a
+                      class="mega-menu__route" href="#">Полусухое</a><a class="mega-menu__route"
+                                                                        href="#">Сладкое</a><a
+                      class="mega-menu__route" href="#">Экстра брют</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Цвет</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Белое</a><a
+                      class="mega-menu__route" href="#">Розовое</a><a class="mega-menu__route"
+                                                                      href="#">Красное</a>
+                  </div>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Популярные</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Moet & Chandon</a><a
+                      class="mega-menu__route" href="#">Veuve Clicquot</a><a class="mega-menu__route"
+                                                                             href="#">Dom
+                    Perignon</a><a
+                      class="mega-menu__route" href="#">Gancia</a><a class="mega-menu__route"
+                                                                     href="#">Ruinart</a><a
+                      class="mega-menu__route" href="#">Krug</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
                 </div>
               </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Популярные</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Moet & Chandon</a><a
-                    class="mega-menu__route" href="#">Veuve Clicquot</a><a class="mega-menu__route"
-                                                                           href="#">Dom
-                  Perignon</a><a
-                    class="mega-menu__route" href="#">Gancia</a><a class="mega-menu__route"
-                                                                   href="#">Ruinart</a><a
-                    class="mega-menu__route" href="#">Krug</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+              <div class="mega-menu__footer">
+                <div class="mega-menu__range">
+                  <div class="line"></div>
+                  <a href="#" class="range-dot item_left">
+                    <span class="dot"></span>
+                    <span class="summ">до 1000 ₽</span>
+                  </a>
+
+                  <a href="#" class="range-dot">
+                    <span class="dot"></span>
+                    <span class="summ">1000 - 3000 ₽</span>
+                  </a>
+
+                  <a href="#" class="range-dot item_right">
+                    <span class="dot"></span>
+                    <span class="summ">3000 - 6000 ₽</span>
+                  </a>
+
+                </div>
+                <a class="button" href="#">Показать все товары</a>
               </div>
             </div>
-            <div class="mega-menu__footer">
-              <div class="mega-menu__range">
-                <div class="line"></div>
-                <a href="#" class="range-dot item_left">
-                  <span class="dot"></span>
-                  <span class="summ">до 2000 ₽</span>
-                </a>
+            <div class="mega-menu__favorite">
+              <div class="product-item js-tab-content active" data-tab="card1">
 
-                <a href="#" class="range-dot">
-                  <span class="dot"></span>
-                  <span class="summ">1000 - 3000 ₽</span>
-                </a>
+                <div class="line-title">
+                  <h4 class="mega-menu__heading">ВЫБОР ПОКУПАТЕЛЕЙ</h4>
+                  <div class="mega-menu__favorite-slider-nav slider-nav"></div>
+                </div>
 
-                <a href="#" class="range-dot item_right">
-                  <span class="dot"></span>
-                  <span class="summ">3000 - 6000 ₽</span>
-                </a>
+                <div class="mega-menu__favorite-slider w-100">
+                  <div class="slide">
+                    <a href="#" class="product-slide">
+                      <span class="product-slide__img"><img src="images/news/new-product4.png" alt=""></span>
+                      <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                      <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                      <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                    </a>
+                  </div>
+
+                  <div class="slide">
+                    <a href="#" class="product-slide">
+                      <span class="product-slide__img"><img src="images/news/new-product1.png" alt=""></span>
+                      <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                      <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                      <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                    </a>
+                  </div>
+
+                  <div class="slide">
+                    <a href="#" class="product-slide">
+                      <span class="product-slide__img"><img src="images/news/new-product3.png" alt=""></span>
+                      <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                      <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                      <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                    </a>
+                  </div>
+                </div>
 
               </div>
-              <a class="button" href="#">Показать все товары</a>
+
+              <div class="product-item js-tab-content" data-tab="card2">
+                <div class="line-title">
+                  <h4 class="mega-menu__heading">ВЫБОР ПОКУПАТЕЛЕЙ</h4>
+                  <div class="mega-menu__favorite-slider-nav slider-nav"></div>
+                </div>
+
+                <div class="mega-menu__favorite-slider w-100">
+                  <div class="slide">
+                    <a href="#" class="product-slide">
+                      <span class="product-slide__img"><img src="images/news/new-product4.png" alt=""></span>
+                      <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                      <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                      <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                    </a>
+                  </div>
+
+                  <div class="slide">
+                    <a href="#" class="product-slide">
+                      <span class="product-slide__img"><img src="images/news/new-product1.png" alt=""></span>
+                      <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                      <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                      <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                    </a>
+                  </div>
+
+                  <div class="slide">
+                    <a href="#" class="product-slide">
+                      <span class="product-slide__img"><img src="images/news/new-product3.png" alt=""></span>
+                      <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                      <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                      <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item js-tab-content" data-tab="card3">
+                <div class="line-title">
+                  <h4 class="mega-menu__heading">ВЫБОР ПОКУПАТЕЛЕЙ</h4>
+                  <div class="mega-menu__favorite-slider-nav slider-nav"></div>
+                </div>
+
+                <div class="mega-menu__favorite-slider w-100">
+                  <div class="slide">
+                    <a href="#" class="product-slide">
+                      <span class="product-slide__img"><img src="images/news/new-product4.png" alt=""></span>
+                      <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                      <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                      <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                    </a>
+                  </div>
+
+                  <div class="slide">
+                    <a href="#" class="product-slide">
+                      <span class="product-slide__img"><img src="images/news/new-product1.png" alt=""></span>
+                      <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                      <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                      <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                    </a>
+                  </div>
+
+                  <div class="slide">
+                    <a href="#" class="product-slide">
+                      <span class="product-slide__img"><img src="images/news/new-product3.png" alt=""></span>
+                      <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                      <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                      <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item js-tab-content" data-tab="card4">
+                <div class="line-title">
+                  <h4 class="mega-menu__heading">ВЫБОР ПОКУПАТЕЛЕЙ</h4>
+                  <div class="mega-menu__favorite-slider-nav slider-nav"></div>
+                </div>
+
+                <div class="mega-menu__favorite-slider w-100">
+                  <div class="slide">
+                    <a href="#" class="product-slide">
+                      <span class="product-slide__img"><img src="images/news/new-product4.png" alt=""></span>
+                      <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                      <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                      <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                    </a>
+                  </div>
+
+                  <div class="slide">
+                    <a href="#" class="product-slide">
+                      <span class="product-slide__img"><img src="images/news/new-product1.png" alt=""></span>
+                      <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                      <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                      <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                    </a>
+                  </div>
+
+                  <div class="slide">
+                    <a href="#" class="product-slide">
+                      <span class="product-slide__img"><img src="images/news/new-product3.png" alt=""></span>
+                      <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                      <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                      <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item js-tab-content" data-tab="card5">
+                <div class="line-title">
+                  <h4 class="mega-menu__heading">ВЫБОР ПОКУПАТЕЛЕЙ</h4>
+                  <div class="mega-menu__favorite-slider-nav slider-nav"></div>
+                </div>
+
+                <div class="mega-menu__favorite-slider w-100">
+                  <div class="slide">
+                    <a href="#" class="product-slide">
+                      <span class="product-slide__img"><img src="images/news/new-product4.png" alt=""></span>
+                      <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                      <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                      <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                    </a>
+                  </div>
+
+                  <div class="slide">
+                    <a href="#" class="product-slide">
+                      <span class="product-slide__img"><img src="images/news/new-product1.png" alt=""></span>
+                      <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                      <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                      <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                    </a>
+                  </div>
+
+                  <div class="slide">
+                    <a href="#" class="product-slide">
+                      <span class="product-slide__img"><img src="images/news/new-product3.png" alt=""></span>
+                      <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                      <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                      <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item js-tab-content" data-tab="card6">
+                <div class="line-title">
+                  <h4 class="mega-menu__heading">ВЫБОР ПОКУПАТЕЛЕЙ</h4>
+                  <div class="mega-menu__favorite-slider-nav slider-nav"></div>
+                </div>
+
+                <div class="mega-menu__favorite-slider w-100">
+                  <div class="slide">
+                    <a href="#" class="product-slide">
+                      <span class="product-slide__img"><img src="images/news/new-product4.png" alt=""></span>
+                      <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                      <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                      <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                    </a>
+                  </div>
+
+                  <div class="slide">
+                    <a href="#" class="product-slide">
+                      <span class="product-slide__img"><img src="images/news/new-product1.png" alt=""></span>
+                      <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                      <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                      <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                    </a>
+                  </div>
+
+                  <div class="slide">
+                    <a href="#" class="product-slide">
+                      <span class="product-slide__img"><img src="images/news/new-product3.png" alt=""></span>
+                      <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                      <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                      <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
+
           </div>
-          <div class="mega-menu__favorite">
-            <div class="product-item js-tab-content active" data-tab="card1">
-              <div class="product-item__overlay">
-                <a class="product-item__header"
-                   href="#">
-                  <div class="product-item__thumbnail">
-                    <div class="product-item__tags">
-                      <div class="product-item__tag product-item__tag--new"><img
-                          src="images/blue.svg" alt="">
-                      </div>
-                    </div>
-                    <div class="product-item__controls">
-                      <button class="product-item__control product-item__control--like"><i
-                          class="icon-heart"></i></button>
-                      <button class="product-item__control product-item__control--comparison"><i
-                          class="icon-shuffle"></i></button>
-                    </div>
-                    <img class="lazyload product-item__image" src="images/products/chivas-regal.png"
-                         srcset="images/products/chivas-regal.png">
+          <div class="mega-menu__window mega-menu__window--hidden" data-category="Коньяк">
+            <div class="mega-menu__content">
+              <div class="mega-menu__header">
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Категория</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Шампанское</a><a
+                      class="mega-menu__route" href="#">Игристое вино</a><a class="mega-menu__route"
+                                                                            href="#">Просекко</a><a
+                      class="mega-menu__route" href="#">Асти</a><a class="mega-menu__route"
+                                                                   href="#">Кава</a><a
+                      class="mega-menu__route" href="#">Ламбурско</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Страна</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Франция</a><a
+                      class="mega-menu__route" href="#">Италия</a><a class="mega-menu__route"
+                                                                     href="#">Чили</a><a
+                      class="mega-menu__route" href="#">Аргентина</a><a class="mega-menu__route"
+                                                                        href="#">Испания</a><a
+                      class="mega-menu__route" href="#">Россия</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Сахар</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Брют</a><a
+                      class="mega-menu__route" href="#">Сухое</a><a class="mega-menu__route" href="#">Полусладкое</a><a
+                      class="mega-menu__route" href="#">Полусухое</a><a class="mega-menu__route"
+                                                                        href="#">Сладкое</a><a
+                      class="mega-menu__route" href="#">Экстра брют</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Цвет</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Белое</a><a
+                      class="mega-menu__route" href="#">Розовое</a><a class="mega-menu__route"
+                                                                      href="#">Красное</a>
                   </div>
-                  <div class="product-item__content">
-                    <div class="product-item__seo"><span
-                        class="product-item__available product-item__available--yes">Доступно</span><span
-                        class="product-item__heading">Виски Chivas Regal 12 years old 0.7 l</span>
-                    </div>
-                    <div class="product-item__components"><span
-                        class="product-item__component product-item__component--displacement">0.7 л</span><span
-                        class="product-item__component product-item__component--alcohol">47% алк</span>
-                    </div>
-                    <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
-                  </div>
-                </a>
-                <div class="product-item__footer">
-                  <div class="product-item__prices"><span
-                      class="product-item__price">2 639<span class="icon-rub"></span></span><span
-                      class="product-item__sale">3 890 ₽ без скидки</span>
-                  </div>
-                  <a class="button product-item__order" href="#"><i
-                      class="icon-basket"></i><span>В корзину</span></a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Популярные</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Moet & Chandon</a><a
+                      class="mega-menu__route" href="#">Veuve Clicquot</a><a class="mega-menu__route"
+                                                                             href="#">Dom
+                    Perignon</a><a
+                      class="mega-menu__route" href="#">Gancia</a><a class="mega-menu__route"
+                                                                     href="#">Ruinart</a><a
+                      class="mega-menu__route" href="#">Krug</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
                 </div>
               </div>
-            </div>
+              <div class="mega-menu__footer">
+                <div class="mega-menu__range">
+                  <div class="line"></div>
+                  <a href="#" class="range-dot item_left">
+                    <span class="dot"></span>
+                    <span class="summ">до 2000 ₽</span>
+                  </a>
 
-            <div class="product-item js-tab-content" data-tab="card2">
-              <div class="product-item__overlay">
-                <a class="product-item__header"
-                   href="#">
-                  <div class="product-item__thumbnail">
-                    <div class="product-item__tags">
-                      <div class="product-item__tag product-item__tag--best"><img
-                          src="images/green.svg" alt="">
-                      </div>
-                    </div>
-                    <div class="product-item__controls">
-                      <button class="product-item__control product-item__control--like"><i
-                          class="icon-heart"></i></button>
-                      <button class="product-item__control product-item__control--comparison"><i
-                          class="icon-shuffle"></i></button>
-                    </div>
-                    <img class="lazyload product-item__image" src="images/products/bombay.png"
-                         srcset="images/products/bombay.png">
-                  </div>
-                  <div class="product-item__content">
-                    <div class="product-item__seo"><span
-                        class="product-item__available product-item__available--yes">В
-											наличии</span><span
-                        class="product-item__heading">Джин Bombay Sapphire 0.7 l</span>
-                    </div>
-                    <div class="product-item__components"><span
-                        class="product-item__component product-item__component--displacement">0.7 л</span><span
-                        class="product-item__component product-item__component--alcohol">47% алк</span>
-                    </div>
-                    <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
-                  </div>
-                </a>
-                <div class="product-item__footer">
-                  <div class="product-item__prices"><span
-                      class="product-item__price">2 666<span class="icon-rub"></span></span><span
-                      class="product-item__sale">4 890 ₽ без скидки</span>
-                  </div>
-                  <a class="button product-item__order" href="#"><i
-                      class="icon-basket"></i><span>В корзину</span></a>
+                  <a href="#" class="range-dot">
+                    <span class="dot"></span>
+                    <span class="summ">1000 - 3000 ₽</span>
+                  </a>
+
+                  <a href="#" class="range-dot item_right">
+                    <span class="dot"></span>
+                    <span class="summ">3000 - 6000 ₽</span>
+                  </a>
+
                 </div>
+                <a class="button" href="#">Показать все товары</a>
               </div>
             </div>
-            <div class="product-item js-tab-content" data-tab="card3">
-              <div class="product-item__overlay">
-                <a class="product-item__header"
-                   href="#">
-                  <div class="product-item__thumbnail">
-                    <div class="product-item__tags">
-                      <div class="product-item__tag product-item__tag--new"><img
-                          src="images/blue.svg" alt="">
-                      </div>
-                    </div>
-                    <div class="product-item__controls">
-                      <button class="product-item__control product-item__control--like"><i
-                          class="icon-heart"></i></button>
-                      <button class="product-item__control product-item__control--comparison"><i
-                          class="icon-shuffle"></i></button>
-                    </div>
-                    <img class="lazyload product-item__image" src="images/products/chivas-regal.png"
-                         srcset="images/products/chivas-regal.png">
-                  </div>
-                  <div class="product-item__content">
-                    <div class="product-item__seo"><span
-                        class="product-item__available product-item__available--yes">Доступно</span><span
-                        class="product-item__heading">Виски Chivas Regal 12 years old 0.7 l</span>
-                    </div>
-                    <div class="product-item__components"><span
-                        class="product-item__component product-item__component--displacement">0.7 л</span><span
-                        class="product-item__component product-item__component--alcohol">47% алк</span>
-                    </div>
-                    <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
-                  </div>
-                </a>
-                <div class="product-item__footer">
-                  <div class="product-item__prices"><span
-                      class="product-item__price">2 639<span class="icon-rub"></span></span><span
-                      class="product-item__sale">3 890 ₽ без скидки</span>
-                  </div>
-                  <a class="button product-item__order" href="#"><i
-                      class="icon-basket"></i><span>В корзину</span></a>
-                </div>
+            <div class="mega-menu__favorite">
+              <div class="line-title">
+                <h4 class="mega-menu__heading">ВЫБОР ПОКУПАТЕЛЕЙ</h4>
+                <div class="mega-menu__favorite-slider-nav slider-nav"></div>
               </div>
-            </div>
-            <div class="product-item js-tab-content" data-tab="card4">
-              <div class="product-item__overlay">
-                <a class="product-item__header"
-                   href="#">
-                  <div class="product-item__thumbnail">
-                    <div class="product-item__tags">
-                      <div class="product-item__tag product-item__tag--best"><img
-                          src="images/green.svg" alt="">
-                      </div>
-                    </div>
-                    <div class="product-item__controls">
-                      <button class="product-item__control product-item__control--like"><i
-                          class="icon-heart"></i></button>
-                      <button class="product-item__control product-item__control--comparison"><i
-                          class="icon-shuffle"></i></button>
-                    </div>
-                    <img class="lazyload product-item__image" src="images/products/bombay.png"
-                         srcset="images/products/bombay.png">
-                  </div>
-                  <div class="product-item__content">
-                    <div class="product-item__seo"><span
-                        class="product-item__available product-item__available--yes">В
-											наличии</span><span
-                        class="product-item__heading">Джин Bombay Sapphire 0.7 l</span>
-                    </div>
-                    <div class="product-item__components"><span
-                        class="product-item__component product-item__component--displacement">0.7 л</span><span
-                        class="product-item__component product-item__component--alcohol">47% алк</span>
-                    </div>
-                    <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
-                  </div>
-                </a>
-                <div class="product-item__footer">
-                  <div class="product-item__prices"><span
-                      class="product-item__price">2 666<span class="icon-rub"></span></span><span
-                      class="product-item__sale">4 890 ₽ без скидки</span>
-                  </div>
-                  <a class="button product-item__order" href="#"><i
-                      class="icon-basket"></i><span>В корзину</span></a>
-                </div>
-              </div>
-            </div>
-            <div class="product-item js-tab-content" data-tab="card5">
-              <div class="product-item__overlay">
-                <a class="product-item__header"
-                   href="#">
-                  <div class="product-item__thumbnail">
-                    <div class="product-item__tags">
-                      <div class="product-item__tag product-item__tag--new"><img
-                          src="images/blue.svg" alt="">
-                      </div>
-                    </div>
-                    <div class="product-item__controls">
-                      <button class="product-item__control product-item__control--like"><i
-                          class="icon-heart"></i></button>
-                      <button class="product-item__control product-item__control--comparison"><i
-                          class="icon-shuffle"></i></button>
-                    </div>
-                    <img class="lazyload product-item__image" src="images/products/chivas-regal.png"
-                         srcset="images/products/chivas-regal.png">
-                  </div>
-                  <div class="product-item__content">
-                    <div class="product-item__seo"><span
-                        class="product-item__available product-item__available--yes">Доступно</span><span
-                        class="product-item__heading">Виски Chivas Regal 12 years old 0.7 l</span>
-                    </div>
-                    <div class="product-item__components"><span
-                        class="product-item__component product-item__component--displacement">0.7 л</span><span
-                        class="product-item__component product-item__component--alcohol">47% алк</span>
-                    </div>
-                    <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
-                  </div>
-                </a>
-                <div class="product-item__footer">
-                  <div class="product-item__prices"><span
-                      class="product-item__price">2 639<span class="icon-rub"></span></span><span
-                      class="product-item__sale">3 890 ₽ без скидки</span>
-                  </div>
-                  <a class="button product-item__order" href="#"><i
-                      class="icon-basket"></i><span>В корзину</span></a>
+
+              <div class="mega-menu__favorite-slider w-100">
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product4.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
                 </div>
 
-              </div>
-            </div>
-            <div class="product-item js-tab-content" data-tab="card6">
-              <div class="product-item__overlay">
-                <a class="product-item__header"
-                   href="#">
-                  <div class="product-item__thumbnail">
-                    <div class="product-item__tags">
-                      <div class="product-item__tag product-item__tag--best"><img
-                          src="images/green.svg" alt="">
-                      </div>
-                    </div>
-                    <div class="product-item__controls">
-                      <button class="product-item__control product-item__control--like"><i
-                          class="icon-heart"></i></button>
-                      <button class="product-item__control product-item__control--comparison"><i
-                          class="icon-shuffle"></i></button>
-                    </div>
-                    <img class="lazyload product-item__image" src="images/products/bombay.png"
-                         srcset="images/products/bombay.png">
-                  </div>
-                  <div class="product-item__content">
-                    <div class="product-item__seo"><span
-                        class="product-item__available product-item__available--yes">В
-											наличии</span><span
-                        class="product-item__heading">Джин Bombay Sapphire 0.7 l</span>
-                    </div>
-                    <div class="product-item__components"><span
-                        class="product-item__component product-item__component--displacement">0.7 л</span><span
-                        class="product-item__component product-item__component--alcohol">47% алк</span>
-                    </div>
-                    <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
-                  </div>
-                </a>
-                <div class="product-item__footer">
-                  <div class="product-item__prices"><span
-                      class="product-item__price">2 666<span class="icon-rub"></span></span><span
-                      class="product-item__sale">4 890 ₽ без скидки</span>
-                  </div>
-                  <a class="button product-item__order" href="#"><i
-                      class="icon-basket"></i><span>В корзину</span></a>
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product1.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
                 </div>
-              </div>
-            </div>
-          </div>
 
-        </div>
-        <div class="mega-menu__window mega-menu__window--hidden" data-category="Коньяк">
-          <div class="mega-menu__content">
-            <div class="mega-menu__header">
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Категория</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Шампанское</a><a
-                    class="mega-menu__route" href="#">Игристое вино</a><a class="mega-menu__route"
-                                                                          href="#">Просекко</a><a
-                    class="mega-menu__route" href="#">Асти</a><a class="mega-menu__route"
-                                                                 href="#">Кава</a><a
-                    class="mega-menu__route" href="#">Ламбурско</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Страна</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Франция</a><a
-                    class="mega-menu__route" href="#">Италия</a><a class="mega-menu__route"
-                                                                   href="#">Чили</a><a
-                    class="mega-menu__route" href="#">Аргентина</a><a class="mega-menu__route"
-                                                                      href="#">Испания</a><a
-                    class="mega-menu__route" href="#">Россия</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Сахар</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Брют</a><a
-                    class="mega-menu__route" href="#">Сухое</a><a class="mega-menu__route" href="#">Полусладкое</a><a
-                    class="mega-menu__route" href="#">Полусухое</a><a class="mega-menu__route"
-                                                                      href="#">Сладкое</a><a
-                    class="mega-menu__route" href="#">Экстра брют</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Цвет</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Белое</a><a
-                    class="mega-menu__route" href="#">Розовое</a><a class="mega-menu__route"
-                                                                    href="#">Красное</a>
-                </div>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Популярные</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Moet & Chandon</a><a
-                    class="mega-menu__route" href="#">Veuve Clicquot</a><a class="mega-menu__route"
-                                                                           href="#">Dom
-                  Perignon</a><a
-                    class="mega-menu__route" href="#">Gancia</a><a class="mega-menu__route"
-                                                                   href="#">Ruinart</a><a
-                    class="mega-menu__route" href="#">Krug</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-            </div>
-            <div class="mega-menu__footer">
-              <div class="mega-menu__range">
-                <div class="line"></div>
-                <a href="#" class="range-dot item_left">
-                  <span class="dot"></span>
-                  <span class="summ">до 2000 ₽</span>
-                </a>
-
-                <a href="#" class="range-dot">
-                  <span class="dot"></span>
-                  <span class="summ">1000 - 3000 ₽</span>
-                </a>
-
-                <a href="#" class="range-dot item_right">
-                  <span class="dot"></span>
-                  <span class="summ">3000 - 6000 ₽</span>
-                </a>
-
-              </div>
-              <a class="button" href="#">Показать все товары</a>
-            </div>
-          </div>
-          <div class="mega-menu__favorite">
-            <div class="product-item">
-              <div class="product-item__overlay">
-                <a class="product-item__header" href="#">
-                  <div class="product-item__thumbnail">
-                    <div class="product-item__tags">
-                      <div class="product-item__tag product-item__tag--best"><img
-                          src="images/green.svg" alt="">
-                      </div>
-                    </div>
-                    <div class="product-item__controls">
-                      <button class="product-item__control product-item__control--like"><i
-                          class="icon-heart"></i></button>
-                      <button class="product-item__control product-item__control--comparison"><i
-                          class="icon-shuffle"></i></button>
-                    </div>
-                    <img class="lazyload product-item__image" src="images/products/bombay.png"
-                         srcset="images/products/bombay.png">
-                  </div>
-                  <div class="product-item__content">
-                    <div class="product-item__seo"><span
-                        class="product-item__available product-item__available--yes">В
-											наличии</span><span
-                        class="product-item__heading">Джин Bombay Sapphire 0.7 l</span>
-                    </div>
-                    <div class="product-item__components"><span
-                        class="product-item__component product-item__component--displacement">0.7 л</span><span
-                        class="product-item__component product-item__component--alcohol">47% алк</span>
-                    </div>
-                    <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
-                  </div>
-                </a>
-                <div class="product-item__footer">
-                  <div class="product-item__prices"><span
-                      class="product-item__price">2 666<span class="icon-rub"></span></span><span
-                      class="product-item__sale">4 890 ₽ без скидки</span>
-                  </div>
-                  <a class="button product-item__order" href="#"><i
-                      class="icon-basket"></i><span>В корзину</span></a>
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product3.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="mega-menu__window mega-menu__window--hidden" data-category="Водка">
-          <div class="mega-menu__content">
-            <div class="mega-menu__header">
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Категория</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Шампанское</a><a
-                    class="mega-menu__route" href="#">Игристое вино</a><a class="mega-menu__route"
-                                                                          href="#">Просекко</a><a
-                    class="mega-menu__route" href="#">Асти</a><a class="mega-menu__route"
-                                                                 href="#">Кава</a><a
-                    class="mega-menu__route" href="#">Ламбурско</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Страна</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Франция</a><a
-                    class="mega-menu__route" href="#">Италия</a><a class="mega-menu__route"
-                                                                   href="#">Чили</a><a
-                    class="mega-menu__route" href="#">Аргентина</a><a class="mega-menu__route"
-                                                                      href="#">Испания</a><a
-                    class="mega-menu__route" href="#">Россия</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Сахар</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Брют</a><a
-                    class="mega-menu__route" href="#">Сухое</a><a class="mega-menu__route" href="#">Полусладкое</a><a
-                    class="mega-menu__route" href="#">Полусухое</a><a class="mega-menu__route"
-                                                                      href="#">Сладкое</a><a
-                    class="mega-menu__route" href="#">Экстра брют</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Цвет</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Белое</a><a
-                    class="mega-menu__route" href="#">Розовое</a><a class="mega-menu__route"
-                                                                    href="#">Красное</a>
+          <div class="mega-menu__window mega-menu__window--hidden" data-category="Водка">
+            <div class="mega-menu__content">
+              <div class="mega-menu__header">
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Категория</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Шампанское</a><a
+                      class="mega-menu__route" href="#">Игристое вино</a><a class="mega-menu__route"
+                                                                            href="#">Просекко</a><a
+                      class="mega-menu__route" href="#">Асти</a><a class="mega-menu__route"
+                                                                   href="#">Кава</a><a
+                      class="mega-menu__route" href="#">Ламбурско</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Страна</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Франция</a><a
+                      class="mega-menu__route" href="#">Италия</a><a class="mega-menu__route"
+                                                                     href="#">Чили</a><a
+                      class="mega-menu__route" href="#">Аргентина</a><a class="mega-menu__route"
+                                                                        href="#">Испания</a><a
+                      class="mega-menu__route" href="#">Россия</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Сахар</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Брют</a><a
+                      class="mega-menu__route" href="#">Сухое</a><a class="mega-menu__route" href="#">Полусладкое</a><a
+                      class="mega-menu__route" href="#">Полусухое</a><a class="mega-menu__route"
+                                                                        href="#">Сладкое</a><a
+                      class="mega-menu__route" href="#">Экстра брют</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Цвет</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Белое</a><a
+                      class="mega-menu__route" href="#">Розовое</a><a class="mega-menu__route"
+                                                                      href="#">Красное</a>
+                  </div>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Популярные</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Moet & Chandon</a><a
+                      class="mega-menu__route" href="#">Veuve Clicquot</a><a class="mega-menu__route"
+                                                                             href="#">Dom
+                    Perignon</a><a
+                      class="mega-menu__route" href="#">Gancia</a><a class="mega-menu__route"
+                                                                     href="#">Ruinart</a><a
+                      class="mega-menu__route" href="#">Krug</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
                 </div>
               </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Популярные</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Moet & Chandon</a><a
-                    class="mega-menu__route" href="#">Veuve Clicquot</a><a class="mega-menu__route"
-                                                                           href="#">Dom
-                  Perignon</a><a
-                    class="mega-menu__route" href="#">Gancia</a><a class="mega-menu__route"
-                                                                   href="#">Ruinart</a><a
-                    class="mega-menu__route" href="#">Krug</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-            </div>
-            <div class="mega-menu__footer">
-              <div class="mega-menu__range">
-                <div class="line"></div>
-                <a href="#" class="range-dot item_left">
-                  <span class="dot"></span>
-                  <span class="summ">до 2000 ₽</span>
-                </a>
+              <div class="mega-menu__footer">
+                <div class="mega-menu__range">
+                  <div class="line"></div>
+                  <a href="#" class="range-dot item_left">
+                    <span class="dot"></span>
+                    <span class="summ">до 2000 ₽</span>
+                  </a>
 
-                <a href="#" class="range-dot">
-                  <span class="dot"></span>
-                  <span class="summ">1000 - 3000 ₽</span>
-                </a>
+                  <a href="#" class="range-dot">
+                    <span class="dot"></span>
+                    <span class="summ">1000 - 3000 ₽</span>
+                  </a>
 
-                <a href="#" class="range-dot item_right">
-                  <span class="dot"></span>
-                  <span class="summ">3000 - 6000 ₽</span>
-                </a>
+                  <a href="#" class="range-dot item_right">
+                    <span class="dot"></span>
+                    <span class="summ">3000 - 6000 ₽</span>
+                  </a>
 
-              </div>
-              <a class="button" href="#">Показать все товары</a>
-            </div>
-          </div>
-          <div class="mega-menu__favorite">
-            <div class="product-item">
-              <div class="product-item__overlay">
-                <a class="product-item__header" href="#">
-                  <div class="product-item__thumbnail">
-                    <div class="product-item__tags">
-                      <div class="product-item__tag product-item__tag--new"><img
-                          src="images/blue.svg" alt="">
-                      </div>
-                    </div>
-                    <div class="product-item__controls">
-                      <button class="product-item__control product-item__control--like"><i
-                          class="icon-heart"></i></button>
-                      <button class="product-item__control product-item__control--comparison"><i
-                          class="icon-shuffle"></i></button>
-                    </div>
-                    <img class="lazyload product-item__image" src="images/products/chivas-regal.png"
-                         srcset="images/products/chivas-regal.png">
-                  </div>
-                  <div class="product-item__content">
-                    <div class="product-item__seo"><span
-                        class="product-item__available product-item__available--yes">Доступно</span><span
-                        class="product-item__heading">Виски Chivas Regal 12 years old 0.7 l</span>
-                    </div>
-                    <div class="product-item__components"><span
-                        class="product-item__component product-item__component--displacement">0.7 л</span><span
-                        class="product-item__component product-item__component--alcohol">47% алк</span>
-                    </div>
-                    <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
-                  </div>
-                </a>
-                <div class="product-item__footer">
-                  <div class="product-item__prices"><span
-                      class="product-item__price">2 639<span class="icon-rub"></span></span><span
-                      class="product-item__sale">3 890 ₽ без скидки</span>
-                  </div>
-                  <a class="button product-item__order" href="#"><i
-                      class="icon-basket"></i><span>В корзину</span></a>
                 </div>
+                <a class="button" href="#">Показать все товары</a>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="mega-menu__window mega-menu__window--hidden" data-category="Вино">
-          <div class="mega-menu__content">
-            <div class="mega-menu__header">
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Категория</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Шампанское</a><a
-                    class="mega-menu__route" href="#">Игристое вино</a><a class="mega-menu__route"
-                                                                          href="#">Просекко</a><a
-                    class="mega-menu__route" href="#">Асти</a><a class="mega-menu__route"
-                                                                 href="#">Кава</a><a
-                    class="mega-menu__route" href="#">Ламбурско</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+            <div class="mega-menu__favorite">
+              <div class="line-title">
+                <h4 class="mega-menu__heading">ВЫБОР ПОКУПАТЕЛЕЙ</h4>
+                <div class="mega-menu__favorite-slider-nav slider-nav"></div>
               </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Страна</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Франция</a><a
-                    class="mega-menu__route" href="#">Италия</a><a class="mega-menu__route"
-                                                                   href="#">Чили</a><a
-                    class="mega-menu__route" href="#">Аргентина</a><a class="mega-menu__route"
-                                                                      href="#">Испания</a><a
-                    class="mega-menu__route" href="#">Россия</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Сахар</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Брют</a><a
-                    class="mega-menu__route" href="#">Сухое</a><a class="mega-menu__route" href="#">Полусладкое</a><a
-                    class="mega-menu__route" href="#">Полусухое</a><a class="mega-menu__route"
-                                                                      href="#">Сладкое</a><a
-                    class="mega-menu__route" href="#">Экстра брют</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Цвет</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Белое</a><a
-                    class="mega-menu__route" href="#">Розовое</a><a class="mega-menu__route"
-                                                                    href="#">Красное</a>
+
+              <div class="mega-menu__favorite-slider w-100">
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product4.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
                 </div>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Популярные</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Moet & Chandon</a><a
-                    class="mega-menu__route" href="#">Veuve Clicquot</a><a class="mega-menu__route"
-                                                                           href="#">Dom
-                  Perignon</a><a
-                    class="mega-menu__route" href="#">Gancia</a><a class="mega-menu__route"
-                                                                   href="#">Ruinart</a><a
-                    class="mega-menu__route" href="#">Krug</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-            </div>
-            <div class="mega-menu__footer">
-              <div class="mega-menu__range">
-                <div class="line"></div>
-                <a href="#" class="range-dot item_left">
-                  <span class="dot"></span>
-                  <span class="summ">до 2000 ₽</span>
-                </a>
 
-                <a href="#" class="range-dot">
-                  <span class="dot"></span>
-                  <span class="summ">1000 - 3000 ₽</span>
-                </a>
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product1.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
+                </div>
 
-                <a href="#" class="range-dot item_right">
-                  <span class="dot"></span>
-                  <span class="summ">3000 - 6000 ₽</span>
-                </a>
-
-              </div>
-              <a class="button" href="#">Показать все товары</a>
-            </div>
-          </div>
-          <div class="mega-menu__favorite">
-            <div class="product-item">
-              <div class="product-item__overlay">
-                <a class="product-item__header" href="#">
-                  <div class="product-item__thumbnail">
-                    <div class="product-item__tags">
-                      <div class="product-item__tag product-item__tag--best"><img
-                          src="images/green.svg" alt="">
-                      </div>
-                    </div>
-                    <div class="product-item__controls">
-                      <button class="product-item__control product-item__control--like"><i
-                          class="icon-heart"></i></button>
-                      <button class="product-item__control product-item__control--comparison"><i
-                          class="icon-shuffle"></i></button>
-                    </div>
-                    <img class="lazyload product-item__image" src="images/products/bombay.png"
-                         srcset="images/products/bombay.png">
-                  </div>
-                  <div class="product-item__content">
-                    <div class="product-item__seo"><span
-                        class="product-item__available product-item__available--yes">В
-											наличии</span><span
-                        class="product-item__heading">Джин Bombay Sapphire 0.7 l</span>
-                    </div>
-                    <div class="product-item__components"><span
-                        class="product-item__component product-item__component--displacement">0.7 л</span><span
-                        class="product-item__component product-item__component--alcohol">47% алк</span>
-                    </div>
-                    <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
-                  </div>
-                </a>
-                <div class="product-item__footer">
-                  <div class="product-item__prices"><span
-                      class="product-item__price">2 666<span class="icon-rub"></span></span><span
-                      class="product-item__sale">4 890 ₽ без скидки</span>
-                  </div>
-                  <a class="button product-item__order" href="#"><i
-                      class="icon-basket"></i><span>В корзину</span></a>
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product3.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="mega-menu__window mega-menu__window--hidden" data-category="Шампанское">
-          <div class="mega-menu__content">
-            <div class="mega-menu__header">
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Категория</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Шампанское</a><a
-                    class="mega-menu__route" href="#">Игристое вино</a><a class="mega-menu__route"
-                                                                          href="#">Просекко</a><a
-                    class="mega-menu__route" href="#">Асти</a><a class="mega-menu__route"
-                                                                 href="#">Кава</a><a
-                    class="mega-menu__route" href="#">Ламбурско</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Страна</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Франция</a><a
-                    class="mega-menu__route" href="#">Италия</a><a class="mega-menu__route"
-                                                                   href="#">Чили</a><a
-                    class="mega-menu__route" href="#">Аргентина</a><a class="mega-menu__route"
-                                                                      href="#">Испания</a><a
-                    class="mega-menu__route" href="#">Россия</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Сахар</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Брют</a><a
-                    class="mega-menu__route" href="#">Сухое</a><a class="mega-menu__route" href="#">Полусладкое</a><a
-                    class="mega-menu__route" href="#">Полусухое</a><a class="mega-menu__route"
-                                                                      href="#">Сладкое</a><a
-                    class="mega-menu__route" href="#">Экстра брют</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Цвет</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Белое</a><a
-                    class="mega-menu__route" href="#">Розовое</a><a class="mega-menu__route"
-                                                                    href="#">Красное</a>
+          <div class="mega-menu__window mega-menu__window--hidden" data-category="Вино">
+            <div class="mega-menu__content">
+              <div class="mega-menu__header">
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Категория</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Шампанское</a><a
+                      class="mega-menu__route" href="#">Игристое вино</a><a class="mega-menu__route"
+                                                                            href="#">Просекко</a><a
+                      class="mega-menu__route" href="#">Асти</a><a class="mega-menu__route"
+                                                                   href="#">Кава</a><a
+                      class="mega-menu__route" href="#">Ламбурско</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Страна</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Франция</a><a
+                      class="mega-menu__route" href="#">Италия</a><a class="mega-menu__route"
+                                                                     href="#">Чили</a><a
+                      class="mega-menu__route" href="#">Аргентина</a><a class="mega-menu__route"
+                                                                        href="#">Испания</a><a
+                      class="mega-menu__route" href="#">Россия</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Сахар</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Брют</a><a
+                      class="mega-menu__route" href="#">Сухое</a><a class="mega-menu__route" href="#">Полусладкое</a><a
+                      class="mega-menu__route" href="#">Полусухое</a><a class="mega-menu__route"
+                                                                        href="#">Сладкое</a><a
+                      class="mega-menu__route" href="#">Экстра брют</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Цвет</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Белое</a><a
+                      class="mega-menu__route" href="#">Розовое</a><a class="mega-menu__route"
+                                                                      href="#">Красное</a>
+                  </div>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Популярные</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Moet & Chandon</a><a
+                      class="mega-menu__route" href="#">Veuve Clicquot</a><a class="mega-menu__route"
+                                                                             href="#">Dom
+                    Perignon</a><a
+                      class="mega-menu__route" href="#">Gancia</a><a class="mega-menu__route"
+                                                                     href="#">Ruinart</a><a
+                      class="mega-menu__route" href="#">Krug</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
                 </div>
               </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Популярные</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Moet & Chandon</a><a
-                    class="mega-menu__route" href="#">Veuve Clicquot</a><a class="mega-menu__route"
-                                                                           href="#">Dom
-                  Perignon</a><a
-                    class="mega-menu__route" href="#">Gancia</a><a class="mega-menu__route"
-                                                                   href="#">Ruinart</a><a
-                    class="mega-menu__route" href="#">Krug</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-            </div>
-            <div class="mega-menu__footer">
-              <div class="mega-menu__range">
-                <div class="line"></div>
-                <a href="#" class="range-dot item_left">
-                  <span class="dot"></span>
-                  <span class="summ">до 2000 ₽</span>
-                </a>
+              <div class="mega-menu__footer">
+                <div class="mega-menu__range">
+                  <div class="line"></div>
+                  <a href="#" class="range-dot item_left">
+                    <span class="dot"></span>
+                    <span class="summ">до 2000 ₽</span>
+                  </a>
 
-                <a href="#" class="range-dot">
-                  <span class="dot"></span>
-                  <span class="summ">1000 - 3000 ₽</span>
-                </a>
+                  <a href="#" class="range-dot">
+                    <span class="dot"></span>
+                    <span class="summ">1000 - 3000 ₽</span>
+                  </a>
 
-                <a href="#" class="range-dot item_right">
-                  <span class="dot"></span>
-                  <span class="summ">3000 - 6000 ₽</span>
-                </a>
+                  <a href="#" class="range-dot item_right">
+                    <span class="dot"></span>
+                    <span class="summ">3000 - 6000 ₽</span>
+                  </a>
 
-              </div>
-              <a class="button" href="#">Показать все товары</a>
-            </div>
-          </div>
-          <div class="mega-menu__favorite">
-            <div class="product-item">
-              <div class="product-item__overlay">
-                <a class="product-item__header" href="#">
-                  <div class="product-item__thumbnail">
-                    <div class="product-item__tags">
-                      <div class="product-item__tag product-item__tag--new"><img
-                          src="images/blue.svg" alt="">
-                      </div>
-                    </div>
-                    <div class="product-item__controls">
-                      <button class="product-item__control product-item__control--like"><i
-                          class="icon-heart"></i></button>
-                      <button class="product-item__control product-item__control--comparison"><i
-                          class="icon-shuffle"></i></button>
-                    </div>
-                    <img class="lazyload product-item__image" src="images/products/chivas-regal.png"
-                         srcset="images/products/chivas-regal.png">
-                  </div>
-                  <div class="product-item__content">
-                    <div class="product-item__seo"><span
-                        class="product-item__available product-item__available--yes">Доступно</span><span
-                        class="product-item__heading">Виски Chivas Regal 12 years old 0.7 l</span>
-                    </div>
-                    <div class="product-item__components"><span
-                        class="product-item__component product-item__component--displacement">0.7 л</span><span
-                        class="product-item__component product-item__component--alcohol">47% алк</span>
-                    </div>
-                    <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
-                  </div>
-                </a>
-                <div class="product-item__footer">
-                  <div class="product-item__prices"><span
-                      class="product-item__price">2 639<span class="icon-rub"></span></span><span
-                      class="product-item__sale">3 890 ₽ без скидки</span>
-                  </div>
-                  <a class="button product-item__order" href="#"><i
-                      class="icon-basket"></i><span>В корзину</span></a>
                 </div>
+                <a class="button" href="#">Показать все товары</a>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="mega-menu__window mega-menu__window--hidden" data-category="Крепкие напитки">
-          <div class="mega-menu__content">
-            <div class="mega-menu__header">
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Категория</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Шампанское</a><a
-                    class="mega-menu__route" href="#">Игристое вино</a><a class="mega-menu__route"
-                                                                          href="#">Просекко</a><a
-                    class="mega-menu__route" href="#">Асти</a><a class="mega-menu__route"
-                                                                 href="#">Кава</a><a
-                    class="mega-menu__route" href="#">Ламбурско</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+            <div class="mega-menu__favorite">
+              <div class="line-title">
+                <h4 class="mega-menu__heading">ВЫБОР ПОКУПАТЕЛЕЙ</h4>
+                <div class="mega-menu__favorite-slider-nav slider-nav"></div>
               </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Страна</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Франция</a><a
-                    class="mega-menu__route" href="#">Италия</a><a class="mega-menu__route"
-                                                                   href="#">Чили</a><a
-                    class="mega-menu__route" href="#">Аргентина</a><a class="mega-menu__route"
-                                                                      href="#">Испания</a><a
-                    class="mega-menu__route" href="#">Россия</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Сахар</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Брют</a><a
-                    class="mega-menu__route" href="#">Сухое</a><a class="mega-menu__route" href="#">Полусладкое</a><a
-                    class="mega-menu__route" href="#">Полусухое</a><a class="mega-menu__route"
-                                                                      href="#">Сладкое</a><a
-                    class="mega-menu__route" href="#">Экстра брют</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Цвет</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Белое</a><a
-                    class="mega-menu__route" href="#">Розовое</a><a class="mega-menu__route"
-                                                                    href="#">Красное</a>
+
+              <div class="mega-menu__favorite-slider w-100">
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product4.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
                 </div>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Популярные</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Moet & Chandon</a><a
-                    class="mega-menu__route" href="#">Veuve Clicquot</a><a class="mega-menu__route"
-                                                                           href="#">Dom
-                  Perignon</a><a
-                    class="mega-menu__route" href="#">Gancia</a><a class="mega-menu__route"
-                                                                   href="#">Ruinart</a><a
-                    class="mega-menu__route" href="#">Krug</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-            </div>
-            <div class="mega-menu__footer">
-              <div class="mega-menu__range">
-                <div class="line"></div>
-                <a href="#" class="range-dot item_left">
-                  <span class="dot"></span>
-                  <span class="summ">до 2000 ₽</span>
-                </a>
 
-                <a href="#" class="range-dot">
-                  <span class="dot"></span>
-                  <span class="summ">1000 - 3000 ₽</span>
-                </a>
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product1.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
+                </div>
 
-                <a href="#" class="range-dot item_right">
-                  <span class="dot"></span>
-                  <span class="summ">3000 - 6000 ₽</span>
-                </a>
-
-              </div>
-              <a class="button" href="#">Показать все товары</a>
-            </div>
-          </div>
-          <div class="mega-menu__favorite">
-            <div class="product-item">
-              <div class="product-item__overlay">
-                <a class="product-item__header" href="#">
-                  <div class="product-item__thumbnail">
-                    <div class="product-item__tags">
-                      <div class="product-item__tag product-item__tag--best"><img
-                          src="images/green.svg" alt="">
-                      </div>
-                    </div>
-                    <div class="product-item__controls">
-                      <button class="product-item__control product-item__control--like"><i
-                          class="icon-heart"></i></button>
-                      <button class="product-item__control product-item__control--comparison"><i
-                          class="icon-shuffle"></i></button>
-                    </div>
-                    <img class="lazyload product-item__image" src="images/products/bombay.png"
-                         srcset="images/products/bombay.png">
-                  </div>
-                  <div class="product-item__content">
-                    <div class="product-item__seo"><span
-                        class="product-item__available product-item__available--yes">В
-											наличии</span><span
-                        class="product-item__heading">Джин Bombay Sapphire 0.7 l</span>
-                    </div>
-                    <div class="product-item__components"><span
-                        class="product-item__component product-item__component--displacement">0.7 л</span><span
-                        class="product-item__component product-item__component--alcohol">47% алк</span>
-                    </div>
-                    <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
-                  </div>
-                </a>
-                <div class="product-item__footer">
-                  <div class="product-item__prices"><span
-                      class="product-item__price">2 666<span class="icon-rub"></span></span><span
-                      class="product-item__sale">4 890 ₽ без скидки</span>
-                  </div>
-                  <a class="button product-item__order" href="#"><i
-                      class="icon-basket"></i><span>В корзину</span></a>
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product3.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="mega-menu__window mega-menu__window--hidden" data-category="Ликеры">
-          <div class="mega-menu__content">
-            <div class="mega-menu__header">
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Категория</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Шампанское</a><a
-                    class="mega-menu__route" href="#">Игристое вино</a><a class="mega-menu__route"
-                                                                          href="#">Просекко</a><a
-                    class="mega-menu__route" href="#">Асти</a><a class="mega-menu__route"
-                                                                 href="#">Кава</a><a
-                    class="mega-menu__route" href="#">Ламбурско</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Страна</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Франция</a><a
-                    class="mega-menu__route" href="#">Италия</a><a class="mega-menu__route"
-                                                                   href="#">Чили</a><a
-                    class="mega-menu__route" href="#">Аргентина</a><a class="mega-menu__route"
-                                                                      href="#">Испания</a><a
-                    class="mega-menu__route" href="#">Россия</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Сахар</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Брют</a><a
-                    class="mega-menu__route" href="#">Сухое</a><a class="mega-menu__route" href="#">Полусладкое</a><a
-                    class="mega-menu__route" href="#">Полусухое</a><a class="mega-menu__route"
-                                                                      href="#">Сладкое</a><a
-                    class="mega-menu__route" href="#">Экстра брют</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Цвет</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Белое</a><a
-                    class="mega-menu__route" href="#">Розовое</a><a class="mega-menu__route"
-                                                                    href="#">Красное</a>
+          <div class="mega-menu__window mega-menu__window--hidden" data-category="Шампанское">
+            <div class="mega-menu__content">
+              <div class="mega-menu__header">
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Категория</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Шампанское</a><a
+                      class="mega-menu__route" href="#">Игристое вино</a><a class="mega-menu__route"
+                                                                            href="#">Просекко</a><a
+                      class="mega-menu__route" href="#">Асти</a><a class="mega-menu__route"
+                                                                   href="#">Кава</a><a
+                      class="mega-menu__route" href="#">Ламбурско</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Страна</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Франция</a><a
+                      class="mega-menu__route" href="#">Италия</a><a class="mega-menu__route"
+                                                                     href="#">Чили</a><a
+                      class="mega-menu__route" href="#">Аргентина</a><a class="mega-menu__route"
+                                                                        href="#">Испания</a><a
+                      class="mega-menu__route" href="#">Россия</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Сахар</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Брют</a><a
+                      class="mega-menu__route" href="#">Сухое</a><a class="mega-menu__route" href="#">Полусладкое</a><a
+                      class="mega-menu__route" href="#">Полусухое</a><a class="mega-menu__route"
+                                                                        href="#">Сладкое</a><a
+                      class="mega-menu__route" href="#">Экстра брют</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Цвет</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Белое</a><a
+                      class="mega-menu__route" href="#">Розовое</a><a class="mega-menu__route"
+                                                                      href="#">Красное</a>
+                  </div>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Популярные</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Moet & Chandon</a><a
+                      class="mega-menu__route" href="#">Veuve Clicquot</a><a class="mega-menu__route"
+                                                                             href="#">Dom
+                    Perignon</a><a
+                      class="mega-menu__route" href="#">Gancia</a><a class="mega-menu__route"
+                                                                     href="#">Ruinart</a><a
+                      class="mega-menu__route" href="#">Krug</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
                 </div>
               </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Популярные</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Moet & Chandon</a><a
-                    class="mega-menu__route" href="#">Veuve Clicquot</a><a class="mega-menu__route"
-                                                                           href="#">Dom
-                  Perignon</a><a
-                    class="mega-menu__route" href="#">Gancia</a><a class="mega-menu__route"
-                                                                   href="#">Ruinart</a><a
-                    class="mega-menu__route" href="#">Krug</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+              <div class="mega-menu__footer">
+                <div class="mega-menu__range">
+                  <div class="line"></div>
+                  <a href="#" class="range-dot item_left">
+                    <span class="dot"></span>
+                    <span class="summ">до 2000 ₽</span>
+                  </a>
+
+                  <a href="#" class="range-dot">
+                    <span class="dot"></span>
+                    <span class="summ">1000 - 3000 ₽</span>
+                  </a>
+
+                  <a href="#" class="range-dot item_right">
+                    <span class="dot"></span>
+                    <span class="summ">3000 - 6000 ₽</span>
+                  </a>
+
+                </div>
+                <a class="button" href="#">Показать все товары</a>
               </div>
             </div>
-            <div class="mega-menu__footer">
-              <div class="mega-menu__range">
-                <div class="line"></div>
-                <a href="#" class="range-dot item_left">
-                  <span class="dot"></span>
-                  <span class="summ">до 2000 ₽</span>
-                </a>
-
-                <a href="#" class="range-dot">
-                  <span class="dot"></span>
-                  <span class="summ">1000 - 3000 ₽</span>
-                </a>
-
-                <a href="#" class="range-dot item_right">
-                  <span class="dot"></span>
-                  <span class="summ">3000 - 6000 ₽</span>
-                </a>
-
+            <div class="mega-menu__favorite">
+              <div class="line-title">
+                <h4 class="mega-menu__heading">ВЫБОР ПОКУПАТЕЛЕЙ</h4>
+                <div class="mega-menu__favorite-slider-nav slider-nav"></div>
               </div>
-              <a class="button" href="#">Показать все товары</a>
-            </div>
-          </div>
-          <div class="mega-menu__favorite">
-            <div class="product-item">
-              <div class="product-item__overlay">
-                <a class="product-item__header" href="#">
-                  <div class="product-item__thumbnail">
-                    <div class="product-item__tags">
-                      <div class="product-item__tag product-item__tag--new"><img
-                          src="images/blue.svg" alt="">
-                      </div>
-                    </div>
-                    <div class="product-item__controls">
-                      <button class="product-item__control product-item__control--like"><i
-                          class="icon-heart"></i></button>
-                      <button class="product-item__control product-item__control--comparison"><i
-                          class="icon-shuffle"></i></button>
-                    </div>
-                    <img class="lazyload product-item__image" src="images/products/chivas-regal.png"
-                         srcset="images/products/chivas-regal.png">
-                  </div>
-                  <div class="product-item__content">
-                    <div class="product-item__seo"><span
-                        class="product-item__available product-item__available--yes">Доступно</span><span
-                        class="product-item__heading">Виски Chivas Regal 12 years old 0.7 l</span>
-                    </div>
-                    <div class="product-item__components"><span
-                        class="product-item__component product-item__component--displacement">0.7 л</span><span
-                        class="product-item__component product-item__component--alcohol">47% алк</span>
-                    </div>
-                    <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
-                  </div>
-                </a>
-                <div class="product-item__footer">
-                  <div class="product-item__prices"><span
-                      class="product-item__price">2 639<span class="icon-rub"></span></span><span
-                      class="product-item__sale">3 890 ₽ без скидки</span>
-                  </div>
-                  <a class="button product-item__order" href="#"><i
-                      class="icon-basket"></i><span>В корзину</span></a>
+
+              <div class="mega-menu__favorite-slider w-100">
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product4.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
                 </div>
 
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mega-menu__window mega-menu__window--hidden" data-category="Вода">
-          <div class="mega-menu__content">
-            <div class="mega-menu__header">
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Категория</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Шампанское</a><a
-                    class="mega-menu__route" href="#">Игристое вино</a><a class="mega-menu__route"
-                                                                          href="#">Просекко</a><a
-                    class="mega-menu__route" href="#">Асти</a><a class="mega-menu__route"
-                                                                 href="#">Кава</a><a
-                    class="mega-menu__route" href="#">Ламбурско</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Страна</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Франция</a><a
-                    class="mega-menu__route" href="#">Италия</a><a class="mega-menu__route"
-                                                                   href="#">Чили</a><a
-                    class="mega-menu__route" href="#">Аргентина</a><a class="mega-menu__route"
-                                                                      href="#">Испания</a><a
-                    class="mega-menu__route" href="#">Россия</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Сахар</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Брют</a><a
-                    class="mega-menu__route" href="#">Сухое</a><a class="mega-menu__route" href="#">Полусладкое</a><a
-                    class="mega-menu__route" href="#">Полусухое</a><a class="mega-menu__route"
-                                                                      href="#">Сладкое</a><a
-                    class="mega-menu__route" href="#">Экстра брют</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Цвет</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Белое</a><a
-                    class="mega-menu__route" href="#">Розовое</a><a class="mega-menu__route"
-                                                                    href="#">Красное</a>
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product1.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
                 </div>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Популярные</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Moet & Chandon</a><a
-                    class="mega-menu__route" href="#">Veuve Clicquot</a><a class="mega-menu__route"
-                                                                           href="#">Dom
-                  Perignon</a><a
-                    class="mega-menu__route" href="#">Gancia</a><a class="mega-menu__route"
-                                                                   href="#">Ruinart</a><a
-                    class="mega-menu__route" href="#">Krug</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-            </div>
-            <div class="mega-menu__footer">
-              <div class="mega-menu__range">
-                <div class="line"></div>
-                <a href="#" class="range-dot item_left">
-                  <span class="dot"></span>
-                  <span class="summ">до 2000 ₽</span>
-                </a>
 
-                <a href="#" class="range-dot">
-                  <span class="dot"></span>
-                  <span class="summ">1000 - 3000 ₽</span>
-                </a>
-
-                <a href="#" class="range-dot item_right">
-                  <span class="dot"></span>
-                  <span class="summ">3000 - 6000 ₽</span>
-                </a>
-
-              </div>
-              <a class="button" href="#">Показать все товары</a>
-            </div>
-          </div>
-          <div class="mega-menu__favorite">
-            <div class="product-item">
-              <div class="product-item__overlay">
-                <a class="product-item__header" href="#">
-                  <div class="product-item__thumbnail">
-                    <div class="product-item__tags">
-                      <div class="product-item__tag product-item__tag--best"><img
-                          src="images/green.svg" alt="">
-                      </div>
-                    </div>
-                    <div class="product-item__controls">
-                      <button class="product-item__control product-item__control--like"><i
-                          class="icon-heart"></i></button>
-                      <button class="product-item__control product-item__control--comparison"><i
-                          class="icon-shuffle"></i></button>
-                    </div>
-                    <img class="lazyload product-item__image" src="images/products/bombay.png"
-                         srcset="images/products/bombay.png">
-                  </div>
-                  <div class="product-item__content">
-                    <div class="product-item__seo"><span
-                        class="product-item__available product-item__available--yes">В
-											наличии</span><span
-                        class="product-item__heading">Джин Bombay Sapphire 0.7 l</span>
-                    </div>
-                    <div class="product-item__components"><span
-                        class="product-item__component product-item__component--displacement">0.7 л</span><span
-                        class="product-item__component product-item__component--alcohol">47% алк</span>
-                    </div>
-                    <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
-                  </div>
-                </a>
-                <div class="product-item__footer">
-                  <div class="product-item__prices"><span
-                      class="product-item__price">2 666<span class="icon-rub"></span></span><span
-                      class="product-item__sale">4 890 ₽ без скидки</span>
-                  </div>
-                  <a class="button product-item__order" href="#"><i
-                      class="icon-basket"></i><span>В корзину</span></a>
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product3.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="mega-menu__window mega-menu__window--hidden" data-category="Стекло">
-          <div class="mega-menu__content">
-            <div class="mega-menu__header">
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Категория</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Шампанское</a><a
-                    class="mega-menu__route" href="#">Игристое вино</a><a class="mega-menu__route"
-                                                                          href="#">Просекко</a><a
-                    class="mega-menu__route" href="#">Асти</a><a class="mega-menu__route"
-                                                                 href="#">Кава</a><a
-                    class="mega-menu__route" href="#">Ламбурско</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Страна</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Франция</a><a
-                    class="mega-menu__route" href="#">Италия</a><a class="mega-menu__route"
-                                                                   href="#">Чили</a><a
-                    class="mega-menu__route" href="#">Аргентина</a><a class="mega-menu__route"
-                                                                      href="#">Испания</a><a
-                    class="mega-menu__route" href="#">Россия</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Сахар</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Брют</a><a
-                    class="mega-menu__route" href="#">Сухое</a><a class="mega-menu__route" href="#">Полусладкое</a><a
-                    class="mega-menu__route" href="#">Полусухое</a><a class="mega-menu__route"
-                                                                      href="#">Сладкое</a><a
-                    class="mega-menu__route" href="#">Экстра брют</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
-              </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Цвет</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Белое</a><a
-                    class="mega-menu__route" href="#">Розовое</a><a class="mega-menu__route"
-                                                                    href="#">Красное</a>
+          <div class="mega-menu__window mega-menu__window--hidden" data-category="Крепкие напитки">
+            <div class="mega-menu__content">
+              <div class="mega-menu__header">
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Категория</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Шампанское</a><a
+                      class="mega-menu__route" href="#">Игристое вино</a><a class="mega-menu__route"
+                                                                            href="#">Просекко</a><a
+                      class="mega-menu__route" href="#">Асти</a><a class="mega-menu__route"
+                                                                   href="#">Кава</a><a
+                      class="mega-menu__route" href="#">Ламбурско</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Страна</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Франция</a><a
+                      class="mega-menu__route" href="#">Италия</a><a class="mega-menu__route"
+                                                                     href="#">Чили</a><a
+                      class="mega-menu__route" href="#">Аргентина</a><a class="mega-menu__route"
+                                                                        href="#">Испания</a><a
+                      class="mega-menu__route" href="#">Россия</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Сахар</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Брют</a><a
+                      class="mega-menu__route" href="#">Сухое</a><a class="mega-menu__route" href="#">Полусладкое</a><a
+                      class="mega-menu__route" href="#">Полусухое</a><a class="mega-menu__route"
+                                                                        href="#">Сладкое</a><a
+                      class="mega-menu__route" href="#">Экстра брют</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Цвет</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Белое</a><a
+                      class="mega-menu__route" href="#">Розовое</a><a class="mega-menu__route"
+                                                                      href="#">Красное</a>
+                  </div>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Популярные</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Moet & Chandon</a><a
+                      class="mega-menu__route" href="#">Veuve Clicquot</a><a class="mega-menu__route"
+                                                                             href="#">Dom
+                    Perignon</a><a
+                      class="mega-menu__route" href="#">Gancia</a><a class="mega-menu__route"
+                                                                     href="#">Ruinart</a><a
+                      class="mega-menu__route" href="#">Krug</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
                 </div>
               </div>
-              <div class="mega-menu__category">
-                <h4 class="mega-menu__heading">Популярные</h4>
-                <div class="mega-menu__list"><a class="mega-menu__route" href="#">Moet & Chandon</a><a
-                    class="mega-menu__route" href="#">Veuve Clicquot</a><a class="mega-menu__route"
-                                                                           href="#">Dom
-                  Perignon</a><a
-                    class="mega-menu__route" href="#">Gancia</a><a class="mega-menu__route"
-                                                                   href="#">Ruinart</a><a
-                    class="mega-menu__route" href="#">Krug</a></div>
-                <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+              <div class="mega-menu__footer">
+                <div class="mega-menu__range">
+                  <div class="line"></div>
+                  <a href="#" class="range-dot item_left">
+                    <span class="dot"></span>
+                    <span class="summ">до 2000 ₽</span>
+                  </a>
+
+                  <a href="#" class="range-dot">
+                    <span class="dot"></span>
+                    <span class="summ">1000 - 3000 ₽</span>
+                  </a>
+
+                  <a href="#" class="range-dot item_right">
+                    <span class="dot"></span>
+                    <span class="summ">3000 - 6000 ₽</span>
+                  </a>
+
+                </div>
+                <a class="button" href="#">Показать все товары</a>
               </div>
             </div>
-            <div class="mega-menu__footer">
-              <div class="mega-menu__range">
-                <div class="line"></div>
-                <a href="#" class="range-dot item_left">
-                  <span class="dot"></span>
-                  <span class="summ">до 2000 ₽</span>
-                </a>
-
-                <a href="#" class="range-dot">
-                  <span class="dot"></span>
-                  <span class="summ">1000 - 3000 ₽</span>
-                </a>
-
-                <a href="#" class="range-dot item_right">
-                  <span class="dot"></span>
-                  <span class="summ">3000 - 6000 ₽</span>
-                </a>
-
+            <div class="mega-menu__favorite">
+              <div class="line-title">
+                <h4 class="mega-menu__heading">ВЫБОР ПОКУПАТЕЛЕЙ</h4>
+                <div class="mega-menu__favorite-slider-nav slider-nav"></div>
               </div>
-              <a class="button" href="#">Показать все товары</a>
+
+              <div class="mega-menu__favorite-slider w-100">
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product4.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
+                </div>
+
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product1.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
+                </div>
+
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product3.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="mega-menu__favorite">
-            <div class="product-item">
-              <div class="product-item__overlay">
-                <a class="product-item__header" href="#">
-                  <div class="product-item__thumbnail">
-                    <div class="product-item__tags">
-                      <div class="product-item__tag product-item__tag--new"><img
-                          src="images/blue.svg" alt="">
-                      </div>
-                    </div>
-                    <div class="product-item__controls">
-                      <button class="product-item__control product-item__control--like"><i
-                          class="icon-heart"></i></button>
-                      <button class="product-item__control product-item__control--comparison"><i
-                          class="icon-shuffle"></i></button>
-                    </div>
-                    <img class="lazyload product-item__image" src="images/products/chivas-regal.png"
-                         srcset="images/products/chivas-regal.png">
+          <div class="mega-menu__window mega-menu__window--hidden" data-category="Ликеры">
+            <div class="mega-menu__content">
+              <div class="mega-menu__header">
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Категория</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Шампанское</a><a
+                      class="mega-menu__route" href="#">Игристое вино</a><a class="mega-menu__route"
+                                                                            href="#">Просекко</a><a
+                      class="mega-menu__route" href="#">Асти</a><a class="mega-menu__route"
+                                                                   href="#">Кава</a><a
+                      class="mega-menu__route" href="#">Ламбурско</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Страна</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Франция</a><a
+                      class="mega-menu__route" href="#">Италия</a><a class="mega-menu__route"
+                                                                     href="#">Чили</a><a
+                      class="mega-menu__route" href="#">Аргентина</a><a class="mega-menu__route"
+                                                                        href="#">Испания</a><a
+                      class="mega-menu__route" href="#">Россия</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Сахар</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Брют</a><a
+                      class="mega-menu__route" href="#">Сухое</a><a class="mega-menu__route" href="#">Полусладкое</a><a
+                      class="mega-menu__route" href="#">Полусухое</a><a class="mega-menu__route"
+                                                                        href="#">Сладкое</a><a
+                      class="mega-menu__route" href="#">Экстра брют</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Цвет</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Белое</a><a
+                      class="mega-menu__route" href="#">Розовое</a><a class="mega-menu__route"
+                                                                      href="#">Красное</a>
                   </div>
-                  <div class="product-item__content">
-                    <div class="product-item__seo"><span
-                        class="product-item__available product-item__available--yes">Доступно</span><span
-                        class="product-item__heading">Виски Chivas Regal 12 years old 0.7 l</span>
-                    </div>
-                    <div class="product-item__components"><span
-                        class="product-item__component product-item__component--displacement">0.7 л</span><span
-                        class="product-item__component product-item__component--alcohol">47% алк</span>
-                    </div>
-                    <span class="single-item__vendor"><strong>Артикул:</strong><span>PR-3434</span></span>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Популярные</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Moet & Chandon</a><a
+                      class="mega-menu__route" href="#">Veuve Clicquot</a><a class="mega-menu__route"
+                                                                             href="#">Dom
+                    Perignon</a><a
+                      class="mega-menu__route" href="#">Gancia</a><a class="mega-menu__route"
+                                                                     href="#">Ruinart</a><a
+                      class="mega-menu__route" href="#">Krug</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+              </div>
+              <div class="mega-menu__footer">
+                <div class="mega-menu__range">
+                  <div class="line"></div>
+                  <a href="#" class="range-dot item_left">
+                    <span class="dot"></span>
+                    <span class="summ">до 2000 ₽</span>
+                  </a>
+
+                  <a href="#" class="range-dot">
+                    <span class="dot"></span>
+                    <span class="summ">1000 - 3000 ₽</span>
+                  </a>
+
+                  <a href="#" class="range-dot item_right">
+                    <span class="dot"></span>
+                    <span class="summ">3000 - 6000 ₽</span>
+                  </a>
+
+                </div>
+                <a class="button" href="#">Показать все товары</a>
+              </div>
+            </div>
+            <div class="mega-menu__favorite">
+              <div class="line-title">
+                <h4 class="mega-menu__heading">ВЫБОР ПОКУПАТЕЛЕЙ</h4>
+                <div class="mega-menu__favorite-slider-nav slider-nav"></div>
+              </div>
+
+              <div class="mega-menu__favorite-slider w-100">
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product4.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
+                </div>
+
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product1.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
+                </div>
+
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product3.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mega-menu__window mega-menu__window--hidden" data-category="Вода">
+            <div class="mega-menu__content">
+              <div class="mega-menu__header">
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Категория</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Шампанское</a><a
+                      class="mega-menu__route" href="#">Игристое вино</a><a class="mega-menu__route"
+                                                                            href="#">Просекко</a><a
+                      class="mega-menu__route" href="#">Асти</a><a class="mega-menu__route"
+                                                                   href="#">Кава</a><a
+                      class="mega-menu__route" href="#">Ламбурско</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Страна</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Франция</a><a
+                      class="mega-menu__route" href="#">Италия</a><a class="mega-menu__route"
+                                                                     href="#">Чили</a><a
+                      class="mega-menu__route" href="#">Аргентина</a><a class="mega-menu__route"
+                                                                        href="#">Испания</a><a
+                      class="mega-menu__route" href="#">Россия</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Сахар</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Брют</a><a
+                      class="mega-menu__route" href="#">Сухое</a><a class="mega-menu__route" href="#">Полусладкое</a><a
+                      class="mega-menu__route" href="#">Полусухое</a><a class="mega-menu__route"
+                                                                        href="#">Сладкое</a><a
+                      class="mega-menu__route" href="#">Экстра брют</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Цвет</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Белое</a><a
+                      class="mega-menu__route" href="#">Розовое</a><a class="mega-menu__route"
+                                                                      href="#">Красное</a>
                   </div>
-                </a>
-                <div class="product-item__footer">
-                  <div class="product-item__prices"><span
-                      class="product-item__price">2 639<span class="icon-rub"></span></span><span
-                      class="product-item__sale">3 890 ₽ без скидки</span>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Популярные</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Moet & Chandon</a><a
+                      class="mega-menu__route" href="#">Veuve Clicquot</a><a class="mega-menu__route"
+                                                                             href="#">Dom
+                    Perignon</a><a
+                      class="mega-menu__route" href="#">Gancia</a><a class="mega-menu__route"
+                                                                     href="#">Ruinart</a><a
+                      class="mega-menu__route" href="#">Krug</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+              </div>
+              <div class="mega-menu__footer">
+                <div class="mega-menu__range">
+                  <div class="line"></div>
+                  <a href="#" class="range-dot item_left">
+                    <span class="dot"></span>
+                    <span class="summ">до 2000 ₽</span>
+                  </a>
+
+                  <a href="#" class="range-dot">
+                    <span class="dot"></span>
+                    <span class="summ">1000 - 3000 ₽</span>
+                  </a>
+
+                  <a href="#" class="range-dot item_right">
+                    <span class="dot"></span>
+                    <span class="summ">3000 - 6000 ₽</span>
+                  </a>
+
+                </div>
+                <a class="button" href="#">Показать все товары</a>
+              </div>
+            </div>
+            <div class="mega-menu__favorite">
+              <div class="line-title">
+                <h4 class="mega-menu__heading">ВЫБОР ПОКУПАТЕЛЕЙ</h4>
+                <div class="mega-menu__favorite-slider-nav slider-nav"></div>
+              </div>
+
+              <div class="mega-menu__favorite-slider w-100">
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product4.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
+                </div>
+
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product1.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
+                </div>
+
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product3.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mega-menu__window mega-menu__window--hidden" data-category="Стекло">
+            <div class="mega-menu__content">
+              <div class="mega-menu__header">
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Категория</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Шампанское</a><a
+                      class="mega-menu__route" href="#">Игристое вино</a><a class="mega-menu__route"
+                                                                            href="#">Просекко</a><a
+                      class="mega-menu__route" href="#">Асти</a><a class="mega-menu__route"
+                                                                   href="#">Кава</a><a
+                      class="mega-menu__route" href="#">Ламбурско</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Страна</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Франция</a><a
+                      class="mega-menu__route" href="#">Италия</a><a class="mega-menu__route"
+                                                                     href="#">Чили</a><a
+                      class="mega-menu__route" href="#">Аргентина</a><a class="mega-menu__route"
+                                                                        href="#">Испания</a><a
+                      class="mega-menu__route" href="#">Россия</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Сахар</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Брют</a><a
+                      class="mega-menu__route" href="#">Сухое</a><a class="mega-menu__route" href="#">Полусладкое</a><a
+                      class="mega-menu__route" href="#">Полусухое</a><a class="mega-menu__route"
+                                                                        href="#">Сладкое</a><a
+                      class="mega-menu__route" href="#">Экстра брют</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Цвет</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Белое</a><a
+                      class="mega-menu__route" href="#">Розовое</a><a class="mega-menu__route"
+                                                                      href="#">Красное</a>
                   </div>
-                  <a class="button product-item__order" href="#"><i
-                      class="icon-basket"></i><span>В корзину</span></a>
+                </div>
+                <div class="mega-menu__category">
+                  <h4 class="mega-menu__heading">Популярные</h4>
+                  <div class="mega-menu__list"><a class="mega-menu__route" href="#">Moet & Chandon</a><a
+                      class="mega-menu__route" href="#">Veuve Clicquot</a><a class="mega-menu__route"
+                                                                             href="#">Dom
+                    Perignon</a><a
+                      class="mega-menu__route" href="#">Gancia</a><a class="mega-menu__route"
+                                                                     href="#">Ruinart</a><a
+                      class="mega-menu__route" href="#">Krug</a></div>
+                  <a class="link link--theme-dashed mega-menu__more" href="#">Посмотреть все</a>
+                </div>
+              </div>
+              <div class="mega-menu__footer">
+                <div class="mega-menu__range">
+                  <div class="line"></div>
+                  <a href="#" class="range-dot item_left">
+                    <span class="dot"></span>
+                    <span class="summ">до 2000 ₽</span>
+                  </a>
+
+                  <a href="#" class="range-dot">
+                    <span class="dot"></span>
+                    <span class="summ">1000 - 3000 ₽</span>
+                  </a>
+
+                  <a href="#" class="range-dot item_right">
+                    <span class="dot"></span>
+                    <span class="summ">3000 - 6000 ₽</span>
+                  </a>
+
+                </div>
+                <a class="button" href="#">Показать все товары</a>
+              </div>
+            </div>
+            <div class="mega-menu__favorite">
+              <div class="line-title">
+                <h4 class="mega-menu__heading">ВЫБОР ПОКУПАТЕЛЕЙ</h4>
+                <div class="mega-menu__favorite-slider-nav slider-nav"></div>
+              </div>
+
+              <div class="mega-menu__favorite-slider w-100">
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product4.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
+                </div>
+
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product1.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
+                </div>
+
+                <div class="slide">
+                  <a href="#" class="product-slide">
+                    <span class="product-slide__img"><img src="images/news/new-product3.png" alt=""></span>
+                    <span class="product-slide__title">Коньяк Hine Talent de Thomas
+Hine Grande Champagne
+Superior de France</span>
+                    <span class="product-slide__info">Франция, 0.7 л., 40%</span>
+                    <span class="product-slide__price">1.399.990 <span class="icon-rub"></span></span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1871,7 +1897,8 @@
             <p>Консультации по телефону
               8 (495) 789-71-17</p>
 
-            <a href="#" class="btn button">Послать запрос <span class="btn-icon-arrow"><img src="images/arrow_mini_right-white.svg" alt=""></span></a>
+            <a href="#" class="btn button">Послать запрос <span class="btn-icon-arrow"><img
+                src="images/arrow_mini_right-white.svg" alt=""></span></a>
             <img src="images/bg-item1.jpg" alt="" class="main-home-offers__bg">
           </div>
 
@@ -1879,7 +1906,8 @@
             <p>Купить дешевые спиртные
               напитки до 2500 руб.</p>
 
-            <a href="#" class="btn button">К предложениям <span class="btn-icon-arrow"><img src="images/arrow_mini_right-white.svg" alt=""></span></a>
+            <a href="#" class="btn button">К предложениям <span class="btn-icon-arrow"><img
+                src="images/arrow_mini_right-white.svg" alt=""></span></a>
             <img src="images/bg-item2.jpg" alt="" class="main-home-offers__bg">
           </div>
 
@@ -1887,7 +1915,8 @@
             <p>Откройте для себя новые
               вкусы в магазине Digestive</p>
 
-            <a href="#" class="btn button">Новые вкусы <span class="btn-icon-arrow"><img src="images/arrow_mini_right-white.svg" alt=""></span></a>
+            <a href="#" class="btn button">Новые вкусы <span class="btn-icon-arrow"><img
+                src="images/arrow_mini_right-white.svg" alt=""></span></a>
             <img src="images/bg-item3.jpg" alt="" class="main-home-offers__bg">
           </div>
 
@@ -1895,7 +1924,8 @@
             <p>Вы ищете хороший подарок
               для друзей?</p>
 
-            <a href="#" class="btn button">Идеи для подарков <span class="btn-icon-arrow"><img src="images/arrow_mini_right-white.svg" alt=""></span></a>
+            <a href="#" class="btn button">Идеи для подарков <span class="btn-icon-arrow"><img
+                src="images/arrow_mini_right-white.svg" alt=""></span></a>
             <img src="images/bg-item4.jpg" alt="" class="main-home-offers__bg">
           </div>
         </div>
@@ -2486,7 +2516,7 @@
 
 
   <footer class="footer lazyload" data-bgset="images/footer/background.png">
-    <div class="footer__wrapper">
+    <div class="container container-flex">
       <a class="footer__logo block__mobile" href="#"><img class="lazyload" src="images/main-logo/round-logo.png"
                                                           alt=""></a>
 

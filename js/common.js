@@ -146,6 +146,18 @@ $(document).ready(function () {
     }
 });
 
+$( document ).ready( function() {
+    $( '.mega-menu__favorite-slider' ).each( function() {
+        $(this).slick( {
+            slidesToShow: 1,
+            fade: true,
+            appendArrows: $(this).parents('.product-item').find('.mega-menu__favorite-slider-nav'),
+            nextArrow: '<button type="button" class="slick-next"><span class="icon-slider-arrow-right"></span></button>',
+            prevArrow: '<button type="button" class="slick-prev"><span class="icon-slider-arrow-left"></span></button>',
+        } );
+    } );
+} );
+
 // показать карточку товара по наведению в зависимости от значениея data-tab
 $(document).ready(function () {
     $(".mega-menu__route").hover(function () {
@@ -157,6 +169,8 @@ $(document).ready(function () {
 
         $('.js-tab-content.active').removeClass('active'); // 3
         content.addClass('active'); // 4
+
+        $('.mega-menu__favorite-slider.slick-initialized').slick("setPosition");
     })
 });
 
@@ -441,7 +455,7 @@ $('.popular-category-slider').slick({
 let pagingInfo = $('.news-slider-nav .counter-slide');
 let teamSlider = $('.news-slider');
 
-teamSlider.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+teamSlider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
     let i = (currentSlide ? currentSlide : 0) + 1;
     let prefix = i < 10 ? '0' : '';
     let prefixAll = slick.slideCount < 10 ? '0' : '';
@@ -462,7 +476,7 @@ $('.news-slider').slick({
 let pagingInfo2 = $('.main-home-slider__nav .counter-slide');
 let teamSlider2 = $('.main-home-slider');
 
-teamSlider2.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+teamSlider2.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
     let i = (currentSlide ? currentSlide : 0) + 1;
     let prefix = i < 10 ? '0' : '';
     let prefixAll = slick.slideCount < 10 ? '0' : '';
@@ -490,16 +504,20 @@ $(document).ready(function () {
             $(this).attr("data-category") === e && ($(".header__category").removeClass("header__category--current"),
                 t.addClass("header__category--current"),
                 $(this).removeClass("mega-menu__window--hidden"))
-        })
+        });
+        $('.mega-menu__favorite-slider.slick-initialized').slick("setPosition");
     });
     $(document).mouseup(function (t) {
         var e = $(".header");
         e.is(t.target) || 0 !== e.has(t.target).length || ($(".header__category").removeClass("header__category--current"),
-            $(".mega-menu").addClass("mega-menu--hidden"), $(".mega-menu__window").addClass("mega-menu__window--hidden"))
+            $(".mega-menu").addClass("mega-menu--hidden"),
+            $(".mega-menu__window").addClass("mega-menu__window--hidden"));
     });
     $(".header").mouseleave(function () {
-        $(".header__category").removeClass("header__category--current"), $(".mega-menu").addClass("mega-menu--hidden"), $(".mega-menu__window").addClass("mega-menu__window--hidden")
-    })
+        $(".header__category").removeClass("header__category--current");
+        $(".mega-menu").addClass("mega-menu--hidden");
+        $(".mega-menu__window").addClass("mega-menu__window--hidden");
+    });
 });
 
 
