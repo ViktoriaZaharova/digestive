@@ -152,8 +152,8 @@ $( document ).ready( function() {
             slidesToShow: 1,
             fade: true,
             appendArrows: $(this).parents('.product-item').find('.mega-menu__favorite-slider-nav'),
-            nextArrow: '<button type="button" class="slick-next"><span class="icon-slider-arrow-right"></span></button>',
-            prevArrow: '<button type="button" class="slick-prev"><span class="icon-slider-arrow-left"></span></button>',
+            nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="images/sprite.svg#arrow-right-mini"></use></svg></button>',
+            prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="images/sprite.svg#arrow-left-mini"></use></svg></button>',
         } );
     } );
 } );
@@ -437,18 +437,28 @@ $('.instagramm-slider').slick({
     dots: true,
     appendArrows: '.instagramm-slider-nav',
     appendDots: '.instagramm-slider-nav',
-    nextArrow: '<button type="button" class="slick-next"><span class="icon-slider-arrow-right"></span></button>',
-    prevArrow: '<button type="button" class="slick-prev"><span class="icon-slider-arrow-left"></span></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="images/sprite.svg#arrow-right-mini"></use></svg></button>',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="images/sprite.svg#arrow-left-mini"></use></svg></button>',
+
 });
 
 $('.popular-category-slider').slick({
     slidesToShow: 4,
     dots: true,
-    // variableWidth: true,
     appendArrows: '.popular-category-nav',
     appendDots: '.popular-category-nav',
-    nextArrow: '<button type="button" class="slick-next"><span class="icon-slider-arrow-right"></span></button>',
-    prevArrow: '<button type="button" class="slick-prev"><span class="icon-slider-arrow-left"></span></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="images/sprite.svg#arrow-right-mini"></use></svg></button>',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="images/sprite.svg#arrow-left-mini"></use></svg></button>',
+});
+
+$('.new-arrivals-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: true,
+    appendArrows: '.new-arrivals__slick-nav',
+    appendDots: '.new-arrivals__slick-nav',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="images/sprite.svg#arrow-right-mini"></use></svg></button>',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="images/sprite.svg#arrow-left-mini"></use></svg></button>',
 });
 
 //счетчик слик слайдер с 0//
@@ -490,9 +500,10 @@ $('.main-home-slider').slick({
     fade: true,
     appendArrows: '.main-home-slider__arrows',
     appendDots: '.main-home-slider__nav',
-    nextArrow: '<button type="button" class="slick-next"><span class="icon-slider-arrow-right"></span></button>',
-    prevArrow: '<button type="button" class="slick-prev"><span class="icon-slider-arrow-left"></span></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="images/sprite.svg#arrow-right-mini"></use></svg></button>',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="images/sprite.svg#arrow-left-mini"></use></svg></button>',
 });
+
 
 
 // category
@@ -598,11 +609,11 @@ $(document).ready(function () {
     $(".product-filter .filter-item input[type=checkbox]").change(function () {
         this.checked ? t.append('<button data-currentFilter="' + $(this).val() + '" class="product-filter__current"><i class="icon-cancel" /> ' + $(this).val() + "</button>") : $('*[data-currentFilter="' + $(this).val() + '"]').remove()
     });
-    $(".product-filter__toggle").on("click", function (t) {
-        t.preventDefault();
-        $(this).toggleClass("product-filter__toggle--no");
-        $(this).hasClass("product-filter__toggle--no") ? e.fadeOut() : e.fadeIn()
-    })
+	$(".product-filter__toggle").on("click", function (t) {
+		t.preventDefault();
+		$(this).toggleClass("product-filter__toggle--no");
+		$(this).hasClass("product-filter__toggle--no") ? e.fadeOut() : e.fadeIn()
+	});
 });
 
 $('.attention_banner button').on('click', function () {
@@ -662,6 +673,10 @@ $('.view-link').click(function (e) {
     }
 });
 
+$('.popular-slider').slick({
+	slideToShow: 1,
+});
+
 $('.single-item__share').click(function (e) {
     e.preventDefault();
     $(this).parents('.box__share').toggleClass('active');
@@ -671,8 +686,19 @@ $('.single-item__tabs').on('click', 'a:not(.single-item__tab--current)', functio
     e.preventDefault();
     $(this)
         .addClass('single-item__tab--current').siblings().removeClass('single-item__tab--current')
-        .closest('div.single-item__content').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+			.closest('div.single-item__content').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+	$('.popular-slider').slick('setPosition');
 });
+
+// $('.popular-tabs').slick({
+// 	slidesToShow: 7,
+// 	variableWidth: true,
+// 	asNavFor: '.popular-slider',
+// 	focusOnSelect: true,
+// 	infinite: false,
+// });
+
+
 
 // модальные окна (несколько)
 $(document).ready(function () {

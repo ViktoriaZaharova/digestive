@@ -9309,9 +9309,6 @@ button.mz-button:before {
     height: 100%
 }
 
-.header__logo:focus, .header__logo:hover {
-    opacity: .8
-}
 
 @media (max-width: 1200px) {
     .header__logo {
